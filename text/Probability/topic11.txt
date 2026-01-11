@@ -1,0 +1,57 @@
+
+[Page 1]
+Topic 11: Limit Theorems Outline Markov Inequality Chebyshev Inequality Weak Law of Large Number (LLN) 大數法則 The Central Limit Theorem (CLT) 中央極限定理 Convergence of a Sequence of RVs 隨機序列的收斂性 Reading: Textbook Section 5.1~5.5 1
+[Page 2]
+2 Why study limit theorems? Study the asymptotic behavior of sequences of RVs. We’d like to know whether a sequence of RVs converges (如鐵穹防禦系統要能鎖定並持續追蹤直到擊中目標) 大數法則(Law of Large Numbers) 陳述sample mean ଵ ௡∑ 𝑋௜ ௡ ௜ୀଵ 在樣本 數很大時會收斂到真實的期望值。 應用: 可估計群體中某現象存在個數(某事件發生次數)。在群體樣本非常 大時，此估計愈準確。 我們經常對一連串i.i.d.隨機變數之總和感興趣，如計算個數、多次賽 局輸贏總合、長隊伍等待時間等。中央極限定理(Central Limit Theorem)宣告我們可借用常態分佈來近似此總和的PDF Introduction
+[Page 3]
+3 Law of large numbers and Central Limit Theorem are related to the sample mean. Let’s have a quick review. X1,X2, . . .Xn are i.i.d. RVs with E[Xi]=μ, var(Xi)=σ2 Sample mean: Mn = (X1+X2+. . .+Xn ) /n Then, Review of Sample Mean 2 [ ] ; var( ) n n E M M n    
+[Page 4]
+Markov Inequality If a random variable X can only take nonnegative values, then we must have the following Markov inequality Remark: 僅需知道期望值即可! Markov inequality provides a loose bound, but is easy to calculate! Example 5.1: Uniform in [0,4] (p.266) 4 2 3 Markov: Pr( 3) 0.67; Exact: Pr( 3) 0.25 X X     
+[Page 5]
+Chebyshev Inequality If X is a random variable with mean μ and variance σ2, then Remarks:  Markov and Chebyshev inequalities allow us to derive bounds on probabilities when only the mean, or both the mean and the variance are available  In general, Markov and Chebyshev inequality are NOT very tight upper bounds, as the required information is only the mean and the variance. (Examples 5.1 and 5.2) 5
+[Page 6]
+Chebyshev Inequality In general, Markov and Chebyshev inequality are NOT very tight upper bound. Example 5.2: Let 𝑋be uniform in [0,4]. Use the Chebyshev inequality to bound the probability of 𝑋െ2 ൒1 6
+[Page 7]
+Chebyshev Inequality Example 1: Weak Law of Large Numbers (LLN) Let X1, X2, . . ., Xn be a sequence of independent and identically distributed (i.i.d.) RVs with mean μ and finite variance σ2. For every 𝜖> 0 (no matter how small it is), we have the following (weak) law of large numbers where Mn =(X1+X2+…+Xn )/n is the sample mean. The weak LLN (大數法則) says that the sample mean will be very close to the true mean, when the sample size is sufficiently large. (Proof) Use Chebyshev inequality! 7
+[Page 8]
+Chebyshev Inequality Example: The Pollster’s Problem The Pollster’s Problem (民意調查問題) You may often see something like this, particularly during elections: 「這次選前民意調查，XX的支持率約為52%。此結果有 95% 信心水準，抽樣誤差於正負3% 以內。」 Questions: 1) 直覺上，抽樣樣本數越多，則估計出來的支持率越接近真實。但， 最少需抽樣幾份，才能保證有上述之抽樣誤差與信心水準? 2) 另外一個問法是，民調公司預算僅能允許抽樣1000份。若欲保證預 估的支持率可有95%信心水準，那抽樣誤差要如何修正? 8
+[Page 9]
+The Pollster’s Problem Example 5.5: Accuracy of Polling (p.270) (民調數據的準確率) The ith person’ polled: Fraction of “Yes” : p: (unknown) fraction of population voting “Yes”: The question here is: 95% 信心水準，抽樣誤差於正負1% 以內，則需要抽樣幾份? 9 1 If "Yes" 0 If "No" i X    1 2 n n X X X M n      x p 
+[Page 10]
+The Pollster’s Problem Accuracy of Polling (p.270) (民調數據的準確率) 使用Chebyshev: In fact, Xi is i.i.d. Bernoulli RV: Remarks: 1. Chebyshev 算出的n 可保證不等式成立，but… 2. CLT can also do the tricks, and give a much smaller n (i.e., fewer samples. See page 14.) 10 Pr( 0.01) 0.05 n X M     2 2 Pr( ) x n x M n        2 14 ; (1 ) x x p p p       1 Pr( 0.01) 50,000 0.0004 n M p n n      x p  95% 信心水準，抽樣誤差於正負1% 以內
+[Page 11]
+The Central Limit Theorem (CLT) Central Limit Theorem (中央極限定理) Let X1,X2, . . ., Xn be a sequence of i.i.d. RVs with mean μ and variance σ2, and define Then, the CDF of Zn converges to the standard normal CDF (z) in the sense that Remarks: Note that X1,X2, …,Xn can be of any distributions (this is why CLT is so powerful), and the CLT is also true. 不論X1,X2, …,Xn 原本的統計行為如何，Zn 在n很大時會趨近於常態分佈 11
+[Page 12]
+The Central Limit Theorem (CLT) Central Limit Theorem (中央極限定理) Let X1,X2, . . ., Xn be a sequence of i.i.d. RVs with mean μ and variance σ2, and define Then, the CDF of Zn converges to the standard normal 該如何去理解上式Zn的結構? 減去n μ 的意義，分母的物理意義各為何? CLT well models many practical real-world problems. Sum of i.i.d. RVs with arbitrary distributions having finite mean and variance can be approximated by Gaussian The number of occurrence of a certain event, the sample mean Noise, channel effects in the received signal of your smartphone 12
+[Page 13]
+Proof of CLT (p.290) Sum of indep. RVs use moment generating function 13
+[Page 14]
+14 To make a “good” Gaussian, how large is n? “N” in CLT n=2 n=32 n=4 n=1
+[Page 15]
+15 The shape of PDF of X has “some” impact on n. “N” in CLT (2) n=8 n=1 n=32 n=18
+[Page 16]
+The Pollster’s Problem (p.277) For the ith person: Fraction of “Yes”: p: fraction of population voting “Yes” =μX Suppose we want: CLT facilitates calculations of the probability: 16 1 If "Yes" 0 If "No" i X    1 2 n n X X X M n      2 14 (1 ) x p p    2 0.01 1.96 9604 n n      Pr( 0.01) Pr(| | 0.02 ) 0.05 n X M Z n       Pr( 0.01) 0.05 n X M     1 2 n n X X X M n      1 2 1 2 0.01 0.01 n n X X X np X X X np n n n                95% 信心水準，抽樣誤差於正負1% 以內
+[Page 17]
+17 CLT Applied to Binomial Bernoulli: Binomial: Approximation: Example: n=36, p=0.5; find Pr(Sn=19) Exact answer: 2 ; (1 ) x x p p p      1 2 n n S X X X      2 ; (1 ) S S np np p      (1 ) S np np p    CDF of standard normal 36 36 1 0.1251 19 2           
+[Page 18]
+18 De Moivre-Laplace Approximation to Binomial The ½ Correction for Binomial Approximation Let Sn be normalized to zero mean and unit variance: Pr(k≤ Sn≤l) ≈ Φ(l+0.5)−Φ(k − 0.5) Ex: n=36, p=0.5; Pr(Sn=19) = Pr(18.5≤Sn≤19.5)
+[Page 19]
+19 Deterministic limit: a sequence a number an converges to a: an eventually gets and stays (arbitrarily) close to a Def: For every ε>0 there exists n0, such that for all n≥n0, |an −a |≤ε. Stochastic limits: there exists several definitions Convergence “in probability” Convergence “almost surely” or “with probability 1” Convergence lim n n a a  
+[Page 20]
+20 Y1,Y2, . . . is a sequence of RVs, and let a be a real number. We say Yn converges to a in probability, if for every ε>0, we have (Almost) all of the PMF/PDF of Yn eventually gets concentrated (arbitrarily) close to a 例子: (大數法則) The weak law of large numbers the sample mean converges in prob to the true mean. Accuracy level: ε, Confidence level: δ; Convergence “in Probability” lim Pr( ) 0 n n Y a      0 Pr( ) , for all n Y a n n      
+[Page 21]
+21 Example 5.6: Consider a sequence of independent random variables 𝑋௡ that are uniform in [0,1]. Let 𝑌௡ൌminሼ𝑋ଵ, … , 𝑋௡ሽ Does 𝑌௡converge to in probability? Example (p.272)
+[Page 22]
+22 Consider a sequence of RVs Yn with the following PMFs. Does Yn converge? Yes. What is E[Yn]? “n” Example (p.272) 1 lim Pr( 0 ) lim 0 n n n Y n        2 n 2 1 1 0 1 n n n n          
+[Page 23]
+23 Y1,Y2, . . . is a sequence of RVs, and let c be a real number. We say Yn converges to c with probability 1, if Remarks:  lim ௡→ஶ𝑌௡ൌ𝑐 寫得精確一些應為𝜔: lim ௡→ஶ𝑌௡ሺ𝜔ሻൌ𝑐 大括號表示一個事件，此事件發生機率為1 時稱Yn converges to c with probability 1  隨機變數所構成的序列，其收斂的不同定義會在研究所 “隨機過程”課程中有更詳細解說 Convergence “with Probability 1” Pr(lim ) 1 n n Y c   
+[Page 24]
+24 Example Consider a sample space Ω ൌሾ0,1ሿ, the closed interval between 0 and 1. Assume that each sample point 𝜖∈Ω follows continuous uniform distribution. Then, the random sequence 𝑋௡𝜖ൌexpሺെ𝑛ଶሺ𝜖െ1/𝑛ሻሻconverges to 0 with probability 1. Example -- Convergence with Probability 1
+[Page 25]
+25 Example 5.14 Consider a sequence of independent random variables 𝑋௡ that are uniform in [0,1]. Let 𝑌௡ൌminሼ𝑋ଵ, … , 𝑋௡ሽ Show that 𝑌௡converge to 0 with probability 1. Example
+[Page 26]
+26 Y1,Y2, . . . is a sequence of RVs, and let c be a real number. We say Yn converges to c with probability 1, if Remarks Convergence with probability 1 定義中有傳統數列收斂的概念(see p.19)。 樣本空間中若幾乎每一個sample point 對應到的數列都會收斂，僅部分的 sample points對應到的數列不收斂，若那些對應到不收斂數列的sample points所成集合發生機率是零，即為此處所謂收斂with probability 1 或稱為 convergence almost surely Convergence with probability 1 implies convergence in probability. The converse is not necessarily true. (Problem 15*, p.292) Example 5.15 (p.282) says a random sequence may converge in probability, but not with probability 1 Convergence “with Probability 1” Pr(lim ) 1 n n Y c   
+[Page 27]
+27 Example 5.15 Consider a discrete time arrival process. The set of times is 𝐈௞ൌ2௞, 2௞൅1, … , 2௞ାଵെ1 for k=1,2,…. During each 𝐈௞, there is exactly one arrival, and all times within an interval are equally likely. The arrival times in different intervals are assumed to be independent. Define 𝑌௡=1 if there is an arrival at time n, and 𝑌௡=0 if there is no arrival. Show that 𝑌௡converge to 0 in probability, but NOT with probability 1 Example
+[Page 28]
+The Strong Law of Large Numbers Let X1, X2, . . . be a sequence of i.i.d. RVs with mean μ. Let , Sample space: set A = collections of (x1, x2,… ) Prob of A = 1. Weak Law: 這是convergence in probability的概念 Strong Law: For every ε>0 there exists n0, 這是convergence with probability 1 的概念 28 Pr(lim ) 1 n n M       1 2 / n n M X X X n      1 2 1 2 ( , , ) such that lim n n x x x x x n                   lim Pr( ) 0 n n M         0 Pr( : , ) 1 n n M n n       

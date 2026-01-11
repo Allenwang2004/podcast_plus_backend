@@ -1,0 +1,233 @@
+[
+  {
+    "source": "Lec03.txt",
+    "category": "Physics",
+    "chunk_index": 0,
+    "page": 2,
+    "text": "2  3 1. Position, Velocity, and Acceleration Vector 1. Position, Velocity, and Acceleration Vectors 2. Two-dimensional motion with constant acceleration 3. Projectile motion 4. Uniform circular motion 5. Relative motion Position vector: Displacement: Position, Velocity, and Acceleration Vectors  4 r f i r r r     "
+  },
+  {
+    "source": "Lec03.txt",
+    "category": "Physics",
+    "chunk_index": 1,
+    "page": 3,
+    "text": "3 Average velocity: Instantaneous velocity Instantaneous speed =  5 , indepdent of path r v t     0 lim t r dr v t dt         v  Average acceleration:  Instantaneous acceleration:  6 f i f i v v v a t t t           0 lim t v dv a t dt        \n\n4  7 Any particle following a curved path is accelerating! a∥: change speed a⊥: change direction  8"
+  },
+  {
+    "source": "Lec03.txt",
+    "category": "Physics",
+    "chunk_index": 2,
+    "page": 5,
+    "text": "5  9  10 2. Two-dimensional motion with constant acceleration 1. Position, Velocity, and Acceleration Vectors 2. Two-dimensional motion with constant acceleration 3. Projectile motion 4. Uniform circular motion 5. Relative motion"
+  },
+  {
+    "source": "Lec03.txt",
+    "category": "Physics",
+    "chunk_index": 3,
+    "page": 6,
+    "text": "6  11 dv a dt    x x y y dv a dt dv a dt         ( ) (0) ( ) (0) x x x y y y v t v a t v t v a t         ( ) (0) v t v at       Two-dimensional motion with constant acceleration The motion in the x and y directions is independent of each other. ˆ ˆ ˆ ˆ y x x y dv dv i j a i a j dt dt     (1) f i v v at      2 1 (2) 2 f i i r r v t at         12"
+  },
+  {
+    "source": "Lec03.txt",
+    "category": "Physics",
+    "chunk_index": 4,
+    "page": 7,
+    "text": "7  13 (3) f i r r t v      Note: 2 2 (4) 2 ( ) f i f i v v a r r        2 2 2 2 2 Proof: ( ) ( ) 2 1 2 2 2 ( ) f f f i i i i i i i f i v v v v at v at v v at at at v a v t at v a r r                                          Q: Plot ( ) ? ( ) ? ( ) ? y y y y y y t v v t a a t       x y 0 ( ) xv t v    14"
+  },
+  {
+    "source": "Lec03.txt",
+    "category": "Physics",
+    "chunk_index": 5,
+    "page": 8,
+    "text": "8 0 x t v  y yv y a 0 x t v  0 x t v   15  16 3. Projectile Motion 1. Position, Velocity, and Acceleration Vectors 2. Two-dimensional motion with constant acceleration 3. Projectile motion 4. Uniform circular motion 5. Relative motion"
+  },
+  {
+    "source": "Lec03.txt",
+    "category": "Physics",
+    "chunk_index": 6,
+    "page": 9,
+    "text": "9 Projectile Motion 0 An object in projectile motion will follow a parabolic path. 0 Reference frame chosen y is vertical with upward positive. 0 Acceleration components: ay = g and ax = 0 0 Initial velocity components: vxi = vi cos and vyi = vi sin   17 Trajectory  18 2 2 cos cos 1 1 ( sin ) 2 2 f f xi i i i i f yi y i i x x v t v t t v y v t a t v t gt               2 2 2 tan 2 cos f i f f i i g y x x v           “Parabola” (0,0)"
+  },
+  {
+    "source": "Lec03.txt",
+    "category": "Physics",
+    "chunk_index": 7,
+    "page": 10,
+    "text": "10  19 2 1 2 f i r v t gt      Range and Maximum Height of a Projectile 0 The range, R, is the horizontal distance of the projectile. 0 The maximum height the projectile reaches is h 2 sin 2 i i v R g   2 2 sin 2 i i v h g    20"
+  },
+  {
+    "source": "Lec03.txt",
+    "category": "Physics",
+    "chunk_index": 8,
+    "page": 10,
+    "text": "11 Proof:  21 0 0 Time to max height: 0 sin sin / yf yi y i i i i v v a t v gt t v g          2 2 2 2 sin sin 1 1 sin 2 2 sin 2 i i i i yi i i i i v v h v t gt v g g g v h g                 0 2 2 sin (2 ) cos (2 ) 2 sin cos sin 2 i i xi xi i i i i i i i v R v t v t v g v v R g g            0 The maximum range occurs at θi = 45o. What if there is air resistance (Fr ∝v)? θi < 45o [Am. J. Phys. 72, 1404 (2004)] 0 Complementary angles will produce the same range,"
+  },
+  {
+    "source": "Lec03.txt",
+    "category": "Physics",
+    "chunk_index": 9,
+    "page": 10,
+    "text": "Complementary angles will produce the same range, but flight time and max height are different! 0 In this figure, which angle has the shortest flight time?  22 15o"
+  },
+  {
+    "source": "Lec03.txt",
+    "category": "Physics",
+    "chunk_index": 10,
+    "page": 12,
+    "text": "12  23 A projectile is thrown from the origin O. It moves in such a way that its distance from O is always increasing. Find the maximum angle above the horizontal with which the projectile could have been thrown. Ex. At which angle can the ball hit the target? 24"
+  },
+  {
+    "source": "Lec03.txt",
+    "category": "Physics",
+    "chunk_index": 11,
+    "page": 13,
+    "text": "13 25  Target: Projectile: 2 0 1 tan 2 T T y x gt    2 The expected if 0. 1 tan 2 P P P i y g y x gt       0 When ( , ) ( , ), P P T T i x y x y      x y 0 tan Tx  Tx 0  i 0 26  Or in terms of vector, 2 0 1 2 Pr v t gt      2 0 1 2 Tr r gt      P Tr r    0 0 / v r t    0 0 r v     x y 0 T P 0r 0v"
+  },
+  {
+    "source": "Lec03.txt",
+    "category": "Physics",
+    "chunk_index": 12,
+    "page": 14,
+    "text": "14 What is the requirement for the target to be hit before it reaches ground? 27  0 Ty  2 1 0 2 d gt    / tan cos cos sin i T Pi i Pi i Pi i d x d t v v v        sin 2 Pi i gd v    d i iP v  28 Q: When the bullet is at P, where will be the monkey?"
+  },
+  {
+    "source": "Lec03.txt",
+    "category": "Physics",
+    "chunk_index": 13,
+    "page": 14,
+    "text": "15 Projectile Motion – Problem Solving Hints 0 Select a coordinate system. 0 v vx, vy 0 Analyze the horizontal motion using constant velocity techniques 0 Analyze the vertical motion using constant acceleration techniques 0 Remember that both directions share the same time. 29  1. Flight time t = ? 2. xf = ? 3. vf = ? 30  2 1 1. 2 f i yi y y y v t a t    2 1 0 sin 2 i i h v t gt       t   3. cos ˆ ˆ sin xf xi i i f xf yf yf yi y i i v v v v v i v j v v a t v gt         "
+  },
+  {
+    "source": "Lec03.txt",
+    "category": "Physics",
+    "chunk_index": 14,
+    "page": 14,
+    "text": "i v v v v v i v j v v a t v gt                Ex. iv i h 2. f xi x v t  "
+  },
+  {
+    "source": "Lec03.txt",
+    "category": "Physics",
+    "chunk_index": 15,
+    "page": 16,
+    "text": "16 31 ? d   Ex.  ? d  32  2 2 1 1 2 2 f xi i f yi y x v t v t y v t a t gt        1 2 tan f f i y gt x v     2 tan iv t g     ( , ) f f x y  "
+  },
+  {
+    "source": "Lec03.txt",
+    "category": "Physics",
+    "chunk_index": 16,
+    "page": 17,
+    "text": "17  Which θ makes the distance d maximum? 33  iv  34  2 cos cos 1 ( sin ) sin 2 f i f i x v t d y v t gt d            cos cos i d t v      2 2 2 ( ) sin 2 cos 2cos sin cos iv d d g             Max ( ) 0 d d d d     4 2       Note: 0 45       Hint: To express d = d(θ)= ?"
+  },
+  {
+    "source": "Lec03.txt",
+    "category": "Physics",
+    "chunk_index": 17,
+    "page": 17,
+    "text": "18  35 4. Uniform Circular Motion 1. Position, Velocity, and Acceleration Vectors 2. Two-dimensional motion with constant acceleration 3. Projectile motion 4. Uniform circular motion 5. Relative motion Uniform Circular Motion 0 Uniform circular motion occurs when an object moves in a circular path with a constant speed. 0 The velocity vector is always tangent to the path of the object. 0 An acceleration exists since the direction of the motion is changing, and the acceleration is perpendicular"
+  },
+  {
+    "source": "Lec03.txt",
+    "category": "Physics",
+    "chunk_index": 18,
+    "page": 17,
+    "text": "changing, and the acceleration is perpendicular to the path. 36"
+  },
+  {
+    "source": "Lec03.txt",
+    "category": "Physics",
+    "chunk_index": 19,
+    "page": 19,
+    "text": "19  37 OAB Oab    O O a b i f r r r     i f v v v     v r v r       0 lim t v a t       2 0 lim t r v v r t r             38 ˆ ˆ ˆ ˆ ( sin ) ( cos ) ˆ ˆ ( ) ( ) x y p p v v i v j v i v j y x v i v j r r          2 2 ˆ ˆ ( ) ( ) ˆ ˆ ( ) ( ) ˆ ˆ ( cos ) [ ( sin )] ˆ ˆ ( cos ) ( sin ) p p y x dy dx dv v v a i j dt r dt r dt v v v i v j r r v v v i v j r r v v i j r r                 2v a r   "
+  },
+  {
+    "source": "Lec03.txt",
+    "category": "Physics",
+    "chunk_index": 20,
+    "page": 19,
+    "text": "20  39 ˆ ˆ cos( ) si ) n( ) ( r t i r t j r t      ( ( ) ˆ ˆ sin ) cos( ) ( ) r t i r t j dr t v t dt           2 2 ˆ ˆ co ) s( ) sin( ( ( ) ) r t i r t j dv t a t dt           2 ˆ ( ) a t r r    Centripetal Acceleration 0 The acceleration always points toward the center of the circle of motion, perpendicular to the path of the motion, is called the centripetal acceleration. 0 The magnitude of the centripetal acceleration vector is given by 0 The direction of the"
+  },
+  {
+    "source": "Lec03.txt",
+    "category": "Physics",
+    "chunk_index": 21,
+    "page": 19,
+    "text": "vector is given by 0 The direction of the centripetal acceleration vector is always changing, to stay directed toward the center of the circle of motion. 0 This concept also applies to nonuniform circular motion or any curved path, where r is the radius of the curvature. 2 C v a r  40"
+  },
+  {
+    "source": "Lec03.txt",
+    "category": "Physics",
+    "chunk_index": 22,
+    "page": 21,
+    "text": "21 Period 0 The period, T, is the time required for one complete revolution. 0 The speed of the particle would be the circumference of the circle of motion divided by the period. 0 Therefore, the period is 2 r T v   41   42 Q: What is the centripetal acceleration of the Earth as it moves around the Sun? Q: What is the centripetal acceleration of a point on the surface of the Earth at the equator caused by the Earth’s spinning about its axis? 2 2 3 2 2 2 5.93 10 m/s 9.8m/s c r v T a r r   "
+  },
+  {
+    "source": "Lec03.txt",
+    "category": "Physics",
+    "chunk_index": 23,
+    "page": 21,
+    "text": "2 3 2 2 2 5.93 10 m/s 9.8m/s c r v T a r r              2 2 2 2 2 2 3.37 10 m/s 9.8m/s c r v T a r r             "
+  },
+  {
+    "source": "Lec03.txt",
+    "category": "Physics",
+    "chunk_index": 24,
+    "page": 22,
+    "text": "22  43 2 r T v   Period: 2 T   v r     2 2 Only for uniform circular motion Valid for any radius of curvature c v a r r    Angular speed: Centripetal Acceleration: 2 2 v v r r           Tangential and Radial Acceleration 0 The tangential acceleration causes the change in the speed of the particle. 0 The radial acceleration comes from a change in the direction of the velocity vector. 44"
+  },
+  {
+    "source": "Lec03.txt",
+    "category": "Physics",
+    "chunk_index": 25,
+    "page": 23,
+    "text": "23 0 The total acceleration is 45  2 changes directi d n change . s magnitu o e ˆ ( ) ˆ ( ) t v v r v a a d v a dt r r                 ˆ ( ) r t rr   2 2 ( ) ( ) d r t a t dt      46 g a F m    a ca ta\n\n24 Total acceleration =? 47  2 2 2 2 2 ( ) r t t v a a a a r     1 tan r t a a    Ex. ta v ra ta a g ca ta  48 Ex."
+  },
+  {
+    "source": "Lec03.txt",
+    "category": "Physics",
+    "chunk_index": 26,
+    "page": 25,
+    "text": "25  49 5. Relative Motion 1. Position, Velocity, and Acceleration Vectors 2. Two-dimensional motion with constant acceleration 3. Projectile motion 4. Uniform circular motion 5. Relative motion Relative Motion 0 Two observers moving relative to each other generally do NOT agree on the outcome of an experiment. 0 For example, observers A and B below see different paths for the ball.  50"
+  },
+  {
+    "source": "Lec03.txt",
+    "category": "Physics",
+    "chunk_index": 27,
+    "page": 26,
+    "text": "26  51 台灣歷史博物館(台南) – 時光列車 [https://www.youtube.com/watch?v=0vYPPRcm0kg] P B BP A A v v v      In general, the relative velocity of observer B to observer A can be written as  52 Particle Observer B Observer A p.s., ( ) PA AP v v    A B t t t   A P PB A B r r r      B P P A A B r r v t      A B P P A B v v v      "
+  },
+  {
+    "source": "Lec03.txt",
+    "category": "Physics",
+    "chunk_index": 28,
+    "page": 26,
+    "text": "27 br b r bE br rE E E v v v v v v            53 The boat heads north, what is ? bE v   (boat, river, Earth)  Assume , are known. br rE v v   Ex. The boat heads north is known. br v  br v rE v bE v bE br rE v v v      Which θ will be so that the boat lands exactly opposite the starting point? 54 ˆ ˆ ˆ ( sin ) ( cos ) ˆ ˆ ( sin ) cos br br rE rE br br v i v j v i v v i v j           , 0 bE x v  sin 0 rE br v v     1 sin rE br v v      rE v bE v br"
+  },
+  {
+    "source": "Lec03.txt",
+    "category": "Physics",
+    "chunk_index": 29,
+    "page": 26,
+    "text": "v     1 sin rE br v v      rE v bE v br v ?  x y Ex. , 0 bE x v "
+  },
+  {
+    "source": "Lec03.txt",
+    "category": "Physics",
+    "chunk_index": 30,
+    "page": 28,
+    "text": "28 If |vbr| is the same, which arrives fastest? 55 ˆ ˆ ˆ ( sin ) ( cos ) ˆ ˆ ( sin ) cos br br rE rE br br v i v j v i v v i v j           Fastest  0 , cos is max, 0 bE y br v v       rE v bE v br v x y bE br rE v v v      Ex. ?  Relative Velocity and Acceleration 56  0 (1 ' ) r r v t      0 ' dr dr v dt dt      0 2) ' ( v v v      Galilean transformation 0 (Only valid for , ) v v c   0 ' dv dv dv dt dt dt      0 If is constant, then ' . v a a"
+  },
+  {
+    "source": "Lec03.txt",
+    "category": "Physics",
+    "chunk_index": 31,
+    "page": 28,
+    "text": "dt dt      0 If is constant, then ' . v a a     't t "
+  },
+  {
+    "source": "Lec03.txt",
+    "category": "Physics",
+    "chunk_index": 32,
+    "page": 29,
+    "text": "29 Q: A passenger on a train that is moving with constant velocity drops a spoon. What is the acceleration of the spoon relative to (a) the train and (b) the Earth? 57"
+  }
+]

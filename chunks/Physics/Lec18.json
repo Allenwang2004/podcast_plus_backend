@@ -1,0 +1,282 @@
+[
+  {
+    "source": "Lec18.txt",
+    "category": "Physics",
+    "chunk_index": 0,
+    "page": 2,
+    "text": "2 3 1. Equations of State  1. Equations of state 2. Microscopic interpretation of pressure and temperature in an ideal gas system 3. Degree of freedom and theorem of equipartition of energy 4. Specific heat of an ideal gas and a solid 5. Boltzmann distribution law 6. Mean free path  4 State variables: P, V, n, T Equations of state in terms of the state variables. Macroscopic state of matter"
+  },
+  {
+    "source": "Lec18.txt",
+    "category": "Physics",
+    "chunk_index": 1,
+    "page": 3,
+    "text": "3  5 Equation of state for solids 2 0 Bulk modulus: / P B V V   1 0 Thermal expansion: V V T     1 2 0 0 V V V V T kV P         1 compressibility k B    0 0 0 1 ( ) ( ) V V T T k P P        An Ideal Gas 0 For gases, the interatomic forces within the gas are very weak. 0 The molecular volume is negligible compared with the volume of the container. 6  Boyle's law : 1 P V  The law of Charles and Gay-Lussac :V T "
+  },
+  {
+    "source": "Lec18.txt",
+    "category": "Physics",
+    "chunk_index": 2,
+    "page": 4,
+    "text": "4  7 B PV nRT Nk T   23 8.314 J/mol K, gas constant. 1.38 10 J/molecule K, Boltzmann constant B A R R k N        Equation of state of an ideal gas 23 : number of moles Avogadro's number (the number of moleucles in a mole), 6.02 10 molecules/mol. A n N    8 , : molar mass total m nM M  total m V  PM RT   "
+  },
+  {
+    "source": "Lec18.txt",
+    "category": "Physics",
+    "chunk_index": 3,
+    "page": 5,
+    "text": "5 9   10 Ex. Variation of atmospheric pressure with elevation. Find the variation of atmospheric pressure with elevation in the earth's atmosphere, assuming that the temperature is 0 ˚C at all elevations. Ignore the variation of g with elevation."
+  },
+  {
+    "source": "Lec18.txt",
+    "category": "Physics",
+    "chunk_index": 4,
+    "page": 6,
+    "text": "6  11 Ans: dP P g y g dy        dP g d PM PM R T y T R      dP Mg dy P RT  2 2 1 1 P y P y dP Mg dy P RT    2 2 1 1 ln ( ) P Mg y y P RT   2 1 ( ) 2 1 Mg y y RT P e P    0 y Mg RT P P e     12 The van der waals equation"
+  },
+  {
+    "source": "Lec18.txt",
+    "category": "Physics",
+    "chunk_index": 5,
+    "page": 7,
+    "text": "7  13 2 2 , are emperical constants. ( )( ) a b an P V nb nRT V    : the volume of a mole of molecules. b The van der waals equation: ( ): the effective volume V nb  : the attractive intermoecular forces a 2 2 ( ) : the effective pressure an P V   14\n\n8  15 Typical phase diagram in 2D  16 Typical phase diagram in 3D"
+  },
+  {
+    "source": "Lec18.txt",
+    "category": "Physics",
+    "chunk_index": 6,
+    "page": 9,
+    "text": "9  17 Phase diagram of an Ideal gas 18 2. Microscopic interpretation of pressure and temperature in an ideal gas system  1. Equations of state 2. Microscopic interpretation of pressure and temperature in an ideal gas system 3. Degree of freedom and theorem of equipartition of energy 4. Specific heat of an ideal gas and a solid 5. Boltzmann distribution law 6. Mean free path"
+  },
+  {
+    "source": "Lec18.txt",
+    "category": "Physics",
+    "chunk_index": 7,
+    "page": 9,
+    "text": "10 Kinetic Theory 0 Model gas behavior using Newton’s laws of motion to describe thermodynamic processes. To understand “pressure” and “temperature” 19  Molecular Model of an Ideal Gas 0 The number of molecules in the gas is large, and the average separation between the molecules is large compared with their dimensions. The volume of molecules is negligible. 0 The molecules obey Newton’s laws of motion, but as a whole they move randomly. 0 The molecules interact only by short-range forces"
+  },
+  {
+    "source": "Lec18.txt",
+    "category": "Physics",
+    "chunk_index": 8,
+    "page": 9,
+    "text": "The molecules interact only by short-range forces during elastic collisions. 0 The molecules make elastic collisions with the walls. 0 All molecules are identical. 20"
+  },
+  {
+    "source": "Lec18.txt",
+    "category": "Physics",
+    "chunk_index": 9,
+    "page": 11,
+    "text": "11 Pressure and Kinetic Energy 21  22"
+  },
+  {
+    "source": "Lec18.txt",
+    "category": "Physics",
+    "chunk_index": 10,
+    "page": 12,
+    "text": "12 23 Perfectly elastic collision:    (1) 2 x x i i xi x i mv mv m P v     ,on gas (2) 2 i xi xi t P F mv   2 (3) xi t d v   2 ,on gas 2 xi xi i mv mv F t d       2 ,on wall , on gas ( ) xi i i mv F F d    24 2 2 on wall 1 1 N N xi xi i i mv m F v d d       on wall Note, for small , would vary with time. N F 2 2 1 N xi i x v v N   2 on wall x m F Nv d   2 2 2 2 x y z v v v v    2 2 2 2 x y z v v v v     2 2 2 x y z v v v   2 2 1 3 xv v  "
+  },
+  {
+    "source": "Lec18.txt",
+    "category": "Physics",
+    "chunk_index": 11,
+    "page": 13,
+    "text": "13 25 2 on wall 3 N mv F d          on wall on wall 2 F F P A d   2 3 3 N mv d          2 1 3 N mv V        2 2 1 2 3 2 3 k N N P mv E V V              Molecular Interpretation of Temperature 26 2 2 1 3 2 PV N mv        compared with B PV Nk T  2 Average kinetic energy per particle 1 2 3 2 B T mv k           “Temperature” is a direct measure of average molecular kinetic energy. (Only valid for monatomic gas)"
+  },
+  {
+    "source": "Lec18.txt",
+    "category": "Physics",
+    "chunk_index": 12,
+    "page": 14,
+    "text": "14  27 The velocity for the kinetic energy is measured with respect to the center of mass of the ideal gas. Therefore, the motion of the gas container doesn’t change the gas temperature!  28 For molecules, the rotational and vibrational motions can contribute to the pressure as well. The kinetic energy contain not just translational but also rotational and vibrational energies. 在室溫金屬內的自由電子(Fermi gas)的平均動能≫kBT300K ⇒ 量子效應 (https://en.wikipedia.org/wiki/Fermi_energy)"
+  },
+  {
+    "source": "Lec18.txt",
+    "category": "Physics",
+    "chunk_index": 13,
+    "page": 15,
+    "text": "15  29 https://www.youtube.com/watch?v=syu6SM7X8yU VORTEX TUBE https://en.wikipedia.org/wiki/Vortex_tube 30 3. Degrees of freedom and theorem of equipartition of energy  1. Equations of state 2. Microscopic interpretation of pressure and temperature in an ideal gas system 3. Degree of freedom and theorem of equipartition of energy 4. Specific heat of an ideal gas and a solid 5. Boltzmann distribution law 6. Mean free path"
+  },
+  {
+    "source": "Lec18.txt",
+    "category": "Physics",
+    "chunk_index": 14,
+    "page": 15,
+    "text": "16 Degrees of Freedom 0 In general, a degree of freedom refers to an independent means by which a molecule can possess the energy. 0 Each translational degree of freedom contributes an equal amount to the energy of the gas. 31 2 1 3 2 2 B mv k T  2 2 , , 1 3 x y z v v  2 2 2 1 1 2 2 1 1 2 2 1 1 2 2 x B y B z B mv k T mv k T mv k T            Theorem of Equipartition of Energy 0 Each degree of freedom contributes ½kBT to the energy of a system. 0 The possible degrees of freedom,"
+  },
+  {
+    "source": "Lec18.txt",
+    "category": "Physics",
+    "chunk_index": 15,
+    "page": 15,
+    "text": "of a system. 0 The possible degrees of freedom, in addition to those associated with translation, could arise from rotation and vibration of molecules. 32"
+  },
+  {
+    "source": "Lec18.txt",
+    "category": "Physics",
+    "chunk_index": 16,
+    "page": 17,
+    "text": "17 33 2 translation 1 2 K N mv        1 3 2 B N k T         3 2 nRT  B A R k N  A N n N  The Eint of an ideal monatomic gas is the Ktranslation: int 3 2 E nRT  The internal energy of ideal gases depend only on temperature. The root mean square (rms) speed is the square root of the average of the squares of the speeds. (M is the molar mass and M = mNA) 2 B rms 3 3 k T RT v v m M     34 For diatomic molecules, the possible degrees of freedom are Translational: Rotational:"
+  },
+  {
+    "source": "Lec18.txt",
+    "category": "Physics",
+    "chunk_index": 17,
+    "page": 17,
+    "text": "degrees of freedom are Translational: Rotational: Vibrational: 1 3 2 B k T         1 2 2 B k T         int 7 2 B E k T N        2 2 2 1 1 1 2 2 2 1 1 0 2 2 x x y y z z B B I I I k T k T                     2 2 2 1 1 1 2 2 2 1 1 1 2 2 2 x y z B B B mv mv mv k T k T k T                        1 2 2 B k T         2 2 1 1 2 2 1 1 2 2 B B mv kx k T k T               "
+  },
+  {
+    "source": "Lec18.txt",
+    "category": "Physics",
+    "chunk_index": 18,
+    "page": 18,
+    "text": "18 Complex Molecules 0 For molecules with more than two atoms, the vibrations are more complex. The number of degrees of freedom is larger. The more degrees of freedom available to a molecule, the more “ways” there are to store energy. This results in a higher molar specific heat. 35  36 4. Specific heat of an ideal gas and a solid  1. Equations of state 2. Microscopic interpretation of pressure and temperature in an ideal gas system 3. Degree of freedom and theorem of equipartition of energy"
+  },
+  {
+    "source": "Lec18.txt",
+    "category": "Physics",
+    "chunk_index": 19,
+    "page": 18,
+    "text": "of freedom and theorem of equipartition of energy 4. Specific heat of an ideal gas and a solid 5. Boltzmann distribution law 6. Mean free path"
+  },
+  {
+    "source": "Lec18.txt",
+    "category": "Physics",
+    "chunk_index": 20,
+    "page": 19,
+    "text": "19 Molar Specific Heat of an Ideal Gas 0 Several processes can change the temperature of an ideal gas. 0 Since T is the same for each process, Eint is also the same. 0 The heat is different for the different paths. 37  Q Q’ Q” 38 (1) For constant volume: v Q n T c   0 W  int v E Q W nc T      i t int n 1 v v E n c d c dE n T T      int 3 For monatomic gases, 2 E nRT  3 2 vc R   int 7 For diatomic gases, 2 E nRT  7 2 vc R  "
+  },
+  {
+    "source": "Lec18.txt",
+    "category": "Physics",
+    "chunk_index": 21,
+    "page": 20,
+    "text": "20 39 (2) For constant pressure: p Q n T c   0 W  int E Q W     ( ) v p nR T n T P nc T c V        , p v c c R    / p v c c  For solids and liquids, Not : . e p v c c   If neither P or V is constant, there will be infinite number of possible specific heat. 40 The molar specific heat of hydrogen  It requires quantum mechanics to explain the temperature dependence of the specific heat."
+  },
+  {
+    "source": "Lec18.txt",
+    "category": "Physics",
+    "chunk_index": 22,
+    "page": 20,
+    "text": "21 DuLong-Petit Law 0 At high temperatures, the molar specific heat of solids approaches the value of 3R. 0 The molar specific heat of a solid at high temperature can be explained by the equipartition theorem. Each atom of the solid has six degrees of freedom. The internal energy is 6x(1/2)nRT and Cv = 3 R. 41  42 In solids, 2 2 2 2 2 2 int 1 1 1 1 1 1 2 2 2 2 2 2 x y z E mv kx mv ky mv kz                         1 ( ) 6 2 B N k T   3nRT  int 1 3 v dE c R n dT   "
+  },
+  {
+    "source": "Lec18.txt",
+    "category": "Physics",
+    "chunk_index": 23,
+    "page": 22,
+    "text": "22 Molar Specific Heat of Solids 0 As T approaches 0, the molar specific heat approaches 0. 0 At high temperatures, CV becomes a constant at ~3R. 43  Energy Quantization – energy levels 0 This energy level diagram shows the rotational and vibrational states of a diatomic molecule. 0 The lowest allowed state is the ground state. 0 The vibrational states are separated by larger energy gaps than are rotational states. 0 At low temperatures, the energy gained during collisions is generally not"
+  },
+  {
+    "source": "Lec18.txt",
+    "category": "Physics",
+    "chunk_index": 24,
+    "page": 22,
+    "text": "energy gained during collisions is generally not enough to raise it to the first excited state of either rotation or vibration. 44"
+  },
+  {
+    "source": "Lec18.txt",
+    "category": "Physics",
+    "chunk_index": 25,
+    "page": 23,
+    "text": "23 45 5. Boltzmann distribution law  1. Equations of state 2. Microscopic interpretation of pressure and temperature in an ideal gas system 3. Degree of freedom and theorem of equipartition of energy 4. Specific heat of an ideal gas and a solid 5. Boltzmann distribution law 6. Mean free path Boltzmann Distribution Law 0 The motion of molecules is extremely chaotic. 0 From statistical mechanics, the probability density or the distribution function for classical particles is a function of energy"
+  },
+  {
+    "source": "Lec18.txt",
+    "category": "Physics",
+    "chunk_index": 26,
+    "page": 23,
+    "text": "for classical particles is a function of energy and temperature, , known as the Boltzmann distribution law. n(E)dE is the number of molecules per unit volume with energy between E and E + dE. The distribution shows that states with lower energy will always have a higher probability of being occupied. 46  ( ) B E k T n E e  "
+  },
+  {
+    "source": "Lec18.txt",
+    "category": "Physics",
+    "chunk_index": 27,
+    "page": 24,
+    "text": "24 47  Ex. Determine the ratio of the number of atoms in the higher energy level to the number of atoms in the lower energy level. 2 2 1 1 2 1 ( ) ( ) B B B E E E k T k T E k T n E e e n E e       Ans: Distribution of Molecular Speeds 0 N(v) is called the Maxwell-Boltzmann speed distribution function: 48 2 3/2 /2 2 B ( ) 4 2 B mv k T m N v N v e k T            3/2 / 2 B 1 8 ( ) 2 2 B E k T m E mv N E T e k E m             Distribution depends on / . B E k T 𝐸ൌ𝑘஻𝑇at"
+  },
+  {
+    "source": "Lec18.txt",
+    "category": "Physics",
+    "chunk_index": 28,
+    "page": 24,
+    "text": "   Distribution depends on / . B E k T 𝐸ൌ𝑘஻𝑇at peak 0 ( with ) N N v dv  "
+  },
+  {
+    "source": "Lec18.txt",
+    "category": "Physics",
+    "chunk_index": 29,
+    "page": 25,
+    "text": "25  49 50 2 ( ) Most probable speed : (By 0) B mp k T N v v m v     2 3 Root mean square speed : B rms k T v v m     1/2 2 2 0 v v v N dv          8 Average speed : B k T v m   0 v v vN dv          rms mp v v v    (This can explain why lighter gas molecules such as H2, can escape easier from the Earth than the heavier molecules N2.)"
+  },
+  {
+    "source": "Lec18.txt",
+    "category": "Physics",
+    "chunk_index": 30,
+    "page": 26,
+    "text": "26  51 Sound speed = ? 0 0 , : mass of one molecule B k T v m m   Speed Distribution at different temperature 0 The peak shifts to the right as T increases. 52"
+  },
+  {
+    "source": "Lec18.txt",
+    "category": "Physics",
+    "chunk_index": 31,
+    "page": 26,
+    "text": "27 Evaporation 0 Some molecules in the liquid are more energetic than others. This occurs even before the boiling point is reached. 0 The molecules that escape are those that have enough energy to overcome the attractive forces of the molecules in the liquid phase. Evaporation is a cooling process. 53  54 6. Mean free path  1. Equations of state 2. Microscopic interpretation of pressure and temperature in an ideal gas system 3. Degree of freedom and theorem of equipartition of energy 4."
+  },
+  {
+    "source": "Lec18.txt",
+    "category": "Physics",
+    "chunk_index": 32,
+    "page": 26,
+    "text": "freedom and theorem of equipartition of energy 4. Specific heat of an ideal gas and a solid 5. Boltzmann distribution law 6. Mean free path"
+  },
+  {
+    "source": "Lec18.txt",
+    "category": "Physics",
+    "chunk_index": 33,
+    "page": 28,
+    "text": "28 Mean Free Path 0 The average velocity of air molecules is ~340 m/s. Why don’t we smell perfume immediately when the bottle is just opened? 0 A molecule moving through a gas collides with other molecules in a random fashion, sometimes referred to as a random‐walk process. 0 The average distance between collisions is called the mean free path. 0 The mean free path increases as the number of molecules per unit volume decreases. 55  56 The number of collisions # in t is equivalent to the number"
+  },
+  {
+    "source": "Lec18.txt",
+    "category": "Physics",
+    "chunk_index": 34,
+    "page": 28,
+    "text": "of collisions # in t is equivalent to the number of molecules in the cylinder. 2 # ( ) : number of molecules per unit volume d v t n n     d d 2d"
+  },
+  {
+    "source": "Lec18.txt",
+    "category": "Physics",
+    "chunk_index": 35,
+    "page": 29,
+    "text": "29 0 The number of collisions per unit time is the collision frequency: The inverse of the collision frequency is the collision mean free time =1 / f. 0 The mean free path, ℓ, equals the average distance vt traveled in a time interval t divided by the number of collisions that occur in that time interval: 0 Ideal gas : 57 # v t    2 # ƒ d vn t     f v      2 2 1 v t d n d v t n        =  0 In reality, the molecules are not fixed in space, so the correction is 58 2 2 1 2 2"
+  },
+  {
+    "source": "Lec18.txt",
+    "category": "Physics",
+    "chunk_index": 36,
+    "page": 29,
+    "text": "fixed in space, so the correction is 58 2 2 1 2 2 B k T d n d P      2 ƒ , 2 d vn   v f  "
+  },
+  {
+    "source": "Lec18.txt",
+    "category": "Physics",
+    "chunk_index": 37,
+    "page": 30,
+    "text": "30 Ex. Approximate the air around you as a collection of nitrogen molecules, each having a diameter of 2.00 ×  m. (A) How far does a typical molecule move before it collides with another molecule? (B) On average, how frequently does one molecule collide with another? 59   60 Average separation: Mean free path: Ans: 5 2 25 3 23 1.01 10 N/m 2.5 10 molecules/m (1.38 10 J/K)(293 K) B N P n V k T         2 10 2 25 3 7 1 1 2 2 (2 10 m) (2.5 10 molecules/m ) 2.25 10 m d n           "
+  },
+  {
+    "source": "Lec18.txt",
+    "category": "Physics",
+    "chunk_index": 38,
+    "page": 30,
+    "text": "molecules/m ) 2.25 10 m d n            9 1/3 25 1/3 1 1 3.4 10 m (2.5 10 ) D n       (A)"
+  },
+  {
+    "source": "Lec18.txt",
+    "category": "Physics",
+    "chunk_index": 39,
+    "page": 31,
+    "text": "31 61 Molecule diameter d = 2 x  m Average separation D = 3.4 x  m Mean free path = 2.25 x  m d < D < for 1-atm air at room temperature  (B) 9 7 473 m/s 2.10 10 /s 2.25 10 m v f         62 https://fb.watch/hx4Rlilfhi/ https://youtu.be/Xw_Nb_dyi3A"
+  }
+]

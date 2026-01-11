@@ -1,0 +1,317 @@
+[
+  {
+    "source": "Lec15.txt",
+    "category": "Physics",
+    "chunk_index": 0,
+    "page": 2,
+    "text": "2 3 1. Wave – Propagation of a Disturbance  1. Wave - Propagation of a Disturbance 2. Wave function 3. The Speed of Waves on Strings 4. The Linear Wave Equation 5. Rate of Energy Transfer 6. Superposition and Interference 7. Reflection and Transmission 8. Standing Wave Types of Waves 0 Mechanical waves Some physical medium is being disturbed. The wave is the propagation of a disturbance through a medium. 0 Electromagnetic waves No medium required. Examples are light, radio waves, x-rays. 0"
+  },
+  {
+    "source": "Lec15.txt",
+    "category": "Physics",
+    "chunk_index": 1,
+    "page": 2,
+    "text": "Examples are light, radio waves, x-rays. 0 Matter waves de Broglie waves. All matter can exhibit wave-like behavior. 0 Gravitational waves Gravitational waves are ripples in the curvature of spacetime that propagate as a wave. 4"
+  },
+  {
+    "source": "Lec15.txt",
+    "category": "Physics",
+    "chunk_index": 2,
+    "page": 3,
+    "text": "3 5  Quantum corral (https://www.nanowerk.com/news/newsid=2370.php) Fe Cu Co 6\n\n4 Wave properties 0 All waves carry energy. 0 In wave motion, energy is transferred over a distance. 0 Matter is not transferred over a distance. 7  Transverse Wave 0 A traveling wave or pulse that causes the elements of the disturbed medium to move perpendicular to the direction of propagation is called a transverse wave. 8"
+  },
+  {
+    "source": "Lec15.txt",
+    "category": "Physics",
+    "chunk_index": 3,
+    "page": 5,
+    "text": "5 Longitudinal Wave 0 A traveling wave or pulse that causes the elements of the disturbed medium to move parallel to the direction of propagation is called a longitudinal wave. 9  Complex Waves 0 Some waves exhibit a combination of transverse and longitudinal waves. 0 Surface water waves are an example. 10 Why in a circle?"
+  },
+  {
+    "source": "Lec15.txt",
+    "category": "Physics",
+    "chunk_index": 4,
+    "page": 6,
+    "text": "6 11 Transverse Longitudinal mixed Water wave  Earthquake Waves 0 P waves “P” stands for primary Fastest, at 7 – 8 km / s Longitudinal 0 S waves “S” stands for secondary Slower, at 4 – 5 km/s Transverse 0 A seismograph records the waves and allows determination of information about the earthquake’s place of origin. 12"
+  },
+  {
+    "source": "Lec15.txt",
+    "category": "Physics",
+    "chunk_index": 5,
+    "page": 7,
+    "text": "7 13 2. Wave function  1. Wave - Propagation of a Disturbance 2. Wave function 3. The Speed of Waves on Strings 4. The Linear Wave Equation 5. Rate of Energy Transfer 6. Superposition and Interference 7. Reflection and Transmission 8. Standing Wave Pulse on a Rope 14"
+  },
+  {
+    "source": "Lec15.txt",
+    "category": "Physics",
+    "chunk_index": 6,
+    "page": 8,
+    "text": "8 Traveling Pulse y (x, t=0) = f (x) 15 y (x, t) = f (x – vt) = y(x – vt, 0)  ( ) f x ( ) f x vt  Wave function y(x, t) 0 For a pulse traveling to the right (+x) y (x, t) = f (x – vt) 0 For a pulse traveling to the left (-x) y (x, t) = f (x + vt) 16\n\n9 17  Ex. Sinusoidal Waves 0 Sinusoidal wave is the simplest example of a periodic continuous wave. Any periodic wave can be represented as a combination of sinusoidal waves. 18"
+  },
+  {
+    "source": "Lec15.txt",
+    "category": "Physics",
+    "chunk_index": 7,
+    "page": 10,
+    "text": "10  19 20 Sinusoidal wa ? e, ( ) v , y x t  ( ,0) ? y x  By y (x, t) = y(x – vt, 0) cos( ) A kx   ( ,0) cos(0 ) 0 0 2 x y A          2 ( ,0) cos( 2 ) 0 2 y A k k x              2 ( , ) ( ,0) cos 2 So y x t y A x vt x vt             cos 2 2 A x t T                  y(x, 0)  2 ( ,0) cos( ) 2 y x A x      "
+  },
+  {
+    "source": "Lec15.txt",
+    "category": "Physics",
+    "chunk_index": 8,
+    "page": 11,
+    "text": "11 21 t = 0 x = 0 ( , ) cos 2 2 x t y x T t A                  Wave speed: v T   Wave number: 2 k    Angular frequency: 2 T   ( , ) cos( ) 2 k t y t A x x        Amplitude: A  Wavelength:   Period: T  Frequency: f = 1/T   22"
+  },
+  {
+    "source": "Lec15.txt",
+    "category": "Physics",
+    "chunk_index": 9,
+    "page": 12,
+    "text": "12 23 Traveling sinusoidal wave: cos( ), \" \" direction ( , ) cos( ), \" \" direction A kx t x y x t A kx t x              Angular frequency: 2 T   Wave number: 2 k    Transverse speed: sin( ) y y v A kx t t        2 ) Transverse acceleration: cos( y y v a A kx t t           24 Wave (phase) speed: v f k T       Wave (group) speed: v k    The red square moves with the phase velocity, and the green circles propagate with the group velocity."
+  },
+  {
+    "source": "Lec15.txt",
+    "category": "Physics",
+    "chunk_index": 10,
+    "page": 13,
+    "text": "13  25 26 3. The speed of waves on strings  1. Wave - Propagation of a Disturbance 2. Wave function 3. The Speed of Waves on Strings 4. The Linear Wave Equation 5. Rate of Energy Transfer 6. Superposition and Interference 7. Reflection and Transmission 8. Standing Wave"
+  },
+  {
+    "source": "Lec15.txt",
+    "category": "Physics",
+    "chunk_index": 11,
+    "page": 14,
+    "text": "14  27 ( ( ) ) y y y F t m t v v v    y y v t F vt F  y y v F F v   F is fixed. F F v    Method#1 28 tension mass/length T v    2 sin rF T m s         2T  2 R   2 r v F ma m R   2 2 2 v T R R     T v    p.s., Here, \" \" is tension, not period. T  Rest frame Moving frame (along with the wave) Method#2"
+  },
+  {
+    "source": "Lec15.txt",
+    "category": "Physics",
+    "chunk_index": 12,
+    "page": 15,
+    "text": "15 0 The speed of all mechanical waves follows a general form: 29 Restoring force Inertial property v   30 ,max ( ) yv v A kA      ,max Wave speed , depends on medium; Transverse speed , depends on wave source. y T v k v A      "
+  },
+  {
+    "source": "Lec15.txt",
+    "category": "Physics",
+    "chunk_index": 13,
+    "page": 15,
+    "text": "16 Q: A sinusoidal wave of frequency f is traveling along a stretched string. The string is brought to rest, and a second traveling wave of frequency 2f is established on the string. The wave speed of the second wave is (a) twice that of the first wave (b) half that of the first wave (c) the same as that of the first wave (d) impossible to determine. 31  32 4. The linear wave equation  1. Wave - Propagation of a Disturbance 2. Wave function 3. The Speed of Waves on Strings 4. The Linear Wave"
+  },
+  {
+    "source": "Lec15.txt",
+    "category": "Physics",
+    "chunk_index": 14,
+    "page": 15,
+    "text": "The Speed of Waves on Strings 4. The Linear Wave Equation 5. Rate of Energy Transfer 6. Superposition and Interference 7. Reflection and Transmission 8. Standing Wave"
+  },
+  {
+    "source": "Lec15.txt",
+    "category": "Physics",
+    "chunk_index": 15,
+    "page": 17,
+    "text": "17  33 1 2 , y y x x x F F y y F x F x                    2 1 2 2 2 2 2 2 2 2 y y y y x x x x x x F ma y y y F F F x x x t y y y x x x F t y y x F t                                                                 34 2 2 2 2 ( , ) sin( ) Substitute into y y y x t A kx t T t x                2 2 sin( ) sin( ) kx t k kx t T        2 2 k T    T v v k      2 2 2 2 2 So the general"
+  },
+  {
+    "source": "Lec15.txt",
+    "category": "Physics",
+    "chunk_index": 16,
+    "page": 17,
+    "text": "   T v v k      2 2 2 2 2 So the general wave equat 1 linear ion is . y y x v t           "
+  },
+  {
+    "source": "Lec15.txt",
+    "category": "Physics",
+    "chunk_index": 17,
+    "page": 18,
+    "text": "18 35 2 2 2 2 2 In fact, the general wave function is the solution of the wave equation . ( , ) ( ) 1 linear y x t y x vt y y x v t                2 2 2 2 2 2 2 2 2 2 2 2 2 2 ( ) ( ) ( ) ( ) ( ) ( ) ( ) ( ) ( ) 1 ( ) s x vt y x vt y s s y s v t s t s y x vt y s y s s y s v v v t t s s t s y x vt y s y x vt x s v t                                                                     36 2 2 2 2 2 wave equation: 1"
+  },
+  {
+    "source": "Lec15.txt",
+    "category": "Physics",
+    "chunk_index": 18,
+    "page": 18,
+    "text": "          36 2 2 2 2 2 wave equation: 1 \"L r inea \" y y x v t            Why called “linear” ? If y1 and y2 are solutions, then the linear combination, y = ay1 + by2 is also a solution."
+  },
+  {
+    "source": "Lec15.txt",
+    "category": "Physics",
+    "chunk_index": 19,
+    "page": 19,
+    "text": "19 37 5. Rate of energy transfer  1. Wave - Propagation of a Disturbance 2. Wave function 3. The Speed of Waves on Strings 4. The Linear Wave Equation 5. Rate of Energy Transfer 6. Superposition and Interference 7. Reflection and Transmission 8. Standing Wave Energy in Waves in a String 0 Waves transport energy when they propagate through a medium. 38"
+  },
+  {
+    "source": "Lec15.txt",
+    "category": "Physics",
+    "chunk_index": 20,
+    "page": 19,
+    "text": "20  39 y y F F x    ( , ) ( , ) ( ( , ) ( , ) P e , ) ow r y y y P x t F x y x t t x F t t t x x v                ( , ) cos( ) sin( ) sin( ) y x t A kx t y Ak kx t x y A kx t t              Fy, vy  40 2 2 ( , ) sin ( ) P x t F kA kx t      , F v kv     2 2 2 ( , ) [ ]sin ( ) ( ) x A k v P t x t      2 ,max 2 2 ,m 2 0 1 2 2 2 x 2 / a 1 ) sin [ ( ) 2 ( ( ) 1 ( , ( ] ) ) 2 y y v T v kx t dt P v x t T v v A A             "
+  },
+  {
+    "source": "Lec15.txt",
+    "category": "Physics",
+    "chunk_index": 21,
+    "page": 19,
+    "text": "P v x t T v v A A              "
+  },
+  {
+    "source": "Lec15.txt",
+    "category": "Physics",
+    "chunk_index": 22,
+    "page": 21,
+    "text": "21 41 2 2 1 Power: 2 E E A t T T P          2 2 Energy density 1 2 A v          2 2 A   λ = vT v Energy density 2 2 1 2 A   2 2 Energy per lengt 2 ,max h 1 Energy density = 2 1 2 y E v A      Wave Intensity 42 2 2 2 ( ower) ( ower) ( mplitude) Intensity area 4 average average P P A I r r     An inverse-square law.  2 o P w r e u r e nit t a ( mpli ude a ) re I P A    Power Intensity 2 1 2 2 2 1 Same power I r I r   1 1 2 2 1 2 ( mplitude) ("
+  },
+  {
+    "source": "Lec15.txt",
+    "category": "Physics",
+    "chunk_index": 23,
+    "page": 21,
+    "text": "Same power I r I r   1 1 2 2 1 2 ( mplitude) ( mplitude) I A r A r I    For spherical wave,"
+  },
+  {
+    "source": "Lec15.txt",
+    "category": "Physics",
+    "chunk_index": 24,
+    "page": 22,
+    "text": "22 43 1 For 2D waves, I r   1 Amplitude I r   44 6. Wave Superposition and Interference  1. Wave - Propagation of a Disturbance 2. Wave function 3. The Speed of Waves on Strings 4. The Linear Wave Equation 5. Rate of Energy Transfer 6. Superposition and Interference 7. Reflection and Transmission 8. Standing Wave"
+  },
+  {
+    "source": "Lec15.txt",
+    "category": "Physics",
+    "chunk_index": 25,
+    "page": 22,
+    "text": "23 Superposition Principle 0 If two or more traveling waves are moving through a medium, the resultant value of the wave function at any point is the algebraic sum of the values of the wave functions of the individual waves. 0 Waves that obey the superposition principle are linear waves. For mechanical waves, linear waves usually have amplitudes much smaller than their wavelengths. Waves that violate the superposition principle are called non-linear waves, which usually have larger amplitudes."
+  },
+  {
+    "source": "Lec15.txt",
+    "category": "Physics",
+    "chunk_index": 26,
+    "page": 22,
+    "text": "waves, which usually have larger amplitudes. 45  Interference 0 The combination of separate waves in the same region of space to produce a resultant wave is called interference. 46"
+  },
+  {
+    "source": "Lec15.txt",
+    "category": "Physics",
+    "chunk_index": 27,
+    "page": 24,
+    "text": "24 Types of Interference 0 Constructive interference occurs when the displacements caused by the two pulses are in the same direction. The amplitude of the resultant pulse is greater than either individual pulse. 0 Destructive interference occurs when the displacements caused by the two pulses are in opposite directions. The amplitude of the resultant pulse is less than either individual pulse. 47  48 Constructive Destructive"
+  },
+  {
+    "source": "Lec15.txt",
+    "category": "Physics",
+    "chunk_index": 28,
+    "page": 24,
+    "text": "25 Superposition of Sinusoidal Waves 0 Assume two waves are traveling in the same direction, with the same frequency, wavelength and amplitude, and the waves differ in phase: y1(x, t)= A sin (kx − t), y2(x, t)= A sin (kx − t + ) y(x, t) = y1(x, t)+ y2(x, t) = 2A cos (/2) sin (kx − t + /2) Amplitude is a function of  Still a sinusoidal wave. 49  sin sin 2cos( )sin( ) 2 2 a b a b a b           Spatial Interference In general, y1(x, t)= A sin (kx − t) y2(x, t)= A sin (kx − t +"
+  },
+  {
+    "source": "Lec15.txt",
+    "category": "Physics",
+    "chunk_index": 29,
+    "page": 24,
+    "text": "t)= A sin (kx − t) y2(x, t)= A sin (kx − t + ) 0 Constructive interference occurs when = 0. 0 Destructive interference occurs when = . 0 General interference occurs when 0 < < . 50"
+  },
+  {
+    "source": "Lec15.txt",
+    "category": "Physics",
+    "chunk_index": 30,
+    "page": 26,
+    "text": "26 51  Interference of Sound Waves 52 1 2 1 2 ( , ) sin( ) ( , ) sin( ) y r t A k t y r t A k r r t         1 2 1 sin ( ) ( ) A k t r k r r       1 sin ( ) r r A k t k              , , (2 ) constructive (2 1) destructive 0, 1, 2, ... n n n                (2 ) (2 1) 1 ( ) 2 k r n k r r r n n n              "
+  },
+  {
+    "source": "Lec15.txt",
+    "category": "Physics",
+    "chunk_index": 31,
+    "page": 26,
+    "text": "27 53 1st minimum f = ?  Ex. A pair of speakers placed 3.00 m apart are driven by the same oscillator (Fig.). A listener is originally at point O, which is located 8.00 m from the center of the line connecting the two speakers. The listener then walks to point P, which is a perpendicular distance 0.350 m from O, before reaching the first minimum in sound intensity. What is the frequency of the oscillator? 54 2 1 r r r   1st minimum: 2 r   2 1 2( ) r r     2 1 2( ) v v f r r     "
+  },
+  {
+    "source": "Lec15.txt",
+    "category": "Physics",
+    "chunk_index": 32,
+    "page": 28,
+    "text": "28 55 What if the speaks were connected 1800 out of phase?   1 1 2 sin ( ) ( ) r A k t k r r        1 2 1 2 ( , ) sin( ) ( , ) sin( ) y r t A k t y r t r A r k t         1 sin ( ) A kr k r t                    , , (2 ) constructive (2 1) destructive 0, 1, 2, ... n n n                1 ( ) (2 1) (2 ) 2 k r n k r r n r n n                 1st minimum: r   v v f r      56 What if A1 A2 , y = y1 + y2 = ? 1 2 1 1 1"
+  },
+  {
+    "source": "Lec15.txt",
+    "category": "Physics",
+    "chunk_index": 33,
+    "page": 28,
+    "text": "  56 What if A1 A2 , y = y1 + y2 = ? 1 2 1 1 1 2 2 2 ( , ) sin( ) ( , ) sin( ) y x t kx t y x t kx t A A                   1 2 1 1 1 2 1 2 2 2 ( cos , ) ( cos cos sin sin sin , ) A A A A A A A A A                1 2 1 1 2 2 sin sin sin y y y A A A                2 2 1 1 2 2 1 1 2 2 1 1 1 2 2 1 1 2 2 cos cos sin sin sin sin tan cos cos A A A A A A A A A                        1 2   x y 1 A  2 A  A "
+  },
+  {
+    "source": "Lec15.txt",
+    "category": "Physics",
+    "chunk_index": 34,
+    "page": 29,
+    "text": "29 57 7. Reflection and Transmission  1. Wave - Propagation of a Disturbance 2. Wave function 3. The Speed of Waves on Strings 4. The Linear Wave Equation 5. Rate of Energy Transfer 6. Superposition and Interference 7. Reflection and Transmission 8. Standing Wave Reflection of a Wave, Fixed End 58 Phase change Δ .   \n\n30  59 Reflection of a Wave, Free End 60 Phase change Δ 0. "
+  },
+  {
+    "source": "Lec15.txt",
+    "category": "Physics",
+    "chunk_index": 35,
+    "page": 31,
+    "text": "31 61  Transmission of a Wave 62 ( , ) sin( ) I I y x t A kx t    ( , ) sin( ) R R y x t A kx t      ( , ) sin( 0) R R y x t A kx t    \n\n32 63  64 8. Standing wave  1. Wave - Propagation of a Disturbance 2. Wave function 3. The Speed of Waves on Strings 4. The Linear Wave Equation 5. Rate of Energy Transfer 6. Superposition and Interference 7. Reflection and Transmission 8. Standing Wave"
+  },
+  {
+    "source": "Lec15.txt",
+    "category": "Physics",
+    "chunk_index": 36,
+    "page": 33,
+    "text": "33 65  66 ( , ) sin( ) y x t A kx t     ( , ) sin( ) y x t A kx t     ( , ) sin( ) y x t A kx t       ( , ) sin( ) y x t A kx t      "
+  },
+  {
+    "source": "Lec15.txt",
+    "category": "Physics",
+    "chunk_index": 37,
+    "page": 34,
+    "text": "34 67  Standing Waves 0 Assume two waves with the same amplitude, frequency and wavelength, traveling in opposite directions in a medium. y1(x, t)= A sin (kx – t ) y2(x, t)= A sin (kx + t ) y(x, t)= y1(x, t) + y2(x, t) = [2A sin(kx )] cos t A standing wave, not a traveling wave. Every element in the medium oscillates in simple harmonic motion with the same frequency,  68"
+  },
+  {
+    "source": "Lec15.txt",
+    "category": "Physics",
+    "chunk_index": 38,
+    "page": 34,
+    "text": "35 Standing Waves in a String 69 ( , ) 2 sin( )cos y x t A kx t   Boundary condition: (0, ) ( , ) 0 y t y L t   , integer kL n n    2 , 1,2,3,... n L n n             2 n L n    or 2 n L n          Nodes and Antinodes 0 A node occurs at a point of zero amplitude. These correspond to positions of x where 0 An antinode occurs at a point of maximum displacement, 2A. These correspond to positions of x where 70 0,1, 2 n n x n     1,3, 4 n n x n      ( , ) 2 sin("
+  },
+  {
+    "source": "Lec15.txt",
+    "category": "Physics",
+    "chunk_index": 39,
+    "page": 34,
+    "text": "x n     1,3, 4 n n x n      ( , ) 2 sin( )cos 0 y x t A kx t    ( , ) 2 sin( )cos 2 y x t A kx t A   "
+  },
+  {
+    "source": "Lec15.txt",
+    "category": "Physics",
+    "chunk_index": 40,
+    "page": 36,
+    "text": "36 71 y = y1 + y2 = (2A sin kx) cos t  72\n\n37 Normal modes 0 The wavelengths of the normal modes for a string of length L fixed at both ends are n = 2L / n, n = 1, 2, 3, … n is the nth normal mode of oscillation. 0 The natural frequencies are 73 ƒ 2 2 n v n T n L L     Quantization 0 This situation in which only certain frequencies of oscillation are allowed is called quantization. 0 Quantization is a common occurrence when waves are subject to boundary conditions. 74"
+  },
+  {
+    "source": "Lec15.txt",
+    "category": "Physics",
+    "chunk_index": 41,
+    "page": 38,
+    "text": "38 Harmonic Series 0 The fundamental frequency corresponds to n = 1. It is the lowest frequency, ƒ1. 0 The frequencies of the remaining natural modes are integer multiples of the fundamental frequency. ƒn = nƒ1. Musicians call f2, f3, and so on overtones. These normal modes are called harmonics. 75  Musical Note of a String 0 The musical note is defined by its fundamental frequency. 0 The frequency of the string can be changed by changing either its length or its tension. 76"
+  },
+  {
+    "source": "Lec15.txt",
+    "category": "Physics",
+    "chunk_index": 42,
+    "page": 39,
+    "text": "39 77   78 Complex Standing Waves The standing wave could be a combination of superposition of many modes. s F ( ) ( cos2 in 2 : ) ourier series n n n n n y t a f t b f     "
+  },
+  {
+    "source": "Lec15.txt",
+    "category": "Physics",
+    "chunk_index": 43,
+    "page": 40,
+    "text": "40  79 The harmonic content depends on how the string is initially set into motion. Standing Waves in 2-dimensional Membranes 0 The resulting sound is not harmonic because the standing waves have frequencies that are not related by integer multiples. 0 The fundamental frequency contains one nodal curve. 80\n\n41  81 https://en.wikipedia.org/wiki/Vibrations_of_a_circular_membrane 01 02 03 11 12 13 21 22 23 82  https://en.wikipedia.org/wiki/Ernst_Chladni Chladni plates"
+  },
+  {
+    "source": "Lec15.txt",
+    "category": "Physics",
+    "chunk_index": 44,
+    "page": 42,
+    "text": "42  83 Standing waves in a 3-dimensional sphere"
+  }
+]

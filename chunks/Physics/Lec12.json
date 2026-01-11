@@ -1,0 +1,219 @@
+[
+  {
+    "source": "Lec12.txt",
+    "category": "Physics",
+    "chunk_index": 0,
+    "page": 2,
+    "text": "2 3 1. Newton’s law of universal gravitation  1. Newton’s law of universal gravitation 2. Gravitational field 3. Gravitational potential energy 4. Kepler’s laws of planetary motion 4 Galileo Faster or slower than the stone alone?"
+  },
+  {
+    "source": "Lec12.txt",
+    "category": "Physics",
+    "chunk_index": 1,
+    "page": 3,
+    "text": "3 Newton’s law of universal gravitation 5 1 2 2 g m m F G r  Attractive, field force inverse-square law G: universal gravitational constant G=6.67310-11Nm2/kg2 1 2 12 12 12 2 1 2 ˆ ˆ ˆ ˆ ( ) , m m F G r r r r r      0 The gravitation force exerted by a finite-size, spherically symmetric mass distribution on a particle outside the distribution is the same as if the entire mass of the distribution were concentrated at the center. 6 M m M M m F   m "
+  },
+  {
+    "source": "Lec12.txt",
+    "category": "Physics",
+    "chunk_index": 2,
+    "page": 4,
+    "text": "4 7 Experimental proof of Newton’s law: (2) Centripetal acceleration 2 M M a v r  2 (2 / ) M M r T r   2 2 4 Mr T   (1) Newton’s inverse square law 2 2 (1/ ) (1/ ) M M E a r g R  2 E M M a R g r        Newton verified (1)=(2).  2 2 M E M M M g E A E F M a G m r F M g G m R         Cavendish apparatus for measuring G 8"
+  },
+  {
+    "source": "Lec12.txt",
+    "category": "Physics",
+    "chunk_index": 3,
+    "page": 5,
+    "text": "5 Free-Fall Acceleration 9 g ma F    2 ( ) E E GM m mg R h    2 ( ) E E GM g R h    as g h   E R m h  10 2. Gravitational field  1. Newton’s law of universal gravitation 2. Gravitational field 3. Gravitational potential energy 4. Kepler’s laws of planetary motion"
+  },
+  {
+    "source": "Lec12.txt",
+    "category": "Physics",
+    "chunk_index": 4,
+    "page": 5,
+    "text": "6 The Gravitational Field 11 The inverse-square law can be understood by the “field” concept. M g F g m    : gravitational field g the densityof field lines (number of lines per unit area). g   The number of field lines . N M  2 4 N g r     2 M r  2 ˆ GM g r r    The Gravitational field g inside a Spherical Shell: 12 2 ˆ, 0, GM g r r R r g r R           2 : solid angle : surface density A r    1 2 1 2 ˆ ˆ r r g g      0, fo S r o i i g g r R       1A"
+  },
+  {
+    "source": "Lec12.txt",
+    "category": "Physics",
+    "chunk_index": 5,
+    "page": 5,
+    "text": "    0, fo S r o i i g g r R       1A 2 A 1r 2r R M 1 m 2 m  Proof: M R 2 1 1 1 1 1 1 2 1 1 ˆ s cos ˆ ˆ co Gm G g r r r A G r r            2 2 2 2 2 2 2 2 2 2 ˆ s cos ˆ ˆ co Gm G g r r r A G r r         "
+  },
+  {
+    "source": "Lec12.txt",
+    "category": "Physics",
+    "chunk_index": 6,
+    "page": 7,
+    "text": "7 The Gravitational field g inside a solid sphere: 13 R M r ' M 2 2 0 0 ( ') ( ') ( ) ' ' ( ') ( ') r R r r r g r R dV dV r r r r            3 3 3 3 4 3 ' 4 3 r r M M M R R     2 ' ( ) GM g r r   3 2 3 GM r r R  3 ˆ ( ) , for . GM g r rr r R R     r R  r ( ) g r   14 The above results can also be derived from the gravitational potential energy approach. Please refer to the textbook (Young, p. 401)."
+  },
+  {
+    "source": "Lec12.txt",
+    "category": "Physics",
+    "chunk_index": 7,
+    "page": 7,
+    "text": "8 15 3. Gravitational potential energy  1. Newton’s law of universal gravitation 2. Gravitational field 3. Gravitational potential energy 4. Kepler’s laws of planetary motion 16 The gravitational force is “conservative”. ˆ ( ) ( ) F r F r r   dW F d      ( ) F r dr  ( ) ( ) depends only on the end points (indep. of and ), f i r r W F r dr U r       con ( ) is called \" \" servative e . forc F r  ˆ ( ) ( ) Any central force is a conservative force. F r F r r    ˆ ˆ ˆ ˆ ( ) ( sin"
+  },
+  {
+    "source": "Lec12.txt",
+    "category": "Physics",
+    "chunk_index": 8,
+    "page": 7,
+    "text": "force. F r F r r    ˆ ˆ ˆ ˆ ( ) ( sin ) Fr drr rd r d       "
+  },
+  {
+    "source": "Lec12.txt",
+    "category": "Physics",
+    "chunk_index": 9,
+    "page": 9,
+    "text": "9 Gravitational Potential Energy 17 ( ) f i r f i g r U U U F r dr         2 ˆ ( ) E g GM m F r r r   2 f i r E r GM m U dr r   1 1 E f i GM m r r           Set , 0 i i r U   ( ) E GM m U r r    18 12 13 23 total U U U U    1 3 2 3 1 2 12 13 23 ( ) m m m m m m G r r r     Ex."
+  },
+  {
+    "source": "Lec12.txt",
+    "category": "Physics",
+    "chunk_index": 10,
+    "page": 10,
+    "text": "10 19 For a small vertical distance y near the earth’s surface, U mg y    1 1 E f i U GM m r r            2 E E GM m y R          f i E i f r r GM m rr           E R m y  Total Energy in Planetary Motion 20 2 1 2 E GM m E K U mv r     2 2 E GM m v m r r  2 1 2 2 E GM m mv r   Circular orbits: 2 E GM m E r   2 E x ll o iptical or , bits : semi-maj r a i : s E GM m E a a       "
+  },
+  {
+    "source": "Lec12.txt",
+    "category": "Physics",
+    "chunk_index": 11,
+    "page": 11,
+    "text": "11 21 r ( ) U r ( ) E r K U   ( ) E GM m U r r  u 0, bound 0, nboun d 0 K E E        0  E < 0, bound E > 0, unbound Gravitational Potential Energy for the Earth 22 Binding energy: ( ) ( ) 0 ( ) E E GM m GM m U U r r r    "
+  },
+  {
+    "source": "Lec12.txt",
+    "category": "Physics",
+    "chunk_index": 12,
+    "page": 12,
+    "text": "12 Escape Speed 23 2 2 max 1 1 2 2 E E i f E GM m GM m mv mv R r    max Escape, r  . 2 2 Escape speed indep. of object's mass E esc E E GM v gR R     max E GM m r  2 E i E GM v R    24 4 2 1.12 10 m/s 3 E B esc ms E r G k T v m M v R       Helium gas keeps escaping from the Earth."
+  },
+  {
+    "source": "Lec12.txt",
+    "category": "Physics",
+    "chunk_index": 13,
+    "page": 13,
+    "text": "13 Black hole 25 Light can’t escape from black holes if vesc< c. 2 When , esc s GM v c R   2 Schwarzschild radius 2 s GM R c     26 Black hole doesn’t have to be very massive, it is the density that determines the radius Rs to be > Rblock hole. 3 Black hole 2 2 Black hole 2 8 3 has to be large so that . Schwarzschild radius s s GM G R c c R R R       "
+  },
+  {
+    "source": "Lec12.txt",
+    "category": "Physics",
+    "chunk_index": 14,
+    "page": 13,
+    "text": "14 The formation of black holes 0 “Supernova” – the catastrophic explosion of a heavy massive star. 0 The core mass after explosion is m and the Sun mass is ms m < 1.4 ms, gradually cool down, white dwarf star. m > 1.4 ms, collapse further, neutron star (radius ~10 km). m > 3 ms, collapse into a black hole. 27  28 Properties of black holes  “X-rays” are characteristic of a black hole.  Tidal force.  Gravitational red shift, time dilation. Accretion disk Black hole X-ray star Hawking radiation"
+  },
+  {
+    "source": "Lec12.txt",
+    "category": "Physics",
+    "chunk_index": 15,
+    "page": 13,
+    "text": "disk Black hole X-ray star Hawking radiation (thermal radiation)"
+  },
+  {
+    "source": "Lec12.txt",
+    "category": "Physics",
+    "chunk_index": 16,
+    "page": 15,
+    "text": "15 29 Supermassive black holes may exist at the center of galaxies.  2 3 2 4 X a m GT   30 [https://www.aps.org/publications/apsnews/201906/black-hole.cfm] On April 10, 2019, the Event Horizon Telescope collaboration (eventhorizontelescope.org) released the first direct image of a black hole."
+  },
+  {
+    "source": "Lec12.txt",
+    "category": "Physics",
+    "chunk_index": 17,
+    "page": 16,
+    "text": "16 31 Dark matter Luminous matters (stars) contribute major mass of the universe. Non-luminous matters (planets, dust) are only a small fraction.  2 Sun 2 ( ) G M m v m r r  2 galaxy 2 ( ) G M m v m r r  Dark matter? 32 Dark energy is proposed to explain an increasing acceleration in the expansion of the Universe. Dark energy"
+  },
+  {
+    "source": "Lec12.txt",
+    "category": "Physics",
+    "chunk_index": 18,
+    "page": 17,
+    "text": "17 The General Theory of Relativity Einstein proposed that no experiment, mechanical or otherwise, could distinguish between the two situations. Principle of equivalence: gravitation and acceleration are equivalent. 0 g  0 g   33 a g    a g    a g    Gravity Acceleration 0 g  Einstein assumes that all the laws of nature (including light) have the same form for observers in any reference frame, whether accelerated or not.  34 light 0 g  light Gravity Acceleration"
+  },
+  {
+    "source": "Lec12.txt",
+    "category": "Physics",
+    "chunk_index": 19,
+    "page": 18,
+    "text": "18 35 Gravitational lens  Two postulates in Einstein’s general theory of relativity All the laws of nature have the same form for observers in any frame of reference, whether accelerated or not. In the vicinity of any point, a gravitational field is equivalent to an accelerated frame of reference in gravity-free space (the principle of equivalence).  36"
+  },
+  {
+    "source": "Lec12.txt",
+    "category": "Physics",
+    "chunk_index": 20,
+    "page": 19,
+    "text": "19 37 Gravitation Curvature of space and time  38 4. Kepler’s laws of planetary motion  1. Newton’s law of universal gravitation 2. Gravitational field 3. Gravitational potential energy 4. Kepler’s laws of planetary motion\n\n20 Kepler’s 1st Law 0 All planets move in elliptical orbits with the Sun at one focus. This is a direct result of the inverse-square of the Gravitational force. 39   40"
+  },
+  {
+    "source": "Lec12.txt",
+    "category": "Physics",
+    "chunk_index": 21,
+    "page": 21,
+    "text": "21  41 42 F1, F2: focus a: semi-major axis b: semi-minor axis 2 2 2 a b c   eccentricity: / e c a  0, a circle 0 1, e p lli se e e      e.g., planets, aster bou oid nd orbits, s, comets.  1, parabola 1, hyperbol a e e     e u . nb g. ound , me orbits, teorite. "
+  },
+  {
+    "source": "Lec12.txt",
+    "category": "Physics",
+    "chunk_index": 22,
+    "page": 22,
+    "text": "22 0 Sun is located at focus. 0 Pluto has the highest eccentricity ePluto = 0.25 among the 8 planets in the solar system. 0 Halley’s comet has an orbit with high eccentricity eHalley’s comet = 0.97. 43  44 My Very Eager Mother Just Serves Us Nine Pizza! (Solar) planets 1930–2006 1 2 3 4 5 6 7 8 9 Mercury ☿ Venus ♀ Earth ⊕ Mars ♂ Jupiter ♃ Saturn ♄ Uranus ♅ Neptune ♆ Pluto ♇"
+  },
+  {
+    "source": "Lec12.txt",
+    "category": "Physics",
+    "chunk_index": 23,
+    "page": 22,
+    "text": "23 Kepler’s 2nd Law 0 The radius vector drawn from the Sun to a planet sweeps out equal areas in equal time intervals. This is a consequence of angular momentum conservation. This law applies to any situation that involves a central force, whether inverse-square or not. The orbit lies in the same plane. 45 . 2 P L dA const dt M      46 r F      ˆ ( ) g r F r r    0  0 dL dt    L r p      . P r M v const      1 2 dA r dr     1 2 r v dt     2 P L dt M   . 2 P"
+  },
+  {
+    "source": "Lec12.txt",
+    "category": "Physics",
+    "chunk_index": 24,
+    "page": 22,
+    "text": "    1 2 r v dt     2 P L dt M   . 2 P L dA const dt M    "
+  },
+  {
+    "source": "Lec12.txt",
+    "category": "Physics",
+    "chunk_index": 25,
+    "page": 24,
+    "text": "24 Kepler’s 3rd Law 0 The square of the orbital period of any planet is proportional to the cube of the semi-major axis of the elliptical orbit. 47 2 3 2 4 , fo elli r orbit pt s ic . al S GM T a         48 g c F ma    For circular orbit, 2 2 S P P GM M M v r r  2 2 (2 / ) S GM r T r r    2 2 3 4 S T r GM         3 S K r  indep. of planet’s mass and eccentricity. In general, 2 3 2 4 , fo elli r orbit pt s ic . al S GM T a       "
+  },
+  {
+    "source": "Lec12.txt",
+    "category": "Physics",
+    "chunk_index": 26,
+    "page": 25,
+    "text": "25 Ex. Geosynchronous Satellite 49 (1) ? at . (2) Geosynchronous satellite ? ? v h r v      50 (1) c F ma    2 2 E GM m v m r r  E E GM v R h    (2) 2 r v T   2 24 hrs r   2 2 3 4 E T r GM        2 (24 hrs)  ... v   ... r   Ans:"
+  },
+  {
+    "source": "Lec12.txt",
+    "category": "Physics",
+    "chunk_index": 27,
+    "page": 25,
+    "text": "26 Ex: Astronomers detect a distant meteoroid moving along a straight line that, if extended, would pass at a distance 3RE from the center of the Earth, where RE is the radius of the Earth. What minimum speed must the meteoroid have if the Earth’s gravitation is not to deflect the meteoroid to make it strike the Earth? 51 3 E R iv  52 3 E R iv (2) i f E E  (1) i f L L  (3 ) i E f mv R mv R   (3 / ) f E i v R R v   2 2 1 1 2 2 E i f GM m mv mv R    Not to strike E R R   3 f i v v  "
+  },
+  {
+    "source": "Lec12.txt",
+    "category": "Physics",
+    "chunk_index": 28,
+    "page": 25,
+    "text": "mv R    Not to strike E R R   3 f i v v   1 So 2 E i E GM v R   2 2 2 E f i GM v v R   "
+  },
+  {
+    "source": "Lec12.txt",
+    "category": "Physics",
+    "chunk_index": 29,
+    "page": 27,
+    "text": "27 53 https://exoplanets.nasa.gov/interactable/11/  54 Planetary transit\n\n28 55 Negative mass? ( ) g F m g    [“Negative mass can be positively amusing” by Richard H. Price, American Journal of Physics 61, 216 (1993); View online: https://doi.org/10.1119/1.17293] ( ) m a   is opposite to direction! g F a      56 https://fb.watch/8RNhBCxTgE/ What would happen to the earth if the sun suddenly disappeared?"
+  },
+  {
+    "source": "Lec12.txt",
+    "category": "Physics",
+    "chunk_index": 30,
+    "page": 29,
+    "text": "29  57 Significant Solar Flare Erupts From Sun https://blogs.nasa.gov/solarcycle25/wp- content/uploads/sites/304/2022/03/FlareX13_20220330_171A_2048p30_Sq.gif"
+  }
+]

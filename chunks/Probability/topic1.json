@@ -1,0 +1,219 @@
+[
+  {
+    "source": "topic1.txt",
+    "category": "Probability",
+    "chunk_index": 0,
+    "page": 1,
+    "text": "Topic 1: Probabilistic Models Lecture Outline Basic probabilistic model: an experiment Review of Classical Probability (古典機率) Sample space (樣本空間) Events (事件) Probability measure →Three axioms of probability (機率三大公理) Total Probability Theorem (全機率定理) Reading: 高中數學課本、Bertsekas & Tsitsiklis 1..2"
+  },
+  {
+    "source": "topic1.txt",
+    "category": "Probability",
+    "chunk_index": 1,
+    "page": 2,
+    "text": "Review of Classical Probability 考慮有𝑁𝑁個元素的樣本空間(sample space) 𝑆𝑆，且假設每個樣本點出現的機會均等。S 中的事件 𝐴𝐴有𝑘𝑘個元素，則事件A 發生的機率定義為 P 𝐴𝐴≜𝑛𝑛(𝐴𝐴) 𝑛𝑛(𝑆𝑆) = 𝑘𝑘 𝑁𝑁 其中𝑛𝑛(𝐴𝐴) 表示事件𝐴𝐴中樣本點個數。此定義是由Laplace (法國人，1749~1827)所提出，稱為 古典機率(classical probability)定義法。 Example: 一副撲克牌有52張，均勻洗牌後任取一張，若每張被取出機會相等，試求取出的牌是黑桃的機率 為多少? 以上是高中數學。"
+  },
+  {
+    "source": "topic1.txt",
+    "category": "Probability",
+    "chunk_index": 2,
+    "page": 3,
+    "text": "Limitations of Classical Probability It cannot handle events with an infinite number of possible outcomes Ex: Possible value of received electro-magnetic wave in your smartphone It also cannot handle events where each outcome is not equally likely Ex: 丟擲一顆不公正的骰子，出現偶數的機率? These limitations make classical probability inapplicable for complicated tasks. We need something more!"
+  },
+  {
+    "source": "topic1.txt",
+    "category": "Probability",
+    "chunk_index": 3,
+    "page": 3,
+    "text": "Components of a Probabilistic Model A probabilistic model is a mathematical description of a process (which is called experiment) with an outcome that is not fully predictable, e.g. a coin flip. Components: Outcome: each experiment produces exactly one outcome (Ex: 銅板的正面或反面). An outcome is also called a sample point (樣本點) Sample space: A list of all outcomes of an experiment →A sample space is a set →Any subset of the sample space is called an event (事件) Algebra of events (set theory): language"
+  },
+  {
+    "source": "topic1.txt",
+    "category": "Probability",
+    "chunk_index": 4,
+    "page": 3,
+    "text": "(事件) Algebra of events (set theory): language for manipulating collections of elementary events"
+  },
+  {
+    "source": "topic1.txt",
+    "category": "Probability",
+    "chunk_index": 5,
+    "page": 5,
+    "text": "Experiment Example: Three flips of a fair coin labeled 1 (or heads) on one side and 0 (or tails) on the other. Many ways to represent outcomes:  List or table: each column corresponds to the number of the flip 000 001 010 011 100 101 110 111  Sequential description: a tree\n\n1 0 1 1 1 1 1 1 0 0 0 0 0 0 111 110 101 100 011 010 001 000"
+  },
+  {
+    "source": "topic1.txt",
+    "category": "Probability",
+    "chunk_index": 6,
+    "page": 7,
+    "text": "Example: Roll a fair four-sided die twice Outcome of the experiment We can use a table or tree as above to represent all possible outcomes, or a graphical representation as below: 1 2 3 4 1 2 3 4 1st roll 2nd roll"
+  },
+  {
+    "source": "topic1.txt",
+    "category": "Probability",
+    "chunk_index": 7,
+    "page": 7,
+    "text": "A sample space is a collection of all of the possible elementary outcomes (sample points) A sample space is an example of a set →Dealing with a sample space requires using basic set theory We define Sample points are all disjoint or mutually exclusive (互斥), i.e., they are separate and distinct outcomes Sample points are collectively exhaustive, i.e., together they make up the entire sample space, they constitute all possible elementary outcomes We often use Ω to denote the sample space. A"
+  },
+  {
+    "source": "topic1.txt",
+    "category": "Probability",
+    "chunk_index": 8,
+    "page": 7,
+    "text": "We often use Ω to denote the sample space. A sample point ω in the sample space Ω can be described by ω ∈Ω Sample Space (樣本空間)"
+  },
+  {
+    "source": "topic1.txt",
+    "category": "Probability",
+    "chunk_index": 9,
+    "page": 9,
+    "text": "Event (事件) Definition Events are just subsets of the sample space, i.e., sets of elements which belong to Ω Examples of events: Event A: Flip three coins and get 010 (1 means Head, 0 means Tail) →This is a simple event (elementary event, which is just an outcome) →A={010} Event B: Flip three coins and get exactly one 1 →More complicated event, consisting of three elementary events 001, 010, and 100 →B={001, 010, 100} Event C: Flip three coins and get a result such that the sum of values is 2"
+  },
+  {
+    "source": "topic1.txt",
+    "category": "Probability",
+    "chunk_index": 10,
+    "page": 9,
+    "text": "and get a result such that the sum of values is 2 →C={011,101, 110} Remarks: 1.符號上使用左右大括號來表示集合、事件 2.「機率」的計算必和「事件」有關。我們對特殊事件會發生的機率感興趣"
+  },
+  {
+    "source": "topic1.txt",
+    "category": "Probability",
+    "chunk_index": 11,
+    "page": 10,
+    "text": "We usually use capital letter to denote an event F, a subset of Ω, and write F ⊂Ω A set F might have only one point (i.e. outcome) in it, e.g., F = {ω} for a specific ω∈Ω →An outcome is itself an event (elementary event) All sets are subsets of themselves →the entire sample space Ω is an event A set might have no points in it, i.e., the empty set 𝜙𝜙 →This is the event that \"nothing happens\" Events"
+  },
+  {
+    "source": "topic1.txt",
+    "category": "Probability",
+    "chunk_index": 12,
+    "page": 10,
+    "text": "Use algebra of events, i.e., set theory, to manipulate events Combine simple events into complicated events Decompose complicated events into simpler events Perform operations, e.g. complement, intersection, and union on sets Three basic operations on sets Complement: FC ={ω: ω∉F} 補集(或稱餘集) All the sample points of Ωthat are not in F Intersection: F∩G={ω: ω∈F and ω∈G} 交集 →the points that are in both sets →If F and G have no points in common, then they are said to be disjoint or mutually"
+  },
+  {
+    "source": "topic1.txt",
+    "category": "Probability",
+    "chunk_index": 13,
+    "page": 10,
+    "text": "then they are said to be disjoint or mutually exclusive, i.e. F∩G=Φ, the null set (空集合) Union: F∪G={ω: ω∈F or ω∈G} 聯集 →the points that are either in one set or the other, or both The definitions above can be illustrated by Venn diagrams Events"
+  },
+  {
+    "source": "topic1.txt",
+    "category": "Probability",
+    "chunk_index": 14,
+    "page": 13,
+    "text": "Set Theory Basics Fundamental set relations: F∪G =G ∪F commutative law F∪(G ∪H) = (F∪G)∪H associative law F∩(G ∪H) = (F∩G)∪(F∩G) distributive law (FC)C=F FC∩F= 𝜙𝜙(空集合) (F∩G)C= FC∪GC DeMorgan’s law F∩Ω=F Other relations: (F ∪ G)C= FC ∩ GC DeMorgan’s other law"
+  },
+  {
+    "source": "topic1.txt",
+    "category": "Probability",
+    "chunk_index": 15,
+    "page": 14,
+    "text": "Set Theory Other relations: F ∩ G =G ∩F commutative law F ∩(G ∩ H) = (F ∩ G) ∩ H associative law F ∪(G ∩ H) = (F ∪ G) ∩(F ∪ G) distributive law FC ∪ F= Ω F ∪ 𝜙𝜙=F (𝜙𝜙空集合) F ∪(F∩G)=F=F ∩(F ∪ G) F∪ Ω= Ω F ∩ 𝜙𝜙= 𝜙𝜙 F ∪ G = F ∪(FC ∩ G) = F ∪(G-F) 之後會用到此特別的集合分割 F ∪ F =F F ∩ F =F"
+  },
+  {
+    "source": "topic1.txt",
+    "category": "Probability",
+    "chunk_index": 16,
+    "page": 15,
+    "text": "Probability Law We will want to assign probabilities to particular events occurring as a result of an experiment →Probability law The probability law, which assigns a nonnegative number P(A) to event A that encodes our knowledge or belief about the collective “likelihood” of the elements of A, formally called the probability of A"
+  },
+  {
+    "source": "topic1.txt",
+    "category": "Probability",
+    "chunk_index": 17,
+    "page": 16,
+    "text": "Probability Probability Law An assignment of a real number P(F) to every event F such that the following three simple axioms are satisfied: Non-negativity: P(F) ≧0 for all event F Normalization: P(Ω) = 1 Additivity: If F and G are disjoint (F∩G= 𝜙𝜙), then The function P(.) defined for all subsets of Ω is called a probability measure if and only if it satisfies the three axioms of probability ( ) ( ) ( ) P F G P F P G = + "
+  },
+  {
+    "source": "topic1.txt",
+    "category": "Probability",
+    "chunk_index": 18,
+    "page": 17,
+    "text": "Intuitions behind the probability axioms: Mimic relative frequencies (相對發生次數), i.e., how frequent an event occurs. For example, perform a sequence of N experiments (such as roll a dice N times): The relative frequency of an event F is Relative frequency is nonnegative (Non-negativity) The relative frequency of something happening is 1 (Normalization) Relative frequency of the union of two disjoint events add (Additivity) number of times F occurs N Intuition for Probability Axioms"
+  },
+  {
+    "source": "topic1.txt",
+    "category": "Probability",
+    "chunk_index": 19,
+    "page": 18,
+    "text": "Elementary Properties Assume that P(.) is a probability measure defined on a sample space Ω. Then, we can use the three axioms to prove the following properties: 1. P(FC) = 1 −P(F) 2. P(F) ≤1 3. P(𝜙𝜙) = 0 4. If an event F is the union of a finite collection of disjoint events {Fi; i=1,…,n}, i.e., if Fi ∩ Fk = 𝜙𝜙(空集合) for i≠k, and 𝐹𝐹= ⋃𝑖𝑖=1 𝑛𝑛 𝐹𝐹𝑖𝑖, then 1 ( ) ( ) n i i P F P F = =∑"
+  },
+  {
+    "source": "topic1.txt",
+    "category": "Probability",
+    "chunk_index": 20,
+    "page": 19,
+    "text": "5. Total Probability Theorem: (全機率定理、加法法則) If { Fi; i=1,2,…,K } is a finite partition of Ω, i.e., if Fi ∩ Fk= 𝜙𝜙，when i≠k, and F1 ∪F2… ∪ FK= Ω, then for any event G, we have 這是一個非常重要的結果! 我們可透過將G拆解，來計算複雜事件G的機率值。 Example A fair coin is flipped twice. Let G be the event that the first flip results in Heads. What is the probability of event G? 1 ( ) ( ) K i i P G P G F = =∑  Elementary Properties"
+  },
+  {
+    "source": "topic1.txt",
+    "category": "Probability",
+    "chunk_index": 21,
+    "page": 20,
+    "text": "Total Probability Example Example: 一棟有40住戶的大樓只有30個車位，每年必須透過抽籤方式決定哪一用戶於該年度有車位可停。 抽籤方式如下: 將1~40號的號碼球放置不透明箱中，每戶輪流抽取一球，取後不放回。抽出1~30號的住戶可得車 位使用權。 請問，先抽有利還是後抽?\n\nElementary Properties 6. If F⊂G, then P(F)≤P(G) 7. P( F∪G )= P(F) + P(G) - P(F ∩ G) 8. P( F∪G ) ≤P(F) + P(G) (Union bound or Bonferroni inequality)"
+  },
+  {
+    "source": "topic1.txt",
+    "category": "Probability",
+    "chunk_index": 22,
+    "page": 20,
+    "text": "The fourth property provides explanations to classical probability, which you’ve learned in high school, using counting arguments (排列組合) Consider a sample space with a finite number of sample points Since sample points are by definition disjoint ( {𝜔𝜔𝑖𝑖} ∩{𝜔𝜔𝑗𝑗} = 𝜙𝜙for 𝑖𝑖≠𝑗𝑗), it follows from the fourth property that for any event F We can find the probability of an event with finite sample points by adding up the probabilities of all the sample points in the event →Need to know how many such"
+  },
+  {
+    "source": "topic1.txt",
+    "category": "Probability",
+    "chunk_index": 23,
+    "page": 20,
+    "text": "points in the event →Need to know how many such k’s (# of sample points) →Need to know P({ωk}) for each k This is great for computing probabilities for discrete experiments (coins, dice, etc.), but not for continuous experiments! (Why not?) 1 2 { , , , } N ω ω ω Ω=  : ( ) ({ }) k k k F P F P ω ω ∈ = ∑ Discrete Probability Law"
+  },
+  {
+    "source": "topic1.txt",
+    "category": "Probability",
+    "chunk_index": 24,
+    "page": 23,
+    "text": "Discrete Uniform Probability Law If all sample points are equally probable, i.e., and This implies We can compute probabilities by counting for experiments with finite sample spaces. This is called discrete uniform probability law, equivalent to those given by 古典機率論 Examples: →Probability of getting exactly one 1 in three coin flips: →Probability get an odd number of 1's in three coin flips: 3 8 1 ({ }) ; 1,2, , k P k N N ω = =  number of sample points in F ( ) total number of sample points P"
+  },
+  {
+    "source": "topic1.txt",
+    "category": "Probability",
+    "chunk_index": 25,
+    "page": 23,
+    "text": "points in F ( ) total number of sample points P F = 4 1 8 2 = Example 1 2 { , , , } N ω ω ω Ω= "
+  },
+  {
+    "source": "topic1.txt",
+    "category": "Probability",
+    "chunk_index": 26,
+    "page": 24,
+    "text": "Consider countably infinite sample space, such as the set of all integers Uniform law does not make sense, since the sum will go to infinity Nonuniform law is more reasonable with the additivity property We need a stronger form of Axiom 3: countable additivity, limiting form of Axiom 3 If F1,F2,F3… are disjoint, then Example: Suppose the sample space is {1,2,3,…}, which is countable but infinite, and 𝑃𝑃𝑛𝑛= 2−𝑛𝑛. Pr(outcome is even) = P({2,4,6,8, }) = P(2)+P(4)+P(6)+   What if discrete, but"
+  },
+  {
+    "source": "topic1.txt",
+    "category": "Probability",
+    "chunk_index": 27,
+    "page": 24,
+    "text": "}) = P(2)+P(4)+P(6)+   What if discrete, but not finite? 1 2 1 (2 ) 1 (2 ) 3 k k k P k P ∞ = ∞ − = = = = ∑ ∑ ∑ ∞ = ∞ = =       1 1 ) ( k k k k F P F P "
+  },
+  {
+    "source": "topic1.txt",
+    "category": "Probability",
+    "chunk_index": 28,
+    "page": 25,
+    "text": "What if continuous sample space, i.e., uncountably infinite outcomes? For continuous sample space, since the outcomes are not countable, the idea of adding up probabilities of elementary points does NOT work! →Calculus comes into play ( sum integral ) Examples: 1. A wheel of fortune is continuously calibrated from 0 to 1, so the possible outcomes of an experiment consisting of a single spin are the numbers in the interval Ω= [0, 1]. 2. What is the probability of the event consisting of a"
+  },
+  {
+    "source": "topic1.txt",
+    "category": "Probability",
+    "chunk_index": 29,
+    "page": 25,
+    "text": "is the probability of the event consisting of a single element? Continuous Probability Law"
+  },
+  {
+    "source": "topic1.txt",
+    "category": "Probability",
+    "chunk_index": 30,
+    "page": 26,
+    "text": "Romeo and Juliet will have a date. Each arrives late with a random delay of up to 1 hour, where the pair of delays is equivalent to that achievable by spinning two identical fair wheels. Each will wait only 1/4 of an hour before leaving. What is the probability that Romeo and Juliet will meet? Crosshatched region Answer: 1 {( , ) : } 4 x y x y = − ≤ 2 Area of crosshatched region 1 1 2 (.75) .4375 Area of sample space 2 = −× = Example (Ex. 1.5)"
+  }
+]

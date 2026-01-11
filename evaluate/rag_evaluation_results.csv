@@ -1,0 +1,32 @@
+query,lora_model_output
+Generate a podcast content between two people discussing poisson distribution,"A: What's your favorite way to spend a summer evening?
+B: I like it when the weather is warm and sunny, and I can go swimming or take a stroll in the park.
+A: I'm not sure I'm up for swimming, but I enjoy walking in the park on a warm summer evening.
+B: Really? I prefer to do some outdoor activities like hiking or cycling.
+A: I think cycling is a great idea, but I'm not sure I'd be comfortable on"
+Generate a podcast content between two people discussing definition of class in C++,"A: You know that C++ is a powerful language. But we also have to know the class in C++.
+B: Sure. Class is a fundamental concept in object-oriented programming. It is a blueprint for creating objects that can be used to interact with each other. A class is essentially a collection of data and methods that define its characteristics and behavior.
+A: And there are different types of classes. A class can be a struct or a union. A class can also be a template."
+Generate a podcast content between two people discussing describe the history of computer.,"A: It's wonderful that you could have the opportunity to have a career in the business world. The history of computer is very interesting.
+B: You know, it began in 1936, when Alan Turing invented the Automatic Computing Engine.
+A: In 1946, it was renamed the ENIAC, a machine that could perform calculations quickly.
+B: In the 1950s, it was the first electronic computer. Then in the 1960s, the first commercial computer"
+Generate a podcast content between two people discussing what's the definition of CDF?,"A: Hello, I'm glad to talk with you today. What's the definition of CDF?
+B: Actually, it's a bit difficult to understand. CDF stands for cumulative distribution function. So, what's it used for?
+A: Well, the CDF is a statistical function that describes the cumulative probability distribution of a random variable, or the amount of probability that a random variable is less than or equal to a certain value. It's used to predict the probability that a random"
+Generate a podcast content between two people discussing newto's laws,"A: I'm really excited about the new laws in the United States. There are so many things that are going to change.
+B: What about the new laws in the United States?
+A: Well, for one thing, there are going to be more freedom to travel. I mean, people are going to be able to get to the United States without going through customs and immigration in the United States.
+B: That's true. And people are going to be able to get to other countries"
+Generate a podcast content between two people discussing random variables,"A: You are a big fan of sports and you love playing the game of golf? Why?
+B: Oh, yes. I have been playing golf for many years and I have won a few tournaments. I am a bit of a professional golfer.
+A: Well, I can tell you that the world golf tour has been very popular over the years. How did you come to be a pro golfer?
+B: I played a lot of golf when I was a kid, but I"
+Generate a podcast content between two people discussing the central limit theorem,"A: Hi, guys. Today we are discussing about the central limit theorem. The central limit theorem is a mathematical concept in statistics that describes the behavior of a distribution when the sample size is large. This concept is very important in many fields, such as finance, engineering, and economics. Now, let's see how it is used in real-life situations.
+B: Sure. Let's start with a simple example. For example, suppose that we want to find the mean of a certain number of"
+Generate a podcast content between two people discussing what is a pointer in C++?,"A: It is a reference to a variable and is used to pass data from a function to another.
+B: Yes, that's correct. A pointer in C++ is a variable that points to the memory location of a variable.
+A: What is a pointer?
+B: A pointer is a variable that holds the memory address of another variable.
+A: Can you give me an example of a pointer in C++?
+B: Let's take a simple example. Imagine you have a variable,"

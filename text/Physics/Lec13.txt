@@ -1,0 +1,75 @@
+
+[Page 2]
+2 3 1. Simple Harmonic Motion (SHM)  1. Simple Harmonic Motion (SHM) 2. Energy of the Simple Harmonic Oscillator 3. Simple Harmonic Motion vs Circular Motion 4. The Pendulum 5. The Damped Oscillation and Forced Oscillation 6. Resonance Periodic Motion 0 Periodic motion is motion of an object that regularly repeats. The object returns to a given position after a fixed time interval. 4
+[Page 3]
+3 Simple Harmonic Motion 0 A special kind of periodic motion occurs in mechanical systems when the force acting on the object is proportional to the position of the object relative to some equilibrium position, i.e., called simple harmonic motion. 5 , F kx     It is a conservative force! Motion of a Spring-Mass System 6 ' law: s Hook s F kx   
+[Page 4]
+4 7 , a SHM F k y      0 ˆ ˆ + 0 F khj mgj     ˆ ˆ ˆ + ( ) y F k h y j mgj k yj      8 ' g F F B      fluid a SHM ( ) gA F y       Ex. fluid 0 fluid 0 ˆ + Ay F mg gV j g           fluid 0 ˆ 0 mg gV j     0 g F B     y = 0 ˆj Initially the block is at y away from the equilibrium, not equilibrium. F   y
+[Page 5]
+5 9 The bouncing ball Not a SHM.  Not all periodic motions are simple harmonic! 10 F kx  2 2 d x k x dt m   A 2nd-order differential equation 2 Define k m  2 2 2 d x x dt    What functions satisfy this equation? , sin , cos x e x x   Kinematics of SHM
+[Page 6]
+6 11 The solution to the differential equation is ( ) cos( ) x t A t     Amplitude Angular frequency Phase constant (1) ) ra ( s d/ k m  (2) 0 and , both depend on initial conditions. A    12  t
+[Page 7]
+7 13 (rad/s) 2 k T m    2 Period 2 m T k      1 ( e ) 2 H rtz f T      The frequency and period do not depend on amplitude. 14 The simple harmonic motion ( ) cos( ) x t A t     ( ) sin( ) dx v t A t dt       2 ( ) cos( ) dv a t A t dt       max v A    2 max a A    Not a uniform acceleration.
+[Page 8]
+8  15 (0) sin tan (0) cos v A x A         1 (0) tan (0) v x            To get the phase constant and amplitude: 2 2 2 2 2 2 [ (0)] cos [ (0)] sin x A v A      2 2 2 [ (0)] [ (0)] A v x     16 0 The velocity is 90o out of phase with the displacement and the acceleration is 180o out of phase with the displacement .
+[Page 9]
+9 0 Initial conditions at t = 0 are x (0)= A0 v (0) = 0 17 0 (0) cos( 0 ) (0) sin( 0 ) 0 x A A v A               0 0 A A        ( ) cos( ) x t A t     0 Initial conditions at t = 0 are x (0)=0 v (0) = vi 18 (0) cos( 0 ) 0 (0) sin( 0 ) i x A v A v               ) 2 ( iv A              2 p.s., not allowed. amplitude must > 0. ( ) iv A         
+[Page 10]
+10 19 Q: Velocity at A: positive or negative?  20 k k k k Oscillating frequency ? f  m   eff ( ) total F kx k x x k       eff 4 k k k     Ex. 1 2 eff k f m   
+[Page 11]
+11 21  Ex. A box-spring system a. The period T = ? b. The max. speed of the block = ? c. The max. acceleration of the block =? d. x(t), v(t), a(t) = ? 22  Ans: (a) 2 2 k m T m k         (b) max v A   (c) 2 max a A   (d) (0) cos 0 x A A       2 ( ) cos ( ) sin cos x t A t v t A t a A t        
+[Page 12]
+12 23 2. Energy of the Simple Harmonic Motion  1. Simple Harmonic Motion (SHM) 2. Energy of the Simple Harmonic Oscillator 3. Simple Harmonic Motion vs Circular Motion 4. The Pendulum 5. The Damped Oscillation and Forced Oscillation 6. Resonance Energy of the Simple Harmonic Oscillator 24 2 2 2 2 1 1 sin ( ) 2 2 K mv m A t       2 2 2 1 1 cos ( ) 2 2 U kx kA t      2 1 2 E K U kA     The total mechanical energy of the SHM is proportional to A2. 2 2 2 1 1 1 2 2 2 mv kx kA   2 2 2 2 ( ) ( ) k v x A x A x m      
+[Page 13]
+13 25  26
+[Page 14]
+14 Molecular Model of SHM 0 If the atoms in the molecule do not move too far, the force between them can be modeled as if there were springs between the atoms. 0 The potential energy acts similar to that of the SHM oscillator. 27   28 Why does the volume of solids usually increase as the temperature increases?
+[Page 15]
+15  29 Ex. Find the new amplitude and period.  30 Ans: (a)  2 2 2 1 1 1 1 0 1 1 1 Initial: 2 2 2 x x k Mv k x A A v k M      Collision ⇒Momentum conservation At 0, x  1 1 2 2 Final: ( ) x x x x M Mv M m v M m v v       2 2 2 2 2 2 0 2 1 1 1 ( ) ( ) 2 2 2 x x v M m M m v k A x kA k        2 1 2 2 M m T k M T k       2 1 M A A M m   
+[Page 16]
+16  31 (b) 1 At , x A   1 2 2 2 1 1 1 1 1 1 Initial: 0 2 2 2 x x A Mv k x kA v      1 2 2 1 Final: ( ) x x x x M Mv M m v v v M m        1 2 2 2 2 2 2 1 0 2 2 2 1 1 1 ( ) 2 2 2 A x x v M m M m v k x kA A A k          2 1 2 2 M m T k M T k       2 1 A A   32 3. Simple Harmonic Motion vs. Circular Motion  1. Simple Harmonic Motion (SHM) 2. Energy of the Simple Harmonic Oscillator 3. Simple Harmonic Motion vs Circular Motion 4. The Pendulum 5. The Damped Oscillation and Forced Oscillation 6. Resonance
+[Page 17]
+17 SHM and Circular Motion 0 Simple Harmonic Motion along a straight line can be represented by the projection of uniform circular motion along the diameter of a reference circle. 0 Uniform circular motion can be considered a combination of two perpendicular simple harmonic motions. 33 0 ˆ ˆ ( , ) cos( ) sin( ) ˆ ˆ cos( ) cos( 90 ) r r A t i A t j A t i A t j                     34  n ˆ cos( ˆ ( , ) i ) s ( ) r r A t i j A t           ˆ ( ) cos( ) x t A t i     
+[Page 18]
+18 35 ( ) cos cos( ) x t A A t        36  , max ( ) sin( ) x x v v t A t       v A   
+[Page 19]
+19 37  , max 2 ( ) cos( ) x x a a t A t       2 a A    38
+[Page 20]
+20  39 Torsional Pendulum 40    κ: torsion constant 2 2 d I dt     2 2 2 d dt I       I   2 2 I T      
+[Page 21]
+21 41 Other SHMs.   42 Whether the motion is SHM or not can be judged by F = ma. If the force is not easy to express, then use the equation of energy conservation and try to express it as . The period then is also obtained. 2 2 2 0 dx x dt   
+[Page 22]
+22 43 4. The pendulum  1. Simple Harmonic Motion (SHM) 2. Energy of the Simple Harmonic Oscillator 3. Simple Harmonic Motion vs Circular Motion 4. The Pendulum 5. The Damped Oscillation and Forced Oscillation 6. Resonance The Pendulum 44 2 2 sin t d s F mg m dt    s L  2 2 s n i d g dt L    
+[Page 23]
+23  45 For small , sin     2 2 d g dt L     g L  2 2 L T g      2   max ( ) cos( ) t t       For L = 1m and g =9.8 m/s, the period T ≈ 2 s. Pendulum oscillates at a larger angle 46 2 2 sin d g dt L    0 2 L T g   For not small angle θ, 2 2 4 0 2 2 1 1 1 3 1 1 sin sin 2 2 2 4 2 T T                      0 0 2 0.5% 15 . , for T T L T T g T         
+[Page 24]
+24  47 https://www.facebook.com/watch/?v=306222764371 599&extid=NS-UNK-UNK-UNK-AN_GK0T- GK1C&ref=sharing Physical Pendulum 48 2 2 d I I dt      2 2 sin d mgd I dt      For small , sin     2 2 2 d mgd dt I       mgd I 
+[Page 25]
+25  49 2 2 I T mgd      2 2 CM I md mgd    2 d g   1. It depends on how the mass is distributed! 2. Can be experimentally used to determine the moment of inertia of an object. 50 2 1 ( ) 3 I ML   Ex. A uniform rod of mass M and length L is pivoted about one end and oscillated in a vertical plane. Find the period of oscillation if the amplitude of the motion is small.
+[Page 26]
+26 51 Note, ( ) 2 / 2 T g L    Ans: 2 1 3 2 2 2 ( / 2) 3 ML L T Mg L g      52 3/2 0 0 1 2 2 2 3 4 3 L L d L g g L T L g d           Dividing the rod into tiny pieces, the average T of these pieces does not equal to the true T. 2 2 3 L g  
+[Page 27]
+27  53 [Problem 15.56 (Serway, 6th)] Hint: Without rotation, the motion is the same as a pendulum. With rotation, the equation of motion can be obtained from energy conservation. Then the period can be obtained. T = ? Q:  54 Ex. Estimate the walking speed of rex.
+[Page 28]
+28  55 Ans: 2 3 2 / 3 2 2 L S g T v S T g L       Non-linear effect: Chaos 56
+[Page 29]
+29 57   58 The solution of nonlinear dynamics or chaotic motion is sensitive dependent on initial conditions.
+[Page 30]
+30 59 5. The damped oscillation and forced oscillation  1. Simple Harmonic Motion (SHM) 2. Energy of the Simple Harmonic Oscillator 3. Simple Harmonic Motion vs Circular Motion 4. The Pendulum 5. The Damped Oscillation and Forced Oscillation 6. Resonance Damped Oscillations 60 F ma     v kx ma b     Retarding force: " " : damping coefficient bv b  2 2 dx d x kx b m dt dt     When " " is small, i.e., retarding force restoring force b  2 2 ( ) cos( ) 2 b t m x t Ae t k b m m              Damped oscillation.
+[Page 31]
+31 61 2 2 k b m m         2 2 0 2 b m         0 , nature frequency k m  0 (a) Underdamped, 2 b m  0 (b) Critically damped, 2 b m  0 (c) Overdamped, 2 b m   Q: An automotive suspension system consists of a combination of springs and shock absorbers, as shown in Figure. If you were an automotive engineer, would you design a suspension system that was (a) underdamped (b) critically damped (c) overdamped? 62
+[Page 32]
+32 63 調質阻尼器TMD（Tuned Mass Damper） Taipei 101 從九十二樓懸掛到八十八樓之世 界最大被動式風阻尼器能抵銷自 然力造成的擺動，確保大樓內人 員平穩舒適。   64 Energy loss in damped oscillation: 2 Power loss Power loss r r F bv bv F v             
+[Page 33]
+33 Forced Oscillations 65 Apply an external force, 0 ( ) sin F t F t   F ma     0 sin b m t a F v kx     0 2 2 sin dx d x kx m F t b dt dt      ( ) cos( ) x t A t     0 2 2 2 2 0 / ( ) ( ) F m A b m       0 , resonance frequency k m  F    66
+[Page 34]
+34 67 6. Resonance  1. Simple Harmonic Motion (SHM) 2. Energy of the Simple Harmonic Oscillator 3. Simple Harmonic Motion vs Circular Motion 4. The Pendulum 5. The Damped Oscillation and Forced Oscillation 6. Resonance Resonance 0 When near the natural frequency, , an increase in amplitude occurs, called resonance. 0 At resonance, the applied force is in phase with the velocity and the power transferred to the oscillator is a maximum. The power delivered is F . v This is a maximum when F and v are in phase 68
+[Page 35]
+35 69 0    0    0     F  70
+[Page 36]
+36 71   72 https://fb.watch/v/1KsXBMHLq/
+[Page 37]
+37 73   74 [https://www.facebook.com/theactionla bofficial/videos/354291762265077]
+[Page 38]
+38  75

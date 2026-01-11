@@ -1,0 +1,191 @@
+[
+  {
+    "source": "topic6.txt",
+    "category": "Probability",
+    "chunk_index": 0,
+    "page": 1,
+    "text": "1 Topic 6: Continuous Random Variables Lecture Outline  Continuous Random Variables  Probability Density Functions (PDF)  Typical Continuous RV: Uniform, Exponential, Gaussian  Expectation and Variance of Continuous RVs  Expected Value Rule  Cumulative Distribution Functions (CDF)  Normal (Gaussian) Random Variable (常態分佈、高斯分佈) Reading : Textbook 3.1- 3.3"
+  },
+  {
+    "source": "topic6.txt",
+    "category": "Probability",
+    "chunk_index": 1,
+    "page": 1,
+    "text": "2 Continuous Random Variable A random variable X defined on an experiment in such a way that X can take on a continuum of values is a continuous random variable, e.g., the voltage across a heated resistor the unknown phase of a random electromagnetic wave the noise level in the recorded signal of an ECG plot Definition: A random variable X is called continuous if its probability law can be described in terms of a nonnegative function fX, called the probability density function of X, or PDF"
+  },
+  {
+    "source": "topic6.txt",
+    "category": "Probability",
+    "chunk_index": 2,
+    "page": 1,
+    "text": "the probability density function of X, or PDF (pdf) for short, which satisfies for every subset B of the real line. Therefore, the PDF completely describes the behavior of a continuous RV. PDF"
+  },
+  {
+    "source": "topic6.txt",
+    "category": "Probability",
+    "chunk_index": 3,
+    "page": 3,
+    "text": "3 Analogy/Difference between PMF and PDF Probability Mass Function (PMF)  PMF is used to describe discrete random variables  For a discrete random variable X and a set B with finite number of real elements, the probability that X∈B is  PMF pX(x) itself represents the probability of the event X=x Probability Density Function (PDF)  PDF is used to describe continuous random variables  For a continuous random variable X every subset B of the real line, the probability that X∈B is  PDF is NOT"
+  },
+  {
+    "source": "topic6.txt",
+    "category": "Probability",
+    "chunk_index": 4,
+    "page": 3,
+    "text": "line, the probability that X∈B is  PDF is NOT probability of any event. Takeaway points: 1. The summation in discrete cases becomes integral in the continuous cases 2. The measure fX(x)dx bears similar interpretations to P(X=x), i.e. they’re probabilities"
+  },
+  {
+    "source": "topic6.txt",
+    "category": "Probability",
+    "chunk_index": 5,
+    "page": 4,
+    "text": "4 Why? How to Interpret PDF from PMF? we explain why using integral with the help of calculus to evaluate probabilities involved with a continuous RV. For a discrete random variable X, we know But we cannot do the same for continuous X, because P(X=x) is zero for any continuous X and any possible value x. However, the idea can still be extended from regarding X as discrete and pushing to the limit as a discrete X approaches to a continuous random variable. We can let X take uncountably infinite"
+  },
+  {
+    "source": "topic6.txt",
+    "category": "Probability",
+    "chunk_index": 6,
+    "page": 4,
+    "text": "variable. We can let X take uncountably infinite number of values in [a,b], and evaluate the probability P(a ≤ X ≤ 𝑏𝑏) using the concept of Riemann sum. Detail is provided in the supplementary material."
+  },
+  {
+    "source": "topic6.txt",
+    "category": "Probability",
+    "chunk_index": 7,
+    "page": 5,
+    "text": "5 Probability Density Function By definition, (計算以連續RV所描述事件發生機率時最常使用做法)  The probability of the event 𝑎𝑎≤𝑋𝑋≤𝑏𝑏is 即PDF 圖形下在a 和b 之間的面積 So, the probability of X=c for any constant c is 但這不表示X=c 不會發生，只是它發生的機率極低，數學上以0表示  PDF fX(x) must be nonnegative since for any subset B"
+  },
+  {
+    "source": "topic6.txt",
+    "category": "Probability",
+    "chunk_index": 8,
+    "page": 6,
+    "text": "6 Probability Density Function  PDF fX(x) must satisfy normalization equation, i.e.  Unlike PMF of a discrete RV, PDF is not the probability of any event. Hence, in particular, it needs not be less than 1 for all x Example: The function fX(x)=2 for 0 ≤𝑥𝑥≤1/2 is a legitimate PDF whose value is larger than 1."
+  },
+  {
+    "source": "topic6.txt",
+    "category": "Probability",
+    "chunk_index": 9,
+    "page": 7,
+    "text": "7 Interpretation of Probability Density Function For an interval [x, x + δ] with very small length δ, we have PDF的物理意義: We can view fX(x) as the “probability per unit length” near x PDF是密度的概念。觀念上，fX(3) 並非是X=3的機率值，而是約略正比於X落在3 附近的機率大小。事實上，X=3的機率為0 What does fX(x1) > fX(x2) mean?\n\n8 Example - Uniform Random Variable Continuous Uniform PDF: Let X be a uniformly distributed continuous random variable within [a,b], its PDF is given by"
+  },
+  {
+    "source": "topic6.txt",
+    "category": "Probability",
+    "chunk_index": 10,
+    "page": 7,
+    "text": "9 Example - Exponential Random Variable Exponential PDF: (定義) A random variable is said to be exponential if its PDF takes the form where λ is a positive parameter that characterizes the PDF (應用) Exponential random variable is often used to model the amount of time we need to wait (waiting time) until a certain rare event occurs Examples:  The amount of time we wait in the station until the next bus arrives  The amount of time it takes until the next earthquake strikes (Why?) The rationale of"
+  },
+  {
+    "source": "topic6.txt",
+    "category": "Probability",
+    "chunk_index": 11,
+    "page": 7,
+    "text": "next earthquake strikes (Why?) The rationale of why exponential random variable is related to waiting time is explained in the supplementary material."
+  },
+  {
+    "source": "topic6.txt",
+    "category": "Probability",
+    "chunk_index": 12,
+    "page": 10,
+    "text": "10 Expectation  The expected value or mean of a continuous random variable X is defined by  Expected Value Rule In complete analogy to the discrete case, the mean of 𝑌𝑌= 𝑔𝑔(𝑋𝑋) for any real- valued function 𝑔𝑔(⋅) is given by You can find a proof in the textbook (page 185).\n\n11 Variance  The variance of a (continuous) random variable X is  If Y=aX+b, where a and b are given scalars, then we have 上述結果和discrete random variables 的情況一樣!"
+  },
+  {
+    "source": "topic6.txt",
+    "category": "Probability",
+    "chunk_index": 13,
+    "page": 12,
+    "text": "12 Examples  Mean and variance of a random variable X uniformly distributed in [a,b]  Mean and variance of an exponential random variable X with parameter λ\n\n13 Example Example 3.5, page 148: The time until a small meteorite first lands anywhere in the Sahara desert is modeled as an exponential random variable with a mean of 10 days. The time is currently midnight. What is the probability that a meteorite first lands some time between 6am and 6pm of the first day?"
+  },
+  {
+    "source": "topic6.txt",
+    "category": "Probability",
+    "chunk_index": 14,
+    "page": 12,
+    "text": "14 Cumulative Distribution Functions (CDF)  For discrete RV’s, we use PMF’s; for continuous RV’s, we use PDF’s, to complete characterize RVs  Some RVs are mixed, having both discrete and continuous components, e.g., packets waiting time in a router (applications in networking) If the router buffer is empty, the incoming packet does not have to wait (waiting time=0, discrete, with nonzero probability) A packet may wait for a random amount of time (continuous) until it can be processed See"
+  },
+  {
+    "source": "topic6.txt",
+    "category": "Probability",
+    "chunk_index": 15,
+    "page": 12,
+    "text": "time (continuous) until it can be processed See Problem 9 in the textbook for another example!  The cumulative distribution function or CDF FX(x) of a random variable can characterize all these cases — discrete, continuous, and mixed. The CDF of a random variable X is defined by"
+  },
+  {
+    "source": "topic6.txt",
+    "category": "Probability",
+    "chunk_index": 16,
+    "page": 15,
+    "text": "15 Obtain CDF from PMF and PDF  For discrete random variables, the CDF is related to PMF in terms of  For continuous random variables, the CDF is related to PMF in terms of\n\n16 Obtain PDF and PMF from CDF  Suppose that the RV X is continuous and is described by a pdf fX(x). Then, From the fundamental theorem of calculus (微積分基本定理), we have, for continuous X, 這個結果經常被使用。當我們想找尋一個隨機變數X 的PDF 時，典型作 法即是先找其CDF，再微分之!  If X is discrete and takes integer values,"
+  },
+  {
+    "source": "topic6.txt",
+    "category": "Probability",
+    "chunk_index": 17,
+    "page": 17,
+    "text": "17 Properties of CDF (1)  CDF is the probability of a certain event. Hence, CDF is nonnegative and less than 1. Also we have  The probability that X falls within an interval can be computed from CDF The previous property proves that FX(x) is a non-decreasing function of its argument, i.e., either it grows or it stays the same Since P(X=c)=0 for any constant c, we actually have"
+  },
+  {
+    "source": "topic6.txt",
+    "category": "Probability",
+    "chunk_index": 18,
+    "page": 18,
+    "text": "18 Properties of CDF (2)  Finding PDF from CDF As just mentioned, it is typical to find the PDF of a continuous RV by first finding the CDF and then differentiating. That is Example: Suppose you are allowed to observe a continuous RV independently n times X1,…,Xn, and define Assuming the Xi are mutually independent, what is the PDF of X?\n\n19 Example - CDF of Continuous Uniform Let X be a uniformly distributed continuous random variable within [a,b], its CDF is given by"
+  },
+  {
+    "source": "topic6.txt",
+    "category": "Probability",
+    "chunk_index": 19,
+    "page": 20,
+    "text": "20 Normal (Gaussian) Random Variable 常態、高斯分布 Normal PDF: A continuous random variable X is said to be normal (or Gaussian) with parameter µ and σ2 , often denoted by X∼N(µ,σ2) , if it has a PDF of the form bell-shaped"
+  },
+  {
+    "source": "topic6.txt",
+    "category": "Probability",
+    "chunk_index": 20,
+    "page": 20,
+    "text": "21 Importance of Gaussian Random Variable  The normal random variable plays an important role in a broad range of probabilistic models The main reason is it models well the additive effect of many independent factors, in a variety of engineering, physical, and statistical contexts This is a result from the central limit theorem (中央極限定理)  Central Limit Theorem Mathematically, the key fact is that the sum of a large number of independent and identically distributed (i.i.d.) random variables"
+  },
+  {
+    "source": "topic6.txt",
+    "category": "Probability",
+    "chunk_index": 21,
+    "page": 20,
+    "text": "identically distributed (i.i.d.) random variables X1…Xn with ANY probability distributions has an approximately Gaussian CDF, regardless of the actual distributions of the random variables. We will talk more about this in chapter 5."
+  },
+  {
+    "source": "topic6.txt",
+    "category": "Probability",
+    "chunk_index": 22,
+    "page": 22,
+    "text": "22 Properties of Gaussian  We see the Gaussian PDF is a bell-shaped curve that is symmetric about µ  The mean and variance of a Gaussian random variable with parameter µ and σ2 are  A Gaussian random variable Y with zero mean and unit variance is said to be standard Gaussian  (定理: 高斯的線性轉換仍為高斯) Let X be a Gaussian random variable with mean μ and variance σ2, and if a, b are scalars, then the random variable Y=aX+b is also Gaussian with mean aμ+b and variance a2σ2. You need to find the PDF of"
+  },
+  {
+    "source": "topic6.txt",
+    "category": "Probability",
+    "chunk_index": 23,
+    "page": 22,
+    "text": "and variance a2σ2. You need to find the PDF of Y to prove this statement. 2 ) ( Var ] [ σ µ = = X X E"
+  },
+  {
+    "source": "topic6.txt",
+    "category": "Probability",
+    "chunk_index": 24,
+    "page": 23,
+    "text": "23 Standard Normal  A normal random variable Y with zero mean and unit variance is said to be a standard normal. The CDF Φ(y) of a standard normal is No closed-form expression exists for Φ(y). The value of Φ(y) for various y can be looked up from the normal table Φ(-y)=1- Φ(y)  We can standardize a normal random variable X∼N(µ,σ2) by"
+  },
+  {
+    "source": "topic6.txt",
+    "category": "Probability",
+    "chunk_index": 25,
+    "page": 23,
+    "text": "24 Example – A Simple Communication System A binary message is transmitted as a signal S that is either −1 or +1. The communication channel corrupts the transmission with additive Gaussian noise N having mean μ = 0 and variance σ2. The model for the received signal R is (Receiver 訊號偵測機制) Suppose that the receiver concludes that the signal −1 (or +1) was transmitted if the value of R is < 0 (or ≥ 0), respectively. Question: What is the probability that the receiver makes an error decision?"
+  },
+  {
+    "source": "topic6.txt",
+    "category": "Probability",
+    "chunk_index": 26,
+    "page": 25,
+    "text": "What is the probability that the receiver makes an error decision?"
+  }
+]

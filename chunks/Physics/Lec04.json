@@ -1,0 +1,107 @@
+[
+  {
+    "source": "Lec04.txt",
+    "category": "Physics",
+    "chunk_index": 0,
+    "page": 2,
+    "text": "2  3 1. The concept of force 1. The Concept of Force 2. Newton’s First Law 3. Newton’s Second Law 4. The Gravitational Force and Weight 5. Newton’s Third Law Force 0 Force causes motion. Net force = total force = resultant force. Net Force 0 acceleration change velocity. Velocity is constant net force = 0 called “equilibrium”. Is uniform circular motion in equilibrium? 0 How to measure force? A spring can be used to measure force. 4"
+  },
+  {
+    "source": "Lec04.txt",
+    "category": "Physics",
+    "chunk_index": 1,
+    "page": 3,
+    "text": "3 Force is a vector, experimentally verified as in the figure. 5  Contact force vs Field force In atomic level, all contact forces are caused by electromagnetic force. 6\n\n4  7  8 Which direction is for the normal force?"
+  },
+  {
+    "source": "Lec04.txt",
+    "category": "Physics",
+    "chunk_index": 2,
+    "page": 3,
+    "text": "5  9 2. Newton’s first law 1. The Concept of Force 2. Newton’s First Law 3. Newton’s Second Law 4. The Gravitational Force and Weight 5. Newton’s Third Law Newton’s First Law 0 If an object does not interact with other objects, it is possible to identify a reference frame in which the object has zero acceleration. It defines inertial frames, where Newton’s laws can only be applied. External force = 0, an object at rest remains at rest, and an object in motion continues in motion with a constant"
+  },
+  {
+    "source": "Lec04.txt",
+    "category": "Physics",
+    "chunk_index": 3,
+    "page": 3,
+    "text": "in motion continues in motion with a constant velocity. Also called the law of inertia. In a non-inertial frame, fictious force will arise from nowhere and violates Newton’s laws. 10"
+  },
+  {
+    "source": "Lec04.txt",
+    "category": "Physics",
+    "chunk_index": 4,
+    "page": 6,
+    "text": "6  11 How to find an inertial Frames? 0 Any reference frame that moves with constant velocity relative to an inertial frame is itself an inertial frame. A reference frame that moves with constant velocity relative to the distant stars is the best approximation of an inertial frame. We can consider the Earth to be such an inertial frame although it has a small centripetal acceleration (<< g) associated with its rotation and orbital motion. No absolute reference frame. (Mach’s principle) 12"
+  },
+  {
+    "source": "Lec04.txt",
+    "category": "Physics",
+    "chunk_index": 5,
+    "page": 6,
+    "text": "absolute reference frame. (Mach’s principle) 12  https://en.wikipedia.org/wiki/Bucket_argument https://en.wikipedia.org/wiki/Mach%27s_principle"
+  },
+  {
+    "source": "Lec04.txt",
+    "category": "Physics",
+    "chunk_index": 6,
+    "page": 7,
+    "text": "7  13 In Mach's idea this concept of absolute motion should be substituted with a total relativism in which every motion, uniform or accelerated, has sense only in reference to other bodies. https://en.wikipedia.org/wiki/Mach%27s_principle Inertia and Mass 0 The tendency of an object to resist any attempt to change its velocity is called inertia. (c.p. Lenz’s law in electromagnetics) 0 Mass is that property of an object that specifies how much resistance an object exhibits to changes in its"
+  },
+  {
+    "source": "Lec04.txt",
+    "category": "Physics",
+    "chunk_index": 7,
+    "page": 7,
+    "text": "resistance an object exhibits to changes in its velocity. If same force is applied to two masses: SI unit: kg 1 2 2 1 m a m a  14"
+  },
+  {
+    "source": "Lec04.txt",
+    "category": "Physics",
+    "chunk_index": 8,
+    "page": 8,
+    "text": "8  15 3. Newton’s second law 1. The Concept of Force 2. Newton’s First Law 3. Newton’s Second Law 4. The Gravitational Force and Weight 5. Newton’s Third Law Newton’s Second Law 0 When viewed from an inertial frame, the acceleration of an object is directly proportional to the net force acting on it and inversely proportional to its mass. Algebraically, F = m a (valid only for v << c) Unit of Force: Newton (N) = kg m/s2 Force is the cause of change in motion, as measured by the acceleration."
+  },
+  {
+    "source": "Lec04.txt",
+    "category": "Physics",
+    "chunk_index": 9,
+    "page": 8,
+    "text": "in motion, as measured by the acceleration. “Ma” is not a force! Internal force has no contribution to the acceleration. 16"
+  },
+  {
+    "source": "Lec04.txt",
+    "category": "Physics",
+    "chunk_index": 10,
+    "page": 9,
+    "text": "9  17 4. The Gravitational Force and Weight 1. The Concept of Force 2. Newton’s First Law 3. Newton’s Second Law 4. The Gravitational Force and Weight 5. Newton’s Third Law Gravitational Force 0 The gravitational force, Fg, is the force that the earth exerts on an object. This force is directed toward the center of the earth. Its magnitude is called the weight of the object. Weight = |Fg|= mg Weight will vary with location. Weight and mass are different quantities. 18"
+  },
+  {
+    "source": "Lec04.txt",
+    "category": "Physics",
+    "chunk_index": 11,
+    "page": 9,
+    "text": "10 Gravitational Mass vs. Inertial Mass 0 In Newton’s Laws, the mass is the inertial mass and measures the resistance to a change in the object’s motion. 0 In the gravitational force, the mass is determining the gravitational attraction between the object and the Earth. 0 Experiments show that gravitational mass mg = inertial mass ma, which inspires Einstein’s General Relativity. 19  Inertial mass a F m a  Gravitational mass g g F m g   20 If ma ≠ mg , the acceleration due to gravity might be"
+  },
+  {
+    "source": "Lec04.txt",
+    "category": "Physics",
+    "chunk_index": 12,
+    "page": 9,
+    "text": "≠ mg , the acceleration due to gravity might be different for different bodies! The current experiment verified that two masses of titanium and platinum aboard a satellite orbiting Earth fall exactly in the same way to a precision of 1 part per 1015 . [Phys. Rev. Lett. 129, 121102 (2022)]"
+  },
+  {
+    "source": "Lec04.txt",
+    "category": "Physics",
+    "chunk_index": 13,
+    "page": 11,
+    "text": "11  21 https://physics.aps.org/articles/v15/94?utm_campaign= weekly&utm_medium=email&utm_source=emailalert  22 5. Newton’s third law 1. The Concept of Force 2. Newton’s First Law 3. Newton’s Second Law 4. The Gravitational Force and Weight 5. Newton’s Third Law"
+  },
+  {
+    "source": "Lec04.txt",
+    "category": "Physics",
+    "chunk_index": 14,
+    "page": 12,
+    "text": "12 Newton’s Third Law 0 If two objects interact, the force F12 exerted by object 1 on object 2 is equal in magnitude and opposite in direction to the force F21 exerted by object 2 on object 1. F12 = F21 FAB is the force exerted by A on B Force always occurs in pair. The action-reaction force pair always acts on different objects. 23  n: Normal force Free-body diagram 24\n\n13  25"
+  }
+]

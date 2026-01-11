@@ -1,0 +1,47 @@
+
+[Page 1]
+Topic 10: Covariance and More on Conditional Expectation Outline  Covariance (共變異數) and Correlation (相關性)  Conditional Expectation  Total Expectation Theorem/ Total Variance  Bivariate Normal or Jointly Gaussian (雙變量常態分佈) Reading: Chap. 4.2 ~ Chap. 4.3 1
+[Page 2]
+Covariance and Correlation Definition: The covariance of two random variables X and Y is denoted by cov(X, Y ), and is defined by When cov(X, Y ) = 0, we say that X and Y are uncorrelated. 2 Uncorrelated 中文翻成“零相關” 為妥(而非“不相關”) ，表示covariance=0 Question Uncorrelated RVs 的物理意義為何? 和independent 的差異何在?
+[Page 3]
+Interpretation of Covariance  Covariance provides a qualitative indicator of the relation between two random variables When cov(X,Y)>0, X-E[X] and Y-E[Y] “tend” to have the same sign When cov(X,Y)<0, X-E[X] and Y-E[Y] “tend” to have the opposite sign 3 (+,+) (–,–) 兩隨機變數正相關表示(平移至期望值後)同號的傾向較大，如上圖(b) 正相關表示: 若X-E[X] 為正，則Y-E[Y] 也為正的機會較高
+[Page 4]
+Uncorrelated and Independent 重要: Independence implies uncorrelatedness. But the converse is generally NOT true. Example: (Uncorrelatedness does NOT imply independence) 4 上述兩式並非等義!
+[Page 5]
+Correlation Coefficient The correlation coefficient ρ of two random variables X and Y that have nonzero variances is defined as A normalized version of the covariance We must have −1 ≤𝜌𝜌≤1 (p.250: problem 20 and 21) If ρ >0, 𝑋𝑋−𝐸𝐸𝑋𝑋and 𝑌𝑌−𝐸𝐸𝑌𝑌“tend” to have the same sign , i.e. (+, +) or (−, −) The value of |ρ| provides a normalized measure of the extent to the relation between 𝑋𝑋−𝐸𝐸𝑋𝑋and 𝑌𝑌−𝐸𝐸𝑌𝑌 Example: Let 𝑌𝑌−𝐸𝐸𝑌𝑌= 𝑐𝑐(𝑋𝑋−𝐸𝐸𝑋𝑋) for a positive constant c. Then, the correlation coefficient 𝜌𝜌= 1. This says that 𝑋𝑋−𝐸𝐸𝑋𝑋exactly aligns with 𝑌𝑌−𝐸𝐸𝑌𝑌, subject to a positive constant (STRONG correlation) 5
+[Page 6]
+Variance of the Sum of Random Variables Several properties related to covariance: Variance of the Sum of Random Variables  For n=2: var(X1+X2)=var(X1) +2cov(X1,X2)+var(X2)  See textbook page 221 for an example. 6
+[Page 7]
+Example Consider the problem that n people throw their hat in a box and then pick a hat at random. Let the number of people who pick their own hat be denoted by X. Find var(X). First, define the indicator Xi as follows: We know P(Xi=1)=1/n，so Then we have 7
+[Page 8]
+Conditional Expectation and Total Expectation Recall: The conditional expectation E[X | Y = y] is defined by It should be noted that E[X | Y ] depends on Y, and is therefore a random variable whose value is E[X | Y = y] when the outcome of Y is y. Law of Iterated Expectations: (Total Expectation Theorem, p. 104, p. 173) 8 [ ] [ | ] ( ) [ | ] [ ] [ | ] ( ) Y y Y E X Y y p y E E X Y E X E X Y y f y dy ∞ −∞   =   = =     =   ∑ ∫
+[Page 9]
+Example of E[ E[X | Y ] ]=E[X ] Orthogonality Principle: Show that for any function g(.). (Proof) We first need to show (See problem 25.) 9
+[Page 10]
+Conditional Variance The conditional distribution of X given Y = y has a mean E[X | Y = y], and by the same token, it also has a variance defined as 1. Var(X|Y) is a function of Y, and is therefore a random variable 2. Law of total variance 10
+[Page 11]
+Proof of Law of Total Variance 11
+[Page 12]
+Intuitions behind Law of Total Variance 12 Y X E[X] Y X When E 𝑋𝑋𝑌𝑌= E 𝑋𝑋, a constant When E 𝑋𝑋𝑌𝑌depends on 𝑌𝑌
+[Page 13]
+Example (1) 13
+[Page 14]
+Example (2) (From MIT Open CourseWare) 14
+[Page 15]
+Least Squares Estimation/Minimum Mean Square Error (MMSE) In many practical applications, we want to form an estimate of the value of a random variable X given the value of a related random variable Y, which may be viewed as some form of “measurement” of X. (For example, estimate the distance of an object from a radar) A popular formulation is based on finding the estimate c, based on the observed Y, that minimizes the expected value of the squared error (X-c)2. This is called the least squares estimation in our textbook, or minimum mean-square error (MMSE) estimation in a large body of literature Measurement Least Squares Estimator Observed (Measured, Received) Typically continuous Y=y X a function of Y 15
+[Page 16]
+MMSE Estimator The problem here is to find a function g(Y) such that the mean-square error (MSE) is minimized: It can be shown (Section 8.3) that out of all possible estimators g(Y), the MSE is minimized when That is This can be proved using the othogonality principle (page 9). 16
+[Page 17]
+Example 1. An IoT sensor is probing the temperature X on the top of Mt. Jade. It is known that the measurement of the IoT sensor is corrupted by Gaussian noise Z, where the measured signal Y is modeled by 𝑌𝑌= 𝑋𝑋+ 𝑍𝑍, where 𝑋𝑋~𝑁𝑁(0, 𝜎𝜎𝑋𝑋 2) and 𝑍𝑍~𝑁𝑁(0, 𝜎𝜎𝑍𝑍 2) are independent normal RVs. What is the MMSE estimate of X provided the sensor has observed Y ? 17
+[Page 18]
+Bivariate (Jointly) Normal Distribution Jointly Normal Random Variables (p.254; problem 28*) Two random variables X and Y are said to be jointly normal if they can be expressed in the form where a, b,c and d are some scalars, U and V are independent normal random variables. Remarks: 1. (Recall) Any linear combination of U and V is Gaussian. So, X or Y is Gaussian 2. If X and Y are jointly Gaussian, then any linear combination Z=s1X+s2Y of X and Y has a Gaussian distribution (這是另外一種定義bivariate normal的方式) 3. If X and Y are jointly normal, then either X or Y is marginally (individually) normal. However, the converse is in general not true. 18
+[Page 19]
+Uncorrelated Jointly Normal RVs Are Independent A VERY important property for jointly normal random variables: If two random variables X and Y are jointly normal and are uncorrelated, then they are independent. (See page 20 of this topic.) Note: Generally, two uncorrelated random variables are not necessarily independent. (See page 4 of this topic.) Example If X and Y are zero mean jointly normal with variances σX 2 and σY 2 respectively, find a constant α such that X-α Y and Y are independent. (Sol.) 19
+[Page 20]
+Conditional Distribution of Jointly Normal RVs Question Let X and Y have a bivariate (jointly) normal distribution (Assume zero mean, for simplicity). Then, what is the conditional density 𝑓𝑓𝑋𝑋|𝑌𝑌(𝑥𝑥|𝑦𝑦) of X given Y Two approaches: 1) Use the conditional density formula; or 2) Decompose X into X=X-αY+αY, such that X-αY and Y are indep. (X and Y are marginal normal) We adopt the 2nd approach here: 1. From last page’s example, the conditional expectation is given by It is a linear function of Y and therefore has a normal PDF 2. The error X-E[X|Y] is zero mean, normal, and independent of Y, with variance (1-ρ2)σX 2 3. The conditional distribution of X given Y is normal with mean E[X|Y] (given by the above eqn. (1) ) and variance (1-ρ2)σX 2 20 (1)
+[Page 21]
+Jointly Normal PDF Assume zero mean again for simplicity. From the previous page, the conditional distribution of X given Y is normal with mean E[X|Y] and variance (1-ρ2)σX 2 We can find the joint PDF fX,Y(x,y) of X and Y using the multiplication rule which takes the form where Note: When ρ=0, X and Y are uncorrelated. And the above PDF also reveals that X and Y are independent with ρ=0 (since joint PDF factors) 21
+[Page 22]
+Jointly Normal PDF Contours ρ=0.5 X Y Y X 22 Contour (等高線、橫切面圖) 𝑓𝑓𝑋𝑋,𝑌𝑌𝑥𝑥, 𝑦𝑦= constant 𝐶𝐶1 q(x,y) = constant 𝐶𝐶2 What about a vertical slice section at Y=y? (縱切面圖)
+[Page 23]
+Example 1. An IoT sensor is probing the temperature X on the top of Mt. Jade. It is known that the measurement of the IoT sensor is corrupted by Gaussian noise Z, where the measured signal Y is modeled by 𝑌𝑌= 𝑋𝑋+ 𝑍𝑍, where 𝑋𝑋~𝑁𝑁(0, 𝜎𝜎𝑋𝑋 2) and 𝑍𝑍~𝑁𝑁(0, 𝜎𝜎𝑍𝑍 2) are independent normal RVs. What is the MMSE estimate of X provided the sensor has observed Y ? 23

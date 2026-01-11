@@ -1,0 +1,83 @@
+
+[Page 2]
+2  1. Fluid statics Pressure  1. Fluid statics Pressure Buoyant Forces and Archimedes’s Principle 2. Fluid Dynamics Bernoulli’s Equation Flow of viscous fluids in pipes Applications of Fluid Dynamics 3. Surface tension Fluid  A fluid is a collection of molecules that are randomly arranged and held together by weak cohesive forces and by forces exerted by the walls of a container.  Both liquids and gases are fluids.  Fluids do not sustain shearing stresses or tensile stresses.  
+[Page 3]
+3 Pressure  The force exerted by a static fluid on an object is always perpendicular to the surfaces of the object.  Pressure: , a scalar F P A  SI unit: 1 Pascal (Pa) 1 N/m2 The atmospheric pressure P0 = 1.00 atm = 1.013 105 Pa = 1.013 bar  
+[Page 4]
+4 Q: How do you estimate the total mass of the air on the Earth? if the Earth radius is known. F PA  2 1 atm 4 E gdV R       2 1 atm 4 / E m dV R g         The gas pressure in a closed container is dependent on temperature. However, the ambient pressure is mainly caused by gravity, in addition to temperature. If without gravity, the air will escape from the Earth. Variation of Pressure with Depth 0 F    0 0 PA P A Ahg     0 P P gh     p.s., The pressure variation comes from gravitation. 
+[Page 5]
+5 Pascal’s Law  The pressure in a fluid depends on depth and on the value of P0.  An increase in pressure at the surface must be transmitted to every other point in the fluid.   Pascal vase 
+[Page 6]
+6 Q: You have invented a spacesuit with a straw passing through the faceplate so that you can drink from a glass while on the surface of a planet. Out on the surface of the Moon, you attempt to drink through the straw from an open glass of water. The value of g on the Moon is about one sixth of that on Earth. Compared to the difficulty in drinking through a straw on Earth, you find drinking through a straw on the Moon to be (a) easier (b) equally difficult (c) harder (d) impossible.    C D A B ? A B P P    ? C D P P     Q:
+[Page 7]
+7  0 1 C Hg P P gh    0 1 D Hg P P gh    C D P P   C D O h1  Ans:  O hB A B hA 0 A Hg A P P gh    2 0 ( ) B Hg B H O A B P P gh g h h       2 ( ) ( ) A B Hg B A H O A B P P g h h g h h        2 ( ) ( 0 ) A B H O Hg h h g       0 A B P P    
+[Page 8]
+8 Pressure Measurements Barometer Invented by Torricelli 1 atm = 760 mm (of Hg) 1 mm Hg = 1 torr  0 Hg P gh      5 0 3 3 2 1.013 10 Pa 0.76 m 13.6 10 kg/m 9.8 m/s Hg P h g         
+[Page 9]
+9 Manometer  Absolute pressure: P = P0 + gh  Gauge pressure: P − P0 = gh     Bourdon gauge
+[Page 10]
+10  Ex. The force on a Dam Water is filled to a height H behind a dam of width w. Determine the resultant force exerted by the water on the dam.    ( ) g H y    0 0 ( ) P P gh P     dF PdA  ( ) g H y wdy    0 ( ) H F dF g H y wdy       2 1 2 gwH   Ans:
+[Page 11]
+11 A hydraulic press  1 2 1 2 (1) (assuming and at same height) P P A A  1 2 1 2 F F A A   1 1 2 2 A F F A        1 1 2 2 (2) A x A x    Work done by force: 1 1 2 2 F x F x     Energy is conserved.   1. Fluid statics Buoyant force & Archimedes’s principle  1. Fluid statics Pressure Buoyant Forces and Archimedes’s Principle 2. Fluid Dynamics Bernoulli’s Equation Flow of viscous fluids in pipes Applications of Fluid Dynamics 3. Surface tension
+[Page 12]
+12 Buoyant Force  g B F     Archimedes’s Principle  The magnitude of the buoyant force always equals the weight of the fluid displaced by the object, .    b t B P P A     fluid gh A   fluid gV   fluid M g  Pb Pt  fluid B M g 
+[Page 13]
+13   Q: An apple is held completely submerged just below the surface of a container of water. The apple is then moved to a deeper point in the water. Compared to the force needed to hold the apple just below the surface, the force needed to hold it at a deeper point is (a) larger (b) the same (c) smaller (d) impossible to determine.  
+[Page 14]
+14  What will be the movement of the person and the balloon when the bus stops suddenly? Person -> forward Balloon -> backward a v Q:    https://physics.nyu.edu/~physlab/Demos/updatedEquipment /kinematicsForcesEnergy/forceParadox.html
+[Page 15]
+15 Totally submerged object  fluid fluid obj B gV gV     obj obj g F mg gV    obj fluid obj The net force ) : ( g F B gV      The motion of an object in a fluid is determined by the densities of the fluid and the object   
+[Page 16]
+16  Galileo thermometer   2 0 g B T F    2 0 w w c c gV T gV      w c V V  2 c w w T gV      Use c to determine whether the crown is real or not. Ex. 
+[Page 17]
+17 Floating Object  obj fluid fluid obj V V     fluid fluid B gV   obj obj g F mg gV    g B F  fluid : object's volume in fluid V obj : object's volume V    Hydrometer
+[Page 18]
+18  ? water ice V V  3 3 917 kg/m 89% 1030 kg/m water ice ice water V V       Q: Q: A glass of water contains a single floating ice cube. When the ice melts, does the water level (a) go up (b) go down (c) remain the same?  melted water ice waterV m   g F B  melted wate wa r ter water V    'ice in wate ice wa er r t m g g V    melted water V  Why would the sea level rise if iceberg melts? 
+[Page 19]
+19   https://www.facebook.com/theactionlabofficial/  1 ? f  2 ? f  0 0 : liquid density : block density : block mass : liquid mass b b m m    Ex.
+[Page 20]
+20  1f T  b m g B   0 b b m g V g    0 b b b m m g g    0 1 b b b f m g m g      T B b m g  (1) 1 ? f  Block System = mb Ans: 0 1 0 Note that, b f       0 0 b T N m g m g     0 2 0 (1 ) b b b f N m g m g m g         0 Buoyant 0 b b m m g g        (2) T N 0 ( ) b m m g   2 ? f  System = mb+ m0 Buoyant force is an internal force here.
+[Page 21]
+21  2. Fluid dynamics Bernoullie’s equation  1. Fluid statics Pressure Buoyant Forces and Archimedes’s Principle 2. Fluid Dynamics Bernoulli’s Equation Flow of viscous fluids in pipes Applications of Fluid Dynamics 3. Surface tension Types of Fluid Flow  Laminar flow Steady flow. In a smooth path called a streamline. The paths of the different particles never cross each other.  
+[Page 22]
+22    Turbulent flow An irregular flow characterized by small whirlpool like regions. Turbulent flow occurs when the particles go above some critical speed.   https://fb.watch/8RNkssEGun/
+[Page 23]
+23   Viscosity  The degree of internal friction in the fluid.  This internal friction, viscous force, is associated with the resistance that two adjacent layers of fluid have to moving relative to each other.  It causes part of the kinetic energy of a fluid to be converted to internal energy.  
+[Page 24]
+24   Liquid helium enters superfluid phase transition at 2.17K. Zero viscosity https://www.youtube.com/watch?v=-7PNacL4n8g Superfluid - 4He   ( Prof. Kimitoshi Kono’s lab) No bubbling in superfluid liquid helium!
+[Page 25]
+25 Ideal Fluid Flow (1) The fluid is nonviscous – internal friction is neglected. (2) The flow is steady – the velocity of each point remains constant. (3) The fluid is incompressible – the density remains constant. (4) The flow is irrotational – the fluid has no angular momentum about any point.   Equation of Continuity   Volume flow rate: dV Adx Av dt dt   Mass flow rate: dm Adx Av dt dt     1 1 1 2 2 2 Av A v    1 1 2 2 . Av A v const    Equation of continuity (incompressible fluid) (1) Mass conservation ⇒ (2) Incompressibility ⇒ 1 2      1 1 1 2 2 2 Av A v    For compressible fluid,
+[Page 26]
+26    Why is the diameter of the water stream different? 
+[Page 27]
+27 Bernoulli’s Equation  1 1 1 W F x   1 1 1 PA x   1PV  2 2 2 W F x   2 2 2 P A x   2PV  1 2 1 2 ( ) W W W P P V      2 2 2 1 1 1 2 2 K mv mv    2 1 U mgy mgy      Mechanical energy conservation: W K U   2 2 1 2 2 1 2 1 1 1 ( ) ( ) ( ) 2 2 P P V mv mv mgy mgy      / m V  2 2 1 2 2 1 2 1 1 1 ( ) ( ) 2 2 P P v v gy gy           2 2 1 1 1 2 2 2 1 1 2 2 P v gy P v gy           2 1 Bernoulli's equation: const. 2 P v gy      
+[Page 28]
+28   2 1 Bernoulli's equation: const. 2 P v gy      It is a result of energy conservation. Bernoulli’s equation reduces to Pascal’s law when v = 0. The constant depends on the initial conditions of P, , and y.  The Venturi tube can be used to measure the flow speed of an incompressible fluid. 
+[Page 29]
+29   Q: Determine the flow speed at point 2 if the height h is known.  1 2 y y  2 2 1 1 2 2 1 1 2 2 P v P v       Bernoulli’s eq. Continuity eq. 1 1 2 2 Av A v   1 2 2 1 1 2 2 2 2 1 2 1 2 2( ) 2 ( ) ( ) P P g v A A A A A h A           2 1 Bernoulli's equation: const. 2 P v gy      Ans:
+[Page 30]
+30  An enclosed tank containing a liquid of density has a hole in its side at a distance y1 from the tank’s bottom. The hole is open to the atmosphere, and its diameter is much smaller than the diameter of the tank. The air above the liquid is maintained at a pressure P. Determine the speed of the liquid as it leaves the hole when the liquid’s level is a distance h above the hole. Ex.   2 2 0 1 1 2 1 1 (2) 2 2 P v gy P v        2 gy   1 2 1 1 2 2 2 1 (1) & A A Av A v v v     2 1 y y h   0 1 2( ) 2 P P v gh      0 1 Torricelli's law: 2 v P P gh    Ans: 
+[Page 31]
+31  If the tank is open to the atmosphere and sitting on a table, what position of the hole would cause the water to land on the table at the farthest distance from the tank? 1 2 f i y i y y v t gt    2 1 1 0 0 2 y gt    1 2 y t g   1 2 1 2 0 2 ( ) f i xi y x x v t g y y g      2 2 1 1 2 ( ) y y y   1 2 2 1 y y    2 1/2 2 1 1 2 1 1 1 (2)( ) ( 2 ) 0 2 f dx y y y y y dy        
+[Page 32]
+32    0P max ? ? v y   2 0 0 1 (1) 0 0 2 P P gh v        2 v gh   (0) (1) 2 0 1 (2) 0 0 2 P g P y v        (2) 2 0 1 2 P P v y g       0 max 0, 0 P P v y g      Ex.  (Ignore the water vapor pressure) indep. of y.
+[Page 33]
+33  2. Fluid dynamics Flow of viscous fluids in pipes  1. Fluid statics Pressure Buoyant Forces and Archimedes’s Principle 2. Fluid Dynamics Bernoulli’s Equation Flow of viscous fluids in pipes Applications of Fluid Dynamics 3. Surface tension In reality, the viscosity of fluids is not negligible. , V P I R   IV : the volume flow rate (= Av) R : the measure of resistance It is a typical transport equation, similar to the electrical current flow ΔV = IR, and the diffusion due to concentration difference. Viscosity  1 2 0 P P P     1P  2P  The pressure differential to keep fluid moving at a fixed speed in a horizontal pipe is
+[Page 34]
+34 4 8 L R r    , V P I R   The resistance R can be shown as 4 8 V L r P I       4 1 ! P r    : viscosity (unit: poise)  2. Fluid dynamics Applications of fluid dynamics  1. Fluid statics Pressure Buoyant Forces and Archimedes’s Principle 2. Fluid Dynamics Bernoulli’s Equation Flow of viscous fluids in pipes Applications of Fluid Dynamics 3. Surface tension
+[Page 35]
+35 Applications of Fluid Dynamics  Streamline flow around a moving airplane wing.  Lift is the upward force on the wing from the air.  Drag is the resistance.  The lift depends on the speed of the airplane, the area of the wing, its curvature, and the angle between the wing and the horizontal.   
+[Page 36]
+36  Bernoulli’s effect Collision effect  F ⇒ Similar to lift weight thrust drag   https://www.dongchedi.com/article/7047867032129323556
+[Page 37]
+37    
+[Page 38]
+38  Golf ball Atomizer  
+[Page 39]
+39 Magnus effect Collision effect Air speed relative to the ball  A clockwise spinning ball experiences a clockwise deflection.  https://kknews.cc/news/qjmnklr.html
+[Page 40]
+40 3. Surface tension  1. Fluid statics Pressure Buoyant Forces and Archimedes’s Principle 2. Fluid Dynamics Bernoulli’s Equation Flow of viscous fluids in pipes Applications of Fluid Dynamics 3. Surface tension   Surface tension: A molecule at the surface of a liquid is attracted into the bulk liquid, which tends to reduce the liquid’s surface area. Surface tension can be changed with temperature or by adding certain chemical into the liquid.
+[Page 41]
+41     Capillary force vs. surface tension
+[Page 42]
+42   https://www.youtube.com/watch?v=Ol6bBB3zuGc Rheological Behavior of Fluids   https://www.youtube.com/watch?v=RIUEZ3AhrVE Fun with Non-Newtonian Fluid

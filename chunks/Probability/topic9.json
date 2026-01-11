@@ -1,0 +1,135 @@
+[
+  {
+    "source": "topic9.txt",
+    "category": "Probability",
+    "chunk_index": 0,
+    "page": 1,
+    "text": "1 Topic 9: Moment Generating Function Lecture Outline Moment Generating Function (MGF) of a RV Why introducing MGF? Notable MGF Properties Uniqueness of MGF MGF PDF or PMF (1-to-1 correspondence) MGF of sum of independent RVs Reading: Textbook 4.4, 4.5"
+  },
+  {
+    "source": "topic9.txt",
+    "category": "Probability",
+    "chunk_index": 1,
+    "page": 2,
+    "text": "2 Definition The moment generating function (MGF) of a RV X (or, the transform of the distribution PDF of PMF) is defined by In general s (and hence esX) can be a complex number. 這類似於「訊號與系統」或「數位訊號處理」裡所介紹的Laplace Transform continuous ) ( discrete ) ( ] [ ) (    = ≡ ∫ ∑ X dx x f e X x p e e E s M X sx x X sx sX X Definition\n\nSimple Case: 3 Example"
+  },
+  {
+    "source": "topic9.txt",
+    "category": "Probability",
+    "chunk_index": 2,
+    "page": 3,
+    "text": "Simple Case: 3 Example\n\n4  Bernoulli random variable X with parameter  Geometric random variable: ∑ + − = = k s X sk X pe p k p e s M ) 1( ) ( ) ( s s sk k k s k s k k s k sk k k sk X X e p pe e p pe e p pe e p p e k p s M ) 1( 1 ) 1( ) 1( ) 1( ) ( ) ( 0 )1 ( 1 1 1 1 1 − − = − = − = − = = ∑ ∑ ∑ ∑ ∞ = − ∞ = − ∞ = − ∞ = :)0( 1 )1( X X p p p − = = ,... 2,1 , ) 1( ) ( 1 = − = −k p p k p k X Examples"
+  },
+  {
+    "source": "topic9.txt",
+    "category": "Probability",
+    "chunk_index": 3,
+    "page": 5,
+    "text": "5 Exponential (p.231) : 0 , ) ( ≥ = − x e x f x X λ λ MGF of Exponential\n\n6 X is Gaussian with mean m and variance σ2: Useful Fact: If X=aY+b, then MX(s)= esb MY(as) We can use this fact to obtain the result 𝑀𝑀𝑋𝑋𝑠𝑠= 𝑒𝑒𝑚𝑚𝑚𝑚+1 2𝜎𝜎2𝑠𝑠2in the above, starting from the MGF of a standard Gaussian RV. Consider zero mean and unit variance Gaussian Y: (p.232) MGF of Gaussian RV"
+  },
+  {
+    "source": "topic9.txt",
+    "category": "Probability",
+    "chunk_index": 4,
+    "page": 5,
+    "text": "7 MGF can be used to speed up computation of moments (mean, variance, or more exactly, 𝐸𝐸𝑋𝑋𝑛𝑛for any n) MGF associated with a RV uniquely determines the PMF/PDF of that RV. In other words, knowing MGF is equivalent to knowing the entire statistical property Inversion Theorem: PMF or PDF MGF Using MGF often greatly simplifies computations MGF of the sum of independent RVs is the multiplication of their corresponding MGFs (see page 13) MGF can be used to prove important properties about"
+  },
+  {
+    "source": "topic9.txt",
+    "category": "Probability",
+    "chunk_index": 5,
+    "page": 5,
+    "text": "can be used to prove important properties about RVs, such as Central Limit Theorem Why Introducing MGF?"
+  },
+  {
+    "source": "topic9.txt",
+    "category": "Probability",
+    "chunk_index": 6,
+    "page": 8,
+    "text": "8 Compute Moments with MGF  Differentiate MX(s) with respect to s: (consider discrete case)  Evaluate the derivative at s = 0 to find Thus, in general, ∑ ∑ = = x sx X x sx X X xe x p e x p ds d s M ds d ) ) ( ) ( ) ( ( ] [ |) ( ) 0 (' 0 X E s M ds d M s X X = = = ) 0 (' ] [ X M X E = 0 ) ( ) ( ) 0 ( ] [ = = = s X k k k k s M ds d M X E The kth moment:"
+  },
+  {
+    "source": "topic9.txt",
+    "category": "Probability",
+    "chunk_index": 7,
+    "page": 9,
+    "text": "9 Proof: Examples  Bernoulli X with parameter has transform Hence ] [ |] [ | |] [ |) ( 0 0 0 0 k s sX k s sX k k s sX k k s X k k X E e X E e ds d E e E ds d s M ds d = =     = = = = = = ) 0 ( 1 ) 1( X X p p p − = = s X pe p s M + − = ) 1( ) ( ] [ ) 0 ( , ] [ ) 0 (' 2 ) 2 ( X E p M X E p M X X = = = = Examples"
+  },
+  {
+    "source": "topic9.txt",
+    "category": "Probability",
+    "chunk_index": 8,
+    "page": 10,
+    "text": "10  Exponential RV λ λ λ 1 | ) ( |) ( ] [ 0 2 0 = − = = = = s s X s s M ds d X E 2 0 3 0 2 2 2 2 | ) ( 2 |) ( ] [ λ λ λ = − = = = = s s X s s M ds d X E Examples s s M X − = λ λ ) ("
+  },
+  {
+    "source": "topic9.txt",
+    "category": "Probability",
+    "chunk_index": 9,
+    "page": 11,
+    "text": "11 Inversion of Transforms The transform MX(s) associated with a random variable X uniquely determines the CDF (or equivalently the PDF or PMF) of X. More specifically, if we know MX(s), then we can find the PDF of the PMF of X Example (Ex 4.28, p.235) A transform of a random variable X is given by Find the probability law of X."
+  },
+  {
+    "source": "topic9.txt",
+    "category": "Probability",
+    "chunk_index": 10,
+    "page": 12,
+    "text": "12 Example – Mixture of Two Random Variables Let X1, . . . , Xn be continuous random variables with PDFs fX1, . . . fXn, and let Y be a random variable, which is equal to Xi with probability pi. Then, by total probability theorem, the PDF of Y is given by The moment generating function is Example: If we know the moment generating function of a random variable Y is given by What is the probability law of Y?"
+  },
+  {
+    "source": "topic9.txt",
+    "category": "Probability",
+    "chunk_index": 11,
+    "page": 13,
+    "text": "13 Sum of Independent Random Variables  Suppose that X and Y are independent random variables. Recall that for any functions g and h, In particular, suppose that W = X + Y . Then, the MGF MW(s) of W is i.e., adding independent RV's produces a new RV whose transform is the product of the original transforms  More generally, if X1, . . . , Xn is a collection of independent random variables, and Then, ) ( ) ( ) ( s M s M s M Y X W ="
+  },
+  {
+    "source": "topic9.txt",
+    "category": "Probability",
+    "chunk_index": 12,
+    "page": 14,
+    "text": "14 Sum of Two Independent RVs The probability distribution of W=X+Y for independent X and Y can by obtained by Inverting the transform MW(s)=MX(s)MY(s) Cf. Direct Evaluation convolution (see topic 8) Discrete Case Let X and Y are independent discrete RVs with PMFs pX(x) and pY (y). Then, Continuous Case Let X and Y be indep. continuous RVs with PDFs fX(x) and fY (y). 我們由原本PDF之間convolution的運算轉換成了MGF之間乘法的運算"
+  },
+  {
+    "source": "topic9.txt",
+    "category": "Probability",
+    "chunk_index": 13,
+    "page": 15,
+    "text": "15 Examples Assume that X is Bernoulli with parameter and If { Xi ; i = 1,…, n } are independent Bernoulli random variables with identical distributions and Then, we know ) 0 ( 1 )1( X X p p p − = = ∑ = + − = = 1 0 ) 1( ) ( ) ( k s X sk X pe p k p e s M n s Y pe p s M n ] ) 1 [( ) ( + − =\n\n16 Sum of Independent Normal RVs Let X and Y be independent normal random variables with means µx and µy and variances σ2 x and σ2 y, respectively. What is the PDF of W =X+Y ?"
+  },
+  {
+    "source": "topic9.txt",
+    "category": "Probability",
+    "chunk_index": 14,
+    "page": 17,
+    "text": "Sum of A Random Number of Independent RVs We consider the sum where N is a random variable that takes nonnegative integer values, and X1,X2, . . .XN are i.i.d. random variables with E[Xi]=μ, var(Xi)=σ2 Then, E[Y ] = μE[N] var(Y)=E[N]σ2 + μ2var(N) 17 1 2 N Y X X X = + + + "
+  },
+  {
+    "source": "topic9.txt",
+    "category": "Probability",
+    "chunk_index": 15,
+    "page": 18,
+    "text": "Transform of Sum of A Random Number of RVs For the sum of a random number of independent RVs Then, Thus, to get MY(s), we start with MN(s) and replace each occurence es of by MX(s). 18 1 2 N Y X X X = + + +  ( ) ( ) log ( ) Y N X M s M M s ="
+  },
+  {
+    "source": "topic9.txt",
+    "category": "Probability",
+    "chunk_index": 16,
+    "page": 18,
+    "text": "19 Bookstore Example (1) Jane visits a number of bookstores, looking for “Great Expectations” (a novel by Charles Dickens) (Example 4.35) A bookstore caries such a book with probability p=1/3. The time Jane spends in each bookstore is exponentially distributed with λ=3. Jane will visit bookstores until she finds the book. We wish to find the mean, variance, and PDF of the total time she spent in bookstores. Solution: Let N be the number of book stores, Xi be the time spent at bookstore i."
+  },
+  {
+    "source": "topic9.txt",
+    "category": "Probability",
+    "chunk_index": 17,
+    "page": 18,
+    "text": "book stores, Xi be the time spent at bookstore i. Total time: Y=X1+X2+ . . +XN"
+  },
+  {
+    "source": "topic9.txt",
+    "category": "Probability",
+    "chunk_index": 18,
+    "page": 20,
+    "text": "20 Bookstore Example (2)\n\n21 Bookstore Example (3)\n\n22 Bookstore Example (4) In the general case,"
+  }
+]
