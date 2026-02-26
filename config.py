@@ -1,6 +1,10 @@
 import torch
+import os
 
 class Config:
+    # 取得項目根目錄的絕對路徑
+    ROOT_DIR = os.path.dirname(os.path.abspath(__file__))
+    
     MODEL_NAME = "meta-llama/Llama-3.2-1B-Instruct"
     
     EMBEDDING_MODEL = "all-MiniLM-L6-v2"
@@ -12,14 +16,14 @@ class Config:
 
     #RAG config
     PDF_DIR = [
-    "./documents/Computer/",
-    "./documents/Physics/",
-    "./documents/Probability/"
-]
-    TXT_DIR = "./db/text"
-    CHUNK_DIR = "./db/chunks"
-    EMBED_DIR = "./db/embeddings"
-    FAISS_INDEX = "./db/faiss_index.index"
+        os.path.join(ROOT_DIR, "documents/Computer/"),
+        os.path.join(ROOT_DIR, "documents/Physics/"),
+        os.path.join(ROOT_DIR, "documents/Probability/")
+    ]
+    TXT_DIR = os.path.join(ROOT_DIR, "db/text")
+    CHUNK_DIR = os.path.join(ROOT_DIR, "db/chunks")
+    EMBED_DIR = os.path.join(ROOT_DIR, "db/embeddings")
+    FAISS_INDEX = os.path.join(ROOT_DIR, "db/faiss_index.index")
     
     # Fine-tuning config
     OUTPUT_DIR = "./llama-dialogue-finetuned"
