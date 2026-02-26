@@ -1,0 +1,49 @@
+
+[Page 1]
+Topic 8: Derived Distributions Lecture Outline  Functions of One Continuous Random Variable Given the PDF of X, find the PDF of Y=g(X)  Function of Two Continuous Random Variable W=g(X,Y) Given the PDF of X and Y, find the PDF of W=g(X,Y)  Joint PDF of Multiple Functions of Two Random Variables References: 1. Textbook: Section 4.1 for functions of one RV 2. H. Stark and J. Woods, Probability and Random Process with Applications to Signal Processing, 3rd ed., 2002, (pp. 152 ~ 161) 3. S. Ghahramani, Fundamentals of Probability with Stochastic Processes, 4th ed., 2019 (Sec. 8.4)
+[Page 2]
+2 Review
+[Page 3]
+3 Review: Derived PMF Recall derived PMF Given pX(x) and a new random variable , derive new PMF pY(y) by Pick up a y value, find all x’s that give g(x)=y. We sum over all x’s that give g(x)=y. Note: The above method cannot be immediately extended to deriving PDFs since X is continuous. PDFs are not probabilities, and we cannot add probabilities of {X=x} for continuous X
+[Page 4]
+4 PDF of g for Continuous Two steps to derive 1. First, calculate the CDF FY ሺyሻ of YൌgሺXሻusing the formula 2. Differentiate to obtain the PDF of Y :
+[Page 5]
+5 Example 4.3 Let Y = g(X) = X2, where X is a uniform random variable over [-2,2]. Find the PDF of Y. (Sol) 𝑓௒𝑦ൌ ଵ ସ𝑦ିଵ/ଶ for 0 ൑𝑦൑4
+[Page 6]
+6 The Linear Case Let X be a continuous random variable with PDF fX(x), and let Y = aX + b, for some scalars a 0 and b. Then, Two steps: Scaling: z=ax; Shift: y=z+b Example: 1. A linear function of a normal random variable is normal 2. A linear function of an exponential random variable is NOT necessarily exponential
+[Page 7]
+7 Example 4.4: A liner function of an exponential random variable Let X be an exponential random variable with parameter 𝜆. We have the PDF
+[Page 8]
+8 Monotonic Function of a Continuous Random Variable Suppose that g is strictly monotonic and that for some function h and all x in the range of X we have Assume that h is differentiable. Then, the PDF of Y=g(X) in the region is given by This can be justified by first finding the CDF of Y, then taking the derivative. Monotonically increasing: g(x) < g(x’) for all x, x’ satisfying x < x’ Monotonically decreasing 上式絕對值的物理意義?
+[Page 9]
+9 Illustration (page 210) Fig. 4.4: Consider an interval, [x,x+δ1], where δ1 is a small number. Under the mapping g, the image of this interval is another interval [y,y+δ2] . Since (dg/dx) is the slope of g, we have ఋమ ఋభൎ ௗ௚ ௗ௫𝑥 Or in terms of the inverse function, 𝛿ଵ 𝛿ଶ ൎ𝑑ℎ 𝑑𝑦ሺ𝑦ሻ, ℎൌ𝑔ିଵ We now note the event {x≤X≤x+δ1} is the same as the event {y≤Y≤y+δ2}. Thus, 𝑓௒ሺ𝑦ሻ𝛿ଶൎPrሺ𝑦൑𝑌൑𝑦൅𝛿ଶሻ ൌPrሺ𝑥൑𝑋൑𝑥൅𝛿ଵሻൎ𝑓௑ሺ𝑥ሻ𝛿ଵ
+[Page 10]
+10 Examples Let Y = g(X) = X2, where X is a uniform random variable on [0,2]. Find the PDF of Y. Sol: Let Y = g(X) = X2, where X is a uniform random variable on [-2,2]. Find the PDF of Y. <Non-monotonic> Sol:
+[Page 11]
+11 Functions of Two Random Variables Two-step procedure 1. Calculate the CDF FZ (z) of Z=g(X,Y) 2. Differentiate to obtain the PDF of Z Example: (4.8) (p.211) Let X and Y be two independent uniform (continuous) random variables over [0,1]. Find the PDF of Z=Y/X. 0 <= z <= 1 1 <z
+[Page 12]
+12 The Distribution of X+Y Let X ,Y be two RVs, and let W =X+Y . Find the PMF (if X, Y discrete) or PDF of W (if X,Y continuous). Points where the value W =w0 is some constant lie on the following line Idea – Discrete case: add probabilities of all points on this line. – Continuous case: integrate the joint density on this line.
+[Page 13]
+13 X+Y: Independent Discrete Integers Let X ,Y be discrete, independent RVs. Then W =X+Y is also integer-valued. Thus, 𝑝ௐሺ𝑤ሻൌPrሺ𝑋൅𝑌ൌ𝑤ሻൌ෌Prሺ𝑋ൌ𝑥ሻPrሺ𝑌ൌ𝑤െ𝑥ሻ ௫ ൌ෌𝑝௑ሺ𝑥ሻ𝑝௒ሺ𝑤െ𝑥ሻ ௫ This operation is called discrete convolution (摺積、迴旋積)
+[Page 14]
+14 Obtaining pW(w) by Discrete Convolution ( ) ( ) ( ) W X Y x p w p x p w x    Problem10 (p. 246): Let X ,Y be two indep. RVs with PMFs Find the PMF of W =X+Y.
+[Page 15]
+15 Discrete Convolution 0 1 2 3 0 1 2 3 0 1 2 -1 -2 0 1 2 -1 -2 0 1 2 -1 3 x x x x 𝑝௑𝑥 𝑝௒െ𝑥 𝑝௒1 െ𝑥 𝑝௒2 െ𝑥 𝑤ൌ0: ෍ 𝑝௑𝑥𝑝௒െ𝑥=0 ௫ 𝑤ൌ1: ෍ 𝑝௑𝑥𝑝௒1 െ𝑥=1/6 ௫ ( ) ( ) ( ) W X Y x p w p x p w x    𝑤ൌ2: ෍ 𝑝௑𝑥𝑝௒2 െ𝑥ൌ1 3 ൈ1 3 ൅1 3 ൈ1 2 ൌ5 18 ௫
+[Page 16]
+16 X+Y: Convolution Integral Let X ,Y be independent, continuous RVs. Then the PDF of W =X+Y is given by This integral is called (continuous) convolution (摺疊積分) ( ) ( ) ( ) W X Y f w f x f w x dx     
+[Page 17]
+17 Graphical Understanding of Continuous Convolutions Convolution can be perceived with the help of graphical illustration. Key step: how to draw fY(w-t) from fY(t) for a fixed w and variable t
+[Page 18]
+18 X+Y Example: Independent Continuous Let X ,Y be independent, uniform on [0,1]. Find the PDF of W =X+Y. Convolution idea applies: ( ) ( ) ( ) W X Y f w f x f w x dx     
+[Page 19]
+19 Sum of Independent Normals Let X ,Y be independent, normal RVs. 𝑋∼𝑁ሺ0, 𝜎௫ଶሻ 𝑌∼𝑁0, 𝜎௬ଶ What is the PDF of W =X+Y ? 𝑓ௐሺ𝑤ሻൌ׬ 𝑓௑ሺ𝑥ሻ𝑓௒ሺ𝑤െ𝑥ሻ𝑑𝑥 ஶ ିஶ ൌ ଵ ଶగఙೣఙ೤׬ expሺെ𝑥ଶ2𝜎௫ଶሻ ⁄ ஶ ିஶ expሾെሺ𝑤െ𝑥ሻଶ2𝜎௬ଶ൯ ൗ 𝑑𝑥 ൌ𝐶⋅expሺെ𝑤ଶ2ሺ𝜎௫ଶ൅𝜎௬ଶ ൗ ሻሻ, 𝐶ൌ1 2𝜋ሺ𝜎௫ଶ൅𝜎௬ଶሻ ଵଶ ⁄ ⁄ 上式積分的結果很neat，但推導有些繁瑣。推導關鍵有兩點: 1) 配方法; 2) ׬ 𝑓௑𝑥𝑑𝑥ൌ1 ஶ ିஶ for any PDF 𝑓௑𝑥. Hence, W is normal with mean = 0, and 𝜎௪ଶൌ𝜎௫ଶ൅𝜎௬ଶ Note: More generally, aX+bY is also normal for any two constants a and b 此結果若將Independent 的條件移除則未必成立
+[Page 20]
+20 Review Review: Monotonic Function of a Continuous RV Suppose that g is strictly monotonic and that for some function h and all x in the range of X we have Assume that h is differentiable. Then, the PDF of Y=g(X) in the region is given by 這個式子不需要背，其實本質上就是先找Ｙ的CDF，再取微分即可！
+[Page 21]
+21 Joint Density of Two Functions of Two RVs Problem: Given joint PDF fX,Y(x,y) of two continuous random variables X and Y. We now have two newly defined random variables V and W where g(.) and h(.) are two real-valued functions. How do we compute the joint PDF fVW(v,w) from fX,Y(x,y) ? Important Remarks: 1. In general, g(.) and h(.) can be any 2 real-valued functions 2. In this topic, we will consider a special case of g(.) and h(.). We assume that the system of two equations in two unknowns has a unique solution x=p(v,w) and y=q(v,w) for x and y in terms of v and w, similar to the monotonic case mentioned on the previous page.
+[Page 22]
+22 Basic Concept By properly selecting the values of dv, dw, dx, and dy , we have [probability before mapping] = [probability after mapping]. When dv, dw, dx, and dy are very small, The above amounts to So, the question now is how do we find the ratio? Use change of variable theorem in calculus
+[Page 23]
+23 Formula to the Joint Density Using change of variable theorem in calculus, where J is the Jacobian representing the (inverse) ratio of the areas and is the determinant  H. Stark and J. Woods, Probability and Random Process with Applications to Signal Processing, 3rd ed., 2002, (pp. 152 ~ 161) (evaluated at x=p(v,w) and y=q(v,w) )
+[Page 24]
+24 Example Let V=X+Y, and W=X-Y. Find the joint PDF of V and W in terms of the joint PDF of X and Y. (S&W, p.153) Solutions: We use the formula First, we solve for x and y in terms of v and w. It is clear that The Jacobian is Thus,

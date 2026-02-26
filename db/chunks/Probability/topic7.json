@@ -1,0 +1,212 @@
+[
+  {
+    "source": "topic7.txt",
+    "category": "Probability",
+    "chunk_index": 0,
+    "page": 1,
+    "text": "1 Topic 7: Multiple Continuous Random Variables Lecture Outline  Conditioning on an Event  Joint Probability Density Functions  Conditioning on a Random Variable  條件機率Conditional probability conditioned on a continuous RV  條件期望值Conditional expectation  條件機率密度函數Conditional PDF  Continuous Bayes Rule  Variants of Total Probability Theorem (total probability theorem 的四個變形) Reading : Textbook 3.4- 3.6"
+  },
+  {
+    "source": "topic7.txt",
+    "category": "Probability",
+    "chunk_index": 1,
+    "page": 1,
+    "text": "2 Multiple Random Variables Quite naturally, we definitely will have to deal with multiple RVs in a real-world problem:  The total amount of time we need to wait in the line at the supermarket counter  What information can the multiple antennas of a WiFi router provide to the receiver? Again, we are particularly interested in the following:  How different random variables are related to each other? 不同隨機變數間之關聯性 (正相關、負相關、零相關、獨立、條件機率、條件期望值、條件機率密度函數)  How to learn the behavior of the sum of all"
+  },
+  {
+    "source": "topic7.txt",
+    "category": "Probability",
+    "chunk_index": 2,
+    "page": 1,
+    "text": " How to learn the behavior of the sum of all RVs? Ex: 分析網路系統中資料流量進出某網路節點所耗費的時間延遲(排隊理論, queueing)  How to learn the behavior or the true value of one RV when it is buried in the sum with other random variables? Ex: 如何從接收訊號(Y)=傳送訊號(S)+雜訊(N) 中擷取S 的資訊。其中雜訊一般是 continuous RV，在數位通訊的技術下，傳送訊號S 是discrete。接收訊號Y 為連續。"
+  },
+  {
+    "source": "topic7.txt",
+    "category": "Probability",
+    "chunk_index": 3,
+    "page": 3,
+    "text": "3 Conditioning on an Event Definition Similar to the definition of unconditional PDF, the conditional PDF of a continuous random variable X, conditioned on a particular event E with P(E) > 0, is a function fX|E that satisfies (1) Special Case Conditioning on the event E that X belongs to a subset A of the real line, we have (2) Therefore, comparing (2) with (1), we have"
+  },
+  {
+    "source": "topic7.txt",
+    "category": "Probability",
+    "chunk_index": 4,
+    "page": 4,
+    "text": "4 Illustration of Conditioning on an Event Special Case Conditioning on the set when X belongs to a subset A of the real line, we have We see it’s just a scaling of fx(x). So the PDF within the conditioning set has the same shape as the unconditional PDF"
+  },
+  {
+    "source": "topic7.txt",
+    "category": "Probability",
+    "chunk_index": 5,
+    "page": 4,
+    "text": "5 Example: The Exponential Random Variable Is Memoryless Example 3.13 (Memoryless Property of Exponential) The time T until a new light bulb burns out can be modeled by an exponential random variable with parameter λ. Alice turns the light on, leaves the room, and when she returns, t time units later, finds that the light bulb is still on, which corresponds to the event A={T>t}. Let X be the additional time until the light bulb burns out. What is the conditional CDF of X, given the event A?"
+  },
+  {
+    "source": "topic7.txt",
+    "category": "Probability",
+    "chunk_index": 6,
+    "page": 6,
+    "text": "6 Total Probability Theorem Using Conditional PDF** If A1,A2, . . . , An are disjoint events with P(Ai) > 0 for each i, that form a partition of the sample space, then 這是常用的技巧，可協助計算出複雜X 的PDF。 How to justify the equation? See Example 3.14 in the textbook Another example: Let X be a standard normal random variable. A new random variable Y is defined as follows: We flip a coin. If the outcome is a head, then Y= X. And if the outcome of the coin flip is a tail, then 𝑌𝑌= −𝑋𝑋. Assume the coin flip is"
+  },
+  {
+    "source": "topic7.txt",
+    "category": "Probability",
+    "chunk_index": 7,
+    "page": 6,
+    "text": "is a tail, then 𝑌𝑌= −𝑋𝑋. Assume the coin flip is independent with X. Please find the PDF of Y."
+  },
+  {
+    "source": "topic7.txt",
+    "category": "Probability",
+    "chunk_index": 8,
+    "page": 7,
+    "text": "7 Total Probability Theorem using Conditional PDF (Example 3.14) The metro train arrives at the station near your home every quarter hour starting at 6:00 a.m. You walk into the station every morning between 7:10 and 7:30 a.m. and your arrival time is a uniform random variable over this interval. What is the PDF of the time you have to wait for the first train to arrive?"
+  },
+  {
+    "source": "topic7.txt",
+    "category": "Probability",
+    "chunk_index": 9,
+    "page": 8,
+    "text": "8 Total Expectation Theorem using Conditional Expectation Definition The conditional expectation is defined by Total Expectation Theorem If A1,A2, . . . , An are disjoint events with P(Ai) > 0 for each i, that form a partition of the sample space, then See Example 3.17 in textbook.\n\n9 Total Expectation Theorem using Conditional Expectation (Example 3.17) Suppose that the random variable X has the piecewise constant PDF Find E[X] and var(X)."
+  },
+  {
+    "source": "topic7.txt",
+    "category": "Probability",
+    "chunk_index": 10,
+    "page": 10,
+    "text": "10 Joint Probability Density Function We say that two continuous random variables associated with a common experiment are jointly continuous and can be described in terms of a joint PDF fX,Y , if fX,Y is a nonnegative function that satisfies for every subset B of the 2-dimensional plane. The probability that (X,Y) falls within a rectangle is"
+  },
+  {
+    "source": "topic7.txt",
+    "category": "Probability",
+    "chunk_index": 11,
+    "page": 11,
+    "text": "11 Joint Probability Density Function  PDF fX,Y(x,y) must satisfy normalization equation, i.e.  To interpret the PDF, we let δ be very small and consider the probability of a small rectangle. We have we can view fX,Y (a, c) as the “probability per unit area” in the vicinity of (a, c)\n\n12 Marginal PDF from Joint PDF The marginal PDFs fX(x) and fY(y) of continuous X and Y are given by Recall that for discrete random RVs, we have 本質上，上述諸式均源自於total probability theorem"
+  },
+  {
+    "source": "topic7.txt",
+    "category": "Probability",
+    "chunk_index": 12,
+    "page": 13,
+    "text": "13 Expectation  If X and Y are jointly continuous random variables, and g is some function, then Z = g(X, Y) is also a random variable. the expected value rule is  Using the expected value rule, for any scalars a, b, we have"
+  },
+  {
+    "source": "topic7.txt",
+    "category": "Probability",
+    "chunk_index": 13,
+    "page": 14,
+    "text": "14 Conditioning on a Random Variable Definition Let X and Y be continuous random variables with joint PDF fX,Y. For any fixed y with fY (y) > 0, the conditional PDF of X given that Y = y, is defined by 1. Analogous to the formula in the discrete PMF case 2. fX|Y(x|y) is a legitimate PDF (check normalization) See example 3.19 in the textbook."
+  },
+  {
+    "source": "topic7.txt",
+    "category": "Probability",
+    "chunk_index": 14,
+    "page": 15,
+    "text": "15 Interpretation of Conditioning on a Random Variable Interpretation Fix some small positive numbers δ1 and δ2, and condition on the event B = {y ≤ Y ≤ y + δ2}. We have We can think of the limiting case where δ2 decreases to zero and write More generally,\n\n16 Conditional Expectation Definition The conditional expectation is defined by  The expected value rule applies to conditional expectation  Total expectation theorem"
+  },
+  {
+    "source": "topic7.txt",
+    "category": "Probability",
+    "chunk_index": 15,
+    "page": 17,
+    "text": "17 Conditional Expectation Example The joint PDF of X and Y is Find the conditional expectation E[X|Y=y]."
+  },
+  {
+    "source": "topic7.txt",
+    "category": "Probability",
+    "chunk_index": 16,
+    "page": 18,
+    "text": "18 Total Expectation Theorem Total expectation theorem for continuous random variable  Consider any event A. Let X be the random variable that takes the value 1 if event A occurs and the value 0 otherwise (Such RV is called an indicator). In this case, we have E[X]=P(A) . Then, we have the following version of total probability theorem, when conditioned on continuous random variable Y (See page 30 of this topic)"
+  },
+  {
+    "source": "topic7.txt",
+    "category": "Probability",
+    "chunk_index": 17,
+    "page": 19,
+    "text": "19 Independence Two continuous random variables X and Y are independent if their joint PDF for all x and y is the product of the marginal PDFs: Suppose X and Y are independent.  Similar to the discrete case, the random variables g(X) and h(Y) are independent, for any functions g and h  We have or more generally,  IF X and Y are independent, we have\n\n20 Continuous Bayes’ Rule The conditional PDF fX|Y(x|y) can by obtained via"
+  },
+  {
+    "source": "topic7.txt",
+    "category": "Probability",
+    "chunk_index": 18,
+    "page": 19,
+    "text": "21 Statistical Inference using Bayes’ Rule 使用貝氏定理進行預測、推論  Unobserved phenomenon (cause) describes something we want to know about. But we can only observe a certain result (effect) at the receiving end. For example,  Unknown transmitted bit (0 or 1) in a communication system  Unknown presence of an airplane in a radar system  Unknown disease of a patient  Objective: (藉由觀察Y 的值來推論X 或N 的值。此處Y是蒐集獲得之資料、訊號) Determine which cause among many candidates is the most likely, by checking the posterior"
+  },
+  {
+    "source": "topic7.txt",
+    "category": "Probability",
+    "chunk_index": 19,
+    "page": 19,
+    "text": "is the most likely, by checking the posterior probability PN|Y(n|y) for all possible n (or posterior density fX|Y(x|y) ) Measurement Inference Transmission Medium Unobserved phenomenon Case 1: Continuous X Case 2: Discrete N Case 1: Continuous fX|Y(x|y) Case 2: Discrete PN|Y(n|y) Observed (Measured, Received) Typically continuous Y"
+  },
+  {
+    "source": "topic7.txt",
+    "category": "Probability",
+    "chunk_index": 20,
+    "page": 22,
+    "text": "22 Statistical Inference using Bayes’ Rule 1. Continuous case: The unobserved phenomenon is a continuous random variable X, the posterior density of the unknown X given observed Y=y is 2. Discrete case: The unobserved phenomenon is a discrete random variable N, the posterior probability of N given the observed Y=y is Measurement Inference Transmission Medium Unobserved phenomenon Observed (Measured, Received) Typically continuous, due to noise in the observation Y Case 1: Continuous X Case 2:"
+  },
+  {
+    "source": "topic7.txt",
+    "category": "Probability",
+    "chunk_index": 21,
+    "page": 22,
+    "text": "in the observation Y Case 1: Continuous X Case 2: Discrete N Case 1: Continuous fX|Y(x|y) Case 2: Discrete PN|Y(n|y)"
+  },
+  {
+    "source": "topic7.txt",
+    "category": "Probability",
+    "chunk_index": 22,
+    "page": 23,
+    "text": "23 Example – Signal Detection in Communication Systems** A binary signal S is transmitted, and we are given that P(S = 1) = p and P(S = −1) = 1−p. The received signal is Y = N+S, where N is normal noise, with zero mean and variance σ2, independent of S. What is the probability that S = 1, given that we have observed Y=y ?"
+  },
+  {
+    "source": "topic7.txt",
+    "category": "Probability",
+    "chunk_index": 23,
+    "page": 24,
+    "text": "24 Joint CDF If X and Y are two random variables associated with the same experiment, we define their joint CDF by  The joint CDF  The PDF can be recovered from the PDF by differentiating:"
+  },
+  {
+    "source": "topic7.txt",
+    "category": "Probability",
+    "chunk_index": 24,
+    "page": 25,
+    "text": "25 Joint PDF of Independent Gaussian RVs Let X and Y be two independent Gaussian random variables with means μx ,μy, and variances σx 2, σy 2 respectively. The joint PDF is given by  The joint PDF has a bell shape centered at (μx ,μy). Whether the PDF is a tall-thin bell or wide-fat bell is determined by the variances σx 2, σy 2  Very often we are interested in knowing the contours (等高線圖、切面圖) of the joint PDF. The contours are sets of points at which the PDF takes a constant value."
+  },
+  {
+    "source": "topic7.txt",
+    "category": "Probability",
+    "chunk_index": 25,
+    "page": 26,
+    "text": "Summary of Total Probability Theorem and Its Variants We have already learned several different versions of total probability theorem. The original version is given in the form of probability of events (Section 1.4, page 28) According to the types of underlying RVs in forming G and Fi, the TPT can be further generalized to the following variants: Variant 1: Discrete RV in G – Discrete RV in Fi (DD Type) Variant 2: Continuous RV in G – Continuous RV in Fi (CC Type) Variant 3: Continuous RV in"
+  },
+  {
+    "source": "topic7.txt",
+    "category": "Probability",
+    "chunk_index": 26,
+    "page": 26,
+    "text": "RV in Fi (CC Type) Variant 3: Continuous RV in G – Discrete RV in Fi (CD Type) Variant 4: Discrete RV in G – Continuous RV in Fi (DC Type) 通則: When continuous RV is involved, the sum and PMF in original TPT need to be modified to integral and PDF 26 1 ( ) ( | ) ( ) K i i i P G P G F P F = =∑"
+  },
+  {
+    "source": "topic7.txt",
+    "category": "Probability",
+    "chunk_index": 27,
+    "page": 27,
+    "text": "第一類變形: Discrete RV in G – Discrete RV in Fi Variant 1: Discrete RV in G – Discrete RV in Fi (DD Type) This follows directly from original version by setting G={X=x} and Fi ={Y=yi} See Example 2.14 and 2.15. Another possible forms: Example: Let 𝑋𝑋, 𝑌𝑌be discrete RVs. Compute the probability 𝑃𝑃𝑋𝑋+ 𝑌𝑌= 𝑤𝑤. 27"
+  },
+  {
+    "source": "topic7.txt",
+    "category": "Probability",
+    "chunk_index": 28,
+    "page": 28,
+    "text": "第二類: Continuous RV in G – Continuous RV in Fi Variant 2: Continuous RV in G – Continuous RV in Fi (CCType) See page 172 Example 3.19, on page 179 (continuous Bayes rule) 28\n\n第三類: Continuous RV in G – Discrete RV in Fi Variant 3: Continuous RV in G – Discrete RV in Fi (CDType) See page 180 and Example 3.20. A more general form is (see page 167) Example 3.14, on page 168. See the example on page 6 of this topic. 29"
+  },
+  {
+    "source": "topic7.txt",
+    "category": "Probability",
+    "chunk_index": 29,
+    "page": 30,
+    "text": "第四類: Discrete RV in G – Continuous RV in Fi Variant 4: Discrete RV in G – Continuous RV in Fi (CDType) See page 181 and page 182. A more general form is (page 181 of textbook, page 18 of this topic) You can justify this relation by taking the integral over y to the 1st equation on page 181 of the textbook Example: Let 𝑋𝑋, 𝑌𝑌be indepdent continuous RVs. Compute the PDF of X+Y. 30"
+  }
+]

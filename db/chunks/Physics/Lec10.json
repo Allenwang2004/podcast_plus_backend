@@ -1,0 +1,443 @@
+[
+  {
+    "source": "Lec10.txt",
+    "category": "Physics",
+    "chunk_index": 0,
+    "page": 2,
+    "text": "2 3 1. Torque  1. Torque 2. Energy conservation in rotational motion 3. Rolling motion 4. Angular momentum 5. Conservation of angular momentum 6. The motion of gyroscopes and tops 7. Angular momentum as a fundamental quantity 4 Torque 0 Torque, , is the tendency of a force to rotate an object about some axis. Torque is a vector. = r (F sin = F d F is the force. is the angle the force makes with the horizontal. d is the moment arm (or lever arm). 0 “Torque” and “work” are different"
+  },
+  {
+    "source": "Lec10.txt",
+    "category": "Physics",
+    "chunk_index": 1,
+    "page": 2,
+    "text": "lever arm). 0 “Torque” and “work” are different quantities, though both have the same unit. r F     "
+  },
+  {
+    "source": "Lec10.txt",
+    "category": "Physics",
+    "chunk_index": 2,
+    "page": 3,
+    "text": "3 5 Net Torque  1 2 1 1 2 2 F d F d         6 int 1 21 2 12 1 21 2 21 1 2 21 12 21 12 21 ( ) ( ) 0 r F r F r F r F r r F r F r F                                  “Internal forces” do NOT contribute to the torque!"
+  },
+  {
+    "source": "Lec10.txt",
+    "category": "Physics",
+    "chunk_index": 3,
+    "page": 4,
+    "text": "4 Torque and Angular Acceleration 7 =r F    ( ) t t F r ma r   ta r  2 ( ) mr     I  I       cp., F ma    t r F    ( ) t r r F F        8 2 2 r dm r dm         t t dF dm a    t t d rdF r dm a   2r dm   I      For continuous objects, is valid for , because may change for non-rigid objects such as water in a bucket. rigid bodies only I I      Notice that,"
+  },
+  {
+    "source": "Lec10.txt",
+    "category": "Physics",
+    "chunk_index": 4,
+    "page": 4,
+    "text": "5  9 2 2 ( ) ( ) [ ] ( ) ( ) [ ( )] ( ) [( ) ( ) ] ( ) ( ) dv d r r F r m mr dt dt mr r v m r r m r r mr r mr m r r mr r r mr m r r m r v                                                                                                             In fact, Only if and , then is valid. r r I              o   r F  ! I       ( ) ( ) m r r m r v I          "
+  },
+  {
+    "source": "Lec10.txt",
+    "category": "Physics",
+    "chunk_index": 5,
+    "page": 4,
+    "text": "    ( ) ( ) m r r m r v I                 e.g., 0 s k F R F r I    0 k FR F r    ( ) k k r F F F R    Q: Why wheels can save our effort on moving heavy objects? If no acceleration,  10 0 s s F F ma F F      r R F Fs = F Fk Ans:"
+  },
+  {
+    "source": "Lec10.txt",
+    "category": "Physics",
+    "chunk_index": 6,
+    "page": 6,
+    "text": "6  11 In general, the total torque on a system does NOT equal to the torque on its center of mass. 1 for 1 fo 1 1 1 r ( ) ( ) ( ) CM CM CM CM n t n otal i i i i t i n i i o i i a i n i t i i i l n i m a m a m r F r r r F m                                           12 for , then . Only if is indep. of total CM CM r M r g g            ( ) ( ) CM total r M r d mg rdm g               O  CM r Mg   Eg., CM"
+  },
+  {
+    "source": "Lec10.txt",
+    "category": "Physics",
+    "chunk_index": 7,
+    "page": 7,
+    "text": "7 13   for 0 For const., 0 total CM CM g r Mg             14 2 1 3  I ML ?   ?  ta  Ex. Hint: F ma I a r           "
+  },
+  {
+    "source": "Lec10.txt",
+    "category": "Physics",
+    "chunk_index": 8,
+    "page": 8,
+    "text": "8 15 2 1 3  I ML ① I      r F     d r dF r dmg          3 90 2 g I L         ?  sin 2 L Mg        rdm g         CM M g r       If is indep. of g g dm r r       2 1 3 ML     dm CM Ans:  16 CM F At the CM frame, it is the torque exerted by the hinge so that at > g. ② 3 2 ta r g    g "
+  },
+  {
+    "source": "Lec10.txt",
+    "category": "Physics",
+    "chunk_index": 9,
+    "page": 9,
+    "text": "9 17  t ma mg   18  Q: In an emergent situation that you have to jump from 2F to the ground, will you jump directly as a free fall or grab a pole to jump? Ans: free fall."
+  },
+  {
+    "source": "Lec10.txt",
+    "category": "Physics",
+    "chunk_index": 10,
+    "page": 10,
+    "text": "10  19 https://www.facebook.com/theactionlaboffi cial/videos/836540717108415 ' at CM ' o i i i r F        o i i i r F       CM ( ' ) i i i r r F        CM ' i i i i i r F r F            ' at CM CM CM o o i i F r F             ' CM CM ) N o ote, , if (1) 0 ( ' , r (2) 0, or (3) o o i i i i r o o F r F                Torque at different reference axis  20 ' ir CM r iF  CM O’ O ir"
+  },
+  {
+    "source": "Lec10.txt",
+    "category": "Physics",
+    "chunk_index": 11,
+    "page": 11,
+    "text": "11 21 Q: Why a balance in equilibrium is defined at a leveled position?   0 ' at CM CM ' 0 CM o o CM r Mg r F                 2 1 sin CM m gL m gL r Mg     O  O’  CM r m1 m2 L L CM F   When θ = 0, ⇒ m1 = m2 Ans: 22 ?   ?  a ?  T  Ex. I Hint: F ma I a r           "
+  },
+  {
+    "source": "Lec10.txt",
+    "category": "Physics",
+    "chunk_index": 12,
+    "page": 12,
+    "text": "12 23 (1) I TR      (2) mg T F ma     (3) a R   2 1 ( ) mg T mR I    TR I    mg T a m     I Ans: 24 ?  a 1 2 3 , , ? T T T   I I R Ex. Hint: F ma I a r           "
+  },
+  {
+    "source": "Lec10.txt",
+    "category": "Physics",
+    "chunk_index": 13,
+    "page": 13,
+    "text": "13 25 1 1 2 1 3 2 (1) m g m a m g T T m a        1 2 2 3 ( ) (2) ( ) R I T I T T R T          (3) a R   1 2 3 a T T T                Note: T1 T2 T3. Similar to  I I R Ans:  26 Torque summary l ex e i t rnal nerna 1. , , F r F F F          f ' at CM CM or s 2. is only valid for rigid bodies and for rotation around a ymmetry ax of the bodies! 3. . 4 is . total M o o C C M r F I                   "
+  },
+  {
+    "source": "Lec10.txt",
+    "category": "Physics",
+    "chunk_index": 14,
+    "page": 14,
+    "text": "14 27 2. Energy conservation in rotational motion  1. Torque 2. Energy conservation in rotational motion 3. Rolling motion 4. Angular momentum 5. Conservation of angular momentum 6. The motion of gyroscopes and tops 7. Angular momentum as a fundamental quantity 28 ( )cos(90 ) ( sin ) r F dW F ds F rd F r d                d   W d    dW d P dt dt       Work, Energy, and Power in Rotational Motion Work: Instantaneous power:"
+  },
+  {
+    "source": "Lec10.txt",
+    "category": "Physics",
+    "chunk_index": 15,
+    "page": 14,
+    "text": "15 29 Work-Kinetic Energy Theorem in Rotational Motion ( ) d dW d I d I d dt         2 2 1 1 2 2 f i f i W I d I I           ( ) I d dW Id d dt       Work-kinetic energy theorem: R W K   2 1 2 R K I  30 Strategies for solving rotational problems: 1. Define the system or use the center of mass. 2. Set the pivot. (For rolling, set at the CM or at the ground contact? ) 3. For constant , use rotational kinematic equations. 4. By F = ma, = I, at = R, 5. By"
+  },
+  {
+    "source": "Lec10.txt",
+    "category": "Physics",
+    "chunk_index": 16,
+    "page": 14,
+    "text": "equations. 4. By F = ma, = I, at = R, 5. By conservation laws."
+  },
+  {
+    "source": "Lec10.txt",
+    "category": "Physics",
+    "chunk_index": 17,
+    "page": 16,
+    "text": "16 31 ? f  M L ? CM v   Ex. 2 1 3 OI ML  32 M L ext R W K  /2 2 0 1 2 o f d I       2 1 3 OI ML  System = rod, pivot at O CM r Mg '   Method #1 ext F F Mg      2 2 2 is not applicable. is not constant! P.s., f i         F  Ans:"
+  },
+  {
+    "source": "Lec10.txt",
+    "category": "Physics",
+    "chunk_index": 18,
+    "page": 16,
+    "text": "17 33 /2 0 r dmg d             3 , 2 2 3 , C f M f g L L g L v        /2 0 ( ) CM Mr g d        /2 0 rdm g d             /2 0 sin( ) 2 2 2 L L M g d MgL         /2 0 si ' n 2 L M g d     2 1 1 0 2 2 ext o f W MgL I      /2 /2 0 0 0 0 ( ) ext g F r W d d               34 If system = CM, the force from the hinge on the CM has to be included, , , . CM g CM F CM W W W   , 2 , . Otherwise, 1 1 by using 2 2 you will get the"
+  },
+  {
+    "source": "Lec10.txt",
+    "category": "Physics",
+    "chunk_index": 19,
+    "page": 16,
+    "text": ", . Otherwise, 1 1 by using 2 2 you will get the incorrect answer , if , ! is not t c he CM's pat without in luding h g CM CM C CM W F C M M M C W MgL Mv v gL K W F        However, F is undetermined. Since every point in the rod is known to have different acceleration, the force on each point has to be different so that the force exerting by the hinge is not along the rod or perpendicular to the CM’s path. Mg F CM"
+  },
+  {
+    "source": "Lec10.txt",
+    "category": "Physics",
+    "chunk_index": 20,
+    "page": 18,
+    "text": "18 0 W K U    2 1 ( 0) ( 0 1 2 0 ) 2 f g I M L     2 2 1 1 1 ( ) 2 3 2 f ML MgL    3 f g L  3 , 2 2 CM f gL L v     3 f v L gL     System = rod + hinge + Earth Method #2 35 P.s., Only this equation is valid here. 0 K U    2 ! Such an equation 0 does not exist! ( A point particle system doesnt 1 Therefore, ( 0) (0 ) 0 is ' have any pote t wrong n ial energy.) 2 2 1 CM C cm M K MgL m U v         36  I ? fv  Ex."
+  },
+  {
+    "source": "Lec10.txt",
+    "category": "Physics",
+    "chunk_index": 21,
+    "page": 18,
+    "text": "19  37 (1) 0 W K U      2 2 2 1 1 2 2 1 2 1 1 1 0 2 2 2 f f f m v m v I m gh m gh              (2) f f v R   1/2 2 1 2 1 2 2( ) / f m m gh v m m I R           Method #1 System = m1 + m2 + pulley + Earth  38 Method #2 System = m1 + m2 + pulley (1) W K  1T 2T 1 2 , are internal forces no contribution to . T T W  2 2 2 1 2 1 1 2 2 1 1 1 2 2 2 f f f m gh m gh m v m v I       (2) f f v R   1/2 2 1 2 1 2 2( ) / f m m gh v m m I R          "
+  },
+  {
+    "source": "Lec10.txt",
+    "category": "Physics",
+    "chunk_index": 22,
+    "page": 20,
+    "text": "20 39 3. Rolling motion  1. Torque 2. Energy conservation in rotational motion 3. Rolling motion 4. Angular momentum 5. Conservation of angular momentum 6. The motion of gyroscopes and tops 7. Angular momentum as a fundamental quantity 40 Rolling motion 0 Rolling motion = translation + rotation  4 R  2 R "
+  },
+  {
+    "source": "Lec10.txt",
+    "category": "Physics",
+    "chunk_index": 23,
+    "page": 21,
+    "text": "21 41 The pink dot moves 2Rand the CM moves R.  Rθ  2R 42 Pure Rolling Motion, Center of Mass 0 The velocity of the center of mass is 0 The acceleration of the center of mass is CM ds d v R R dt dt      CM CM dv d a R R dt dt      CM \n\n22  43 , no slipping , when accelerating , when breaking CM CM CM R v R v R v            44   Rolling motion  -ground -CM CM-ground P P v v v     "
+  },
+  {
+    "source": "Lec10.txt",
+    "category": "Physics",
+    "chunk_index": 24,
+    "page": 23,
+    "text": "23  45 2 2 total 1 1 2 2 CM CM K Mv I     CM v R  2 2 2 total 1 1 2 2 CM K MR I      total translation rotation K K K   2 rotation 2 2 2 2 total 1 2 1 1 2 2 CM CM CM CM I K I K MR I MR I         Equivalent to . CM rel K K K    46"
+  },
+  {
+    "source": "Lec10.txt",
+    "category": "Physics",
+    "chunk_index": 25,
+    "page": 23,
+    "text": "24 47 Rolling motion can be also modeled as a pure rotation about the contact point P. same as previous one. 2 1 , 2 total P K I   2 P CM I I MR   2 2 2 1 1 2 2 total CM K I MR     Total kinetic energy:   48 (a) If system = CM, Total 2 1 , ( ) 2 CM s CM CM CM F F W L f K F mv         L CM  In rotation motion, whether the static friction fs does work or not depends on the system! It can do work via torque and the work converts to rotational kinetic energy. 2 1 2 s CM FL mv L"
+  },
+  {
+    "source": "Lec10.txt",
+    "category": "Physics",
+    "chunk_index": 26,
+    "page": 23,
+    "text": "to rotational kinetic energy. 2 1 2 s CM FL mv L f   "
+  },
+  {
+    "source": "Lec10.txt",
+    "category": "Physics",
+    "chunk_index": 27,
+    "page": 25,
+    "text": "25  49 (b) If system = Disk, 2 2 2 2 2 1 1 ( ) 2 2 1 , ( )( ) 1 2 2 C M CM F C M L W K RF R F I I MR I L mv             2 Compare (a), (b) ( )( ) 1 2 s CM s s f I f L L Rf R             (i) Set pivot at ground contact (ii) Set pivot at CM 2 2 , 1 ) 1 ( )( ) 2 ( 2 translation rotation translation rotation s CM s CM W K W W K K F f L m L v f R I R           50 (c) If system = Disk +ground, int ext W E K U      2 For , NOT 2 1 1 2 2 s k C f f M FL mv I"
+  },
+  {
+    "source": "Lec10.txt",
+    "category": "Physics",
+    "chunk_index": 28,
+    "page": 25,
+    "text": "  2 For , NOT 2 1 1 2 2 s k C f f M FL mv I    “fs” is an internal force. ⇒ NO contribution to work Also, no slipping on the contact point ⇒ No contribution to internal energy."
+  },
+  {
+    "source": "Lec10.txt",
+    "category": "Physics",
+    "chunk_index": 29,
+    "page": 26,
+    "text": "26  51 2 CM I cMR  Q. For the same mass objects, which one rolls slowest ?  52 0 K U    2 2 1 1 [ ( ) 0]+(0 ) 0 2 2 M CM CM C M R v I M h v g     1/2 2 1 CM gh v c         indep. of R. Ans:\n\n27 53  54  The shortest path doesn’t mean the least time."
+  },
+  {
+    "source": "Lec10.txt",
+    "category": "Physics",
+    "chunk_index": 30,
+    "page": 28,
+    "text": "28 55 ? CM v  (No slipping) ? CM a   Ex. 56 0 K U    2 2 1 1 [ ( ) 0]+(0 ) 0 2 2 M CM CM C M R v I M h v g     1/2 2 2 1 ( ) CM CM gh v I MR         2 2 2 f i v v a x    2 2 2 0 1 ( ) si ) sin n 2 1 ( CM CM CM g I MR g a x x I MR           (1) (2)  Ans: System=Ball+Earth+”Ramp” (fs does no work!) Method I:"
+  },
+  {
+    "source": "Lec10.txt",
+    "category": "Physics",
+    "chunk_index": 31,
+    "page": 28,
+    "text": "29 57 Method II: System = Ball Set the pivot at the contact point. I    2 sin ( ) CM Mg R I MR      2 sin 1 CM CM g a R I MR       θ  58 Method III: System = Ball Set the pivot at the CM. (1 sin ) s CM mg f F ma ma      = ( ) 2 s CM I f R I        2 sin 1 CM CM g a I mR     (3) CM a R   2 sin sin 1 I s CM CM mg f mg ma mR        p.s., The condition for the ball to roll without slipping is cos s s s f N mg      2 CM tan (1 ) s mR I      mg sf N "
+  },
+  {
+    "source": "Lec10.txt",
+    "category": "Physics",
+    "chunk_index": 32,
+    "page": 28,
+    "text": "    2 CM tan (1 ) s mR I      mg sf N  "
+  },
+  {
+    "source": "Lec10.txt",
+    "category": "Physics",
+    "chunk_index": 33,
+    "page": 30,
+    "text": "30 59 Note, 1. There is a static friction force so that aCM g sinθ. 2. Static friction does NOT do work if the system = Ball+Earth+Ramp.  When the ball rolls upward, in what direction will be the frictional force? 60 (1) ? (2) ? CM s v f   m  Ex. sf  ( ) r R  (Note that , unlike in translational case.) s T f "
+  },
+  {
+    "source": "Lec10.txt",
+    "category": "Physics",
+    "chunk_index": 34,
+    "page": 30,
+    "text": "31 61 W K  (1) ( ) T L L r R   2 2 2 1 1 ( ) ( ) , 2 2 p CM L T L r I I MR R        CM v R   2 2 (1 / ) (1 / ) CM TL r R v m I mR      Ans: System = Disk (Set the pivot at ground contact) L R  lever arm displacement ( ) or ( ) W d T R r Fds T R r                        62 (2) s CM T f ma   2 2 0 2 CM CM v a L   2 1 / 1 1 / s r R f T I mR             System = CM only (In this case, fs is an external force.) 2 1 2 CM CM W mv "
+  },
+  {
+    "source": "Lec10.txt",
+    "category": "Physics",
+    "chunk_index": 35,
+    "page": 30,
+    "text": "fs is an external force.) 2 1 2 CM CM W mv  Alternative method:   2 1 2 C s M f T L mv    2 1 / 1 1 / s r R f T I mR            In this case, fs does work on CM in the rolling motion."
+  },
+  {
+    "source": "Lec10.txt",
+    "category": "Physics",
+    "chunk_index": 36,
+    "page": 32,
+    "text": "32 The Yo-Yo ? CM a   63 (The rope is not moving.) (Similar to the inversed pulley problem.) Ex. 0 NO 0 T g CM C C R M M F T ma a I R T I R           2 0 1 / CM CM g a I MR    64 Set rotation at CM. Ans: Method #1 (rotation) System = Yo-Yo"
+  },
+  {
+    "source": "Lec10.txt",
+    "category": "Physics",
+    "chunk_index": 37,
+    "page": 33,
+    "text": "33 0 2 0 2 0 0 0 2 0 is assumed constant, . (Parallel-axis theorem) ( ) CM CM CM CM CM I g r R Mg I I MR R Mg I MR MgR I MR                    0 2 0 Therefore, 1 / CM CM g a R I MR     65 Set rotation at the contact point. Method #2 (rolling) System = Yo-Yo  66  1. How long does it take the yo-yo to hit the floor? 2. What is the CM velocity?"
+  },
+  {
+    "source": "Lec10.txt",
+    "category": "Physics",
+    "chunk_index": 38,
+    "page": 34,
+    "text": "34  67 (Problem 10.71) Q: In what direction will each yo-yo rotate?  68 https://www.wired.com/2010/01/yo-yo-rolling-sliding-pulling/ https://www.youtube.com/watch?v=tFHd8__h1QU&t=37s Depending upon the angle of applied force, a yo-yo can be made to roll forwards, backwards or simply slide without rotating."
+  },
+  {
+    "source": "Lec10.txt",
+    "category": "Physics",
+    "chunk_index": 39,
+    "page": 34,
+    "text": "35 4. Angular momentum  69 1. Torque 2. Energy conservation in rotational motion 3. Rolling motion 4. Angular momentum 5. Conservation of angular momentum 6. The motion of gyroscopes and tops 7. Angular momentum as a fundamental quantity Angular Momentum dp r F r dt          ( ) d r p dt          0 mv v dr p dt           Angular momentum: L r p      dL dt      p.s., and must be measured about the same origin, fixed in an inertial frame. L     70"
+  },
+  {
+    "source": "Lec10.txt",
+    "category": "Physics",
+    "chunk_index": 40,
+    "page": 36,
+    "text": "36 Angular Momentum of a System of Particles 0 The total angular momentum of a system of particles is Ltot = L1 + L2 + …+ Ln = Li 0 Differentiating with respect to time tot ,e ,int x 0 t i i i i i i i i dL dL dt dt                      71 tot ,ext i i dL dt     ? using and . a L      72 Ex. "
+  },
+  {
+    "source": "Lec10.txt",
+    "category": "Physics",
+    "chunk_index": 41,
+    "page": 36,
+    "text": "37 1 2 L Rm v Rm v RMv    1 2 ( ) ext dL dv R m m M dt dt       1 1 2 2 1 2 0 0 0 ( ) ( ) m gR N N m g R m m M a          1 1 2 m g a m m M     2 m g 2 N 1 N 1 m g  73 2T 1T M Ans: Set system=m1+M+m2  1 2 [ , are internal forces, NO contribution to .] T T  Set pivot at wheel axis Angular Momentum of a Rotating Rigid Object ˆ i i i i i i L r p rm v z       2 ˆ i i i L m r z     2 z i i i i i L L m r      2 i i i I m r           zL I "
+  },
+  {
+    "source": "Lec10.txt",
+    "category": "Physics",
+    "chunk_index": 42,
+    "page": 36,
+    "text": " 2 i i i I m r           zL I   z dL d I dt dt    I  z I      74"
+  },
+  {
+    "source": "Lec10.txt",
+    "category": "Physics",
+    "chunk_index": 43,
+    "page": 38,
+    "text": "38 Note, is not always correct! L I    is not parallel to L     In general, , only if the rotation is a symmetry a . about an xis through the CM d L I    1L  o CM  2 L  CM L  L I      75 o  L  r p  76 2 ( ) ( ) ( ) ( ) ( ) = ( ) L r p r mv mr r m r r mr r mr m r r I m r r                                            In fact, If , r L I         "
+  },
+  {
+    "source": "Lec10.txt",
+    "category": "Physics",
+    "chunk_index": 44,
+    "page": 39,
+    "text": "39  77 If the rotation axis is not a symmetry axis, will not be to the rotation axis. L    keeps changing direction .0 L      e.g., spinning top, wheel balancing, washing machine This will cause force on the pivot! 78"
+  },
+  {
+    "source": "Lec10.txt",
+    "category": "Physics",
+    "chunk_index": 45,
+    "page": 40,
+    "text": "40 5. Conservation of Angular momentum  79 1. Torque 2. Energy conservation in rotational motion 3. Rolling motion 4. Angular momentum 5. Conservation of angular momentum 6. The motion of gyroscopes and tops 7. Angular momentum as a fundamental quantity Conservation of Angular Momentum For rotation about a fixed axis and through the CM of a moving system, If 0 total ext dL dt       . total L const    i f L L    i i f f I I      80 L I   "
+  },
+  {
+    "source": "Lec10.txt",
+    "category": "Physics",
+    "chunk_index": 46,
+    "page": 41,
+    "text": "41  81 Set pivot at CM.  0 If \" \" is constant. 0 . total CM CM g r Mg L const                 82\n\n42  83 “Rotational” collision ( ) A A B B A B A A B B A B I I I I I I I I              ? f  i   84 Ex."
+  },
+  {
+    "source": "Lec10.txt",
+    "category": "Physics",
+    "chunk_index": 47,
+    "page": 43,
+    "text": "43  85 Ans: 0 f f ext i i I I        2 2 2 2 1 1 ( ) ( ) 2 2 i f MR mR MR mr      2 2 2 2 1 2 1 2 f i MR mR MR mr                System = disk + person Note, 1. The kinetic energy is not conserved! Similar to rocket motion, Ki = 0, but Kf 0. 2. If the person and turntable are considered as the system, the “momentum” is not conserved, because the ground exerts force on turntable while the person is walking. [Serway, Problem 11.23(b)]  86"
+  },
+  {
+    "source": "Lec10.txt",
+    "category": "Physics",
+    "chunk_index": 48,
+    "page": 44,
+    "text": "44 Conservation Laws Summary For an isolated system, (1) Conservation of Energy: Ei = Ef (2) Conservation of Linear Momentum: pi = pf (3) Conservation of Angular Momentum: Li = Lf p.s., These quantities do not have to be conserved simultaneously.  87 Initially, only the wheel is rotating. After flipping the wheel, (1) Will |Li| change? (2) What will be Lperson+stool?  88 Ex."
+  },
+  {
+    "source": "Lec10.txt",
+    "category": "Physics",
+    "chunk_index": 49,
+    "page": 45,
+    "text": "45 (1) |Li| will not change; ∵ ∑τby hand =0 about the “spinning axis” of the wheel.  total, wheel (2) i i L L     person+stool total, wheel ( ) f i L L L      ext total, total, 0 i f L L         person+stool 2 i L L      89 Ans:  90"
+  },
+  {
+    "source": "Lec10.txt",
+    "category": "Physics",
+    "chunk_index": 50,
+    "page": 45,
+    "text": "46 ' at CM ' ' o i i i L r p       o i i i L r p       CM ( ' ) ( ' ) i i i CM i r r p m v          CM ' ' ' ' i i i i i CM i CM CM i i i i r p r p m r v m r v                     ' at CM CM o o CM L L r p          0 ' at C 0 CM M ' ( ') o C i i i i i M CM CM p m r L r v Mr v                    Angular momentum at different reference axis  91 ' ir CM r CM O’ O ir ' i i CM r r r      ' i i i CM p p m v      of"
+  },
+  {
+    "source": "Lec10.txt",
+    "category": "Physics",
+    "chunk_index": 51,
+    "page": 45,
+    "text": "r r r      ' i i i CM p p m v      of Earth spin L  of Earth orbit L  with reference at Sun (Earth) spin orbit L L L       92 O  CM"
+  },
+  {
+    "source": "Lec10.txt",
+    "category": "Physics",
+    "chunk_index": 52,
+    "page": 47,
+    "text": "47 ' at CM CM o o CM L L r p        ' at CM CM o o CM r F            'at CM ' at CM CM CM CM o o o o CM dL dt dL dt d r p r F dt                           93  94 https://www.wired.com/story/what-is-angular-momentum/ https://www.youtube.com/watch?v=DtxxmTdQ2Jc&feature=youtu.be"
+  },
+  {
+    "source": "Lec10.txt",
+    "category": "Physics",
+    "chunk_index": 53,
+    "page": 48,
+    "text": "48 Elastic collision ? ? ? df s v v      95 o Ex. d m r s m The middle of the stick moves on a straight line. Why?  96 Set the middle of the stick as the rotation reference, although it is moving (but without acceleration.) (1) (2) (3) i f p p    d di d df s s m v m v m v    i f K K  2 2 2 2 1 1 1 1 2 2 2 2 d di d df s s m v m v m v I     i f L L    d di d df rm v rm v I    Ans:"
+  },
+  {
+    "source": "Lec10.txt",
+    "category": "Physics",
+    "chunk_index": 54,
+    "page": 49,
+    "text": "49 Perfectly inelastic collision ? ? CM v    The middle of the stick doesn’t move on a straight line. Why? CM CM y  97 d m r s m Ex. (1) i f P P  (2) i f K K  (3) i f L L  ( ) d di d s CM m v m m v    d di CM d s m v v m m    set the CM as the rotational reference point ) ( d di CM d s r y m v I I       2 of stick s CM I I MD   2 ( ) d d CM I m r y   of stick 2 CM M s C I m y   ...     98 Ans:"
+  },
+  {
+    "source": "Lec10.txt",
+    "category": "Physics",
+    "chunk_index": 55,
+    "page": 50,
+    "text": "50 6. The motion of gyroscopes and tops  99 1. Torque 2. Energy conservation in rotational motion 3. Rolling motion 4. Angular momentum 5. Conservation of angular momentum 6. The motion of gyroscopes and tops 7. Angular momentum as a fundamental quantity Motion of Gyroscopes and Tops 0 Spin L    100 Without spin, ˆ y L L y  "
+  },
+  {
+    "source": "Lec10.txt",
+    "category": "Physics",
+    "chunk_index": 56,
+    "page": 51,
+    "text": "51  101 0 Spin L   With spin, ˆ Precession z L L z   spin L   102 Analog to this case: When the ball has circular speed, then it will be lifted. Otherwise, it stays in the bottom. v"
+  },
+  {
+    "source": "Lec10.txt",
+    "category": "Physics",
+    "chunk_index": 57,
+    "page": 51,
+    "text": "52 (1) Set the pivot at the CM:   origin at CM ˆ 0 0 mgz r F          0 Spin dL dt   . is constant Spin L   (2) Set the pivot at the tip: 0 0 CM dL r Mg dt         e Spi Pr ces n sion L L L      spin L  Precession L  CM O Mg 0 changes direction, but not its magnitude. Spin L     CM r  103 Precession L  spin L  p d Mgh dt I       Assume so that . Spin Precession Spin L L L L       (1) i f L L    (2) dL dt dL        (3) dt dL   ( )"
+  },
+  {
+    "source": "Lec10.txt",
+    "category": "Physics",
+    "chunk_index": 58,
+    "page": 51,
+    "text": " (2) dL dt dL        (3) dt dL   ( ) ( ) ( ) mgh dt L d I d       Precessional frequency This is why the gyroscope doesn’t fall.  104"
+  },
+  {
+    "source": "Lec10.txt",
+    "category": "Physics",
+    "chunk_index": 59,
+    "page": 53,
+    "text": "53  105 https://www.youtube.com/watch?v=5Sn2J1Vn4zU If is not , \"nutation\" will occur in addition to precession. Spin Precession L L     106 https://www.youtube.com/watch?v=ekzwbt3hu2k\n\n54  107 https://www.youtube.com/watch?v=hVsx4XWafXg http://www.gyroscopes.org/ Applications of Gyroscopes Gyrocompasses, Ship stabilisers, Segway Scooter, etc.  108"
+  },
+  {
+    "source": "Lec10.txt",
+    "category": "Physics",
+    "chunk_index": 60,
+    "page": 55,
+    "text": "55  109 https://www.youtube.com/watch?v=KNDpsBlxUIY Seakeeper Gyro suitcase dL r F dt dL              110 L     fL  r F     iL \n\n56  111  112"
+  },
+  {
+    "source": "Lec10.txt",
+    "category": "Physics",
+    "chunk_index": 61,
+    "page": 56,
+    "text": "56  111  112\n\n57  113 American Journal of Physics 89, 349 (2021); https://doi.org/10.1119/10.0003372 7. Angular momentum as a fundamental quantity  114 1. Torque 2. Energy conservation in rotational motion 3. Rolling motion 4. Angular momentum 5. Conservation of angular momentum 6. The motion of gyroscopes and tops 7. Angular momentum as a fundamental quantity"
+  },
+  {
+    "source": "Lec10.txt",
+    "category": "Physics",
+    "chunk_index": 62,
+    "page": 58,
+    "text": "58 Angular Momentum as a Fundamental Quantity 0 Angular momentum has discrete values. The fundamental unit of angular momentum isℏ, called Planck’s constant. 2 34 kg m 1.054 10 2 s h         115 L n I   , 1,2,3,... I n n      116"
+  }
+]

@@ -1,0 +1,72 @@
+[
+  {
+    "source": "topic4.txt",
+    "category": "Probability",
+    "chunk_index": 0,
+    "page": 1,
+    "text": "Probability  Topic 4: Expectation and Variance Lecture Outline  Expectation (期望值) Variance (變異數) Expected Value Rule 或稱Law of the Unconscious Statistician (LOTUS) Reading: Textbook 2.4"
+  },
+  {
+    "source": "topic4.txt",
+    "category": "Probability",
+    "chunk_index": 1,
+    "page": 2,
+    "text": "Probability   A random variable X is a function defined on the sample space of an experiment  The PMF of a discrete RV X : You need to find pX (x) = P(X = x) for all x  Given a random variable X and a function g(.), we can define a new random variable Y = g(X), i.e., Y (ω) = g(X (ω)) is a mapping from ω to a real number The PMF of Y can be computed from the PMF of X : Review"
+  },
+  {
+    "source": "topic4.txt",
+    "category": "Probability",
+    "chunk_index": 2,
+    "page": 3,
+    "text": "Probability  Expectation Definition The expected value E[X] (also called the average value, expectation, or mean 期望值、平均值) of a random variable X, with PMF pX(x), is defined by Example What is the expected value of rolling a fair dice? 物理意義: The expected value can be regarded as the representative sample value (代表值) of an R.V. (e.g. the average score in a class). It needs not be exactly identical to a possible value of the R.V.\n\nProbability  Analogy to Center of Gravity"
+  },
+  {
+    "source": "topic4.txt",
+    "category": "Probability",
+    "chunk_index": 3,
+    "page": 5,
+    "text": "Probability  Elementary Properties of Expectation If 𝑋𝑋≥0 , then E[𝑋𝑋] ≥0 If a ≤𝑋𝑋≤𝑏𝑏, then a ≤𝐸𝐸[𝑋𝑋] ≤𝑏𝑏 If c is a constant, 𝐸𝐸𝑐𝑐= 𝑐𝑐\n\nProbability  Variance Definition The variance （變異數）of X is defined as the expected value of the random variable (X − E[X])2  物理意義: The variance provides a measure of dispersion (散亂程度) of X around its mean.  Standard deviation (標準差) is defined as the square root of the variance  實務上，怎麼計算variance呢?"
+  },
+  {
+    "source": "topic4.txt",
+    "category": "Probability",
+    "chunk_index": 4,
+    "page": 7,
+    "text": "Probability  如何計算變異數Variance  土法煉鋼法：𝐸𝐸[ 𝑋𝑋−𝐸𝐸𝑋𝑋 2] 令 Y=(X-E[X])2，找出Ｙ的PMF，則可用期望值的定義計算E[Y]，即是var(X)。  進階作法: 使用Expected Value Rule Expected Value Rule (或稱Law of the unconscious statistician, LOTUS) Let X be a random variable with PMF pX(x), and let g(X) be a real-valued function of X. Then 令g(X) =(X-E[X])2 代入上式求解。 上述LOTUS 好用之處: 可直接使用X 的PMF來計算期望值，不需要g(X) 的PMF"
+  },
+  {
+    "source": "topic4.txt",
+    "category": "Probability",
+    "chunk_index": 5,
+    "page": 8,
+    "text": "Probability  Expectation for Functions of Random Variables LOTUS Let X be a random variable with PMF pX(x), and let g(X) be a real-valued function of X. Then,  This result is extremely useful. It tells us, to find E[g(X)], we don’t actually need the PMF of g(X). Instead, knowing the PMF of X can do the trick. Using the expected value rule and letting g(X)=(X − E[X])2, we have the variance of X Similarly, the nth moment of X is Check the proof of LOTUS on page 85 of the textbook"
+  },
+  {
+    "source": "topic4.txt",
+    "category": "Probability",
+    "chunk_index": 6,
+    "page": 9,
+    "text": "Probability  Example of LOTUS\n\nProbability  More on Variance  Variance of X can be expressed in terms of its first 2 moments1 這個式子為計算variance最常用的公式。  Variance of X is always nonnegative which yields the fact that 1Definition for Moments Sometimes we are interested in finding E[Xn ], which is called the n-th moment of the R.V. X. 也就是 E[X2] 是2nd moment，E[X7]是7th moment"
+  },
+  {
+    "source": "topic4.txt",
+    "category": "Probability",
+    "chunk_index": 7,
+    "page": 11,
+    "text": "Probability  Mean and Variance of a Linear Function of X Let X be a random variable and let where a and b are given (non-random) scalars. Then, Remark: Expectation is a linear operator, but variance is not.\n\nWhat is the constant 𝛼𝛼that minimizes the mean square error (MSE，最小均方差) between a random variable X and 𝛼𝛼. That is, please find the constant 𝛼𝛼such that 𝐸𝐸 𝑋𝑋−𝛼𝛼2 is minimized. Any intuition before you start? Probability  Example: the best fit to a random variable"
+  },
+  {
+    "source": "topic4.txt",
+    "category": "Probability",
+    "chunk_index": 8,
+    "page": 13,
+    "text": "Probability  Mean and Variance of Bernoulli Bernoulli Random Variable\n\nProbability  Mean and Variance of Binomial Binomial Random Variables Binomial random variable X with parameter (n,p) has PMF Its mean and variance are This is left as an exercise for you. Hint: Use the identity\n\nProbability  Mean and Variance of Uniform Uniform Random Variables X takes on values in {1,2,…,n} equally likely."
+  },
+  {
+    "source": "topic4.txt",
+    "category": "Probability",
+    "chunk_index": 9,
+    "page": 16,
+    "text": "Probability  Mean and Variance of Uniform General Uniform Random Variables Suppose X takes on values in {a,a+1,…,b} equally likely.\n\nProbability  Mean and Variance of Geometric Geometric Random Variables The PMF of Geometric X is given by Its mean is 這期望值的結果符合直覺嗎？ And, its variance is\n\nProbability  Mean and Variance of Poisson Poisson Random Variable A Poisson random variable X with parameter λ has PMF Its mean and variance are both equal to the parameter λ."
+  }
+]

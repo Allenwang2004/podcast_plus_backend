@@ -1,0 +1,156 @@
+[
+  {
+    "source": "Lec02.txt",
+    "category": "Physics",
+    "chunk_index": 0,
+    "page": 2,
+    "text": "2 Kinematics (運動學) 0 Describe particle motion in terms of space and time. 0 Motion Translation Rotation Vibration 0 Quantities Position Displacement Velocity Acceleration  3  4 1. Definition of Quantities in Kinematics 1. Definition of Quantities in Kinematics Position, Velocity, and Speed Instantaneous Velocity and Speed Acceleration 2. One-Dimensional Motion with Constant Acceleration Kinematic equations 3. Freely Falling Objects 4. Kinematic Equations Derived from Calculus"
+  },
+  {
+    "source": "Lec02.txt",
+    "category": "Physics",
+    "chunk_index": 1,
+    "page": 2,
+    "text": "3 0 Position, x 0 Displacement, x xf – xi 0 Distance s 0 Average velocity, 0 Average speed = s / t 0 Instantaneous velocity, 0 Instantaneous speed |vx| 0 Average acceleration, 0 Instantaneous acceleration, Definition of Quantities in Kinematics f i x f i x x x v t t t       0 lim x t x dx v t dt      xf xi x x f i v v v a t t t       2 2 0 lim x x x t v dv d x a t dt dt        5 Position: the location with respect to the frame of reference.  6 Position-Time Graph"
+  },
+  {
+    "source": "Lec02.txt",
+    "category": "Physics",
+    "chunk_index": 2,
+    "page": 2,
+    "text": "to the frame of reference.  6 Position-Time Graph The goal is to find x = x(t) = ?"
+  },
+  {
+    "source": "Lec02.txt",
+    "category": "Physics",
+    "chunk_index": 3,
+    "page": 4,
+    "text": "4 Modern physics: More precise definitions of space and time will require “relativity”. Space and time are not independent each other. Motion of small particles like atoms is subject to “uncertainty principle” and is described by “Quantum Mechanics”.  7 Displacement & distance 0 Displacement: the change in position x xf xi. 0 Distance: the length of a path followed by a particle, s.  8"
+  },
+  {
+    "source": "Lec02.txt",
+    "category": "Physics",
+    "chunk_index": 4,
+    "page": 5,
+    "text": "5 Instantaneous Velocity 0 The general equation for instantaneous velocity is 0 0 ( ) ( ) lim lim x t t x x t t x t dx v t t dt            9 ( ) x t ( ) x t t  p.s., derivative of x with respect to t : dt dx e.g.,     2 2 2 2 ( ) ( ) 2 x t At x t t A t t At At t A t           2 0 0 2 ( ) ( ) lim lim 2 t t At t A t dx x t t x t At dt t t             10"
+  },
+  {
+    "source": "Lec02.txt",
+    "category": "Physics",
+    "chunk_index": 5,
+    "page": 6,
+    "text": "6  11 Instant speed xv Instant speed = the magnitude of instant velocity, Average Velocity 0 The average velocity is rate at which the displacement occurs f i average x x x v t t       Why is it called “average” ?  12"
+  },
+  {
+    "source": "Lec02.txt",
+    "category": "Physics",
+    "chunk_index": 6,
+    "page": 7,
+    "text": "7 1 1 0 1 1 1 lim ( ) ( ) / n n n k k k k k t k k k f i f i f i f i x x v x x t v n t t t t t x x t t                             it t  ft x t 1 0 lim k k k t x x v t        13 Proof: Instantaneous Acceleration 0 The instantaneous acceleration is the limit of the average acceleration as t approaches 0. 2 2 0 lim x x x t v dv d dx d x a t dt dt dt dt               14"
+  },
+  {
+    "source": "Lec02.txt",
+    "category": "Physics",
+    "chunk_index": 7,
+    "page": 8,
+    "text": "8 Once x = x(t) is known, the v(t) and a(t) can be obtained. x t t t v a  15 0 lim x t x dx v t dt      2 2 0 lim x x x t v dv d x a t dt dt       Can we define another quantity as 3 3 ? d x dt P.s.,  16 (Serway, Problem 2.33) (Jerk) https://en.wikipedia.org/wiki/Jerk_(physics) Air bags are triggered by Jerk?!"
+  },
+  {
+    "source": "Lec02.txt",
+    "category": "Physics",
+    "chunk_index": 8,
+    "page": 9,
+    "text": "9  17 2. One-dimensional motion with constant acceleration 1. Definition of Quantities in Kinematics Position, Velocity, and Speed Instantaneous Velocity and Speed Acceleration 2. One-Dimensional Motion with Constant Acceleration Kinematic equations 3. Freely Falling Objects 4. Kinematic Equations Derived from Calculus One-dimensional motion with constant acceleration 0, i f t t t   (1) 0 xf xi x v v a t    x x xf i v a t v     18"
+  },
+  {
+    "source": "Lec02.txt",
+    "category": "Physics",
+    "chunk_index": 9,
+    "page": 10,
+    "text": "10 2 xi xf x v v v   (2) Average velocity 1 1 p.s., / n n xk xk k k x v v v n t t        0 f i x x t    i x fx x t v     19     1 area under - curve 1 1 1 1 2 2 n xk k v t x xi xf xi xf v t t v v t v v t                                ⇐ Only for constant a (3) 2 1 2 i xi f x x v t a t x       1 2 f i xi xi x x x v v a t t           20 f i x x x v t  "
+  },
+  {
+    "source": "Lec02.txt",
+    "category": "Physics",
+    "chunk_index": 10,
+    "page": 11,
+    "text": "11 2 2 1 ( ) 2 2 f i xi xf xf xi x xf xi x x x v v v v v a v a              (4) 2 2 2 ( ) xf xi x f i v v a x x      21 f i x x x v t   Kinematic Equations - summary (x, v, a, t)  22"
+  },
+  {
+    "source": "Lec02.txt",
+    "category": "Physics",
+    "chunk_index": 11,
+    "page": 11,
+    "text": "12 0 Even the smoothest sports car does not move with constant acceleration. 0 A typical car takes twice as long to accelerate from 50 km/h to 100 km/h as it does to accelerate from 0 to 50 km/h. Why? Non-uniform acceleration case  24 Assume the engine output power is fixed, ( ) ( ) ( ) ( ) . P F t v t ma t v t const    P dv v m dt  0 0 t v P dt vdv m    2 1 2 P t v m  2 2 m t v P   2 0 1 0 2 2 0 0 2 0 0 1 1 0 2 2 (2 ) > 2 2 3 m v v t v P m m v v v t v v t t P P           "
+  },
+  {
+    "source": "Lec02.txt",
+    "category": "Physics",
+    "chunk_index": 12,
+    "page": 11,
+    "text": "v P m m v v v t v v t t P P             "
+  },
+  {
+    "source": "Lec02.txt",
+    "category": "Physics",
+    "chunk_index": 13,
+    "page": 13,
+    "text": "13  25 Ex. 追到的時候兩車速度會一樣?  26 Q: Which one is the correct v-t diagram?"
+  },
+  {
+    "source": "Lec02.txt",
+    "category": "Physics",
+    "chunk_index": 14,
+    "page": 13,
+    "text": "14  27 3. Freely Falling Objects 1. Definition of Quantities in Kinematics Position, Velocity, and Speed Instantaneous Velocity and Speed Acceleration 2. One-Dimensional Motion with Constant Acceleration Kinematic equations 3. Freely Falling Objects 4. Kinematic Equations Derived from Calculus Freely Falling Objects 0 A freely falling object is any object moving freely under the influence of gravity alone. 0 The magnitude of free fall acceleration is g = 9.80 m/s2. g decreases with increasing"
+  },
+  {
+    "source": "Lec02.txt",
+    "category": "Physics",
+    "chunk_index": 15,
+    "page": 13,
+    "text": "is g = 9.80 m/s2. g decreases with increasing altitude. g varies with latitude. 9.80 m/s2 is the average at the Earth’s surface.  28"
+  },
+  {
+    "source": "Lec02.txt",
+    "category": "Physics",
+    "chunk_index": 16,
+    "page": 15,
+    "text": "15  29 Q: A sky diver jumps out of a hovering helicopter. A few seconds later, another sky diver jumps out, and they both fall along the same vertical line. Ignore air resistance, so that both sky divers fall with the same acceleration. Does the difference in their speeds stay the same throughout the fall? Does the vertical distance between them stay the same throughout the fall?  30 t y 0 1t t v 0 1t 1 0 t t  1 2 1 2 0t 'v v   v  0t 1 0 t t  'y y   y "
+  },
+  {
+    "source": "Lec02.txt",
+    "category": "Physics",
+    "chunk_index": 17,
+    "page": 16,
+    "text": "16 Why is the water dripping not continuous in the lower portion?  31  32 4. Kinematic Equations – Derived from Calculus 1. Definition of Quantities in Kinematics Position, Velocity, and Speed Instantaneous Velocity and Speed Acceleration 2. One-Dimensional Motion with Constant Acceleration Kinematic equations 3. Freely Falling Objects 4. Kinematic Equations Derived from Calculus"
+  },
+  {
+    "source": "Lec02.txt",
+    "category": "Physics",
+    "chunk_index": 18,
+    "page": 17,
+    "text": "17 Kinematic Equations -Derived from Calculus n xn x v t   0 1 ( ) area lim N x N i n t n f v t v t x t           33 0 lim x t x dx v t dt      ( ) i f i f i f i ft x f i x t x x t x t d x v t dt x dt x x dx dt           34 ( ) ( ) ( ) f i x t x t dx t v t d x v t dt t    "
+  },
+  {
+    "source": "Lec02.txt",
+    "category": "Physics",
+    "chunk_index": 19,
+    "page": 18,
+    "text": "18  35 area xi x v t   f f i i t t xi xi xi f xi i xi t t v dt v t v t v t v t        Ex. area x  2 1 1 2 2 A x A x A t a t a t     36 2 2 1 1 2 2 f f f f i i i i t t t t x x x x x A t t t t v dt a tdt a tdt a t a t         Ex."
+  },
+  {
+    "source": "Lec02.txt",
+    "category": "Physics",
+    "chunk_index": 20,
+    "page": 19,
+    "text": "19 Kinematic Equations – General Calculus Form   0 0 0 0 2 0 1 ( 0) 2 f i f i t x x x t x xi x x t t xi x f i t xi x f i dx v dt dt dt v a t dt dx v dt a tdt x x v t a t x x                     (1) x x dv a dt  0 0 ( 0) f i xf xi t v x x v t v x x v x xf xi dv a dt dt dt a dt dv a t v v             (2) x dx v dt  2 1 2 f i xi x x x v t a t      37 xf xi x v v a t    ? v   38 Ex. boy v m h v a"
+  },
+  {
+    "source": "Lec02.txt",
+    "category": "Physics",
+    "chunk_index": 21,
+    "page": 20,
+    "text": "20 2 2 2 ( ) h y x h    2 2 h y x h    2 2 y x h h     boy 2 2 dy dy dx x v v dt dx dt x h      39 x y h y  h y  v is dependent on x! ⇨a ≠ 0 Method#1  40 x y h y  h y  x  y    0 0 0 boy 2 2 sin lim lim sin lim t t t y x v t t x t x v x h                 Method#2\n\n21  41 Application: 3D printer"
+  }
+]

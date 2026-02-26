@@ -1,0 +1,43 @@
+
+[Page 2]
+2 3  4 1. Angular position, velocity, acceleration  1. Angular position, velocity, acceleration 2. Rotational Kinematics 3. Rotational Kinetic Energy 4. Moments of Inertia
+[Page 3]
+3 5 Angular Position s r  Polar coordinate ( , ) r  s r  “radian” (rad) (deg) 180      “One radian” is the angle subtended by an arc length equal to the radius of the arc. Radian is dimensionless.  6 f i       f i f i t t t           0 lim t d t dt         Angular displacement: (rad) Average angular speed: (rad/s) Instantaneous angular speed: 1 rev/sec = 2rad/sec; rev = revolution 1 rev/min = 1 rpm = 2π/60 rad/sec; 1 rad/sec ≈10 rpm
+[Page 4]
+4 7 f i f i t t t           0 lim t d t dt         Average angular acceleration: (rad/s2) Instantaneous angular acceleration:  8 Instantaneous , are vectors.    Direction is determined by “right-hand” rule.
+[Page 5]
+5 9 Note, “Angular displacement” ( )can NOT be treated as a vector, because it does not satisfy the commutative rule.  10 Average angular velocity and acceleration are NOT vectors, but instantaneous angular velocity and acceleration are vectors.
+[Page 6]
+6 11 2. Rotational kinematics  1. Angular position, velocity, acceleration 2. Rotational Kinematics 3. Rotational Kinetic Energy 4. Moments of Inertia 12 Rotational Kinematic Equations for constant angular acceleration (1) f i t      2 1 (2) 2 f i it t        2 2 (3) 2 ( ) f i f i          1 (4) 2 f i i f t        d dt     2 2 d dt     (1), (2) ; remove “t” (1), (2) ; remove “”
+[Page 7]
+7 13  Relationship Between Angular and Linear Quantities 14 0 The linear velocity is always tangent to the circular path, called the tangential velocity. ds d v r r dt dt       θ is measured in “radian” instead of degree.
+[Page 8]
+8 15 ( sin ) v r    r  v r         o Usually, both the origin and rotational axis have to be defined in rotational motion. The rotational axis doesn’t have to be physically present. The origin and the rotational axis do not have to fix in space and they can move, too, as in rolling motion. x y z  16 0 The tangential acceleration is 0 The radial acceleration is the centripetal acceleration 0 The total linear acceleration is t dv d a r r dt dt      2 2 r C v a a r r     t r a a a      2 2 2 2 2 4 2 4 t r a a a r r r           ta r        ra v       (See P9.64)
+[Page 9]
+9 17 Angular and Linear Quantities 0 Distance 0 Speeds 0 Accelerations 0 All points on the rigid object will have the same angular speed, but not the same tangential speed. 0 All points on the rigid object will have the same angular acceleration, but not the same tangential acceleration. s r   v r   a r     18 Ex. front front rear rear v r r     front rear front rear 2 2 r r N N    rear front front rear N N     front N rear N
+[Page 10]
+10 19 For a compact disc player to read a CD, the angular speed must vary to keep the tangential speed constant (vt).  Ex. 20 (A) Find the angular speed of the disc in revolution per minute when information is being read from the innermost first track r1 and the outmost final track r2. 1 1 tv r  2 2 tv r 
+[Page 11]
+11  21 (B) The maximum playing time of a CD is t0. How many revolutions does the disc make during that time? Assume is constant,   0 0 1 2 1 2 0 1 1 1 1 1 2 2 2 f i i t t f t v v t v t r r t r r                         0 1 2 1 1 1 2 4 f t n v t r r              22 Another idea from a student: Assume the track’s width is h, then the area 2 2 0 2 1 1 ( ) : the time for the -th revolution n t i t i i h h v t v t r r t i        0 2 1 1 2 Revolutions: ( ) tv t r h r n r r     
+[Page 12]
+12 23 1 ( /2 ). r r h     0 1 0 2 1 Number of Revolution: 1 1 , depends on . 2 tv h t h r n h r                (Serway, Problem 10.46)   1 /2 t t v v d r dt r h          1 2 1 2 1 1 , depends on . ( ) tv r t h h r t h               24 2 1 0 0 1 0 2 1 ( /2 ) (1) 1 1 (2) 2 t h h v r h r r r t                        2 2 2 1 0 0 0 1 2 Solve for : ( ) put it back to (1). different from previous method. 2 ( ) t t h r r h v t v t n r r           
+[Page 13]
+13 25 (c) What is the angular acceleration of the CD over the time interval? Assume that is a constant. 0 t s v t  (d) What total length of track moves past the objective lens during this time? 2 1 0t       2 2 3/2 2 3 1 0 2 1 2 1 t t hv d dt v h r t r              26 3. Rotational kinetic energy  1. Angular position, velocity, acceleration 2. Rotational Kinematics 3. Rotational Kinetic Energy 4. Moments of Inertia 5. Torque 6. Energy conservation in rotational motion 7. Rolling Motion
+[Page 14]
+14 27 Rotational Kinetic Energy 2 2 1 2 R i i i i i K K m r      2 1 2 i i i K m v  i i i v r  2 2 2 1 1 2 2 i i R i K m r I          Moment of Inertia: 2 n i i i I m r  28 4. Moments of inertia  1. Angular position, velocity, acceleration 2. Rotational Kinematics 3. Rotational Kinetic Energy 4. Moments of Inertia
+[Page 15]
+15 29 Moment of Inertia (rotational inertial): 2 n i i i I m r  Depends on the choice of axis. Rotational Kinetic energy: 2 1 2 ( : rad/s) R K I   flywheel   30 Continuously variable transmission (CVT)
+[Page 16]
+16 31 2 2 2 Linear Rotational 1 1 2 2 m I mr v mv I      Calculation of Moment of Inertia 32 2 i i i I r m  2 2 0 lim i i i m i I r m r dm        2  I r dV  dm dV  (volume) 2r dA  2r d    dA  (area) (linear) d   
+[Page 17]
+17  33 ' axis z The moment of inertia for the rotation axis z’ is not the same as that for the z axis. 34 Moment of Inertia of a Uniform Thin Hoop 2 2 I r dm R dm     2 I MR  
+[Page 18]
+18 35 Moment of Inertia of a Uniform Rigid Rod /2 2 2 /2 L L M I r dm x dx L      2 1 12 I ML    36 Moment of Inertia of a Uniform Solid Cylinder 2 2 I r dm r dV      2 2 dV L r dr L r V       2 1 2 zI MR     2 2 z L rdr I r    
+[Page 19]
+19 37 Moments of Inertia of Various Rigid Objects  38 Moments of Inertia of Various Rigid Objects
+[Page 20]
+20 39 Moments of Inertia of Various Rigid Objects  40 Parallel-Axis Theorem 0 The moment of inertia about the axis through O would be 2 O CM I I MD   D  min CM I I   The two axes have to be parallel to each other!
+[Page 21]
+21 41 2 2 2 ( ) O CM CM I r dm x y dm x x x y y y                42  2 2 2 0 0 ( ) 2 0 2 ( ) 2 2 ( ) CM CM CM I CM C x x dm xdm Mx M CM CM D M x y dm x x dm y y dm x y dm                              2 2 [( ) ( ) ] CM CM CM CM x x x x x y y dm y y y                  2 O CM I I MD    2 2 2 ( ) OI r dm x y dm     
+[Page 22]
+22 43 Ex. The moment of inertia of the rod about its center is 2 1 . 12 CM I ML  2 CM 2 2 2 1 1 12 2 3 O O I I MD L I ML M ML             O CM .  44 Perpendicular axis theorem 2 2 2 2 2 ( ) O x y I r dm x y dm x dm y dm I I            O x y I I I  

@@ -72,3 +72,5 @@ if __name__ == "__main__":
     for q in test_query:
         results = retrieve(q)
         df = pd.DataFrame(results[0], index=[0])
+
+        

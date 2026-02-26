@@ -1,0 +1,53 @@
+
+[Page 2]
+2   1. The conditions for equilibrium 1. The Conditions for Equilibrium 2. Center of Gravity 3. Solving rigid-body equilibrium problems 4. Elastic Properties of Solids  Equilibrium Static equilibrium: the object is at rest and experiences no translational and rotational motion, relative to the observer in an inertial reference frame. Conditions for equilibrium: (1) , translational equilib ium 0 r F    (2) , rotational equilib um 0 ri    , and (independent of the choice of axis) 
+[Page 3]
+3   
+[Page 4]
+4   https://www.inc.com/jim-schleckser/seven-secrets-of- successful-people-to-living-a-balanced-life.html
+[Page 5]
+5 i i o i r F       ' ( ') i i i o r r F          ' i i i i i r F r F           ' ' o i i o F r         ' . ( 1) 0 ' indep. of xi , a s or i i o i i o F r F              ' (2) , equilibrium . 0 0 0 i o o i F            Torque for different axes at O and O’ : O O’   2. The center of gravity 1. The Conditions for Equilibrium 2. Center of Gravity 3. Solving rigid-body equilibrium problems 4. Elastic Properties of Solids
+[Page 6]
+6  Center of gravity  All the gravitational torques acting on an object equals to a single torque acting through a point, called center of gravity (CG). In contrast, all the forces acting on an object is equal to a single force acting on the center of mass (CM).  If g is uniform over the object, 1. the CG will coincide with CM, and 2. the gravitational torque on an object equals to the torque acting at the CM.   Torque by gravity, total i i i i m g x   1 2 If ... CM g g g g     By total CG CG CM i i i i i m x m x x          ( ) ([ ] ) i i i CM CM i total i i i i i m g x g x m g m x          ( [( ) [ ) ] ] G CG i CG i CG C i i x g m m g x     Proof of , only if is assumed to be a constant. M C C G x g x 
+[Page 7]
+7    Q: Where is the CG on the horizontal axis? The system satisfies F=0 & = 0. X CG   ' 0 0 ' 0 Equalibrium M o i o i CM CM o C r r F F                         
+[Page 8]
+8   https://en.wikipedia.org/wiki/File:Balanced_scale_of_Justice.svg  What is the maximum x without falling?  Ex.
+[Page 9]
+9   1 CM x  2 CM x  0 x  1 1 2 2 1 2 = ( / 2) [ ( / 2 ( '))] ' 0 2 2 CM CM CG m x m x x m m m x L m L x x L x x m             'x But ' / 2 x L  So 3 / 4 x L   
+[Page 10]
+10   Ex. What is the maximum mass for the person to keep balanced?   1 1 1 ( ) ( ) 2 2 2 0 m M CG m L D M D mx Mx x M m M m          D m M L D    Ans: Set pivot at S: Method#1
+[Page 11]
+11   Set pivot at S: Method#2 N Mg mg 0 ( ) 0 2 2 2 D L D Mg ND mg        ( ) 2 2 2 0 D L D Mg mg N D     D m M L D      3. Solving rigid-body equilibrium problems 1. The Conditions for Equilibrium 2. Center of Gravity 3. Solving rigid-body equilibrium problems 4. Elastic Properties of Solids
+[Page 12]
+12 Problem-Solving Strategy – Equilibrium Problems 1. Isolate the object being analyzed. 2. Draw a free-body diagram. (or separate free-body diagrams if more than one object) 3. Try to guess the correct direction for each force. 4. Choose a coordinate system and the pivot. ( the choice of rotational axis is arbitrary)  F=0 & = 0.    (a) n = ? (b) To be balanced, what is d ?  Ex. The seesaw problem
+[Page 13]
+13   0 f d n m g m g Mg     f d n m g m g Mg    Ans: (a)  Set pivot at (1) Set pivot at (2) When equilibrium, Indep. of the choice of axis. (1) (2) ( / 2) 0 d nd Mgd m g d      f d n m g m g Mg    1 2 d f m d m            ( ) ( ) 0 2 f d m g d m g    2 d f m d m          (b)
+[Page 14]
+14  F = ?  Ex. R = ?   Ans: 0 0 y o F F R mg Fd mg               mg R mg d mg F d           
+[Page 15]
+15  R = ? T = ?  Ex. m M   Ans: F=0 = 0 cos cos 0 sin sin 0 sin 0 2 4 x y o F R T F R T M m L L T L m M                              O
+[Page 16]
+16  0 s  0 s  min ? without sliding.    Ex.  0 0 0 x y o F F         sin cos 0 2 sf P n mg P mg            tan 2 mg P  , 2 s mg f  , s s s f n mg     1 tan 2 s     min 1 tan 2 s      '   , 2tan s mg f   Ans:
+[Page 17]
+17   1. Note that the resultant force can never be along the ladder. tan ' s s n mg f f   2tan  '     (This can be seen if the pivot is set at the wall contact point.) 2. The problem becomes statically indeterminate if the wall has friction.  O  Ex. min ? without sliding.  
+[Page 18]
+18  ( ) s s s f n m M g      min ( / 2) tan ( ) s m Md m M         min depends on " " and " ". d M   min as . d     Ans. 0 0 ( ) 0 sin cos cos 2 x s y o F f P F n m M g P mg Mgd                      ( / 2) ( / 2) tan s mg Mgd mg Mgd P f           ? F    R  Ex.
+[Page 19]
+19  Set the pivot at “A” 2 2 2 mg rh h F mg r h       d System = wheel Ans: 2 2 2 ( ) 2 d r r h rh h      (2 ) 0 mgd F r h      2 2 (2 ) 0 mg rh h F r h     0 cos 0 sin x y F F R F R mg           tan mg F    2 2 ( ) R mg F     Q: 有一人想要測量一個長形物體的重量，他先將一端放在 秤上，得到的讀數是W1，然後再將另一端放在秤上，得到 讀數W2，則此物體的重量是下列何者? (A) W1 + W2。 (B) (W1 + W2)/2。 (C) (D) (E) 無法決定。 1 2 WW 1 2 WW
+[Page 20]
+20 The table is an indeterminate structure. The four forces on the table legs differ from one another in magnitude and cannot be found from the laws of static equilibrium alone. To solve such indeterminate equilibrium problems, we must supplement equilibrium equations with some knowledge of elasticity of the materials. Indeterminate structure b ( u 1) 0 0 3 equations t 4 variables. 0 0 0 ˆ ˆ ˆ ˆ ˆ ˆ ( ) ( ) 0 (2) z x y x y z z x y F F r F r i r j r k F k i i                                                  0 x y   [https://zh.wikipedia.org/wiki/%E9%9D%9C%E4%B8%8D%E5%AE%9A] 0 0 0 0 0 ( ) ( ) 0 x A x y A y B C A y B C F H F F V F V V F a V a b V a b c                        4 unknown variables ( , , , ) A A B C H V V V E.g.,
+[Page 21]
+21   https://www.facebook.com/461822001292778/posts/84734582 2740392/?sfnsn=mo&extid=tooIwDMpAzXQq2DC   4. Elastic properties of solids 1. The Conditions for Equilibrium 2. Center of Gravity 3. Solving rigid-body equilibrium problems 4. Elastic Properties of Solids
+[Page 22]
+22 Elastic Properties of Solids     Deformation: Stress: F, causing deformation. Strain: the result of stress, a measure of the “degree of deformation”.  For sufficiently small stress, strain is proportional to stress. The proportional constant is called, ) E k la H stic m o odul l us ( o ' s aw stress strain  
+[Page 23]
+23  Young’s modulus (elasticity in length): measure the resistance of a solid to a change in its length. Tensile stress: F/A Tensile strain: L/Li tensile stress / tensile strain / i F A Y L L    force unit= area    Elastic hysteresis
+[Page 24]
+24   https://youtu.be/GiG0e1s6nV4 Strain gauge The gauge is fastened with adhesive to the object whose strain is to be measured; it experiences the same strain as the object. The electrical resistance of the gauge varies with the strain, permitting strains up to 3% to be measured.  
+[Page 25]
+25  Shear modulus (elasticity in shape): measure the resistance to motion of the planes within a solid parallel to each other. Shear stress: F/A Shear strain: x/h shear stress / shear strain / F A S x h      Bulk modulus (elasticity in volume): measure the resistance of an object to a change in its volume. Volume stress: F/A Volume strain: V/Vi volume stress ( ) / volume strain / i F A B V V     p.s., “” is to make B “+”. 1 Compressibility B  
+[Page 26]
+26   Prestressed Concrete  
+[Page 27]
+27   https://fb.watch/gtYq32kjNB/   Ex.

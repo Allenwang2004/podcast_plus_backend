@@ -1,0 +1,254 @@
+[
+  {
+    "source": "Lec07.txt",
+    "category": "Physics",
+    "chunk_index": 0,
+    "page": 2,
+    "text": "2 1. Potential energy  3 1. Potential energy 2. Mechanical energy 3. Internal energy 4. Energy in isolated and nonisolated systems 5. Conservation of energy 6. Conservative and nonconservative forces 7. Energy diagram and equilibrium 4 Potential Energy 0 Potential energy is the energy associated with the configuration of a system of objects that exert internal forces on each other. Always associated with a system of two or more interacting objects."
+  },
+  {
+    "source": "Lec07.txt",
+    "category": "Physics",
+    "chunk_index": 1,
+    "page": 3,
+    "text": "3 5 Types of Potential Energy 0 There are many forms of potential energy, including: Mechanical (e.g., gravitational, elastic.) Electromagnetic Chemical Nuclear 0 One form of energy in a system can be converted into another.   6  Gravitational Potential"
+  },
+  {
+    "source": "Lec07.txt",
+    "category": "Physics",
+    "chunk_index": 2,
+    "page": 3,
+    "text": "4  7 i f v v  System = book + Earth p app a p External : 0 for e forc i f F F mg v v       ext on book on Earth Book Earth 0 0 ( ) 0 ( ) 0 app i i f f F v v r mg y y W W W K K                   ext ? W K   app F mg    8 Define Gravitational potential energy (assuming is a constant) g U mg g y  such that ext g W U K    Note that K and Ug depend on the choice of the reference frame, but the equation doesn’t. The gravitational potential is stored"
+  },
+  {
+    "source": "Lec07.txt",
+    "category": "Physics",
+    "chunk_index": 3,
+    "page": 3,
+    "text": "doesn’t. The gravitational potential is stored between the two objects. Work only by external forces is considered. Internal forces are excluded.  instead of ext . W K    System energy cha External in n 2 2 ut ge p 1 1 i.e., ( ) 2 2 f f f i i i F r r mv mv mgy mgy                 "
+  },
+  {
+    "source": "Lec07.txt",
+    "category": "Physics",
+    "chunk_index": 4,
+    "page": 5,
+    "text": "5  9  Elastic Potential  10 System = ball + spring ext F   i f v v  sF   ext ˆ ˆ ( ) s F F kx i kxi       ext ext f f i i x x x x W F dx kxdx     2 2 1 1 0 2 2 f i kx kx K     ext ? W K  "
+  },
+  {
+    "source": "Lec07.txt",
+    "category": "Physics",
+    "chunk_index": 5,
+    "page": 6,
+    "text": "6 11 Define elastic potential energy 2 1 2 s U kx  ext s W K U   such that  2 Exte m rna S l n i 2 n n pu y t ste e ergy cha 2 2 ge 1 1 1 1 i.e., ( ) 2 2 2 2 f f f i i i F r r mv mv kx kx                         12 2. Mechanical Energy 1. Potential energy 2. Mechanical energy 3. Internal energy 4. Energy in isolated and nonisolated systems 5. Conservation of energy 6. Conservative and nonconservative forces 7. Energy diagram and equilibrium"
+  },
+  {
+    "source": "Lec07.txt",
+    "category": "Physics",
+    "chunk_index": 6,
+    "page": 7,
+    "text": "7 Mechanical energy 0 Mechanical energy of a system is the sum of kinetic energy and potential energy. mech E K U    13  14 3. Internal Energy 1. Potential energy 2. Mechanical energy 3. Internal energy 4. Energy in isolated and nonisolated systems 5. Conservation of energy 6. Conservative and nonconservative forces 7. Energy diagram and equilibrium"
+  },
+  {
+    "source": "Lec07.txt",
+    "category": "Physics",
+    "chunk_index": 7,
+    "page": 7,
+    "text": "8 (1) System = Book 2 Book 1 2 i k K mv f d     15 =0 Where does the kinetic energy go? (2) System = Book + Table Internal energy exists only in systems with more than one object. Book: Table: 2 Book 1 2 i K mv   Table 0 K   2 Book Table ext 1 0 2 kf d i W K K K mv            ext Why ? K W   The kinetic energy is transferred to internal energy. t ex in t such that E W K     int k E f d     16 2 Externa System energy cha n n e l i put 2 g 1 1 i.e., ( ) 2 2 f"
+  },
+  {
+    "source": "Lec07.txt",
+    "category": "Physics",
+    "chunk_index": 8,
+    "page": 7,
+    "text": "energy cha n n e l i put 2 g 1 1 i.e., ( ) 2 2 f i f i k F r r m v f v d m                 "
+  },
+  {
+    "source": "Lec07.txt",
+    "category": "Physics",
+    "chunk_index": 9,
+    "page": 9,
+    "text": "9  17 Why does it take energy to hold a weight in position? https://www.facebook.com/theactionlabofficial /posts/958254638316176 4. Energy in isolated and nonisolated systems  18 1. Potential energy 2. Mechanical energy 3. Internal energy 4. Energy in isolated and nonisolated systems 5. Conservation of energy 6. Conservative and nonconservative forces 7. Energy diagram and equilibrium"
+  },
+  {
+    "source": "Lec07.txt",
+    "category": "Physics",
+    "chunk_index": 10,
+    "page": 9,
+    "text": "10 A system’s energy can be stored in various forms: 1. Kinetic energy (motion). 2. Potential energy (elastic, electric, gravitational, chemical, nuclear; by conservative forces). 3. Internal energy (microscopic kinetic and potential energies relative to system’s center of mass, related to temperature).  19 Ways to Transfer Energy 0 Work – transfers by applying a force and causing a displacement of the point of application of the force. 0 Mechanical Waves – allow a disturbance to propagate"
+  },
+  {
+    "source": "Lec07.txt",
+    "category": "Physics",
+    "chunk_index": 11,
+    "page": 9,
+    "text": "Waves – allow a disturbance to propagate through a medium. 0 Heat – is driven by a temperature difference between two regions in space. 0 Matter Transfer – matter physically crosses the boundary of the system, carrying energy with it. 0 Electrical Transmission – transfer is by electric current. 0 Electromagnetic Radiation – energy is transferred by electromagnetic waves.  20"
+  },
+  {
+    "source": "Lec07.txt",
+    "category": "Physics",
+    "chunk_index": 12,
+    "page": 11,
+    "text": "11 a) Work b) Mechanical Waves c) Heat d) Matter transfer e) Electrical Transmission f) Electromagnetic radiation  21 Environment Universe Mechanical waves Heat Matter transfer Electrical transmission Work Electromagnetic radiation  22 Kinetic energy Internal energy Potential energy System"
+  },
+  {
+    "source": "Lec07.txt",
+    "category": "Physics",
+    "chunk_index": 13,
+    "page": 11,
+    "text": "12 5. Conservation of energy  23 1. Potential energy 2. Mechanical energy 3. Internal energy 4. Energy in isolated and nonisolated systems 5. Conservation of energy 6. Conservative and nonconservative forces 7. Energy diagram and equilibrium Conservation of Energy 0 Energy is conserved; we can neither create nor destroy energy. 0 For an isolated system, 0 For a non-isolated system,  Energy transferred across Energy changed the system boundary m in a s t syste ys em E T      othe int"
+  },
+  {
+    "source": "Lec07.txt",
+    "category": "Physics",
+    "chunk_index": 14,
+    "page": 11,
+    "text": "m in a s t syste ys em E T      othe int oth r rs s e : heat : energy transfer via mechancial wave, matter transfer, electromagnetic radiation, etc. E Q T K U W Q T       e.g., system 0 E    24"
+  },
+  {
+    "source": "Lec07.txt",
+    "category": "Physics",
+    "chunk_index": 15,
+    "page": 13,
+    "text": "13  25  1. Conservation of energy can be rigorously proven by Noether's theorem as a consequence of continuous time translation symmetry; that is, from the fact that the laws of physics do not change over time. 2. Energy at each fixed time can in principle be exactly measured without any trade-off in precision forced by the time-energy uncertainty relations. Thus the conservation of energy in time is a well defined concept even in quantum mechanics."
+  },
+  {
+    "source": "Lec07.txt",
+    "category": "Physics",
+    "chunk_index": 16,
+    "page": 13,
+    "text": "a well defined concept even in quantum mechanics. https://en.wikipedia.org/wiki/Conservation_of_energy Work-Kinetic Energy Theorem 0 When work is done on a system and if the only change in the system is in its speed, the net work done on the system equals the change in kinetic energy of the system. (Also valid for rotational motion) external f i W K K K    Always valid for a “one-particle” system.  26"
+  },
+  {
+    "source": "Lec07.txt",
+    "category": "Physics",
+    "chunk_index": 17,
+    "page": 14,
+    "text": "14 Conservation of mechanical energy 0 Mechanical energy: Emech = K +U 0 For an isolated system with no nonconservative forces acting, the mechanical energy is conserved, Emech =0.  27 28 Ex. Which one loses smaller mechanical energy?  2 ,1 1 1 2 mech i E K mv    2 ,2 2 1 2 mech i E K U mv mgh      ,2 ,1 mech mech E E    k  m iv  0 fv  h iv k  m 0 fv  (1) (2)"
+  },
+  {
+    "source": "Lec07.txt",
+    "category": "Physics",
+    "chunk_index": 18,
+    "page": 15,
+    "text": "15 29 h iv k  m  fv d F Case 1: set system = block Work-kinetic theorem ext g W K U     int E  mg F kf n    2 2 sin 1 1 2 2 f k i F mg f d mv mv      ∵The system has only one object, so no potential energy and internal energy.  30 h iv k  m  fv d F F kf  Case 2: set system = block + Earth ext g k W F K f U d d     2 2 1 1 2 n 2 si f i k m mv v Fd d m f gd            on n m on Earth N"
+  },
+  {
+    "source": "Lec07.txt",
+    "category": "Physics",
+    "chunk_index": 19,
+    "page": 15,
+    "text": "16 31 h iv k  m  fv d F F  Case 3: set system = block + Earth+ Ramp t ext in g W E U Fd K       2 2 si 1 1 2 2 n f i kf d m mv mv d Fd g              At what angle should the block achieve the largest speed?  32 System = block ext W K  ext cos cos cos ( sin ) k k k W F x f x F x N x F x mg F x                 2 1 cos ( sin ) 2 f k K mv F x mg F x          max max fv K    0 d K d    sin (0 cos ) 0 k F x F x        1 tan k  "
+  },
+  {
+    "source": "Lec07.txt",
+    "category": "Physics",
+    "chunk_index": 20,
+    "page": 15,
+    "text": "(0 cos ) 0 k F x F x        1 tan k      Ex:"
+  },
+  {
+    "source": "Lec07.txt",
+    "category": "Physics",
+    "chunk_index": 21,
+    "page": 17,
+    "text": "17 33 ? ? B B v T    (1) 2 0, 1 ( 0) 2 [( ) ( cos )] B T dr A T dr mv mgL mgL                2 (1 cos ) B A v gL     (2) F ma     2 B B c v T mg ma m r    (3 2cos ) B A T mg     System = ball + Earth Ex: W K U   34 max ?    0 iv  a m b m F ma     2 f a a m g m R v T    fv 2 0 1 ( 0) [( ) ( cos )] 0 2 f g a K U m m v g R R           3 2 cos a a m g m T g     3 2 cos b a a m g T m g m g     3 cos 2 a b a m m m     1 3 cos 2"
+  },
+  {
+    "source": "Lec07.txt",
+    "category": "Physics",
+    "chunk_index": 22,
+    "page": 17,
+    "text": "m g     3 cos 2 a b a m m m     1 3 cos 2 a b a m m m           System = actor + Earth Ex: b m g T  0 g U "
+  },
+  {
+    "source": "Lec07.txt",
+    "category": "Physics",
+    "chunk_index": 23,
+    "page": 18,
+    "text": "18 35 (A)The spring constant k = ? (B) vB = ?     2 , , , , 0 0 0 1 0 2 2 (A) 0 ( ) ( ) ( ) 0 2 s g C A s C s A g C g A mgh kx W K U U K K U U U U mgh k x                   h     2 2 , , , , 1 0 0 1 0 2 2 2 (B) 0 ( ) ( ) ( ) 0 2 B B A s B s A g B g A mgx mv kx B K K U U U U kx v gx m                 Ex: System = bullet + spring + Earth 0 s U  0 g U   36 (1) No friction (2) With friction fk ( ) 0 iv x   ( 0) ? fv x   System = block+spring"
+  },
+  {
+    "source": "Lec07.txt",
+    "category": "Physics",
+    "chunk_index": 24,
+    "page": 18,
+    "text": "0 iv x   ( 0) ? fv x   System = block+spring ext s W K U   2 2 1 1 (1) 0 0 0 2 2 f mv kx                 f k v x m   2 2 1 1 (2) 0 0 2 2 k f f x mv kx                    f k x v kx f m    Ex:"
+  },
+  {
+    "source": "Lec07.txt",
+    "category": "Physics",
+    "chunk_index": 25,
+    "page": 19,
+    "text": "19 System = block+spring+Earth Alternative method: ext int s W K U E    2 2 1 1 (2) 0 0 0 2 2 f k mv kx f x                    f k x v kx f m     37 38  System = block+Earth ext g W K U   ? fv    2 1 0 0 2 k f i f d mv mgy            2( ) / f i k v mgy f d m    0 y  kf Ex:"
+  },
+  {
+    "source": "Lec07.txt",
+    "category": "Physics",
+    "chunk_index": 26,
+    "page": 20,
+    "text": "20 39  System = block+Spring ext s W K U   2 2 max max 1 1 0 0 2 2 k A f x mv kx                  2 2 max k k A f f mkv x k      kf  max ? x  Ex: A v 40  System = block+Earth+Spring ? k  ext g s W K U U       2 2 2 1 2 1 0 0 0 0 2 1 2 k k f h m gh kh m gh m gh kh                  1 2 2 1 k m g kh m g     Ex:"
+  },
+  {
+    "source": "Lec07.txt",
+    "category": "Physics",
+    "chunk_index": 27,
+    "page": 21,
+    "text": "21  41 https://fb.watch/8S0_2aYAoJ/ 6. Conservative and nonconservative forces  42 1. Potential energy 2. Mechanical energy 3. Internal energy 4. Energy in isolated and nonisolated systems 5. Conservation of energy 6. Conservative and nonconservative forces 7. Energy diagram and equilibrium"
+  },
+  {
+    "source": "Lec07.txt",
+    "category": "Physics",
+    "chunk_index": 28,
+    "page": 21,
+    "text": "22 43 Conservative Forces 0 The work done by a conservative force on a particle moving between any two points has the following features: 1. Independent of the path; dependent on the starting and ending points. 2. The work done through any closed path is zero. 3. Reversible. 4. Can be expressed as the difference between the initial and final values of a potential energy function.  44 Conservative Forces and Potential Energy 0 The work done by a “conservative force” equals the decrease in the"
+  },
+  {
+    "source": "Lec07.txt",
+    "category": "Physics",
+    "chunk_index": 29,
+    "page": 21,
+    "text": "a “conservative force” equals the decrease in the “potential energy” of the system.          f f i i f i r r g g r r y f i y W F dr mg j dxi dy j dzk mgdy mg y y                  g g W U     2 2 1 1 ( ) 2 2 f i x s f i x W kx dx kx kx             s s W U    "
+  },
+  {
+    "source": "Lec07.txt",
+    "category": "Physics",
+    "chunk_index": 30,
+    "page": 23,
+    "text": "23 45 0 The conservative force is related to the potential energy function through . ( ) c dU x F dx  ( ) f f i i x x c i f x x cF dx d W U U U U           ( ) f i x f c i x U x F dx U     ( ) c dU x F dx   ( ) c dU x F dx   g g g dU U mgy F mg dy     2 1 2 s s s dU U kx F kx dx     e.g.,  ( , , ) ( , , ) ( , , ) ˆ ˆ ˆ ( , , ) c U x y z U x y z U x y z F i j k x y z U x y z                  For 3 dimensions,  46"
+  },
+  {
+    "source": "Lec07.txt",
+    "category": "Physics",
+    "chunk_index": 31,
+    "page": 23,
+    "text": "24  47 ˆ, is a constant. F Cxj C   Ex. Work = ? Is F a conservative force? ( ,0) ( , ) (0, ) (0,0) (0,0) ( ,0) ( , ) (0, ) 0 0 0 0 2 2 ˆ ˆ ˆ ˆ ˆ ˆ ˆ ˆ 0 0 0 0 L L L L L L L L L L L L F d F d F d F d Cxj dxi CLj dyj Cxj dx W F d i C j dyj CL CL                                                 0, NOT conservative! W F d         48 Nonconservative Forces 0 A nonconservative force does not satisfy the conditions of conservative forces. 0"
+  },
+  {
+    "source": "Lec07.txt",
+    "category": "Physics",
+    "chunk_index": 32,
+    "page": 23,
+    "text": "satisfy the conditions of conservative forces. 0 Nonconservative forces acting in a system cause a change in the mechanical energy of the system E.g., friction force: 0 If the force acting on objects “within” a system is not “conservative”, then the mechanical energy of the system is NOT conserved. int kf k W f d E  "
+  },
+  {
+    "source": "Lec07.txt",
+    "category": "Physics",
+    "chunk_index": 33,
+    "page": 25,
+    "text": "25 7. Energy diagram and equilibrium  49 1. Potential energy 2. Mechanical energy 3. Internal energy 4. Energy in isolated and nonisolated systems 5. Conservation of energy 6. Conservative and nonconservative forces 7. Energy diagram and equilibrium  50\n\n26  51  52 A conservative always acts to push the system toward lower potential energy!"
+  },
+  {
+    "source": "Lec07.txt",
+    "category": "Physics",
+    "chunk_index": 34,
+    "page": 27,
+    "text": "27 53 0 Stable equilibrium: U(x) has a minimum. 0 Unstable equilibrium: U(x) has a maximum. 0 Neutral equilibrium: U(x) is constant over a small regime. U x  54 stable unstable neutral\n\n28  55 56 Potential Energy in Molecules 0 There is potential energy associated with the force between two neutral atoms in a molecule which can be modeled by the Lennard‐Jones function 12 6 ( ) 4 U x x x                         "
+  },
+  {
+    "source": "Lec07.txt",
+    "category": "Physics",
+    "chunk_index": 35,
+    "page": 29,
+    "text": "29 57  12 6 ( ) 4 U x x x                          12 6 12 6 13 7 ( ) 12 6 4 4 dU x d dx dx x x x x                                      12 6 13 7 12 6 Energy minimum: 4 0 x x            1/6 2 eq x     58"
+  }
+]

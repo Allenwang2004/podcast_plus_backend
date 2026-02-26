@@ -1,0 +1,184 @@
+[
+  {
+    "source": "topic5.txt",
+    "category": "Probability",
+    "chunk_index": 0,
+    "page": 1,
+    "text": "1 Topic 5: Multiple Discrete Random Variables Lecture Outline  Joint PMF and Marginal PMF  Linearity of Expectation  Conditional PMF Total Probability Theorem (TPT) in Discrete Random Variables (第一個TPT變形)  Independent Random Variables  Conditional Expectation Reading : Textbook 2.5- 2.7"
+  },
+  {
+    "source": "topic5.txt",
+    "category": "Probability",
+    "chunk_index": 1,
+    "page": 1,
+    "text": "2 Multiple Random Variables Quite naturally, we have to deal with multiple RVs in real-world problems: The money we earn in several consecutive plays of poker games The numbers of 3 pointers Steph Curry can make in 4 different quarters In a communication system, the receiver signal can often be modeled as the signal that contains the (unknown) transmitted signal plus (unknown) noise We are particularly interested in knowing: How different random variables are related to each other?"
+  },
+  {
+    "source": "topic5.txt",
+    "category": "Probability",
+    "chunk_index": 2,
+    "page": 1,
+    "text": "random variables are related to each other? 不同隨機變數間之關聯性(正相關、負相關、零相關、獨立、條件機率、條件期望值?) How to learn the behavior of the sum of all RVs? How to learn the behavior or the true value of one RV when it is buried in the sum with other random variables? Ex: 如何從接收訊號(Y)=傳送訊號(S)+雜訊(N) 中擷取S 的資訊"
+  },
+  {
+    "source": "topic5.txt",
+    "category": "Probability",
+    "chunk_index": 3,
+    "page": 3,
+    "text": "3 Joint PMF We can fully describe two discrete RVs X and Y by the joint PMF. Suppose two discrete RVs X and Y are defined over the same sample space, the joint PMF pX,Y(x,y) is defined by pX,Y(x,y) = P(X=x and Y=y) = P( {ω: X(ω) = x and Y(ω) = y} ) From the additivity and normalization axioms of probability, we must have Σx,y pX,Y(x,y) = 1 Example: Rolling two 4-sided die. Let X be the outcome of the first roll and Y of the second, then pX,Y(x,y) = 1/16; for x=1,2,3,4; y=1,2,3,4"
+  },
+  {
+    "source": "topic5.txt",
+    "category": "Probability",
+    "chunk_index": 4,
+    "page": 4,
+    "text": "4 Joint PMF and Marginal PMF Suppose X and Y are two random variables defined on a common experiment with a joint PMF pX,Y(x,y) . The marginal PMFs pX(x) and pY(y) can be obtained from joint PMF as follows Remarks:  The above relation can be explained by the total probability theorem  The marginal PMF is just the “individual” PMF pX(x) or pY(y) (單獨RV的PMF、原本個別的PMF、邊際PMF)\n\n5 Example: Calculating Marginal PMF from Joint PMF Example 2.9:"
+  },
+  {
+    "source": "topic5.txt",
+    "category": "Probability",
+    "chunk_index": 5,
+    "page": 6,
+    "text": "6 Functions of Multiple Random Variables A function Z = g(X, Y ) of the random variables X and Y defines another random variable. Its PMF can be calculated from the joint PMF pX,Y according to The expected value rule for functions takes the following form Example: We are often interested in finding E[XY], which measures the similarity between X and Y."
+  },
+  {
+    "source": "topic5.txt",
+    "category": "Probability",
+    "chunk_index": 6,
+    "page": 7,
+    "text": "7 Linearity of Expectation As an example, consider the linear function g(X,Y)=aX+bY+c of random variables X and Y, where a, b, and c are scalars (constants). The expectation of g(X,Y) is given by Expectation is linear We see that the expectation of the sum of random variables is the sum of the expectations. Do Example 2.9 and Example 2.11."
+  },
+  {
+    "source": "topic5.txt",
+    "category": "Probability",
+    "chunk_index": 7,
+    "page": 8,
+    "text": "8 More Than Two Random Variables Consider 3 random variables X, Y, and Z. Joint PMF For all possible triplets of numerical values (x,y,z) Marginal PMF from Joint PMF Linearity of Expectation This is an extremely useful relation!"
+  },
+  {
+    "source": "topic5.txt",
+    "category": "Probability",
+    "chunk_index": 8,
+    "page": 9,
+    "text": "9 Example - Mean of Binomial R.V. One way to define a Binomial random variable is the following: Flip a coin (with bias p) n times independently and let Xi = 1 if the i-th toss is a head and 0 if it is a tail. Define the random variable 𝑌𝑌= ∑𝑖𝑖=1 𝑛𝑛 𝑋𝑋𝑖𝑖. Then, 𝑌𝑌is exactly a binomial RV."
+  },
+  {
+    "source": "topic5.txt",
+    "category": "Probability",
+    "chunk_index": 9,
+    "page": 10,
+    "text": "10 Conditional PMF The conditional PMF of a random variable X, conditioned on a particular event A with P(A) > 0, is defined by In the special case A={Y=y}, we have a PMF conditioned on a random variable Y\n\nVisualization of Conditional PMF 11"
+  },
+  {
+    "source": "topic5.txt",
+    "category": "Probability",
+    "chunk_index": 10,
+    "page": 12,
+    "text": "Visualization of Conditional PMF 11\n\n12 Properties of Conditional PMF  Conditional PMF is just conditional probability in different notations Satisfies the 3 probability axioms  Normalization  Chain rule  Total probability Theorem This is the first variant (變形) of the total probability theorem. We will see three more later in Chapter 3. Please do Example 2.14 and Example 2.15."
+  },
+  {
+    "source": "topic5.txt",
+    "category": "Probability",
+    "chunk_index": 11,
+    "page": 13,
+    "text": "13 Example Example (Problem 43 on page 134) Suppose that X and Y are independent and identically distributed (i.i.d.) geometric random variables with parameter p, then Remarks:  Physical interpretations (物理意義)?  The acronym “i.i.d.” appears very often. So please memorize what that means. .1 , ,1 , 1 1 ) | ( − = − = = + = n i n n Y X i X P "
+  },
+  {
+    "source": "topic5.txt",
+    "category": "Probability",
+    "chunk_index": 12,
+    "page": 14,
+    "text": "14 Independence Definition: We say that two random variables X and Y are independent if  Independence means the experimental value of Y tells us nothing about the value of X  Equivalent to saying that the events { ω: X(ω) = x} and {ω : Y (ω) = y} are independent events for all possible outcomes x and y  The above definition of independence is equivalent to"
+  },
+  {
+    "source": "topic5.txt",
+    "category": "Probability",
+    "chunk_index": 13,
+    "page": 14,
+    "text": "15 Important Facts from Independent RVs  If X and Y are independent random variables, then we can prove that 為什麼我們會對E[XY]是否等於E[X] E[Y] 感興趣? If X and Y are independent, then we have E[XY]= E[X] E[Y]. On the contrary, if E[XY]= E[X] E[Y], can we say that X and Y are independent? The answer is NO. We will look into the above two issues more deeply in Chapter 4.  If X and Y are independent random variables, then g(X) and h(Y ), for any functions g and h, are also independent. (See the proof in"
+  },
+  {
+    "source": "topic5.txt",
+    "category": "Probability",
+    "chunk_index": 14,
+    "page": 14,
+    "text": "g and h, are also independent. (See the proof in Problem 44.) If X and Y are independent random variables, then for any functions g and h"
+  },
+  {
+    "source": "topic5.txt",
+    "category": "Probability",
+    "chunk_index": 15,
+    "page": 16,
+    "text": "16 Important Facts from Independent RVs  If X and Y are independent random variables, then But in general, this relation is not always true. That is, if X and Y are NOT independent, then we do NOT know whether the above relation is true.  可以延伸到: 若X1,X2,…,Xn 為獨立隨機變數(independent RVs), 則"
+  },
+  {
+    "source": "topic5.txt",
+    "category": "Probability",
+    "chunk_index": 16,
+    "page": 17,
+    "text": "17 Multiple Independent Random Variables A collection of random variables { X1,X2, . . . ,Xn} is said to be independent if the n-fold joint PMF is a product of marginal PMFs: In the special case where the marginal probabilities 𝑝𝑝𝑋𝑋𝑖𝑖(𝑥𝑥𝑖𝑖) are all the same, we say that these n random variables are independent and identically distributed (i.i.d.)"
+  },
+  {
+    "source": "topic5.txt",
+    "category": "Probability",
+    "chunk_index": 17,
+    "page": 18,
+    "text": "18 Example - Variance of Binomial One way to define a Binomial random variable is the following: Flip a coin (with bias p) n times independently and let Xi = 1 if the i-th toss is a head and 0 if it is a tail. Define the random variable 𝑌𝑌= ∑𝑖𝑖=1 𝑛𝑛 𝑋𝑋𝑖𝑖. Then, Y is exactly a binomial RV."
+  },
+  {
+    "source": "topic5.txt",
+    "category": "Probability",
+    "chunk_index": 18,
+    "page": 19,
+    "text": "19 Example – Sample Mean Let X1,X2,…,Xn be n i.i.d. random variables with mean µ and variance σ2. The sample mean is defined by We often use sample mean to estimate the mean value of Xi What are the mean and variance of Sn? As n grows, the variance of the sample mean decreases"
+  },
+  {
+    "source": "topic5.txt",
+    "category": "Probability",
+    "chunk_index": 19,
+    "page": 19,
+    "text": "20 Conditional Expectation Definitions Conditional expectation of X given an event A: Conditional expectation of X given Y=y :  Conditional expectation E[X|Y=y] is a function of y, it’s a numerical value depending on y. On the other hand, E[X|Y] is a function of the random variable Y, and is therefore a random variable. 請說服自己，E[X|Y] 是隨機變數，而E[X|Y=y] 是一個和y 有關的實數(也就是以y 為變數的函數值)  Conditional probability (in particular the posterior probability) and conditional expectation play very critical roles"
+  },
+  {
+    "source": "topic5.txt",
+    "category": "Probability",
+    "chunk_index": 20,
+    "page": 19,
+    "text": "conditional expectation play very critical roles in system designs under uncertainty."
+  },
+  {
+    "source": "topic5.txt",
+    "category": "Probability",
+    "chunk_index": 21,
+    "page": 21,
+    "text": "21 Example If X and Y are i.i.d. geometirc random variables with parameters p. Find the conditional expected value of X, given that X+Y=n."
+  },
+  {
+    "source": "topic5.txt",
+    "category": "Probability",
+    "chunk_index": 22,
+    "page": 22,
+    "text": "22 Total Expectation Theorem** Total expectation theorem states unconditional expectation can be calculated using conditional expectation, just like the counterpart of unconditional probability. Please do Example 2.16 and Example 2.17. Remark: Comparing with the expected value rule, we can re-write the total expectation theorem more compactly as 這是經常使用到的關係式!"
+  },
+  {
+    "source": "topic5.txt",
+    "category": "Probability",
+    "chunk_index": 23,
+    "page": 23,
+    "text": "23 Example – Sum of a Random Number of Random Variables Consider the sum where N is a random variable that takes positive integer values, and X1,X2,…,XN are i.i.d. random variables. We assume that N is independent with Xi for all i. Then, we have where E[Xi]=m for all i. Practical applications: N : the number of customers entering a department store Xi: amount of money spent by the ith customer Y : total money spent by customers in the store E[Y]: expected money spent in the store"
+  },
+  {
+    "source": "topic5.txt",
+    "category": "Probability",
+    "chunk_index": 24,
+    "page": 24,
+    "text": "24 Properties of Conditional Expectation  Conditional expectation is simply expectation with respect to a conditional PMF. It inherits many properties from ordinary expectation  Linearity  Expected value of functions of random variables E[Y|Y=y]=?  When conditioning on a random variable, that random variable plays the role of a constant"
+  },
+  {
+    "source": "topic5.txt",
+    "category": "Probability",
+    "chunk_index": 25,
+    "page": 25,
+    "text": "25 Conditional Probability Conditioned on Random Variable 觀念澄清 For independent random variables X and Y, which of the following statements is correct, for an appropriate function g() and set A? Example: Toss a dice twice, and let the outcome for the 1st toss and the 2nd toss be X1 and X2, respectively. What is the probability 𝑃𝑃 𝑋𝑋1 + 𝑋𝑋2 ≤8 ∩𝑋𝑋1 = 5 =? What is the probability 𝑃𝑃𝑋𝑋1 + 𝑋𝑋2 ≤8 | 𝑋𝑋1 = 5 =?"
+  }
+]

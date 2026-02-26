@@ -5,7 +5,7 @@ class Config:
     
     EMBEDDING_MODEL = "all-MiniLM-L6-v2"
     RERANK_MODEL = "cross-encoder/ms-marco-MiniLM-L-12-v2"
-    VECTOR_DB_PATH = "faiss_index.bin"
+    VECTOR_DB_PATH = "embeddings/faiss_index.bin"
     TOP_K = 20
     TOP_N = 5
     ALPHA = 0.75
@@ -16,10 +16,10 @@ class Config:
     "./documents/Physics/",
     "./documents/Probability/"
 ]
-    TXT_DIR = "./text"
-    CHUNK_DIR = "./chunks"
-    EMBED_DIR = "./embeddings"
-    FAISS_INDEX = "./faiss_index.index"
+    TXT_DIR = "./db/text"
+    CHUNK_DIR = "./db/chunks"
+    EMBED_DIR = "./db/embeddings"
+    FAISS_INDEX = "./db/faiss_index.index"
     
     # Fine-tuning config
     OUTPUT_DIR = "./llama-dialogue-finetuned"

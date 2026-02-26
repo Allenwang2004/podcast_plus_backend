@@ -1,0 +1,268 @@
+[
+  {
+    "source": "Lec19.txt",
+    "category": "Physics",
+    "chunk_index": 0,
+    "page": 2,
+    "text": "2 Outline 1. Internal energy 2. State variables, transfer variables 3. The first law of thermodynamics 4. Work in thermodynamics process 5. Various thermodynamics processes 6. Energy transfer mechanisms in thermal processes \u0006 \u0003\u0001\u0003\u0003\u0004\u0005\u0003\u0004\u0006\u0005 \u0007 1. Internal energy \u0003\u0001\u0003\u0003\u0004\u0005\u0003\u0004\u0006\u0005 1. Internal energy 2. State variables, transfer variables 3. The first law of thermodynamics 4. Work in thermodynamics process 5. Various thermodynamics processes 6. Energy transfer mechanisms in thermal processes"
+  },
+  {
+    "source": "Lec19.txt",
+    "category": "Physics",
+    "chunk_index": 1,
+    "page": 3,
+    "text": "3 Internal Energy \u0001 Internal energy is all the energy of a system that is associated with its microscopic components (atoms and molecules)  viewed from a reference frame at rest with respect to the center of mass of the system. The bulk kinetic energy of the system due to its motion through space is NOT included in internal energy. \b \u0003\u0001\u0003\u0003\u0004\u0005\u0003\u0004\u0006\u0005 In general, \u0001 Internal energy = thermal energy (kinetic energy relative to C.M.) + bond energy (potential energy). \u0001 Thermal energy is associated with"
+  },
+  {
+    "source": "Lec19.txt",
+    "category": "Physics",
+    "chunk_index": 2,
+    "page": 3,
+    "text": "energy). \u0001 Thermal energy is associated with random motion of molecules and, therefore, related to temperature. Random translational motion Rotational motion Vibrational motion \u0001 Bond energy is the intermolecular potential energy, related to latent heat or the energy required for phase transition. \u0003\u0001\u0003\u0003\u0004\u0005\u0003\u0004\u0006\u0005"
+  },
+  {
+    "source": "Lec19.txt",
+    "category": "Physics",
+    "chunk_index": 3,
+    "page": 4,
+    "text": "4 Potential energy Phase transition, l n int e Kinetic energy T mperatur t e ate hea t thermal energy + Bond energy E      \u0003\u0001\u0003\u0003\u0004\u0005\u0003\u0004\u0006\u0005   int 1 ( ) 2 n nc T dV L P nR T f W nL E Q            int , , V P E W Q c c c n T n T         P V c c R   \u0003\u0001\u0003\u0003\u0004\u0005\u0003\u0004\u0006\u0005 For ideal gases, the internal energy is only the thermal energy and it depends only on TEMPERATURE.   int int isochoric 0 isobaric 1 ( ) 2 1 ( ) 2 ( ) ( ) ( ) V P P V E K nRT f E nR T f Q W nc T Q W n c"
+  },
+  {
+    "source": "Lec19.txt",
+    "category": "Physics",
+    "chunk_index": 4,
+    "page": 4,
+    "text": ") ( ) V P P V E K nRT f E nR T f Q W nc T Q W n c R T                  "
+  },
+  {
+    "source": "Lec19.txt",
+    "category": "Physics",
+    "chunk_index": 5,
+    "page": 5,
+    "text": "5 \u0003\u0001\u0003\u0003\u0004\u0005\u0003\u0004\u0006\u0005 Is the internal energy of a solid likely to be independent of its volume, as is the case for an ideal gas? No! \u0005\u0001 2. State variables, Transfer variables \u0003\u0001\u0003\u0003\u0004\u0005\u0003\u0004\u0006\u0005 1. Internal energy 2. State variables, transfer variables 3. The first law of thermodynamics 4. Work in thermodynamics process 5. Various thermodynamics processes 6. Energy transfer mechanisms in thermal processes"
+  },
+  {
+    "source": "Lec19.txt",
+    "category": "Physics",
+    "chunk_index": 6,
+    "page": 5,
+    "text": "6 State Variables \u0001 State variables describe the state of a system. \u0001 In the macroscopic approach to thermodynamics, variables are used to describe the state of the system, e.g., Pressure (P), temperature (T), volume (V), internal energy (Eint), particle number (N). \u0001 The macroscopic state of an isolated system can be specified only if the system is in thermal equilibrium internally. \u0005\u0005 \u0003\u0001\u0003\u0003\u0004\u0005\u0003\u0004\u0006\u0005 Transfer Variables \u0001 Transfer variables are zero unless a process occurs in which energy is"
+  },
+  {
+    "source": "Lec19.txt",
+    "category": "Physics",
+    "chunk_index": 7,
+    "page": 5,
+    "text": "zero unless a process occurs in which energy is transferred across the boundary of a system. \u0001 Transfer variables are not associated with any given state of the system, only with changes in the state. Heat (Q) and work (W)are transfer variables. \u0005\u0003 \u0003\u0001\u0003\u0003\u0004\u0005\u0003\u0004\u0006\u0005"
+  },
+  {
+    "source": "Lec19.txt",
+    "category": "Physics",
+    "chunk_index": 8,
+    "page": 7,
+    "text": "7 \u0005\u0006 3. The first law of thermodynamics \u0003\u0001\u0003\u0003\u0004\u0005\u0003\u0004\u0006\u0005 1. Internal energy 2. State variables, transfer variables 3. The first law of thermodynamics 4. Work in thermodynamics process 5. Various thermodynamics processes 6. Energy transfer mechanisms in thermal processes The First Law of Thermodynamics \u0001 The First Law of Thermodynamics is an extension of the Law of Conservation of Energy. \u0001 The First Law of Thermodynamics states that Eint = Q + W. Eint is a state variable. Q and W each are dependent"
+  },
+  {
+    "source": "Lec19.txt",
+    "category": "Physics",
+    "chunk_index": 9,
+    "page": 7,
+    "text": "is a state variable. Q and W each are dependent on the path, BUT Q + W is independent of the path. \u0005\u0007 \u0003\u0001\u0003\u0003\u0004\u0005\u0003\u0004\u0006\u0005"
+  },
+  {
+    "source": "Lec19.txt",
+    "category": "Physics",
+    "chunk_index": 10,
+    "page": 8,
+    "text": "8 \u0005\b 4. Work in thermodynamics process \u0003\u0001\u0003\u0003\u0004\u0005\u0003\u0004\u0006\u0005 1. Internal energy 2. State variables, transfer variables 3. The first law of thermodynamics 4. Work in thermodynamics process 5. Various thermodynamics processes 6. Energy transfer mechanisms in thermal processes Work in Thermodynamic Process \u0001 The piston is pushed downward by a force F through a displacement of dr, \u0001 The total work done on the system is: \u0005 ˆ ˆ dW F dr F j dyj        PAdy PdV   on system f i V V W PdV  F "
+  },
+  {
+    "source": "Lec19.txt",
+    "category": "Physics",
+    "chunk_index": 11,
+    "page": 8,
+    "text": " PAdy PdV   on system f i V V W PdV  F  \u0003\u0001\u0003\u0003\u0004\u0005\u0003\u0004\u0006\u0005"
+  },
+  {
+    "source": "Lec19.txt",
+    "category": "Physics",
+    "chunk_index": 12,
+    "page": 9,
+    "text": "9 PV Diagrams \u0001 The work done on a gas in a quasi-static process that takes the gas from an initial state to a final state is the negative of the area under the curve on the PV diagram, evaluated between the initial and final states \u0005 \u0003\u0001\u0003\u0003\u0004\u0005\u0003\u0004\u0006\u0005 area f i V V W PdV   Work Done By Various Paths Work depends not only on the initial and final states, but also on the path. \u0005 \u0003\u0001\u0003\u0003\u0004\u0005\u0003\u0004\u0006\u0005"
+  },
+  {
+    "source": "Lec19.txt",
+    "category": "Physics",
+    "chunk_index": 13,
+    "page": 9,
+    "text": "10 \u0005 5. Various thermodynamics processes \u0003\u0001\u0003\u0003\u0004\u0005\u0003\u0004\u0006\u0005 1. Internal energy 2. State variables, transfer variables 3. The first law of thermodynamics 4. Work in thermodynamics process 5. Various thermodynamics processes 6. Energy transfer mechanisms in thermal processes (1) Isolated Systems \u0001 An isolated system is one that does not interact with its surroundings. No energy transfer by heat takes place. The work done on the system is zero. Q = W = 0, so Eint = 0 The internal energy of an isolated"
+  },
+  {
+    "source": "Lec19.txt",
+    "category": "Physics",
+    "chunk_index": 14,
+    "page": 9,
+    "text": "so Eint = 0 The internal energy of an isolated system remains constant. \u0003\u0001 \u0003\u0001\u0003\u0003\u0004\u0005\u0003\u0004\u0006\u0005"
+  },
+  {
+    "source": "Lec19.txt",
+    "category": "Physics",
+    "chunk_index": 15,
+    "page": 11,
+    "text": "11 \u0001 A cyclic process is one that starts and ends in the same state. This process would not be isolated. On a PV diagram, a cyclic process appears as a closed curve. The internal energy must be zero since it is a state variable. Eint = 0, Q = W. (2) Cyclic Processes \u0003\u0005 \u0003\u0001\u0003\u0003\u0004\u0005\u0003\u0004\u0006\u0005 (3) Adiabatic Process \u0001 An adiabatic process is one during which no energy enters or leaves the system by heat Q = 0, Eint = W \u0001 This can be achieved by: 1. Thermally insulating the walls of the system. 2. Having"
+  },
+  {
+    "source": "Lec19.txt",
+    "category": "Physics",
+    "chunk_index": 16,
+    "page": 11,
+    "text": "insulating the walls of the system. 2. Having the process proceed so quickly that no heat can be exchanged. If the gas expands adiabatically (but not for freely expansion), the temperature of the gas decreases. \u0003\u0003 \u0003\u0001\u0003\u0003\u0004\u0005\u0003\u0004\u0006\u0005"
+  },
+  {
+    "source": "Lec19.txt",
+    "category": "Physics",
+    "chunk_index": 17,
+    "page": 12,
+    "text": "12 \u0003\u0006 Path B could be the adiabatic expansion. \u0003\u0001\u0003\u0003\u0004\u0005\u0003\u0004\u0006\u0005 \u0003\u0007 Adiabatic compression. \u0003\u0001\u0003\u0003\u0004\u0005\u0003\u0004\u0006\u0005"
+  },
+  {
+    "source": "Lec19.txt",
+    "category": "Physics",
+    "chunk_index": 18,
+    "page": 13,
+    "text": "13 (4) Adiabatic Free Expansion \u0001 Because the gas expands into a vacuum, it does not apply a force on a piston and W = 0. Q = 0 and W = 0, Eint = 0 and the initial and final states are the same. No change in temperature is expected. \u0003\b \u0003\u0001\u0003\u0003\u0004\u0005\u0003\u0004\u0006\u0005 \u0003\u0001\u0003\u0003\u0004\u0005\u0003\u0004\u0006\u0005 \u0003 For nonideal gases, some temperature change occurs during free expansions, even though the internal energy is constant. For such a gas in a free expansion, the temperature usually drops.  int 0 K E U      "
+  },
+  {
+    "source": "Lec19.txt",
+    "category": "Physics",
+    "chunk_index": 19,
+    "page": 14,
+    "text": "14 (5) Isobaric Processes \u0001 An isobaric process is one that occurs at a constant pressure (Path D). The values of the heat and the work are generally both nonzero. The work done on the gas is W = – P (Vf – Vi), where P is the constant pressure. \u0003 \u0003\u0001\u0003\u0003\u0004\u0005\u0003\u0004\u0006\u0005 (6) Isovolumetric (isochoric) Processes \u0001 An isovolumetric process is one in which there is no change in the volume (Path A). Since the volume does not change, W = 0. From the first law, Eint = Q. \u0003 \u0003\u0001\u0003\u0003\u0004\u0005\u0003\u0004\u0006\u0005"
+  },
+  {
+    "source": "Lec19.txt",
+    "category": "Physics",
+    "chunk_index": 20,
+    "page": 15,
+    "text": "15 (7) Isothermal Process \u0001 An isothermal process is one that occurs at a constant temperature. \u0001 Since there is no change in temperature, Eint = 0. Therefore, Q = W. Q 0 in an isothermal process. \u0001 Because it is an ideal gas and the process is quasi-static, PV = nRT and \u0003 f f i i f i V V V V V V nRT W PdV dV V dV nRT V       l n i f V W nRT V           \u0003\u0001\u0003\u0003\u0004\u0005\u0003\u0004\u0006\u0005 (Don't confuse it with .) Q C T   \u0003\u0001\u0003\u0003\u0004\u0005\u0003\u0004\u0006\u0005 \u0006\u0001"
+  },
+  {
+    "source": "Lec19.txt",
+    "category": "Physics",
+    "chunk_index": 21,
+    "page": 16,
+    "text": "16 \u0006\u0005 0 0 W Q   int, int, , although the process is different! a b E E  Adiabatic free expansion int, 0 b E   0 0 W Q   int, 0 a E   Isothermal process \u0003\u0001\u0003\u0003\u0004\u0005\u0003\u0004\u0006\u0005 \u0006\u0003 Situation System Q W Eint (a)Rapidly pumping up a bicycle tire Air in the pump (b)Pan of room-temperature water sitting on a hot stove Water in the pan (c)Air quickly leaking out of a balloon Air originally in the balloon 0    0  0   \u0003\u0001\u0003\u0003\u0004\u0005\u0003\u0004\u0006\u0005"
+  },
+  {
+    "source": "Lec19.txt",
+    "category": "Physics",
+    "chunk_index": 22,
+    "page": 16,
+    "text": "17 \u0006\u0006 \u0003\u0001\u0003\u0003\u0004\u0005\u0003\u0004\u0006\u0005 Ex. An Isothermal Expansion A 1.0-mol sample of an ideal gas is kept at 0.0˚C during an expansion from 3.0 L to 10.0 L. (A) How much work is done on the gas during the expansion? 3 ln( ) 3.0 L (1.0 mol)(8.31 J/mol K)(273 K)ln( ) 10.0 L 2.7 10 J i f V W nRT V      \u0006\u0007 \u0003\u0001\u0003\u0003\u0004\u0005\u0003\u0004\u0006\u0005 (B) How much energy transfer by heat occurs with the surroundings in this process? int 3 0 2.7 10 J E Q W Q W Q W         (C) If the gas is returned to the original volume by means of an"
+  },
+  {
+    "source": "Lec19.txt",
+    "category": "Physics",
+    "chunk_index": 23,
+    "page": 16,
+    "text": "is returned to the original volume by means of an isobaric process, how much work is done on the gas? 3 3 3 3 3 3 3 ( ) ( ) (1.0 mol)(8.31 J/mol K)(273 K) (3.0 10 m 10.0 10 m ) 10.0 10 m 1.6 10 J i f i f i i nRT W P V V V V V                "
+  },
+  {
+    "source": "Lec19.txt",
+    "category": "Physics",
+    "chunk_index": 24,
+    "page": 18,
+    "text": "18 \u0006\b \u0003\u0001\u0003\u0003\u0004\u0005\u0003\u0004\u0006\u0005 Ex. Boiling Water Suppose 1.00 g of water vaporizes isobarically at atmospheric pressure (1.013 × 105 Pa). Its volume in the liquid state is Vi = Vliquid= 1.00 cm³, and its volume in the vapor state is Vf = Vvapor = 1 671 cm³. Find the work done in the expansion and the change in internal energy of the system. Ignore any mixing of the steam and the surrounding air – imagine that the steam simply pushes the surrounding air out of the way. \u0003\u0001\u0003\u0003\u0004\u0005\u0003\u0004\u0006\u0005 \u0006 5 6 3 6 3 ( ) (1.013 10"
+  },
+  {
+    "source": "Lec19.txt",
+    "category": "Physics",
+    "chunk_index": 25,
+    "page": 18,
+    "text": "of the way. \u0003\u0001\u0003\u0003\u0004\u0005\u0003\u0004\u0006\u0005 \u0006 5 6 3 6 3 ( ) (1.013 10 Pa)(1671 10 m 1.00 10 m ) 169 J f i W P V V           3 6 (1.00 10 kg)(2.26 10 J/kg) 2260 J v Q mL       Ans: int 2260 J ( 169 J) 2.09 kJ E Q W      "
+  },
+  {
+    "source": "Lec19.txt",
+    "category": "Physics",
+    "chunk_index": 26,
+    "page": 19,
+    "text": "19 \u0006 \u0003\u0001\u0003\u0003\u0004\u0005\u0003\u0004\u0006\u0005 Ex. Heating a Solid A 1.0-kg bar of copper is heated at atmospheric pressure. If its temperature increases from 20˚C to 50˚C, (A) what is the work done on the copper bar by the sur- rounding atmosphere? 5 1 3 3 7 3 3 3 [5.1 10 ( C) ](50 C 20 C) 1.5 10 1.0 kg 1.5 10 ( ) 1.7 10 m 8.92 10 kg/m i i i V V T V V                        5 2 7 3 2 (1.013 10 N/m )(1.7 10 m ) 1.7 10 J W P V         \u0006 \u0003\u0001\u0003\u0003\u0004\u0005\u0003\u0004\u0006\u0005 (B) What quantity of energy is transferred"
+  },
+  {
+    "source": "Lec19.txt",
+    "category": "Physics",
+    "chunk_index": 27,
+    "page": 19,
+    "text": "(B) What quantity of energy is transferred to the copper bar by heat? 4 (1.0 kg)(387 J/kg C)(30 C) =1.2 10 J Q mc T       (C) What is the increase in internal energy of the copper bar? 4 2 int 4 1.2 10 J ( 1.7 10 J) 1.2 10 J E Q W          "
+  },
+  {
+    "source": "Lec19.txt",
+    "category": "Physics",
+    "chunk_index": 28,
+    "page": 20,
+    "text": "20 \u0006 B V A V C V D V PV nRT  A D P P  B C P P  A B, adiabatic B C, isobaric, QBC C D, isothermal D A, isobaric, ()QDA int, int, ? B A E E   \u0003\u0001\u0003\u0003\u0004\u0005\u0003\u0004\u0006\u0005 Ex. \u0007\u0001 int E Q W    int, int, int, AB B A E E E        int, int, int, int, int, int, B C C D D A E E E E E E       int, int, int, ( ) ( ) ( ) BC CD DA E E E        ( ) 0 ( ) ( ) BC B C B DA A A D Q P V V Q P V V                       DA BC B C B A A D Q Q P V V P V V        "
+  },
+  {
+    "source": "Lec19.txt",
+    "category": "Physics",
+    "chunk_index": 29,
+    "page": 20,
+    "text": "DA BC B C B A A D Q Q P V V P V V         ( ) A B C C D D P P P V P V nRT        int, AB DA BC A A B B E Q Q P V P V      \u0003\u0001\u0003\u0003\u0004\u0005\u0003\u0004\u0006\u0005 Ans:"
+  },
+  {
+    "source": "Lec19.txt",
+    "category": "Physics",
+    "chunk_index": 30,
+    "page": 21,
+    "text": "21 \u0007\u0005 6. Adiabatic process for an ideal gas \u0003\u0001\u0003\u0003\u0004\u0005\u0003\u0004\u0006\u0005 1. Internal energy 2. State variables, transfer variables 3. The first law of thermodynamics 4. Work in thermodynamics process 5. Various thermodynamics processes 6. Energy transfer mechanisms in thermal processes Adiabatic Processes for an Ideal Gas \u0001 Assume an ideal gas is in an equilibrium state and so PV = nRT is valid. \u0001 The pressure and volume of an ideal gas at any time during an adiabatic process are related by PV = constant. = CP"
+  },
+  {
+    "source": "Lec19.txt",
+    "category": "Physics",
+    "chunk_index": 31,
+    "page": 21,
+    "text": "process are related by PV = constant. = CP / CV \u0007\u0003 PV nRT   c o nstant PV   \u0003\u0001\u0003\u0003\u0004\u0005\u0003\u0004\u0006\u0005"
+  },
+  {
+    "source": "Lec19.txt",
+    "category": "Physics",
+    "chunk_index": 32,
+    "page": 22,
+    "text": "22 \u0007\u0006 Adiabatic process: int dE Q W   0 ( ) v P c dT V n d    PV nRT  PdV VdP nRdT   v R PdV VdP PdV c    p v v c c dV dP dV V P c V          (1 ) dV V    0 dP dV P V     co ns ant t PV    \u0003\u0001\u0003\u0003\u0004\u0005\u0003\u0004\u0006\u0005 \u0007\u0007 i i f f PV P V    PV nRT  1 1 i i f f TV T V       Adiabatic compression: . f i T T  Adiabatic expansion: . f i T T  \u0003\u0001\u0003\u0003\u0004\u0005\u0003\u0004\u0006\u0005 int ( ) ( ) v v v f i f f i i c W E nc T nc T T P V PV R       "
+  },
+  {
+    "source": "Lec19.txt",
+    "category": "Physics",
+    "chunk_index": 33,
+    "page": 22,
+    "text": "23 \u0003\u0001\u0003\u0003\u0004\u0005\u0003\u0004\u0006\u0005 \u0007\b The adiabatic process PVγ = const. is valid only for equilibrium states. In the other hand, the process sometimes has to be fast enough to prevent heat exchange in order to be adiabatic. Nevertheless, PVγ = const. is still a good approximation. \u0003\u0001\u0003\u0003\u0004\u0005\u0003\u0004\u0006\u0005 \u0007 Q: You have four samples of ideal gas, each of which contains the same number of moles of gas and has the same initial temperature, volume, and pressure. You compress each sample to one-half of its initial volume. Rank the"
+  },
+  {
+    "source": "Lec19.txt",
+    "category": "Physics",
+    "chunk_index": 34,
+    "page": 22,
+    "text": "to one-half of its initial volume. Rank the four samples in order from highest to lowest value of the final pressure. (i) A monatomic gas compressed isothermally; (ii) A monatomic gas compressed adiabatically; (iii) A diatomic gas compressed isothermally; (iv) A diatomic gas compressed adiabatically. Ans: (ii) > (iv) > (i) = (iii)"
+  },
+  {
+    "source": "Lec19.txt",
+    "category": "Physics",
+    "chunk_index": 35,
+    "page": 24,
+    "text": "24 \u0003\u0001\u0003\u0003\u0004\u0005\u0003\u0004\u0006\u0005 \u0007 Ex. Adiabatic compression in a diesel engine The compression ratio of a diesel engine is 15 to 1; this means that air in the cylinders is compressed to 1/15 of its initial volume. (A)If the initial pressure is 1.01 X 105 Pa and the initial temperature is 27˚C (300 K), find the final pressure and the temperature after compression. Air is mostly a mixture of diatomic oxygen and nitrogen; treat it as an ideal gas with γ = 1.40. (B)How much work does the gas do during the"
+  },
+  {
+    "source": "Lec19.txt",
+    "category": "Physics",
+    "chunk_index": 36,
+    "page": 24,
+    "text": "1.40. (B)How much work does the gas do during the compression if the initial volume of the cylinder is 1.00 L = 1.00 X  m3? Assume that CV for air is 20.8 J/mol⦁K. \u0003\u0001\u0003\u0003\u0004\u0005\u0003\u0004\u0006\u0005 \u0007 Ans: (A) 1 0.4 1 2 1 2 (300 K)(15) 886 K V T T V           5 1.4 5 1 2 1 2 (1.01 10 Pa)(15) 44.8 10 Pa V P P V             (B) 5 3 3 1 1 1 (1.01 10 Pa)(1.00 10 m ) 0.0405 mol 8.314 J/mol K)(300 K) PV n RT        by gas on gas int 1 2 ( ) (0.0405 mol)(20.8 J/mol K)(300K 886 K) 494 J V W W E"
+  },
+  {
+    "source": "Lec19.txt",
+    "category": "Physics",
+    "chunk_index": 37,
+    "page": 24,
+    "text": "mol)(20.8 J/mol K)(300K 886 K) 494 J V W W E nC T T        "
+  }
+]

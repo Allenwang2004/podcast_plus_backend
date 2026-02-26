@@ -1,0 +1,604 @@
+[
+  {
+    "source": "Lec20.txt",
+    "category": "Physics",
+    "chunk_index": 0,
+    "page": 2,
+    "text": "2 Puzzles \u0001 Why heat always flows from the warmer object to the cooler object? \u0001 Why a ball lying on the ground never gathers internal energy from the ground and begins bouncing on its own? \u0001 Why does the gas do free expansion to an evacuated space spontaneously? ⇨ Energy is conserved, but why are all the processes are irreversible? The second law of thermodynamics determines the preferred direction for such processes! \u0006 \u0003\u0001\u0003\u0003\u0004\u0005\u0003\u0004\u0006\u0005 Outline 1. Directions of thermodynamic processes. 2. Heat"
+  },
+  {
+    "source": "Lec20.txt",
+    "category": "Physics",
+    "chunk_index": 1,
+    "page": 2,
+    "text": "1. Directions of thermodynamic processes. 2. Heat engine & Kelvin-Planck form of the 2nd law of thermodynamics. 3. Heat pump, Refrigerator & Clausius statement of the 2nd law of thermodynamics. 4. Carnot engine. 5. Gasoline and diesel engines. 6. Entropy and the 2nd law of thermodynamics \u0007 \u0003\u0001\u0003\u0003\u0004\u0005\u0003\u0004\u0006\u0005"
+  },
+  {
+    "source": "Lec20.txt",
+    "category": "Physics",
+    "chunk_index": 2,
+    "page": 3,
+    "text": "3 \b 1. Directions of thermodynamic processes \u0003\u0001\u0003\u0003\u0004\u0005\u0003\u0004\u0006\u0005 1. Directions of thermodynamic processes. 2. Heat engine & Kelvin-Planck form of the 2nd law of thermodynamics. 3. Heat pump, Refrigerator & Clausius statement of the 2nd law of thermodynamics. 4. Carnot engine. 5. Gasoline and diesel engines. 6. Entropy and the 2nd law of thermodynamics Reversible and Irreversible Processes \u0001 A reversible process is a process that the system can return to its initial state along the same path, with no"
+  },
+  {
+    "source": "Lec20.txt",
+    "category": "Physics",
+    "chunk_index": 3,
+    "page": 3,
+    "text": "to its initial state along the same path, with no increase in entropy. It must have the following features. 1. Every point along the path is in a “nearly equilibrium state” so that its state can be identified in the process. 2. No dissipative effects that convert mechanical energy to internal energy, e.g., no friction or turbulence (i.e., no nonconservative effects). \u0001 An irreversible process does not meet the above requirements. All natural processes are known to be irreversible. \u0003\u0001\u0003\u0003\u0004\u0005\u0003\u0004\u0006\u0005"
+  },
+  {
+    "source": "Lec20.txt",
+    "category": "Physics",
+    "chunk_index": 4,
+    "page": 4,
+    "text": "4 \u0003\u0001\u0003\u0003\u0004\u0005\u0003\u0004\u0006\u0005 A real process that can be a good approximation of a reversible one must occur very slowly quasi-equilibrium and without energy dissipation. Spontaneous process, which is not in an equilibrium state, is irreversible, e.g., heat flows from hot to cold substances and adiabatic free expansion. No dissipation in the process does not mean it is reversible, for example, the adiabatic free expansion case. It also has to occur slowly in order to be reversible. \u0003\u0001\u0003\u0003\u0004\u0005\u0003\u0004\u0006\u0005 (Non-equilibrium)"
+  },
+  {
+    "source": "Lec20.txt",
+    "category": "Physics",
+    "chunk_index": 5,
+    "page": 4,
+    "text": "to be reversible. \u0003\u0001\u0003\u0003\u0004\u0005\u0003\u0004\u0006\u0005 (Non-equilibrium) Irreversible (Quasi-equilibrium) Quasi-reversible Temperature change due to not thermal equilibrium is irreversible."
+  },
+  {
+    "source": "Lec20.txt",
+    "category": "Physics",
+    "chunk_index": 6,
+    "page": 5,
+    "text": "5 Adiabatic free expansion is an “irreversible” process. It requires exchange of W and Q in order to return to the initial state. During “free expansion”, the intermediate state is not in a equilibrium state; the path can’t be described in the PV diagram. \u0003\u0001\u0003\u0003\u0004\u0005\u0003\u0004\u0006\u0005 \u0005\u0001  A real process that is a good approximation of a reversible one will occur very slowly. The system is always very nearly in an equilibrium state.  A general characteristic of a reversible process is that there are no"
+  },
+  {
+    "source": "Lec20.txt",
+    "category": "Physics",
+    "chunk_index": 7,
+    "page": 5,
+    "text": "of a reversible process is that there are no dissipative effects that convert mechanical energy to internal energy (e.g., no friction or turbulence). \u0003\u0001\u0003\u0003\u0004\u0005\u0003\u0004\u0006\u0005 Quasi-reversible process: Isothermal “infinitesimal” expansion/compression"
+  },
+  {
+    "source": "Lec20.txt",
+    "category": "Physics",
+    "chunk_index": 8,
+    "page": 6,
+    "text": "6 \u0003\u0001\u0003\u0003\u0004\u0005\u0003\u0004\u0006\u0005 \u0005\u0005 The mixing of colored ink and water starts from a state of relative order (low entropy) in which each fluid is separate and distinct from the other. The final state after mixing is more disordered (greater entropy). Spootaneous uumixing of the ink and water, a process in which there would be a net decrease in entropy, is never observed. Mixing of different substances is irreversible. \u0005\u0003 \u0003\u0001\u0003\u0003\u0004\u0005\u0003\u0004\u0006\u0005"
+  },
+  {
+    "source": "Lec20.txt",
+    "category": "Physics",
+    "chunk_index": 9,
+    "page": 7,
+    "text": "7 \u0005\u0006 https://www.youtube.com/watch?v=UpJ-kGII074 \u0003\u0001\u0003\u0003\u0004\u0005\u0003\u0004\u0006\u0005 \u0003\u0001\u0003\u0003\u0004\u0005\u0003\u0004\u0006\u0005 \u0005\u0007 The process of tossing and picking up the cards is irreversible!  In fact, the irreversibility of a process is related to the increasing randomness or disorder of the system."
+  },
+  {
+    "source": "Lec20.txt",
+    "category": "Physics",
+    "chunk_index": 10,
+    "page": 7,
+    "text": "8 \u0003\u0001\u0003\u0003\u0004\u0005\u0003\u0004\u0006\u0005 \u0005\b In fact, all the irreversible processes drive systems toward an equilibrium state of increasing randomness. Conversion of mechanical energy into heat due to friction also involves an increase of randomness or disorder. Because the rising temperature due to friction broadens the particle speed distribution. \u0005 2. Heat engine & Kelvin-Planck form of the 2nd law of thermodynamics \u0003\u0001\u0003\u0003\u0004\u0005\u0003\u0004\u0006\u0005 1. Directions of thermodynamic processes. 2. Heat engine & Kelvin-Planck form of the 2nd law"
+  },
+  {
+    "source": "Lec20.txt",
+    "category": "Physics",
+    "chunk_index": 11,
+    "page": 7,
+    "text": "Heat engine & Kelvin-Planck form of the 2nd law of thermodynamics. 3. Heat pump, Refrigerator & Clausius statement of the 2nd law of thermodynamics. 4. Carnot engine. 5. Gasoline and diesel engines. 6. Entropy and the 2nd law of thermodynamics"
+  },
+  {
+    "source": "Lec20.txt",
+    "category": "Physics",
+    "chunk_index": 12,
+    "page": 9,
+    "text": "9 \u0005 \u0003\u0001\u0003\u0003\u0004\u0005\u0003\u0004\u0006\u0005 Steam engine Car engine \u0005 http://auto.howstuffworks.com/stirling-engine2.htm https://www.youtube.com/watch?v=zCGTNArwJ0s Stirling engine \u0003\u0001\u0003\u0003\u0004\u0005\u0003\u0004\u0006\u0005"
+  },
+  {
+    "source": "Lec20.txt",
+    "category": "Physics",
+    "chunk_index": 13,
+    "page": 9,
+    "text": "10 Heat Engine \u0001 A heat engine is a device that takes in energy by heat and, operating in a cyclic process, expels a fraction of that energy by means of work. The working substance absorbs energy by heat from a high temperature energy reservoir (Qh). Work is done by the engine (Weng). Energy is expelled as heat to a lower temperature reservoir (Qc). \u0005 \u0003\u0001\u0003\u0003\u0004\u0005\u0003\u0004\u0006\u0005 \u0003\u0001\u0003\u0003\u0004\u0005\u0003\u0004\u0006\u0005 \u0003\u0001 A heat engine can also operate in a cycle with more than two reservoirs so that all the heat transfers do not occur at"
+  },
+  {
+    "source": "Lec20.txt",
+    "category": "Physics",
+    "chunk_index": 14,
+    "page": 9,
+    "text": "so that all the heat transfers do not occur at the maximum and minimum temperatures."
+  },
+  {
+    "source": "Lec20.txt",
+    "category": "Physics",
+    "chunk_index": 15,
+    "page": 11,
+    "text": "11 \u0003\u0005 For the working substance in the engine, Eint = 0 in a cyclic process. i = f   on gas work done on g eng Work done a by engine (gas) s area in the enclosed curv ( ) e W W PdV P V       \u0003\u0001\u0003\u0003\u0004\u0005\u0003\u0004\u0006\u0005 (Clockwise, heat engine) > 0 \u0003\u0003 i = f \u0003\u0001\u0003\u0003\u0004\u0005\u0003\u0004\u0006\u0005 (Counterclockwise, heat pump) < 0"
+  },
+  {
+    "source": "Lec20.txt",
+    "category": "Physics",
+    "chunk_index": 16,
+    "page": 11,
+    "text": "12 \u0003\u0006 For a cyclic process, int eng 0 ( ) h c E Q W Q Q W        eng h c W Q Q    Thermal efficiency: eng 1 h c c h h h W Q Q Q e Q Q Q     \u0003\u0001\u0003\u0003\u0004\u0005\u0003\u0004\u0006\u0005 Kelvin-Planck form of the 2nd Law of Thermodynamics \u0001 A machine that operates in a cycle, taking in energy by heat and expelling an equal amount of energy by work, cannot be constructed. This limits the efficiency of heat engines. Although the 1st law of thermodynamics says Eint = Q + W, a 100% conversion between heat and work is"
+  },
+  {
+    "source": "Lec20.txt",
+    "category": "Physics",
+    "chunk_index": 17,
+    "page": 11,
+    "text": "Q + W, a 100% conversion between heat and work is impossible for a cyclic process. \u0003\u0007 \u0003\u0001\u0003\u0003\u0004\u0005\u0003\u0004\u0006\u0005"
+  },
+  {
+    "source": "Lec20.txt",
+    "category": "Physics",
+    "chunk_index": 18,
+    "page": 13,
+    "text": "13 \u0003\b Kelvin-Planck’s 2nd law of thermodynamics: “No perfect heat engine” (e = 1) can be constructed for any cyclic process. In practice, automobile gasoline engine e ~ 20% diesel engine e ~ 35% - 40%. \u0003\u0001\u0003\u0003\u0004\u0005\u0003\u0004\u0006\u0005 \u0003\u0001\u0003\u0003\u0004\u0005\u0003\u0004\u0006\u0005 \u0003 The maximum efficiency for a heat engine is given by the ideal “reversible” Carnot engine. A real engine always operates in an “irreversible” process so that it has lower efficiency than the ideal Carnot engine."
+  },
+  {
+    "source": "Lec20.txt",
+    "category": "Physics",
+    "chunk_index": 19,
+    "page": 14,
+    "text": "14 The real engine involves irreversible processes: Th Tc Qh W Qc Heat bypass Thermal resistant, friction, …(dissipation) \u0003\u0001\u0003\u0003\u0004\u0005\u0003\u0004\u0006\u0005 \u0003 \u0003 A useful engine must have the two features: 1. Work in cycles 2. More than one heat reservoir. Note: For a “one-time” isothermal process (i.e., one reservoir), int on gas 0 E Q W     on gas eng Q W W    All input heat is converted to work, but this is not a useful engine. \u0003\u0001\u0003\u0003\u0004\u0005\u0003\u0004\u0006\u0005 Q  T eng W PdV Q   "
+  },
+  {
+    "source": "Lec20.txt",
+    "category": "Physics",
+    "chunk_index": 20,
+    "page": 15,
+    "text": "15 \u0003\u0001\u0003\u0003\u0004\u0005\u0003\u0004\u0006\u0005 \u0003 eng on gas 0 W W PdV       T A useful engine must contact with more than one reservoirs. \u0003\u0001\u0003\u0003\u0004\u0005\u0003\u0004\u0006\u0005 \u0006\u0001 hT cT Therefore, a useful heat engine requires a clockwise loop to make ∲PdV > 0. This means that a second different thermal bath Tc is required and Qc = 0 is impossible! Impossible!"
+  },
+  {
+    "source": "Lec20.txt",
+    "category": "Physics",
+    "chunk_index": 21,
+    "page": 16,
+    "text": "16 \u0006\u0005 3. Heat pump, Refrigerator & Clausius statement of the 2nd law of thermodynamics. \u0003\u0001\u0003\u0003\u0004\u0005\u0003\u0004\u0006\u0005 1. Directions of thermodynamic processes. 2. Heat engine & Kelvin-Planck form of the 2nd law of thermodynamics. 3. Heat pump, Refrigerator & Clausius statement of the 2nd law of thermodynamics. 4. Carnot engine. 5. Gasoline and diesel engines. 6. Entropy and the 2nd law of thermodynamics \u0006\u0003 Some heat pumps, refrigerators: \u0003\u0001\u0003\u0003\u0004\u0005\u0003\u0004\u0006\u0005"
+  },
+  {
+    "source": "Lec20.txt",
+    "category": "Physics",
+    "chunk_index": 22,
+    "page": 17,
+    "text": "17 \u0003\u0001\u0003\u0003\u0004\u0005\u0003\u0004\u0006\u0005 \u0006\u0006 Heat Pump and refrigerator \u0001 Heat engines can run in reverse; this is called heat pump or refrigerator, e.g., air conditioner, refrigerator. Energy is extracted from the cold reservoir, Qc. Energy is transferred to the hot reservoir, Qh. Work must be done on the engine, W. \u0006\u0007 \u0003\u0001\u0003\u0003\u0004\u0005\u0003\u0004\u0006\u0005"
+  },
+  {
+    "source": "Lec20.txt",
+    "category": "Physics",
+    "chunk_index": 23,
+    "page": 17,
+    "text": "18 Coefficient of Performance \u0001 The effectiveness of a heat pump is described by a number called the coefficient of performance (COP) \u0001 In heating mode, COP generally > 1. \u0001 In cooling mode, a good refrigerator COP~5 or 6. \u0006\b COP (heating) h Q W  COP(cooling) c Q W  \u0003\u0001\u0003\u0003\u0004\u0005\u0003\u0004\u0006\u0005 \u0006 W = 0 Clausius’s 2nd law of thermodynamics: No “perfect heat pump” or refrigerator (W = 0) can be constructed for any cyclic process. i.e., Energy does not transfer spontaneously by heat from a cold object to a hot"
+  },
+  {
+    "source": "Lec20.txt",
+    "category": "Physics",
+    "chunk_index": 24,
+    "page": 17,
+    "text": "spontaneously by heat from a cold object to a hot object. \u0003\u0001\u0003\u0003\u0004\u0005\u0003\u0004\u0006\u0005"
+  },
+  {
+    "source": "Lec20.txt",
+    "category": "Physics",
+    "chunk_index": 25,
+    "page": 19,
+    "text": "19 \u0006 熱泵熱水器 http://blog.udn.com/escos/5000981 \u0003\u0001\u0003\u0003\u0004\u0005\u0003\u0004\u0006\u0005 \u0006 \u0003\u0001\u0003\u0003\u0004\u0005\u0003\u0004\u0006\u0005"
+  },
+  {
+    "source": "Lec20.txt",
+    "category": "Physics",
+    "chunk_index": 26,
+    "page": 19,
+    "text": "20 \u0003\u0001\u0003\u0003\u0004\u0005\u0003\u0004\u0006\u0005 \u0006 The refrigerator statement of the 2nd law is equivalent to the heat engine statement. For example, if we could build a workless refrigerator, violating the second or ''refrigerator'' statement of the second law, we could use it in conjunction with a heat engine, pumping the heat rejected by the engine back to the hot reservoir to be reused. This composite machine would violate the \"engine“ statement of the second law because its net effect would be to take a net quantity of heat"
+  },
+  {
+    "source": "Lec20.txt",
+    "category": "Physics",
+    "chunk_index": 27,
+    "page": 19,
+    "text": "effect would be to take a net quantity of heat QH - |QC| from the hot reservoir and convert it completely to work W. \u0003\u0001\u0003\u0003\u0004\u0005\u0003\u0004\u0006\u0005 \u0007\u0001"
+  },
+  {
+    "source": "Lec20.txt",
+    "category": "Physics",
+    "chunk_index": 28,
+    "page": 21,
+    "text": "21 \u0003\u0001\u0003\u0003\u0004\u0005\u0003\u0004\u0006\u0005 \u0007\u0005 \u0007\u0003 4. Carnot engine \u0003\u0001\u0003\u0003\u0004\u0005\u0003\u0004\u0006\u0005 1. Directions of thermodynamic processes. 2. Heat engine & Kelvin-Planck form of the 2nd law of thermodynamics. 3. Heat pump, Refrigerator & Clausius statement of the 2nd law of thermodynamics. 4. Carnot engine. 5. Gasoline and diesel engines. 6. Entropy and the 2nd law of thermodynamics"
+  },
+  {
+    "source": "Lec20.txt",
+    "category": "Physics",
+    "chunk_index": 29,
+    "page": 21,
+    "text": "22 Carnot Engine \u0001 A theoretical engine developed by Sadi Carnot. \u0001 A heat engine operating in an ideal, reversible cycle (now called a Carnot cycle) between two reservoirs is the most efficient engine possible. All real engines are less efficient than the Carnot engine because they do not operate through a reversible cycle, which causes additional energy dissipation. \u0001 Carnot’s Theorem: 1. All the reversible engines operating between two given reservoirs have the same efficiency. 2. No real"
+  },
+  {
+    "source": "Lec20.txt",
+    "category": "Physics",
+    "chunk_index": 30,
+    "page": 21,
+    "text": "reservoirs have the same efficiency. 2. No real heat engine has a greater efficiency than a reversible engine operating between the same two temperatures (reservoirs). \u0007\u0006 \u0003\u0001\u0003\u0003\u0004\u0005\u0003\u0004\u0006\u0005 \u0003\u0001\u0003\u0003\u0004\u0005\u0003\u0004\u0006\u0005 \u0007\u0007 For maximum heat-engine efficiency, all irreversible processes must be avoided as possible. For example, heat flow through a finite temperature difference is an irreversible process, and some of the heat may lose to other places instead of converting to work unless it is adiabatic. Therefore, the"
+  },
+  {
+    "source": "Lec20.txt",
+    "category": "Physics",
+    "chunk_index": 31,
+    "page": 21,
+    "text": "to work unless it is adiabatic. Therefore, the engine cycle involving isothermal and adiabatic can be quasi-rerersible and will be favored for maximizing the engine efficiency, which are exactly the design of Carnot cycle."
+  },
+  {
+    "source": "Lec20.txt",
+    "category": "Physics",
+    "chunk_index": 32,
+    "page": 23,
+    "text": "23 \u0003\u0001\u0003\u0003\u0004\u0005\u0003\u0004\u0006\u0005 \u0007\b If not in isothermal processes, there will be temperature difference between the hot reservoir and the engine. We can put another engine between the hot reservoir and the first engine to produce another work. Obviously, the first engine efficiency is reduced and can’t be greater than the one in the isothermal processes. ( e0 > e1 , e2 ) Th Tc Qh2 1 W Qc T Th Tc Qh 0 W Qc Th Tc 2 W Qh1 isothermal Not isothermal \u0003\u0001\u0003\u0003\u0004\u0005\u0003\u0004\u0006\u0005 \u0007 https://youtu.be/2RvgpN0tkrU"
+  },
+  {
+    "source": "Lec20.txt",
+    "category": "Physics",
+    "chunk_index": 33,
+    "page": 24,
+    "text": "24 Carnot Cycle \u0007 A B, isothermal C D, isothermal B C adiabatic D A adiabatic h Q  isothermal isothermal c Q  \u0003\u0001\u0003\u0003\u0004\u0005\u0003\u0004\u0006\u0005 \u0007 \u0003\u0001\u0003\u0003\u0004\u0005\u0003\u0004\u0006\u0005"
+  },
+  {
+    "source": "Lec20.txt",
+    "category": "Physics",
+    "chunk_index": 34,
+    "page": 24,
+    "text": "25 \u0007 Calculation of the Carnot engine efficiency: eng 1 h c c h h h W Q Q Q e Q Q Q     A B, isothermal, int 0 E   ln B A B A V h AB V V h B h V A Q W PdV nRT V dV nRT V V       C D, isothermal, ln C c CD c D V Q W nRT V   \u0003\u0001\u0003\u0003\u0004\u0005\u0003\u0004\u0006\u0005 \b\u0001     ln / ln / c C D c h h B A Q V V T Q T V V  B C D A, adiabatic 1 1 i i f f TV T V      1 1 1 1 h B c C h A c D T V T V T V T V               C B A D V V V V   So c c h h Q T Q T  1 1 c c h h Q T e Q T   "
+  },
+  {
+    "source": "Lec20.txt",
+    "category": "Physics",
+    "chunk_index": 35,
+    "page": 24,
+    "text": "c c h h Q T Q T  1 1 c c h h Q T e Q T    \u0003\u0001\u0003\u0003\u0004\u0005\u0003\u0004\u0006\u0005"
+  },
+  {
+    "source": "Lec20.txt",
+    "category": "Physics",
+    "chunk_index": 36,
+    "page": 26,
+    "text": "26 Efficiency of a Carnot Engine \u0001 Carnot showed that the efficiency of the engine depends on the temperatures of the reservoirs: Temperatures must be in Kelvins. All Carnot engines operating between the same two temperatures will have the same efficiency, which could be used as the definition of Kelvin temperature. \u0001 In order for the processes in the Carnot cycle to be reversible, they must be carried out infinitesimally slowly, which will make the engine output power extremely small. In"
+  },
+  {
+    "source": "Lec20.txt",
+    "category": "Physics",
+    "chunk_index": 37,
+    "page": 26,
+    "text": "make the engine output power extremely small. In principle, a Carnot engine is an ideal engine, but is impractical in reality. \b\u0005 C and 1 h h c c c h T e T Q T T Q   \u0003\u0001\u0003\u0003\u0004\u0005\u0003\u0004\u0006\u0005 Carnot Cycle in Reverse \u0001 Theoretically, a Carnot-cycle heat engine can run in reverse, because Canot cycle is reversible and ΔS = 0. This would constitute the most effective heat pump available. In heating mode: In cooling mode: \b\u0003 C h h h c Q T COP W T T    c c C h c Q T COP W T T    \u0003\u0001\u0003\u0003\u0004\u0005\u0003\u0004\u0006\u0005"
+  },
+  {
+    "source": "Lec20.txt",
+    "category": "Physics",
+    "chunk_index": 38,
+    "page": 27,
+    "text": "27 \u0003\u0001\u0003\u0003\u0004\u0005\u0003\u0004\u0006\u0005 \b\u0006 Although we derived the thermal efficiency for a Carnot engine using an ideal gas as its working substance, it is in fact valid for any Carnot engine, no matter what its working substance. \b\u0007 \u0003\u0001\u0003\u0003\u0004\u0005\u0003\u0004\u0006\u0005 Proof of Carnot engine’s efficiency always greater than any real engines: The proof is based on the reversible of Carnot engine, involving only isothermal and adiabatic processes. Therefore, the Carnot engine contacts only with two environments, the hot and cold reservoirs."
+  },
+  {
+    "source": "Lec20.txt",
+    "category": "Physics",
+    "chunk_index": 39,
+    "page": 27,
+    "text": "two environments, the hot and cold reservoirs. There is no other reservoir for the heat to flow!"
+  },
+  {
+    "source": "Lec20.txt",
+    "category": "Physics",
+    "chunk_index": 40,
+    "page": 28,
+    "text": "28 \u0003\u0001\u0003\u0003\u0004\u0005\u0003\u0004\u0006\u0005 \b\b Let’s design a new engine built by combining the superefficient heat engine and Carnot heat pump. new 0 C W W W     \u0003\u0001\u0003\u0003\u0004\u0005\u0003\u0004\u0006\u0005 \b , C e e  C hC h h hC W W Q Q Q Q     h c hC cC Q Q Q Q     0 h c hC h cC c Q Q Q Q Q Q          Heat flows from to but with 0, for the new engine. c h T T W    Assume the super heat engine has an efficiency e > eC (Carnot) , , C W W  Violate Clausius's 2nd law of thermodynamics  C e e  "
+  },
+  {
+    "source": "Lec20.txt",
+    "category": "Physics",
+    "chunk_index": 41,
+    "page": 28,
+    "text": "29 \b 5. Gasoline and diesel engines \u0003\u0001\u0003\u0003\u0004\u0005\u0003\u0004\u0006\u0005 1. Directions of thermodynamic processes. 2. Heat engine & Kelvin-Planck form of the 2nd law of thermodynamics. 3. Heat pump, Refrigerator & Clausius statement of the 2nd law of thermodynamics. 4. Carnot engine. 5. Gasoline and diesel engines. 6. Entropy and the 2nd law of thermodynamics \b \u0003\u0001\u0003\u0003\u0004\u0005\u0003\u0004\u0006\u0005 Diesel cycle c Q h Q h Q c Q h Q c Q h Q c Q h Q c Q  Unlike Carnot cycle, these cycles do not have fixed reservoirs or temperatures Th and Tc"
+  },
+  {
+    "source": "Lec20.txt",
+    "category": "Physics",
+    "chunk_index": 42,
+    "page": 28,
+    "text": "have fixed reservoirs or temperatures Th and Tc (isothermal), there are temperature difference along paths for Qh so that they are not reversible and some of the heat will lose to other places because of not being adiabatic."
+  },
+  {
+    "source": "Lec20.txt",
+    "category": "Physics",
+    "chunk_index": 43,
+    "page": 30,
+    "text": "30 The 4-stroke cycle of a Gasoline Engine \b \u0003\u0001\u0003\u0003\u0004\u0005\u0003\u0004\u0006\u0005 \u0001 \u0003\u0001\u0003\u0003\u0004\u0005\u0003\u0004\u0006\u0005"
+  },
+  {
+    "source": "Lec20.txt",
+    "category": "Physics",
+    "chunk_index": 44,
+    "page": 31,
+    "text": "31 \u0001 In a gasoline engine, six processes occur during each cycle. \u0001 For a given cycle, the piston moves up and down. twice; this represents a four-stroke cycle. \u0001 The processes in the cycle can be approximated by the Otto cycle. \u0005 \u0003\u0001\u0003\u0003\u0004\u0005\u0003\u0004\u0006\u0005 Otto Cycle \u0003 1. O A, intake stroke 2. A B, compression stroke 3. B C, spark ( Qh ) (irreversible) 4. C D, power stroke 5. D A, exhaust ( Qc ) (irreversible) 6. A O, exhaust stroke \u0003\u0001\u0003\u0003\u0004\u0005\u0003\u0004\u0006\u0005"
+  },
+  {
+    "source": "Lec20.txt",
+    "category": "Physics",
+    "chunk_index": 45,
+    "page": 31,
+    "text": "32 Otto Cycle Efficiency \u0001 If the air-fuel mixture is assumed to be an ideal gas, then the efficiency of the Otto cycle is =Cp/Cv is the ratio of the molar specific heats. V1 / V2 is called the compression ratio. Typical values: V1 / V2 ~ 8; = 1.4; e = 56% Efficiencies of real engines are 15% to 20% Mainly due to friction, energy transfer by conduction, incomplete combustion of the air-fuel mixture. \u0006   1 1 2 1 1 e V V   \u0003\u0001\u0003\u0003\u0004\u0005\u0003\u0004\u0006\u0005 \u0007 Otto Cycle Efficiency: eng 1 h c c h h h W Q Q Q e Q"
+  },
+  {
+    "source": "Lec20.txt",
+    "category": "Physics",
+    "chunk_index": 46,
+    "page": 31,
+    "text": "Cycle Efficiency: eng 1 h c c h h h W Q Q Q e Q Q Q     B C, D A, ( ) ( ) h V C B c V D A Q nC T T Q nC T T     1 D A C B T T e T T     \u0003\u0001\u0003\u0003\u0004\u0005\u0003\u0004\u0006\u0005"
+  },
+  {
+    "source": "Lec20.txt",
+    "category": "Physics",
+    "chunk_index": 47,
+    "page": 33,
+    "text": "33 \b A B, adiabatic, C D, adiabatic, 1 1 1 1 A A B B C C D D T V T V T V T V           1 2 , A D B C V V V V V V     1 1 2 2 1 1 , A B D C V V T T T T V V                    1 2 1 D A C B T T V T T V             1 1 2 1 1 1 / D A C B T T e T T V V       \u0003\u0001\u0003\u0003\u0004\u0005\u0003\u0004\u0006\u0005 Is the Otto cycle efficiency smaller than the Carnot cycle efficiency? Otto cycle:   1 1 2 1 1 1 1 / A D B C T T e T T V V     Carnot cycle: 1 A C T e T  Carnot"
+  },
+  {
+    "source": "Lec20.txt",
+    "category": "Physics",
+    "chunk_index": 48,
+    "page": 33,
+    "text": "V     Carnot cycle: 1 A C T e T  Carnot cycle Otto cycle. efficiency: A D T T     \u0003\u0001\u0003\u0003\u0004\u0005\u0003\u0004\u0006\u0005"
+  },
+  {
+    "source": "Lec20.txt",
+    "category": "Physics",
+    "chunk_index": 49,
+    "page": 34,
+    "text": "34 Diesel Engines \u0001 Operate on a cycle similar to the Otto cycle without a spark plug. \u0001 The compression ratio is much greater and so the cylinder temperature at the end of the compression stroke is much higher. \u0001 Fuel is injected and the temperature is high enough for the mixture to ignite without the spark plug. \u0001 Diesel engines are more efficient than gasoline engines, because of high compression ratio and combustion temperature. \u0003\u0001\u0003\u0003\u0004\u0005\u0003\u0004\u0006\u0005 Diesel engine: 1. A B, adiabatic compression 2. B"
+  },
+  {
+    "source": "Lec20.txt",
+    "category": "Physics",
+    "chunk_index": 50,
+    "page": 34,
+    "text": "engine: 1. A B, adiabatic compression 2. B C, fuel-air mixture, P = const. ( Qh ) 3. C D, adiabatic expansion 4. D A, exhaust, V = const. ( Qc ) \u0003\u0001\u0003\u0003\u0004\u0005\u0003\u0004\u0006\u0005"
+  },
+  {
+    "source": "Lec20.txt",
+    "category": "Physics",
+    "chunk_index": 51,
+    "page": 35,
+    "text": "35 \u0003\u0001\u0003\u0003\u0004\u0005\u0003\u0004\u0006\u0005 Science 352, 325 (2016) \u0001 6. Entropy and the 2nd law of thermodynamics \u0003\u0001\u0003\u0003\u0004\u0005\u0003\u0004\u0006\u0005 1. Directions of thermodynamic processes. 2. Heat engine & Kelvin-Planck form of the 2nd law of thermodynamics. 3. Heat pump, Refrigerator & Clausius statement of the 2nd law of thermodynamics. 4. Carnot engine. 5. Gasoline and diesel engines. 6. Entropy and the 2nd law of thermodynamics"
+  },
+  {
+    "source": "Lec20.txt",
+    "category": "Physics",
+    "chunk_index": 52,
+    "page": 35,
+    "text": "36 Macroscopic Entropy and the 2nd Law of Thermodynamics \u0001 The original formulation of entropy dealt with the transfer of energy by heat in a reversible process. \u0001 Let dQr be the amount of energy transferred by heat when a system follows a reversible path. \u0001 The change in entropy, dS is (macroscopic) \u0001 Entropy is a state variable, i.e., the change in entropy depends only on the endpoints and is independent of the path followed. \u0005 r dQ dS T  \u0003\u0001\u0003\u0003\u0004\u0005\u0003\u0004\u0006\u0005 (only for infinitesimal reversible path)"
+  },
+  {
+    "source": "Lec20.txt",
+    "category": "Physics",
+    "chunk_index": 53,
+    "page": 35,
+    "text": "(only for infinitesimal reversible path) \u0003\u0001\u0003\u0003\u0004\u0005\u0003\u0004\u0006\u0005 \u0003 r r dQ dS dQ TdS T    In the (reversible) phase transition with latent heat, T is fixed. The entropy mihgt be thought as a quantity to characterize the changes in the system while T remains constant but with heat flow. Compare entropy with heat capacity, dQ C dQ CdT dT    T varies: T fixed: (latent heat)"
+  },
+  {
+    "source": "Lec20.txt",
+    "category": "Physics",
+    "chunk_index": 54,
+    "page": 37,
+    "text": "37 \u0003\u0001\u0003\u0003\u0004\u0005\u0003\u0004\u0006\u0005 \u0006 Entropy also provides a quantitative measure of disorder or randomness. Consider an infinitesimal isothermal expansion (reversible), nRT dQ dW PdV dV V    1 A measure of disorder dQ dV V nR T         Q dS d T   Q: True or false: The entropy change in an adiabatic process must be zero because Q = 0. \u0007 \u0003\u0001\u0003\u0003\u0004\u0005\u0003\u0004\u0006\u0005 Ans: False. The determining factor for the entropy change is Qr, not Q. If the adiabatic process is not reversible, the entropy change is not necessarily"
+  },
+  {
+    "source": "Lec20.txt",
+    "category": "Physics",
+    "chunk_index": 55,
+    "page": 37,
+    "text": "reversible, the entropy change is not necessarily zero because a reversible path between the same initial and final states may involve energy transfer by heat."
+  },
+  {
+    "source": "Lec20.txt",
+    "category": "Physics",
+    "chunk_index": 56,
+    "page": 38,
+    "text": "38 Q: Which of the following is true for the entropy change of a system that undergoes a reversible, adiabatic process? (a) S < 0 (b) S = 0 (c) S > 0 \b \u0003\u0001\u0003\u0003\u0004\u0005\u0003\u0004\u0006\u0005 Ans: (b). Because the process is reversible and adiabatic, Qr = 0; therefore, S = 0. S in Irreversible Processes \u0001 To calculate the change in entropy in a real system, remember that entropy depends only on the state of the system. \u0001 Distinguish this from Qr, the amount of energy that would have been transferred by heat along a"
+  },
+  {
+    "source": "Lec20.txt",
+    "category": "Physics",
+    "chunk_index": 57,
+    "page": 38,
+    "text": "that would have been transferred by heat along a reversible path. \u0001 Do not use Q, the actual energy transfer in the process; Qr is the correct value to use for S. \u0003\u0001\u0003\u0003\u0004\u0005\u0003\u0004\u0006\u0005"
+  },
+  {
+    "source": "Lec20.txt",
+    "category": "Physics",
+    "chunk_index": 58,
+    "page": 39,
+    "text": "39 , reversible r dQ , irreversible dQ i i S f f S f f r f i i i dQ dQ S S S T T        Note that, The entropy change does not always involve heat transfer, e.g., adiabatic free expansion. \u0003\u0001\u0003\u0003\u0004\u0005\u0003\u0004\u0006\u0005 \u0003\u0001\u0003\u0003\u0004\u0005\u0003\u0004\u0006\u0005 ΔS in a temperature change: The process of heating an object is irreversible. Since the entropy depends only on the initial and final states, the change of entropy is the same whether the process is reversible or irreversible. We can take the reversible path by raising the"
+  },
+  {
+    "source": "Lec20.txt",
+    "category": "Physics",
+    "chunk_index": 59,
+    "page": 39,
+    "text": "We can take the reversible path by raising the temperature in steps of infinitesimal amount dT. ln 0, if for this irreversible process. h c f T h i T c h c T dQ ncdT S nc T T T T T         Tc ⇨ Th dQ"
+  },
+  {
+    "source": "Lec20.txt",
+    "category": "Physics",
+    "chunk_index": 60,
+    "page": 40,
+    "text": "40 The calorimetric process is irreversible because the system goes through a series of nonequilibrium states. ΔS can be calculated in terms of the reversible path by exchanging Q slowly. 1 1 2 2 (mol) (specific heat) (temperature) c h f n c T n c T T T   dQ ncdT  1 2 1 1 2 2 1 1 2 2 ln ln f f c h cold hot T T T T f f c h dQ dQ S T T dT dT n c n c T T T T n c n c T T            \u0003\u0001\u0003\u0003\u0004\u0005\u0003\u0004\u0006\u0005 ΔS in a calorimetric process: \u0003\u0001\u0003\u0003\u0004\u0005\u0003\u0004\u0006\u0005 \u0001     2 2 2 ( ) ( ) / 2 0 4 ( ) / 2 ln 0 h c h c"
+  },
+  {
+    "source": "Lec20.txt",
+    "category": "Physics",
+    "chunk_index": 61,
+    "page": 40,
+    "text": "   2 2 2 ( ) ( ) / 2 0 4 ( ) / 2 ln 0 h c h c h c h c total h c T T T T T T T T S nc T T            Th Tc ⇨ Tf Tf ( ) ( ) 0 2 h c h f c f f T T nc T T nc T T T        ln 0 ln 0 f hot h f cold c T S nc T T S nc T           2 2 ( ) / 2 ln ln total hot cold f h c h c h c S S S T T T nc nc T T T T            In fact, ΔStotal is always > 0 for such an irreversible calorimetric process."
+  },
+  {
+    "source": "Lec20.txt",
+    "category": "Physics",
+    "chunk_index": 62,
+    "page": 41,
+    "text": "41 \u0005 2 H O Environment 0 for phase transition. total S S S     \u0003\u0001\u0003\u0003\u0004\u0005\u0003\u0004\u0006\u0005 ΔS in a “phase transition”: Phase transition is a reversible process. The latent heat is L for a phase transition in H2O, at temperature Tm . 2 H O 0 1 r m m dQ mL S dQ T T T        Environment r m dQ mL S T T     In fact, ΔStotal = 0 for a reversible process. \u0003 int reversible path f f f f V i i i i dE PdV nc dT dQ nRdV S T T T V           (Indep. of path, so entropy is indeed a state"
+  },
+  {
+    "source": "Lec20.txt",
+    "category": "Physics",
+    "chunk_index": 63,
+    "page": 41,
+    "text": "  (Indep. of path, so entropy is indeed a state variable!) \u0003\u0001\u0003\u0003\u0004\u0005\u0003\u0004\u0006\u0005 ( ln ln ) ( ln ln ) V f f V i i S n c T R V n c T R V      ΔS for ideal gases in a quasi‐static reversible process."
+  },
+  {
+    "source": "Lec20.txt",
+    "category": "Physics",
+    "chunk_index": 64,
+    "page": 42,
+    "text": "42 \u0003\u0001\u0003\u0003\u0004\u0005\u0003\u0004\u0006\u0005 \u0006 ΔS in an “adiabatic reversible” expansion. 1 1 i i f f TV T V        1 1 ( ln ln ) ( ln ln ) ln ln ln ln ( 1) ln 0 V f f V i i f f V i i i i V f f i V f S n c T R V n c T R V T V nc nR T V V V nc nR V V V n c R V                   P V P V c c R c c                In consistent with 0. r dQ dS T   An adiabatic free expansion: Q = 0 but cannot be used since that is not a reversible process. \u0007 1 f f r i r i dQ dQ S T T      (free"
+  },
+  {
+    "source": "Lec20.txt",
+    "category": "Physics",
+    "chunk_index": 65,
+    "page": 42,
+    "text": "\u0007 1 f f r i r i dQ dQ S T T      (free expansion) (isothermal expansion) S S   int (1) adiabatic free expansion (irreversible) 0 0 0 i f i f V V E T T Q W       int (2) isothermal expansion (reversible) 0 i f i f V V E T T     ln f i f i V r V V f V i Q W PdV V nRT dV nRT V V       ln f r i V Q S nR T V    \u0003\u0001\u0003\u0003\u0004\u0005\u0003\u0004\u0006\u0005 A B P V reversible irreversible ΔS in an irreversible adiabatic free expansion."
+  },
+  {
+    "source": "Lec20.txt",
+    "category": "Physics",
+    "chunk_index": 66,
+    "page": 43,
+    "text": "43 Q: An ideal gas is taken from an initial temperature Tito a higher final temperature Tf along two different reversible paths: Path A is at constant pressure; Path B is at constant volume. The relation between the entropy changes of the gas for these paths is (a) SA > SB (b) SA = SB (c) SA < SB. \b \u0003\u0001\u0003\u0003\u0004\u0005\u0003\u0004\u0006\u0005 Ans:(a). From the first law of thermodynamics, for these two reversible processes, Qr Eint W. During the constant-volume process, W = 0, while the work W is nonzero and negative"
+  },
+  {
+    "source": "Lec20.txt",
+    "category": "Physics",
+    "chunk_index": 67,
+    "page": 43,
+    "text": "W = 0, while the work W is nonzero and negative during the constant-pressure expansion. Thus, Qr is larger for the constant- pressure process, leading to a larger value for the change in entropy. In terms of entropy as disorder, during the constant- pressure process, the gas must expand. The increase in volume results in more ways of locating the molecules of the gas in a container, resulting in a larger increase in entropy. \u0003\u0001\u0003\u0003\u0004\u0005\u0003\u0004\u0006\u0005"
+  },
+  {
+    "source": "Lec20.txt",
+    "category": "Physics",
+    "chunk_index": 68,
+    "page": 44,
+    "text": "44 \u0001 For any “reversible” cycle, \u0001 The direction of thermal energy transfer is not determined by energy conservation, but by the change in entropy of a system. \u0001 A spontaneous process or irreversible process in an isolated system increases the systems entropy, ΔS > 0. \u0001 For an isolated system, entropy drives the system toward equilibrium, and the state of equilibrium is the state of maximum entropy. 0 r dQ S T     \u0003\u0001\u0003\u0003\u0004\u0005\u0003\u0004\u0006\u0005 (for closed loop or cyclic process only!) Physics about Entropy A"
+  },
+  {
+    "source": "Lec20.txt",
+    "category": "Physics",
+    "chunk_index": 69,
+    "page": 44,
+    "text": "or cyclic process only!) Physics about Entropy A B P V reversible irreversible reversible paths. 2. 0, for dQ T   \u0003\u0001\u0003\u0003\u0004\u0005\u0003\u0004\u0006\u0005 Clausius’ inequality: ∵ More heat flow out than heat flow into the system, due to dissipation loss along the irreversible path. 1. 0, if containing . irrev s a i ny a er ble p ths dQ T   0, for . any paths dQ T   Why does the entropy of an isolated system increase in a spontaneous process or an irreversible process, ΔS > 0 ?"
+  },
+  {
+    "source": "Lec20.txt",
+    "category": "Physics",
+    "chunk_index": 70,
+    "page": 45,
+    "text": "45 A B P V reversible irreversible irreversible ( ) ( ) B A dQ T S B S A     \u0003\u0001\u0003\u0003\u0004\u0005\u0003\u0004\u0006\u0005 irreversible i e rever l rrev rsi ib e ble s 0 ( ) ( ) A B A B B A dQ d d Q T Q S T A S B T          If containing any irreversible paths, 0. dQ T   \u0003\u0001\u0003\u0003\u0004\u0005\u0003\u0004\u0006\u0005 \u0001 irreversible 0 B A dQ T    A spontaneous or irreversible process in an isolated system ALWAYS increases the systems entropy. For example, the entropy increases in an adiabatic free expansion. For an isolated system, ( ) ( ) S B S"
+  },
+  {
+    "source": "Lec20.txt",
+    "category": "Physics",
+    "chunk_index": 71,
+    "page": 45,
+    "text": "expansion. For an isolated system, ( ) ( ) S B S A   0 dQ "
+  },
+  {
+    "source": "Lec20.txt",
+    "category": "Physics",
+    "chunk_index": 72,
+    "page": 46,
+    "text": "46 \u0005 One way of conceptualizing a change in entropy is to relate it to energy spreading. A natural tendency is for energy to undergo spatial spreading in time, representing an increasing in entropy. [Serway, P.574] \u0003\u0001\u0003\u0003\u0004\u0005\u0003\u0004\u0006\u0005 \u0003\u0001\u0003\u0003\u0004\u0005\u0003\u0004\u0006\u0005 \u0003 The total entropy (engine + environment) change in a Carnot cycle is zero, because of its reversibility. However, other cycles such as Otto, Stirling … involve some irreversible processes and the total entropy change is greater than zero, where the environment"
+  },
+  {
+    "source": "Lec20.txt",
+    "category": "Physics",
+    "chunk_index": 73,
+    "page": 46,
+    "text": "is greater than zero, where the environment entropy increases but the engine entropy remains unchanged in a cycle."
+  },
+  {
+    "source": "Lec20.txt",
+    "category": "Physics",
+    "chunk_index": 74,
+    "page": 47,
+    "text": "47 Microscopic Entropy and the 2nd Law of Thermodynamics \u0006 Entropy is a measure of the probability of microstates (or degrees of freedom) in a system, representing the level of uncertainty, choice, and possibility in a system.. ln B S k W  W : numbers of “microstates” for the macrostate of a system. Entropy (microscopic): \u0003\u0001\u0003\u0003\u0004\u0005\u0003\u0004\u0006\u0005 (Boltzmann) \u0007 \u0003\u0001\u0003\u0003\u0004\u0005\u0003\u0004\u0006\u0005 \u0001 Entropy is a state variable. The entropy change is path-independent. Another statement of the second law of thermodynamics: \u0001 Law of"
+  },
+  {
+    "source": "Lec20.txt",
+    "category": "Physics",
+    "chunk_index": 75,
+    "page": 47,
+    "text": "of the second law of thermodynamics: \u0001 Law of increase of entropy The entropy of a closed system increases in all irreversible processes, S > 0. p.s., For reversible process, S = 0."
+  },
+  {
+    "source": "Lec20.txt",
+    "category": "Physics",
+    "chunk_index": 76,
+    "page": 48,
+    "text": "48 Microstates vs. Macrostates \u0001 A microstate is a particular configuration of the individual constituents of the system. \u0001 A macrostate is a description of the conditions from a macroscopic point of view. It makes use of macroscopic variables such as pressure, density, and temperature for gases. \b \u0003\u0001\u0003\u0003\u0004\u0005\u0003\u0004\u0006\u0005 Configuration (R, L) Macrostates Number of ways Probability E.g., 10 molecules Total arrangements: 10 10 2 2 2 2 1024       L R (10,0) or (0,10) (9,1) or (1,9) (8,2) or (2,8)"
+  },
+  {
+    "source": "Lec20.txt",
+    "category": "Physics",
+    "chunk_index": 77,
+    "page": 48,
+    "text": "R (10,0) or (0,10) (9,1) or (1,9) (8,2) or (2,8) (7,3) or (3,7) (5,5) (6,4) or (4,6) 1 10 10 9 45 2 1    10 9 8 120 3 2 1    10 9 8 7 210 4 3 2 1    10 9 8 7 6 252 5 4 3 2 1    1 1024 10 1024 45 1024 120 1024 210 1024 252 1024 \u0003\u0001\u0003\u0003\u0004\u0005\u0003\u0004\u0006\u0005 ! ( )! ! n r n W C n r r          10 = ln(2 ) B S k"
+  },
+  {
+    "source": "Lec20.txt",
+    "category": "Physics",
+    "chunk_index": 78,
+    "page": 49,
+    "text": "49 \u0003\u0001\u0003\u0003\u0004\u0005\u0003\u0004\u0006\u0005 (10,0) (9,1) (8,2) (7,3) (6,4) (5,5) (4,6) (3,7) (2,8) (1,9) (0,10) 0 5 10 15 20 25 Probably (%) Configuration The directionality of spontaneous processes is determined by what state has the highest probability. E.g., adiabatic free expansion. \u0003\u0001\u0003\u0003\u0004\u0005\u0003\u0004\u0006\u0005"
+  },
+  {
+    "source": "Lec20.txt",
+    "category": "Physics",
+    "chunk_index": 79,
+    "page": 50,
+    "text": "50 \u0003\u0001\u0003\u0003\u0004\u0005\u0003\u0004\u0006\u0005 https://www.facebook.com/461822001292778/videos/7491 48278925775 \u0003\u0001\u0003\u0003\u0004\u0005\u0003\u0004\u0006\u0005 \u0005\u0001\u0001 For any system, the most probable macroscopic state is the one with the greatest number of corresponding microscopic states, which is also the macroscopic state with the greatest disorder and the greatest entropy. If we consider a system and its surroundings to include the Universe, the Universe is always moving toward a macrostate corresponding to greater disorder."
+  },
+  {
+    "source": "Lec20.txt",
+    "category": "Physics",
+    "chunk_index": 80,
+    "page": 50,
+    "text": "51 \u0005\u0001\u0005 ΔS in an diabatic free expansion : molecular volume m V : number of ways of locatiing molecules W N N i i m V W V       N f f m V W V       ln ln 0 ln f i B f B i f B i S S S k W k W V Nk V        \u0003\u0001\u0003\u0003\u0004\u0005\u0003\u0004\u0006\u0005 [Same as previous S= approach!] r dQ T  S in Thermal Conduction The cold reservoir absorbs Q, Scold = Q/Tc. The hot reservoir loses Q, Shot = Q/Th. ⇨S = Q/Tc Q/Th > 0. If Q flows from Tc to Th, then S < 0, which violates the law of increase of entropy."
+  },
+  {
+    "source": "Lec20.txt",
+    "category": "Physics",
+    "chunk_index": 81,
+    "page": 50,
+    "text": "0, which violates the law of increase of entropy. \u0005\u0001\u0003 \u0003\u0001\u0003\u0003\u0004\u0005\u0003\u0004\u0006\u0005"
+  },
+  {
+    "source": "Lec20.txt",
+    "category": "Physics",
+    "chunk_index": 82,
+    "page": 52,
+    "text": "52 Why no perfect heat engine/heat pump is equivalent to the law of increase of entropy? Th Tc W Qh   0, cyclic process 0 h h h gas Q T S S S          h S  gas S  violates 0 no perfect heat engine. S   1. 2. Th Tc Q h S  gas S  cS  Q  0 1 1 ( ) 0 h c h c gas h c Q Q T T S S S S Q T T             violates 0 no perfect heat pump. S   \u0003\u0001\u0003\u0003\u0004\u0005\u0003\u0004\u0006\u0005 \u0005\u0001\u0006 \u0005\u0001\u0007 Why Carnot cycle has the maximum thermal efficiency? Th Tc Qh W Qc   0 0 h c h c h c gas Q Q T T S S S"
+  },
+  {
+    "source": "Lec20.txt",
+    "category": "Physics",
+    "chunk_index": 83,
+    "page": 52,
+    "text": "Tc Qh W Qc   0 0 h c h c h c gas Q Q T T S S S S           cS  h S  gas S  h c h c Q Q T T   Carnot cycle: reversible Carnot 1 h c c h h h Q Q T W e Q Q T     \u0003\u0001\u0003\u0003\u0004\u0005\u0003\u0004\u0006\u0005 (By entropy argument)"
+  },
+  {
+    "source": "Lec20.txt",
+    "category": "Physics",
+    "chunk_index": 84,
+    "page": 53,
+    "text": "53 Real engine: irreversible   0 0 h c h c h c gas Q Q T T S S S S           c h h c Q Q T T   h c h c h h T T W Q Q Q T     Carnot 1 c h h T W e e Q T            \u0003\u0001\u0003\u0003\u0004\u0005\u0003\u0004\u0006\u0005 \u0005\u0001\b Heat Death of the Universe \u0001 Ultimately, the entropy of the Universe should reach a maximum value, if our universe is a closed isolated system. At this value, the Universe will be in a equilibrium state of uniform temperature and density. All physical, chemical, and biological processes"
+  },
+  {
+    "source": "Lec20.txt",
+    "category": "Physics",
+    "chunk_index": 85,
+    "page": 53,
+    "text": "All physical, chemical, and biological processes will cease. The state of perfect disorder implies that no energy is available for doing work. This state is called the heat death of the Universe. \u0005\u0001 \u0003\u0001\u0003\u0003\u0004\u0005\u0003\u0004\u0006\u0005"
+  }
+]

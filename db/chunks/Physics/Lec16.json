@@ -1,0 +1,366 @@
+[
+  {
+    "source": "Lec16.txt",
+    "category": "Physics",
+    "chunk_index": 0,
+    "page": 2,
+    "text": "2 \u0006 1. Sound waves \u0001\u0003\u0001\u0001\u0004\u0005\u0001\u0004\u0006 1. Sound waves 2. Sound wave function 3. Sound speed 4. Sound wave equation 5. Sound intensity 6. Standing sound wave 7. Resonance and sound 8. The Doppler effect 9. Shock waves 10. Beats Sound Waves \u0003 Sound waves are longitudinal waves. \u0003 Audible waves within the sensitivity of the human ear are approximately 20 Hz to 20 kHz. Why? \u0003 Infrasonic waves have frequencies below the audible range. \u0003 Ultrasonic waves have frequencies above the audible range. \u0007 \u0001\u0003\u0001\u0001\u0004\u0005\u0001\u0004\u0006"
+  },
+  {
+    "source": "Lec16.txt",
+    "category": "Physics",
+    "chunk_index": 1,
+    "page": 3,
+    "text": "3 \b \u0001\u0003\u0001\u0001\u0004\u0005\u0001\u0004\u0006 \u0001\u0003\u0001\u0001\u0004\u0005\u0001\u0004\u0006\n\n4 \u0001\u0003\u0001\u0001\u0004\u0005\u0001\u0004\u0006 The piston’s frequency determines the frequency of the sound wave. The displacement of the piston controls the amplitude, not the wavelength. \u0001\u0003\u0001\u0001\u0004\u0005\u0001\u0004\u0006\n\n5 \u0001\u0003\u0001\u0001\u0004\u0005\u0001\u0004\u0006 \u0001\u0003\u0001\u0001\u0004\u0005\u0001\u0004\u0006 \u0005\u0003 https://fb.watch/fO1kz9VVzH/ Blow air with sound wave"
+  },
+  {
+    "source": "Lec16.txt",
+    "category": "Physics",
+    "chunk_index": 2,
+    "page": 6,
+    "text": "6 \u0005\u0005 2. Sound wave function \u0001\u0003\u0001\u0001\u0004\u0005\u0001\u0004\u0006 1. Sound waves 2. Sound wave function 3. Sound speed 4. Sound wave equation 5. Sound intensity 6. Standing sound wave 7. Resonance and sound 8. The Doppler effect 9. Shock waves 10. Beats \u0001\u0003\u0001\u0001\u0004\u0005\u0001\u0004\u0006 \u0005\u0001 max ( , ) cos( ) Displacement: s x t s kx t    max ( , ) sin( ) Pressure: P x t P kx t    Sound wave function"
+  },
+  {
+    "source": "Lec16.txt",
+    "category": "Physics",
+    "chunk_index": 3,
+    "page": 7,
+    "text": "7 \u0005\u0006 \u0001\u0003\u0001\u0001\u0004\u0005\u0001\u0004\u0006 1 max 1 ( ) cos( ) s t s kx t    2 max 2 ( ) cos( ) s t s kx t    x1 x2 Displacement \u0001\u0003\u0001\u0001\u0004\u0005\u0001\u0004\u0006 \u0005\u0007 Pressure / V A s V A x P B V V             V ds P B B V dx     max Displacement: ( , ) cos( ) s x t s kx t    max Pressure: ( , ) ( ) is n P x t P kx t     max max P Bks "
+  },
+  {
+    "source": "Lec16.txt",
+    "category": "Physics",
+    "chunk_index": 4,
+    "page": 7,
+    "text": "8 \u0001\u0003\u0001\u0001\u0004\u0005\u0001\u0004\u0006 \u0005\b \u0001\u0003\u0001\u0001\u0004\u0005\u0001\u0004\u0006 \u0005 Q: If you blow across the top of an empty soft-drink bottle, a pulse of sound travels down through the air in the bottle. At the moment the pulse reaches the bottom of the bottle, the correct descriptions of the displacement of elements of air from their equilibrium positions and the pressure of the air at this point are (a) the displacement and pressure are both at a maximum (b) the displacement and pressure are both at a minimum (c) the displacement is zero and the"
+  },
+  {
+    "source": "Lec16.txt",
+    "category": "Physics",
+    "chunk_index": 5,
+    "page": 7,
+    "text": "at a minimum (c) the displacement is zero and the pressure is a maximum (d) the displacement is zero and the pressure is a minimum"
+  },
+  {
+    "source": "Lec16.txt",
+    "category": "Physics",
+    "chunk_index": 6,
+    "page": 9,
+    "text": "9 \u0005 3. Sound speed \u0001\u0003\u0001\u0001\u0004\u0005\u0001\u0004\u0006 1. Sound waves 2. Sound wave function 3. Sound speed 4. Sound wave equation 5. Sound intensity 6. Standing sound wave 7. Resonance and sound 8. The Doppler effect 9. Shock waves 10. Beats \u0001\u0003\u0001\u0001\u0004\u0005\u0001\u0004\u0006 \u0005 Sound speed Applying impulse-momentum theorem Momentum ( ) Impulse x Avt v PAt    x Av t V P B B V Avt     B v   "
+  },
+  {
+    "source": "Lec16.txt",
+    "category": "Physics",
+    "chunk_index": 7,
+    "page": 10,
+    "text": "10 Sound speed in a fluid \u0003 The bulk modulus of the fluid is B. \u0003 The density of the fluid is . \u0003 The speed of sound in that medium is \u0005 . B v   \u0001\u0003\u0001\u0001\u0004\u0005\u0001\u0004\u0006 \u0003 Sound speed in an ideal gas: It is closely related to molecular speed. \u0003 For air, the relationship between the speed and temperature is The 331 m/s is the speed at 0o C. TC is the air temperature in Celsius. \u0001\u0003 C (331 m/s . ) 1 273 C T v    \u0001\u0003\u0001\u0001\u0004\u0005\u0001\u0004\u0006 , ratio of specific heats V B P k T v C m C     Sound speed in a gas"
+  },
+  {
+    "source": "Lec16.txt",
+    "category": "Physics",
+    "chunk_index": 8,
+    "page": 11,
+    "text": "11 \u0001\u0005 \u0001\u0003\u0001\u0001\u0004\u0005\u0001\u0004\u0006 Speed of Sound in a Solid Rod \u0003 The Young’s modulus of the material is Y. \u0003 The density of the material is . \u0003 The speed of sound in the rod is \u0001\u0001 . Y v   \u0001\u0003\u0001\u0001\u0004\u0005\u0001\u0004\u0006"
+  },
+  {
+    "source": "Lec16.txt",
+    "category": "Physics",
+    "chunk_index": 9,
+    "page": 12,
+    "text": "12 Speed of Mechanical Waves \u0003 The speed of sound waves in a medium depends on the compressibility and the density of the medium. \u0003 The compressibility can sometimes be expressed in terms of the elastic modulus of the material. \u0003 The speed of all mechanical waves follows a general form: \u0001\u0006 elastic property inertial property v  \u0001\u0003\u0001\u0001\u0004\u0005\u0001\u0004\u0006 \u0001\u0007 E.g, for sea water wave,     / / V V V V P g v gh h B v             \u0001\u0003\u0001\u0001\u0004\u0005\u0001\u0004\u0006"
+  },
+  {
+    "source": "Lec16.txt",
+    "category": "Physics",
+    "chunk_index": 10,
+    "page": 12,
+    "text": "13 \u0001\b 4. Sound wave equation \u0001\u0003\u0001\u0001\u0004\u0005\u0001\u0004\u0006 1. Sound waves 2. Sound wave function 3. Sound speed 4. Sound wave equation 5. Sound intensity 6. Standing sound wave 7. Resonance and sound 8. The Doppler effect 9. Shock waves 10. Beats \u0001   2 2 ( ) F P P A PA s ma V t             ( ) ( ) P x P x x A    P x A x           2 2 s A x t     2 2 P s x A A x x t                2 2 P s x t        / / s P B x P P B V V A s A x          Sound"
+  },
+  {
+    "source": "Lec16.txt",
+    "category": "Physics",
+    "chunk_index": 11,
+    "page": 12,
+    "text": "B x P P B V V A s A x          Sound wave equation 2 2 2 2 B s s x t                    2 2 2 2 2 1 Compare with y y x v t      B v    \u0001\u0003\u0001\u0001\u0004\u0005\u0001\u0004\u0006 P+ΔP P x x+Δx"
+  },
+  {
+    "source": "Lec16.txt",
+    "category": "Physics",
+    "chunk_index": 12,
+    "page": 14,
+    "text": "14 \u0001 5. Sound Intensity \u0001\u0003\u0001\u0001\u0004\u0005\u0001\u0004\u0006 1. Sound waves 2. Sound wave function 3. Sound speed 4. Sound wave equation 5. Sound intensity 6. Standing sound wave 7. Resonance and sound 8. The Doppler effect 9. Shock waves 10. Beats Intensity of Periodic Sound Waves \u0001 \u0001\u0003\u0001\u0001\u0004\u0005\u0001\u0004\u0006 ( , ) Power ( , ) x s x t F v P x t A t       max max max ( , ) cos( ) ( , ) sin( ) P s x t s kx t P x t Bks kx t            2 average 2 2 2 2 max max Energ 1 y density max /2 (Power) Intensity sin ( ) area o"
+  },
+  {
+    "source": "Lec16.txt",
+    "category": "Physics",
+    "chunk_index": 13,
+    "page": 14,
+    "text": "y density max /2 (Power) Intensity sin ( ) area o 2 r 2 1 ( ) v v P s I v I B k s kx t I v B                   "
+  },
+  {
+    "source": "Lec16.txt",
+    "category": "Physics",
+    "chunk_index": 14,
+    "page": 15,
+    "text": "15 \u0001 \u0001\u0003\u0001\u0001\u0004\u0005\u0001\u0004\u0006 Ex. Hearing Limits The faintest sounds the human ear can detect at a frequency of 1 kHz correspond to an intensity of about 1.00 × W/m²—the so-called threshold of hearing. The loudest sounds the ear can tolerate at this frequency correspond to an intensity of about 1.00 W/m²—the threshold of pain. Determine the pressure amplitude and displacement amplitude associated with these two limits. \u0001\u0003\u0001\u0001\u0004\u0005\u0001\u0004\u0006 \u0006\u0003 5 2 1 atm ~10 N/m Ans: 3 12 2 max 5 2 2 2(1.20 kg/m )(343 m/s)(1.00 10 W/m )"
+  },
+  {
+    "source": "Lec16.txt",
+    "category": "Physics",
+    "chunk_index": 15,
+    "page": 15,
+    "text": "2 max 5 2 2 2(1.20 kg/m )(343 m/s)(1.00 10 W/m ) 2.87 10 N/m P vI         5 2 max max 1 3 1 2.87 10 N/m (1.20 kg/m m )(343 m/s)(2 1000 Hz) 1.11 10 P s v          "
+  },
+  {
+    "source": "Lec16.txt",
+    "category": "Physics",
+    "chunk_index": 16,
+    "page": 16,
+    "text": "16 The decibel scale \u0003 The range of intensities detectible by the human ear is very large. \u0003 It is convenient to use a logarithmic scale to determine the intensity level, , I0 is called the reference intensity The threshold of hearing, I0 = 1.00  W/ m2. is in decibels (dB). \u0006\u0005 10log o I I         \u0001\u0003\u0001\u0001\u0004\u0005\u0001\u0004\u0006 \u0006\u0001 \u0001\u0003\u0001\u0001\u0004\u0005\u0001\u0004\u0006"
+  },
+  {
+    "source": "Lec16.txt",
+    "category": "Physics",
+    "chunk_index": 17,
+    "page": 16,
+    "text": "17 Loudness and Frequency \u0003 There is a complex relationship between loudness and frequency. \u0003 The lower curve of the white area shows the threshold of hearing. \u0003 The upper curve shows the threshold of pain. \u0006\u0006 \u0001\u0003\u0001\u0001\u0004\u0005\u0001\u0004\u0006 \u0001\u0003\u0001\u0001\u0004\u0005\u0001\u0004\u0006 \u0006\u0007 Ex. Consider an idealized model with a bird (treated as a point source) emitting constant sound power, with intensity inversely proportional to the square of the distance from the bird. By how many decibels does the sound intensity level drop when you move twice as"
+  },
+  {
+    "source": "Lec16.txt",
+    "category": "Physics",
+    "chunk_index": 18,
+    "page": 16,
+    "text": "sound intensity level drop when you move twice as far away from the bird?"
+  },
+  {
+    "source": "Lec16.txt",
+    "category": "Physics",
+    "chunk_index": 19,
+    "page": 18,
+    "text": "18 \u0001\u0003\u0001\u0001\u0004\u0005\u0001\u0004\u0006 \u0006\b Ans: 2 1 2 2 1 0 0 1 2 2 1 2 1 2 2 2 1 1 2 1 2 2 2 1 10(log log ) 10log 10log 10log 6 dB (2 ) I I I I I I I r I r r r r r              \u0006 6. Standing sound wave \u0001\u0003\u0001\u0001\u0004\u0005\u0001\u0004\u0006 1. Sound waves 2. Sound wave function 3. Sound speed 4. Sound wave equation 5. Sound intensity 6. Standing sound wave 7. Resonance and sound 8. The Doppler effect 9. Shock waves 10. Beats"
+  },
+  {
+    "source": "Lec16.txt",
+    "category": "Physics",
+    "chunk_index": 20,
+    "page": 19,
+    "text": "19 \u0001\u0003\u0001\u0001\u0004\u0005\u0001\u0004\u0006 \u0006 Standing Waves in Air Columns Standing Waves in a Tube Closed at One End \u0003 The closed end is a displacement node. \u0003 The open end is a displacement antinode. \u0003 The fundamental corresponds to ¼ \u0003 The frequencies are ƒn = nƒ1 = n (v/4L), where n = 1, 3, 5, … \u0006 \u0001\u0003\u0001\u0001\u0004\u0005\u0001\u0004\u0006"
+  },
+  {
+    "source": "Lec16.txt",
+    "category": "Physics",
+    "chunk_index": 21,
+    "page": 19,
+    "text": "20 \u0006 1( , ) sin( ) y x t A kx t     2 ( , ) sin( ) y x t A kx t       1 2 ( , ) ( , ) ( , ) 2 sin( )cos( ) 2 2 y x t y x t y x t A kx t         Boundary conditions: ( ) 0 y L  sin( ) 0 2 kL    , integer 2 kL m m      2 1 ( ) 2 m L m      1 , 1,3,5,... 2 2 4 m n L m n n                  \u0001\u0003\u0001\u0001\u0004\u0005\u0001\u0004\u0006 Standing Waves in an Open Tube \u0007\u0003 \u0003 Both ends are displacement antinodes. \u0003 The fundamental frequency is v/2L. \u0003 The higher harmonics are ƒn = nƒ1 = n"
+  },
+  {
+    "source": "Lec16.txt",
+    "category": "Physics",
+    "chunk_index": 22,
+    "page": 19,
+    "text": "is v/2L. \u0003 The higher harmonics are ƒn = nƒ1 = n (v/2L), where n = 1, 2, 3, … \u0001\u0003\u0001\u0001\u0004\u0005\u0001\u0004\u0006"
+  },
+  {
+    "source": "Lec16.txt",
+    "category": "Physics",
+    "chunk_index": 23,
+    "page": 21,
+    "text": "21 \u0007\u0005 (1) 2 n L n           2 1 4 (2) m L m          (3) 2 n L n         n n v f   1 ƒ 2 n v n L nf           1 ƒ 2 1 4 , 1, 3, 5, ... n v m L n n f           1 ƒ 2 n v n L nf         1, 2, 3, ... n  1, 2, 3, ... m  1, 2, 3, ... n  1ƒ 2 v L  1ƒ 4 v L  1ƒ 2 v L  \u0001\u0003\u0001\u0001\u0004\u0005\u0001\u0004\u0006 Q: A pipe open at both ends resonates at a fundamental frequency fopen. When one end is covered and the pipe is again made to resonate, the fundamental frequency is"
+  },
+  {
+    "source": "Lec16.txt",
+    "category": "Physics",
+    "chunk_index": 24,
+    "page": 21,
+    "text": "made to resonate, the fundamental frequency is fclosed. Which of the following expressions describes how these two resonant frequencies compare? (a) fclosed = fopen (b) fclosed = ½ fopen (c) fclosed = 2 fopen (d) fclosed = ²/3 fopen \u0007\u0001 \u0001\u0003\u0001\u0001\u0004\u0005\u0001\u0004\u0006"
+  },
+  {
+    "source": "Lec16.txt",
+    "category": "Physics",
+    "chunk_index": 25,
+    "page": 22,
+    "text": "22 Temperature effect on Instruments As the temperature rises: \u0003 Sounds produced by air columns become sharp. Higher frequency. Higher speed due to the higher temperature. \u0003 Sounds produced by strings become flat. Lower frequency. The strings expand due to the higher temperature, and their tension decreases. \u0007\u0006 \u0001\u0003\u0001\u0001\u0004\u0005\u0001\u0004\u0006 \u0007\u0007 \u0001\u0003\u0001\u0001\u0004\u0005\u0001\u0004\u0006"
+  },
+  {
+    "source": "Lec16.txt",
+    "category": "Physics",
+    "chunk_index": 26,
+    "page": 23,
+    "text": "23 Q: Balboa Park in San Diego has an outdoor organ. When the air temperature increases, the fundamental frequency of one of the organ pipes (a) stays the same (b) goes down (c) goes up (d) is impossible to determine. \u0007\b \u0001\u0003\u0001\u0001\u0004\u0005\u0001\u0004\u0006 A: (c) Standing Waves in Rods \u0003 A rod is clamped in the middle. The clamp forces a displacement node. The ends of the rod are free to vibrate and so will correspond to displacement antinodes. \u0007 \u0001\u0003\u0001\u0001\u0004\u0005\u0001\u0004\u0006"
+  },
+  {
+    "source": "Lec16.txt",
+    "category": "Physics",
+    "chunk_index": 27,
+    "page": 24,
+    "text": "24 \u0007 \u0001\u0003\u0001\u0001\u0004\u0005\u0001\u0004\u0006 \u0007 1 1 ( ) 2 2 L n          2 1 ( ) 2 2 L m          L L2 L1 1 2 ( 1) 2 L L L m n              2 1 , 1, 2, 3, ... and ( ) n m m n L L     \u0001\u0003\u0001\u0001\u0004\u0005\u0001\u0004\u0006\n\n25 \u0007 7. Resonance and sound \u0001\u0003\u0001\u0001\u0004\u0005\u0001\u0004\u0006 1. Sound waves 2. Sound wave function 3. Sound speed 4. Sound wave equation 5. Sound intensity 6. Standing sound wave 7. Resonance and sound 8. The Doppler effect 9. Shock waves 10. Beats \u0001\u0003\u0001\u0001\u0004\u0005\u0001\u0004\u0006 \b\u0003"
+  },
+  {
+    "source": "Lec16.txt",
+    "category": "Physics",
+    "chunk_index": 28,
+    "page": 26,
+    "text": "26 \b\u0005 \u0001\u0003\u0001\u0001\u0004\u0005\u0001\u0004\u0006 Determining frequency by the tuning fork \u0001\u0003\u0001\u0001\u0004\u0005\u0001\u0004\u0006 \b\u0001 https://en.wikipedia.org/wiki/Helmholtz_resonance Helmholtz resonance https://www.youtube.com/watch?v=PZVeJ2rh6ts"
+  },
+  {
+    "source": "Lec16.txt",
+    "category": "Physics",
+    "chunk_index": 29,
+    "page": 27,
+    "text": "27 \b\u0006 8. The Doppler effect \u0001\u0003\u0001\u0001\u0004\u0005\u0001\u0004\u0006 1. Sound waves 2. Sound wave function 3. Sound speed 4. Sound wave equation 5. Sound intensity 6. Standing sound wave 7. Resonance and sound 8. The Doppler effect 9. Shock waves 10. Beats The Doppler Effect \u0003 The Doppler effect is the apparent change in frequency (or wavelength) that occurs because of motion of the source or observer of a wave. \b\u0007 \u0001\u0003\u0001\u0001\u0004\u0005\u0001\u0004\u0006"
+  },
+  {
+    "source": "Lec16.txt",
+    "category": "Physics",
+    "chunk_index": 30,
+    "page": 27,
+    "text": "28 \b\b v : wave speed : wavelength v0 : observer speed 0, wave speed relative to observer ' v v v      , wavelength relative to observer '    , frequency relative to observer ' ' ' v f   0 ' v v f       0 / v v v f      0 v v f v      \u0001\u0003\u0001\u0001\u0004\u0005\u0001\u0004\u0006 Case 1: Source at rest & observer moving \b v : wave speed : wavelength vs : source speed , wave speed relative to observer ' v v    , wavelength relative to obs ' erver  \" \": observer A \" \": observer B '        "
+  },
+  {
+    "source": "Lec16.txt",
+    "category": "Physics",
+    "chunk_index": 31,
+    "page": 27,
+    "text": "\": observer A \" \": observer B '          s v v T f   s s v v v v f f f         ' s v f f v v       , frequency relative to o ' b ' ' server v f   \u0001\u0003\u0001\u0001\u0004\u0005\u0001\u0004\u0006 Case 2: Source moving & observer at rest"
+  },
+  {
+    "source": "Lec16.txt",
+    "category": "Physics",
+    "chunk_index": 32,
+    "page": 29,
+    "text": "29 Doppler Effect for mechanical waves \b 0 ' s v v f f v v        v : wave speed v0 : observer speed vs : source speed \u0001\u0003\u0001\u0001\u0004\u0005\u0001\u0004\u0006 ☢The speeds are all relative to the media that carries the wave. \u0001\u0003\u0001\u0001\u0004\u0005\u0001\u0004\u0006 \b Q. You are at an outdoor concert with a wind blowing at 10 m/s from the performers toward you. Is the sound you hear Doppler shifted? If so, is it shifted to lower or higher frequencies?"
+  },
+  {
+    "source": "Lec16.txt",
+    "category": "Physics",
+    "chunk_index": 33,
+    "page": 30,
+    "text": "30 \u0001\u0003\u0001\u0001\u0004\u0005\u0001\u0004\u0006 \b Ans: No. ∵ The speeds in the Doppler shift formula are all relative to the media, so that it doesn’t matter whether the wind is blowing or not. Only the relative motion of the source and observer matter. \u0001\u0003\u0001\u0001\u0004\u0005\u0001\u0004\u0006 \u0003 Doppler effect for electromagnetic waves ' c v f f c v        In the observer’s reference frame, c : light speed v : source speed relative to the observer"
+  },
+  {
+    "source": "Lec16.txt",
+    "category": "Physics",
+    "chunk_index": 34,
+    "page": 31,
+    "text": "31 \u0005 \u0001\u0003\u0001\u0001\u0004\u0005\u0001\u0004\u0006 Q: Consider detectors of water waves at three locations A, B, and C in Figure. Which of the following statements is true? (a) The wave speed is highest at location A. (b) The wave speed is highest at location C. (c) The detected wavelength is largest at location B. (d) The detected wavelength is largest at location C. (e) The detected frequency is highest at location C. (f) The detected frequency is highest at location A. \u0001 \u0001\u0003\u0001\u0001\u0004\u0005\u0001\u0004\u0006"
+  },
+  {
+    "source": "Lec16.txt",
+    "category": "Physics",
+    "chunk_index": 35,
+    "page": 31,
+    "text": "32 Q: You stand on a platform at a train station and listen to a train approaching the station at a constant velocity. While the train approaches, but before it arrives, you hear (a) the intensity and the frequency of the sound both increasing (b) the intensity and the frequency of the sound both decreasing (c) the intensity increasing and the frequency decreasing (d) the intensity decreasing and the frequency increasing (e) the intensity increasing and the frequency remaining the same (f) the"
+  },
+  {
+    "source": "Lec16.txt",
+    "category": "Physics",
+    "chunk_index": 36,
+    "page": 31,
+    "text": "and the frequency remaining the same (f) the intensity decreasing and the frequency remaining the same. \u0006 \u0001\u0003\u0001\u0001\u0004\u0005\u0001\u0004\u0006 \u0007 Doppler effect in 2-dimension \u0001\u0003\u0001\u0001\u0004\u0005\u0001\u0004\u0006 t = 0 t < 0 t > 0 observer 2 2 2 2 cos s s v v v f f f v t v v v v v b v t           "
+  },
+  {
+    "source": "Lec16.txt",
+    "category": "Physics",
+    "chunk_index": 37,
+    "page": 33,
+    "text": "33 \u0001\u0003\u0001\u0001\u0004\u0005\u0001\u0004\u0006 \b \u0001\u0003\u0001\u0001\u0004\u0005\u0001\u0004\u0006 Ex. Your clock radio awakens you with a steady and irritating sound of frequency f Hz. One morning, it malfunctions and cannot be turned off. In frustration, you drop the clock radio out of your fourth-story dorm window, h m from the ground. Assume the speed of sound is vs m/s. As you listen to the falling clock radio, what frequency do you hear just before you hear the radio striking the ground?"
+  },
+  {
+    "source": "Lec16.txt",
+    "category": "Physics",
+    "chunk_index": 38,
+    "page": 33,
+    "text": "34 \u0001\u0003\u0001\u0001\u0004\u0005\u0001\u0004\u0006 0 ' s v v f f v v        2 2 1 1 0 0 2 2 f i yi y y v t gt h gt        2 h t g   0 ' ( 2 ) v f f v gh            2 v f v gh          0 s yi y v v a t gt gt      Ans: \u0001\u0003\u0001\u0001\u0004\u0005\u0001\u0004\u0006 Ex. A submarine (sub A) travels through water at a speed of 8.00 m/s, emitting a sonar wave at a frequency of 1 400 Hz. The speed of sound in the water is 1 533 m/s. A second submarine (sub B) is located such that both submarines are traveling directly toward one"
+  },
+  {
+    "source": "Lec16.txt",
+    "category": "Physics",
+    "chunk_index": 39,
+    "page": 33,
+    "text": "both submarines are traveling directly toward one another. The second submarine is moving at 9.00 m/s. (A)What frequency is detected by an observer riding sub B as the subs approach each other? (B)The subs barely miss each other and pass. What frequency is detected by an observer riding on sub B as the subs recede from each other?"
+  },
+  {
+    "source": "Lec16.txt",
+    "category": "Physics",
+    "chunk_index": 40,
+    "page": 35,
+    "text": "35 0 B A s v v f f v v        1533 ( 9)1400 1416 Hz 1533 ( 8)     A B   \u0001\u0003\u0001\u0001\u0004\u0005\u0001\u0004\u0006 Ans: (A) (B) 0 B A s v v f f v v        A  B  1533 ( 9)1400 1385 Hz 1533 ( 8)       \u0003 1533 ( 8)1416 1432 Hz 1533 ( 9)       0 ' A B s v v f f v v        A B   \u0001\u0003\u0001\u0001\u0004\u0005\u0001\u0004\u0006 What If? While the subs are approaching each other, some of the sound from sub A will reflect from sub B and return to sub A. If this sound were to be detected by an observer on sub A, what is its"
+  },
+  {
+    "source": "Lec16.txt",
+    "category": "Physics",
+    "chunk_index": 41,
+    "page": 35,
+    "text": "be detected by an observer on sub A, what is its frequency?"
+  },
+  {
+    "source": "Lec16.txt",
+    "category": "Physics",
+    "chunk_index": 42,
+    "page": 36,
+    "text": "36 \u0005 9. Shock waves \u0001\u0003\u0001\u0001\u0004\u0005\u0001\u0004\u0006 1. Sound waves 2. Sound wave function 3. Sound speed 4. Sound wave equation 5. Sound intensity 6. Standing sound wave 7. Resonance and sound 8. The Doppler effect 9. Shock waves 10. Beats Shock Wave \u0003 The speed of the source vs exceeds the speed of the wave v. \u0001 Sonic boom \u0001\u0003\u0001\u0001\u0004\u0005\u0001\u0004\u0006"
+  },
+  {
+    "source": "Lec16.txt",
+    "category": "Physics",
+    "chunk_index": 43,
+    "page": 37,
+    "text": "37 Mach Number \u0003 The ratio vs / v is referred to as the Mach number. \u0003 The relationship between the Mach angle θ and the Mach number is , which can be used to measure the speeds of the wave and the source. \u0006 sin s s vt v v t v   \u0001\u0003\u0001\u0001\u0004\u0005\u0001\u0004\u0006 \u0007 sv v  sv v  sv v  \u0001\u0003\u0001\u0001\u0004\u0005\u0001\u0004\u0006"
+  },
+  {
+    "source": "Lec16.txt",
+    "category": "Physics",
+    "chunk_index": 44,
+    "page": 37,
+    "text": "38 \b Cherenkov radiation: The electromagnetic radiation emitted when a charged particle (such as an electron) passes through a dielectric medium at a speed greater than the phase velocity of light in that medium. The characteristic blue glow of an underwater nuclear reactor is due to Cherenkov radiation. It is named for Soviet physicist Pavel Cherenkov, who shared the 1958 Nobel Prize in Physics for its discovery. (Wikipedia) \u0001\u0003\u0001\u0001\u0004\u0005\u0001\u0004\u0006 10. Beats \u0001\u0003\u0001\u0001\u0004\u0005\u0001\u0004\u0006 1. Sound waves 2. Sound wave function"
+  },
+  {
+    "source": "Lec16.txt",
+    "category": "Physics",
+    "chunk_index": 45,
+    "page": 37,
+    "text": "\u0001\u0003\u0001\u0001\u0004\u0005\u0001\u0004\u0006 1. Sound waves 2. Sound wave function 3. Sound speed 4. Sound wave equation 5. Sound intensity 6. Standing sound wave 7. Resonance and sound 8. The Doppler effect 9. Shock waves 10. Beats"
+  },
+  {
+    "source": "Lec16.txt",
+    "category": "Physics",
+    "chunk_index": 46,
+    "page": 39,
+    "text": "39 Spatial and Temporal Interference \u0003 Spatial interference occurs when the amplitude of the oscillation in a medium varies with the position in space of the element. \u0003 Temporal interference occurs when the amplitude has a temporal alternation between constructive and destructive interference. \u0001\u0003\u0001\u0001\u0004\u0005\u0001\u0004\u0006 Beats \u0003 Temporal interference will occur when the interfering waves have slightly different frequencies. \u0003 Beating is the periodic variation in amplitude at a given point due to the"
+  },
+  {
+    "source": "Lec16.txt",
+    "category": "Physics",
+    "chunk_index": 47,
+    "page": 39,
+    "text": "in amplitude at a given point due to the superposition of two waves having slightly different frequencies. \u0001\u0003\u0001\u0001\u0004\u0005\u0001\u0004\u0006"
+  },
+  {
+    "source": "Lec16.txt",
+    "category": "Physics",
+    "chunk_index": 48,
+    "page": 40,
+    "text": "40 1 1 1 2 1 1 2 2 2 2 ( , ) sin( ) ( , ) sin( ) y x t A x t y x x k t A t k              1 2 1 2 To be simple, set , 0. A A A       At 0, x  1 2 1 2 (0, ) sin( ) (0, ) sin( ) y t A t y t A t            1 1 2 1 2 2 1 1 (0, ) (0, ) (0, 2 cos 2 ) sin 2 A t y t y t y t t                      resultant 1 2 2 co 2 s 2 A A f t f                 \u0001\u0003\u0001\u0001\u0004\u0005\u0001\u0004\u0006 \u0003 The amplitude of the resultant wave varies in time according to \u0003 The number"
+  },
+  {
+    "source": "Lec16.txt",
+    "category": "Physics",
+    "chunk_index": 49,
+    "page": 40,
+    "text": "wave varies in time according to \u0003 The number of beats per second, the beat frequency, is ƒbeat = 2f = |ƒ1 – ƒ2|. \u0003 1 2 resultant 2 cos2 2 f f A A t          1 2 2 f f f   \u0001\u0003\u0001\u0001\u0004\u0005\u0001\u0004\u0006"
+  },
+  {
+    "source": "Lec16.txt",
+    "category": "Physics",
+    "chunk_index": 50,
+    "page": 41,
+    "text": "41 Beat Frequency \u0003 The number of amplitude maxima one hears per second is the beat frequency. \u0003 It equals the difference between the frequencies of the two sources. \u0003 The human ear can detect a beat frequency up to about 20 beats/sec. \u0005 \u0001\u0003\u0001\u0001\u0004\u0005\u0001\u0004\u0006 \u0001 \u0001\u0003\u0001\u0001\u0004\u0005\u0001\u0004\u0006"
+  },
+  {
+    "source": "Lec16.txt",
+    "category": "Physics",
+    "chunk_index": 51,
+    "page": 42,
+    "text": "42 \u0006 \u0001\u0003\u0001\u0001\u0004\u0005\u0001\u0004\u0006 Q: You are tuning a guitar by comparing the sound of the string with that of a standard tuning fork. You notice a beat frequency of 5 Hz when both sounds are present. You tighten the guitar string and the beat frequency rises to 8 Hz. In order to tune the string exactly to the tuning fork, you should (a) continue to tighten the string (b) loosen the string (c) impossible to determine. \u0007 \u0001\u0003\u0001\u0001\u0004\u0005\u0001\u0004\u0006 A: (b)"
+  }
+]
