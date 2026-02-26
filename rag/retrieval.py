@@ -3,6 +3,9 @@ import numpy as np
 import json
 from sentence_transformers import SentenceTransformer, CrossEncoder
 from sklearn import pipeline
+import sys
+import os
+sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 from config import Config
 import os
 import pandas as pd
@@ -66,11 +69,5 @@ def process_queries_with_summary(input_csv, output_csv):
 
     df = pd.DataFrame(all_results)
     df.to_csv(output_csv, index=False)
-
-if __name__ == "__main__":
-    test_query = pd.read_csv('evaluation/queries_rag.csv')['question'].tolist()
-    for q in test_query:
-        results = retrieve(q)
-        df = pd.DataFrame(results[0], index=[0])
 
         
