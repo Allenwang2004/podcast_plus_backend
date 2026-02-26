@@ -220,3 +220,5 @@ feat
 pytest.ini
 
 db
+
+*.wav
