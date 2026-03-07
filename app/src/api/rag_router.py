@@ -1,10 +1,12 @@
-from fastapi import APIRouter, HTTPException, BackgroundTasks
+from fastapi import APIRouter, HTTPException, BackgroundTasks, UploadFile, File, Form
 from fastapi.responses import JSONResponse
 import sys
 import os
 import faiss
 import numpy as np
 import json
+import shutil
+from typing import Optional
 
 # Add parent directory to path
 sys.path.append(os.path.dirname(os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))))
@@ -15,11 +17,13 @@ from app.src.schema.rag_schema import (
     BuildIndexResponse,
     ChunkAndEmbedRequest,
     ChunkAndEmbedResponse,
-    IndexStatusResponse
+    IndexStatusResponse,
+    UploadPDFResponse
 )
 from rag.chunking import text_splitter
 from rag.embedding import load_chunks, embed_texts, save_embedding
 from rag.build_index import load_embeddings, create_faiss_index, save_index
+from rag.text_extraction import extract_text, extract_text_ocr, save_text
 
 router = APIRouter()
 config = Config()
@@ -157,24 +161,157 @@ async def chunk_and_embed_texts(request: ChunkAndEmbedRequest):
         raise HTTPException(status_code=500, detail=f"Error during chunking and embedding: {str(e)}")
 
 
+@router.post("/upload-pdf", response_model=UploadPDFResponse)
+async def upload_pdf(
+    file: UploadFile = File(...),
+    auto_process: bool = Form(False)
+):
+    """
+    Upload a PDF file and optionally process it automatically.
+    
+    - **file**: PDF file to upload
+    - **auto_process**: If True, automatically extract text, chunk, embed, and build index
+    
+    Files are organized by upload timestamp for better tracking.
+    """
+    try:
+        # Validate file type
+        if not file.filename.lower().endswith('.pdf'):
+            raise HTTPException(status_code=400, detail="Only PDF files are allowed")
+        
+        # Create timestamp-based directory
+        from datetime import datetime
+        timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
+        upload_dir = os.path.join(
+            os.path.dirname(config.PDF_DIR[0] if isinstance(config.PDF_DIR, list) else config.PDF_DIR),
+            "uploads",
+            timestamp
+        )
+        os.makedirs(upload_dir, exist_ok=True)
+        
+        # Save uploaded file
+        file_path = os.path.join(upload_dir, file.filename)
+        
+        with open(file_path, "wb") as buffer:
+            shutil.copyfileobj(file.file, buffer)
+        
+        response_data = {
+            "success": True,
+            "message": "PDF uploaded successfully",
+            "filename": file.filename,
+            "category": timestamp,  # Use timestamp as identifier
+            "file_path": file_path,
+            "auto_processed": False
+        }
+        
+        # Auto process if requested
+        if auto_process:
+            try:
+                # Extract text from this specific PDF
+                out_dir = os.path.join(config.TXT_DIR, timestamp)
+                
+                # Extract text (no category-specific logic needed)
+                text = extract_text(file_path, skip_first_page=False)
+                
+                filename = os.path.splitext(file.filename)[0] + ".txt"
+                save_text(text, out_dir, filename)
+                
+                # Run chunk and embed
+                chunk_request = ChunkAndEmbedRequest(
+                    text_directory=config.TXT_DIR,
+                    chunk_size=500,
+                    chunk_overlap=50
+                )
+                await chunk_and_embed_texts(chunk_request)
+                
+                # Rebuild index
+                await build_faiss_index()
+                
+                response_data["auto_processed"] = True
+                response_data["message"] = "PDF uploaded and processed successfully"
+                
+            except Exception as e:
+                response_data["message"] = f"PDF uploaded but processing failed: {str(e)}"
+        
+        return UploadPDFResponse(**response_data)
+        
+    except HTTPException:
+        raise
+    except Exception as e:
+        raise HTTPException(status_code=500, detail=f"Error uploading PDF: {str(e)}")
+
+
+@router.post("/extract-text", response_model=dict)
+async def extract_pdf_text():
+    """
+    Extract text from PDF files in the configured directories.
+    
+    This endpoint processes all PDF files from the directories specified in config
+    and saves them as text files.
+    """
+    try:
+        pdf_dirs = config.PDF_DIR
+        root_out_dir = config.TXT_DIR
+        total_files = 0
+        
+        for pdf_dir in pdf_dirs:
+            if not os.path.exists(pdf_dir):
+                continue
+                
+            category = os.path.basename(os.path.normpath(pdf_dir))
+            out_dir = os.path.join(root_out_dir, category)
+            skip_first = category in ["Computer", "Physics"]
+            
+            for file in os.listdir(pdf_dir):
+                if file.lower().endswith(".pdf"):
+                    pdf_path = os.path.join(pdf_dir, file)
+                    print(f"Extracting: {pdf_path}")
+                    
+                    # Use OCR for Physics, regular extraction for others
+                    if category == "Physics":
+                        text = extract_text_ocr(pdf_path, skip_first_page=skip_first)
+                    else:
+                        text = extract_text(pdf_path, skip_first_page=skip_first)
+                    
+                    filename = os.path.splitext(file)[0] + ".txt"
+                    save_text(text, out_dir, filename)
+                    total_files += 1
+        
+        return {
+            "success": True,
+            "message": "Text extraction completed successfully",
+            "total_files_processed": total_files,
+            "output_directory": root_out_dir
+        }
+    except Exception as e:
+        raise HTTPException(status_code=500, detail=f"Error extracting text: {str(e)}")
+
+
 @router.post("/full-pipeline", response_model=dict)
 async def full_pipeline(request: ChunkAndEmbedRequest):
     """
-    Execute the full RAG pipeline: chunking -> embedding -> index building.
+    Execute the full RAG pipeline: text extraction -> chunking -> embedding -> index building.
     
     This endpoint runs all steps sequentially to create a complete FAISS index
-    from text files.
+    from PDF files.
     """
     try:
-        # Step 1: Chunk and embed
+        # Step 1: Extract text from PDFs
+        extraction_response = await extract_pdf_text()
+        
+        # Step 2: Chunk and embed
         chunk_embed_response = await chunk_and_embed_texts(request)
         
-        # Step 2: Build index
+        # Step 3: Build index
         build_response = await build_faiss_index()
         
         return {
             "success": True,
             "message": "Full RAG pipeline completed successfully",
+            "text_extraction": {
+                "total_files_processed": extraction_response["total_files_processed"],
+                "output_directory": extraction_response["output_directory"]
+            },
             "chunking_embedding": {
                 "num_chunks": chunk_embed_response.num_chunks,
                 "num_embeddings": chunk_embed_response.num_embeddings,

@@ -48,3 +48,12 @@ class IndexStatusResponse(BaseModel):
     num_vectors: Optional[int] = None
     dimension: Optional[int] = None
     message: str
+
+class UploadPDFResponse(BaseModel):
+    """Response model for PDF upload"""
+    success: bool
+    message: str
+    filename: str
+    category: str
+    file_path: str
+    auto_processed: bool = False
