@@ -15,11 +15,7 @@ class Config:
     ALPHA = 0.75
 
     #RAG config
-    PDF_DIR = [
-        os.path.join(ROOT_DIR, "documents/Computer/"),
-        os.path.join(ROOT_DIR, "documents/Physics/"),
-        os.path.join(ROOT_DIR, "documents/Probability/")
-    ]
+    PDF_DIR = os.path.join(ROOT_DIR, "uploads")
     TXT_DIR = os.path.join(ROOT_DIR, "db/text")
     CHUNK_DIR = os.path.join(ROOT_DIR, "db/chunks")
     EMBED_DIR = os.path.join(ROOT_DIR, "db/embeddings")
