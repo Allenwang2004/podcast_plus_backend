@@ -24,6 +24,7 @@ from rag.chunking import text_splitter
 from rag.embedding import load_chunks, embed_texts, save_embedding
 from rag.build_index import load_embeddings, create_faiss_index, save_index
 from rag.text_extraction import extract_text, extract_text_ocr, save_text
+from rag.processing_tracker import ProcessingTracker
 
 router = APIRouter()
 config = Config()
@@ -91,6 +92,9 @@ async def chunk_and_embed_texts(request: ChunkAndEmbedRequest):
         from langchain_text_splitters import RecursiveCharacterTextSplitter
         import re
         
+        # Initialize processing tracker
+        tracker = ProcessingTracker()
+        
         splitter = RecursiveCharacterTextSplitter(
             chunk_size=request.chunk_size,
             chunk_overlap=request.chunk_overlap,
@@ -102,53 +106,99 @@ async def chunk_and_embed_texts(request: ChunkAndEmbedRequest):
                 if file.lower().endswith(".txt"):
                     file_path = os.path.join(root, file)
                     
-                    with open(file_path, "r", encoding="utf-8") as f:
-                        text = f.read()
+                    # Check if already processed
+                    if tracker.is_file_processed(file_path, stage="chunking"):
+                        print(f"Skipping (already processed): {file_path}")
+                        continue
                     
-                    chunks = splitter.split_text(text)
-                    
-                    data = []
-                    chunk_id = 0
-                    last_page = 1
-                    
-                    for idx, chunk in enumerate(chunks):
-                        page_match = re.search(r'\[Page (\d+)\]', chunk)
-                        if page_match:
-                            last_page = int(page_match.group(1))
-                        page_num = last_page
-                        chunk = re.sub(r'\[Page \d+\]', '', chunk).strip()
-                        if not chunk:
-                            continue
-                        category = os.path.basename(root)
-                        source_path = os.path.relpath(file_path, root).replace("\\", "/")
+                    try:
+                        # Mark file as processing
+                        tracker.mark_file_processing(file_path, "chunking")
                         
-                        data.append({
-                            "source": source_path,
-                            "category": category,
-                            "chunk_index": chunk_id,
-                            "page": page_num,
-                            "text": chunk
-                        })
-                        chunk_id += 1
-                    
-                    rel_dir = os.path.relpath(root, text_dir)
-                    out_dir_full = os.path.join(chunk_dir, rel_dir)
-                    os.makedirs(out_dir_full, exist_ok=True)
-                    
-                    out_path = os.path.join(out_dir_full, file.replace(".txt", ".json"))
-                    with open(out_path, "w", encoding="utf-8") as f:
-                        json.dump(data, f, ensure_ascii=False, indent=2)
-                    
-                    total_chunks += len(data)
+                        with open(file_path, "r", encoding="utf-8") as f:
+                            text = f.read()
+                        
+                        chunks = splitter.split_text(text)
+                        
+                        data = []
+                        chunk_id = 0
+                        last_page = 1
+                        
+                        for idx, chunk in enumerate(chunks):
+                            page_match = re.search(r'\[Page (\d+)\]', chunk)
+                            if page_match:
+                                last_page = int(page_match.group(1))
+                            page_num = last_page
+                            chunk = re.sub(r'\[Page \d+\]', '', chunk).strip()
+                            if not chunk:
+                                continue
+                            category = os.path.basename(root)
+                            source_path = os.path.relpath(file_path, root).replace("\\", "/")
+                            
+                            data.append({
+                                "source": source_path,
+                                "category": category,
+                                "chunk_index": chunk_id,
+                                "page": page_num,
+                                "text": chunk
+                            })
+                            chunk_id += 1
+                        
+                        rel_dir = os.path.relpath(root, text_dir)
+                        out_dir_full = os.path.join(chunk_dir, rel_dir)
+                        os.makedirs(out_dir_full, exist_ok=True)
+                        
+                        out_path = os.path.join(out_dir_full, file.replace(".txt", ".json"))
+                        with open(out_path, "w", encoding="utf-8") as f:
+                            json.dump(data, f, ensure_ascii=False, indent=2)
+                        
+                        # Mark file as completed
+                        tracker.mark_file_completed(
+                            file_path,
+                            "chunking",
+                            chunk_count=len(data),
+                            output_path=out_path
+                        )
+                        
+                        total_chunks += len(data)
+                        print(f"Processed: {file_path} -> {len(data)} chunks")
+                        
+                    except Exception as e:
+                        # Mark file as failed
+                        tracker.mark_file_failed(file_path, "chunking", str(e))
+                        print(f"Failed to process {file_path}: {str(e)}")
+                        raise
         
         # Step 2: Load chunks and create embeddings
-        texts, metadata = load_chunks(chunk_dir)
+        texts, metadata, source_files = load_chunks(chunk_dir, only_unprocessed=True)
+        
+        if len(texts) == 0:
+            print("No new texts to embed")
+            return ChunkAndEmbedResponse(
+                success=True,
+                message="No new chunks to process",
+                num_chunks=total_chunks,
+                num_embeddings=0,
+                embedding_shape=[0, 0]
+            )
         
         # Step 3: Generate embeddings
+        print(f"Generating embeddings for {len(texts)} texts...")
         embeddings = embed_texts(texts, model_name=embedding_model)
         
         # Step 4: Save embeddings
-        save_embedding(embeddings, metadata, output_dir=config.EMBED_DIR)
+        save_embedding(embeddings, metadata, output_dir=config.EMBED_DIR, mode="append")
+        
+        # Step 5: Mark embedding as completed for all source files
+        for source_file_info in source_files:
+            try:
+                tracker.mark_file_completed(
+                    source_file_info["txt_file"],
+                    "embedding",
+                    chunk_count=source_file_info["chunk_count"]
+                )
+            except Exception as e:
+                print(f"Warning: Could not update tracker for {source_file_info['txt_file']}: {str(e)}")
         
         return ChunkAndEmbedResponse(
             success=True,
