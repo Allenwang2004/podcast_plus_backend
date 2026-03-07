@@ -1,0 +1,21 @@
+{
+  "files": {
+    "/Users/coconut/pp_backend/db/text/20260308_010327/fia_2026_f1_regulations_-_section_a_general_provisions_-_iss_02_-_2026-02-27.txt": {
+      "file_hash": "3bf29614772d8ca08ac91a96840b730bf850e2e244a91ab89ebab2f2de6ed0a4",
+      "file_mtime": 1772903007.3983629,
+      "first_processed": "2026-03-08T01:03:27.404572",
+      "chunking_status": "completed",
+      "chunking_started": "2026-03-08T01:03:27.404585",
+      "chunking_completed": "2026-03-08T01:03:27.420759",
+      "last_processed": "2026-03-08T01:03:34.888896",
+      "chunk_count": 523,
+      "output_path": "/Users/coconut/pp_backend/db/chunks/20260308_010327/fia_2026_f1_regulations_-_section_a_general_provisions_-_iss_02_-_2026-02-27.json",
+      "embedding_status": "completed",
+      "embedding_completed": "2026-03-08T01:03:34.869282",
+      "indexing_status": "completed",
+      "indexing_completed": "2026-03-08T01:03:34.888887"
+    }
+  },
+  "last_full_rebuild": null,
+  "version": "1.0"
+}

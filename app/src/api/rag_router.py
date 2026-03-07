@@ -38,6 +38,9 @@ async def build_faiss_index(request: BuildIndexRequest = None):
     The embeddings must already exist in the embeddings directory.
     """
     try:
+        # Initialize tracker
+        tracker = ProcessingTracker()
+        
         # Load embeddings
         embeddings, metadata = load_embeddings()
         
@@ -47,6 +50,24 @@ async def build_faiss_index(request: BuildIndexRequest = None):
         # Save index
         index_path = config.FAISS_INDEX
         save_index(index, index_path)
+        
+        # Mark all files as indexed
+        # Get unique source files from metadata
+        source_files = set()
+        for item in metadata:
+            if 'source' in item:
+                # Reconstruct the txt file path
+                category = item.get('category', '')
+                source = item.get('source', '')
+                txt_path = os.path.join(config.TXT_DIR, category, source)
+                if os.path.exists(txt_path):
+                    source_files.add(txt_path)
+        
+        for txt_file in source_files:
+            try:
+                tracker.mark_file_completed(txt_file, "indexing")
+            except Exception as e:
+                print(f"Warning: Could not update tracker for {txt_file}: {str(e)}")
         
         return BuildIndexResponse(
             success=True,
