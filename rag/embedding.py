@@ -4,6 +4,7 @@ from sentence_transformers import SentenceTransformer
 import numpy as np
 import torch
 import sys
+import re
 sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 from config import Config
 from rag.processing_tracker import ProcessingTracker
@@ -117,61 +118,63 @@ def save_embedding(embeddings, metadata, output_dir=config.EMBED_DIR, mode="appe
         print(f"Saved {len(embeddings)} embeddings to {output_dir}")
 
 
-if __name__ == "__main__":
-    # 1) Load chunks (只載入未處理的)
-    chunk_dir = config.CHUNK_DIR  
+def embed_chunks(chunk_dir=None, embedding_model=None):
+    """
+    為 chunks 生成 embeddings
+    
+    Args:
+        chunk_dir: chunk 目錄路徑
+        embedding_model: 使用的 embedding 模型名稱
+    
+    Returns:
+        dict: 包含處理結果的字典
+    """
+    chunk_dir = chunk_dir or config.CHUNK_DIR
+    embedding_model = embedding_model or config.EMBEDDING_MODEL
+    
+    tracker = ProcessingTracker()
+    
+    # Load chunks
     texts, metadata, source_files = load_chunks(chunk_dir, only_unprocessed=True)
     
     if len(texts) == 0:
-        print("All files have been processed. No new embeddings needed.")
-        print(f"\nStatistics:")
-        stats = tracker.get_statistics()
-        for key, value in stats.items():
-            print(f"   {key}: {value}")
-    else:
-        print(f"Loaded {len(texts)} chunks from {len(source_files)} files.")
-        
-        # 標記開始處理
-        for source in source_files:
-            tracker.mark_file_processing(source["txt_file"], "embedding")
-        
+        print("No new texts to embed")
+        return {
+            "success": True,
+            "message": "No new chunks to embed",
+            "num_embeddings": 0,
+            "embedding_shape": [0, 0]
+        }
+    
+    # Generate embeddings
+    print(f"Generating embeddings for {len(texts)} texts...")
+    embeddings = embed_texts(texts, model_name=embedding_model)
+    
+    # Save embeddings
+    save_embedding(embeddings, metadata, output_dir=config.EMBED_DIR, mode="append")
+    
+    # Mark embedding as completed for all source files
+    for source_file_info in source_files:
         try:
-            # 2) Run embeddings
-            embeddings = embed_texts(texts)
-            
-            # 3) Example output
-            print("Example Text:", texts[0][:200], "...")
-            print("Embedding vector shape:", embeddings.shape)
-            print("First 5 dims of embedding:", embeddings[0][:5])
-            
-            # 4) Save embeddings (append mode)
-            save_embedding(embeddings, metadata, mode="append")
-            
-            # 5) 標記所有檔案處理完成
-            current_idx = 0
-            existing_count = 0
-            
-            # 計算現有的 embedding 數量
-            embedding_path = os.path.join(config.EMBED_DIR, "embeddings.npy")
-            if os.path.exists(embedding_path):
-                existing_embeddings = np.load(embedding_path)
-                existing_count = len(existing_embeddings) - len(embeddings)
-            
-            for source in source_files:
-                start_idx = existing_count + source["chunk_range"][0]
-                end_idx = existing_count + source["chunk_range"][1]
-                
-                tracker.mark_file_completed(
-                    source["txt_file"],
-                    "embedding",
-                    embedding_range=(start_idx, end_idx),
-                    embedding_count=source["chunk_count"]
-                )
-                print(f"Marked {source['txt_file']} as completed (embeddings {start_idx}-{end_idx})")
-                
+            tracker.mark_file_completed(
+                source_file_info["txt_file"],
+                "embedding",
+                chunk_count=source_file_info["chunk_count"]
+            )
         except Exception as e:
-            # 標記失敗
-            for source in source_files:
-                tracker.mark_file_failed(source["txt_file"], "embedding", str(e))
-            print(f"Embedding failed: {str(e)}")
-            raise
+            print(f"Warning: Could not update tracker for {source_file_info['txt_file']}: {str(e)}")
+    
+    return {
+        "success": True,
+        "message": "Embedding completed successfully",
+        "num_embeddings": len(embeddings),
+        "embedding_shape": list(embeddings.shape)
+    }
+
+### Testing script
+if __name__ == "__main__":
+    result = embed_chunks(
+        chunk_dir=config.CHUNK_DIR,
+        embedding_model=config.EMBEDDING_MODEL
+    )
+    print(json.dumps(result, indent=2))

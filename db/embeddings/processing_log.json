@@ -7,13 +7,21 @@
       "chunking_status": "completed",
       "chunking_started": "2026-03-08T01:51:58.865503",
       "chunking_completed": "2026-03-08T01:51:58.872394",
-      "last_processed": "2026-03-08T01:52:04.847212",
+      "last_processed": "2026-03-08T13:40:49.223816",
       "chunk_count": 569,
       "output_path": "/Users/coconut/pp_backend/db/chunks/20260308_015145/fia_2026_f1_regulations_-_section_b_sporting_-_iss_05_-_2026-02-27.json",
       "embedding_status": "completed",
       "embedding_completed": "2026-03-08T01:52:04.837081",
       "indexing_status": "completed",
-      "indexing_completed": "2026-03-08T01:52:04.847203"
+      "indexing_completed": "2026-03-08T13:40:49.223805"
+    },
+    "/Users/coconut/pp_backend/db/text/20260308_134007/fia_2026_f1_regulations_-_section_c_technical_-_iss_16_-_2026-02-27.txt": {
+      "file_hash": "b5f6ddab08dab510ee2f5302122be15c4e05014fd85e6c2aa2f7aaf4703dfbcf",
+      "file_mtime": 1772948440.1586378,
+      "first_processed": "2026-03-08T13:40:49.224531",
+      "indexing_status": "completed",
+      "indexing_completed": "2026-03-08T13:40:49.224541",
+      "last_processed": "2026-03-08T13:40:49.224542"
     }
   },
   "last_full_rebuild": null,

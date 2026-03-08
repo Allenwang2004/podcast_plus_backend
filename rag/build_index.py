@@ -33,42 +33,54 @@ def save_index(index, path=FAISS_INDEX_FILE):
     faiss.write_index(index, path)
     print(f"FAISS index saved to {path}.")
 
-if __name__ == "__main__":
+def build_index():
+    """
+    完整的 FAISS index 建立流程
+    
+    Returns:
+        dict: 包含處理結果的字典
+    """
     try:
-        print("🔨 Building FAISS index...")
+        # Load embeddings
         embeddings, metadata = load_embeddings()
+        
+        # Create FAISS index
         index = create_faiss_index(embeddings)
-        save_index(index)
         
-        # 標記完整重建
-        tracker.mark_full_rebuild()
+        # Save index
+        index_path = config.FAISS_INDEX
+        save_index(index, index_path)
         
-        # 將所有已嵌入的檔案標記為已索引
-        print("\nUpdating processing log...")
+        # Mark all files as indexed
+        # Get unique source files from metadata
+        source_files = set()
         for item in metadata:
-            # 從 metadata 取得原始檔案路徑
-            source = item.get("source", "")
-            category = item.get("category", "")
-            
-            # 重建完整的 txt 檔案路徑
-            txt_file = os.path.join(config.TXT_DIR, category, source)
-            
-            # 檢查檔案是否存在且已完成 embedding
-            if os.path.exists(txt_file):
-                file_info = tracker.get_file_info(txt_file)
-                if file_info and file_info.get("embedding_status") == "completed":
-                    # 標記為已索引（不重複標記已完成的）
-                    if file_info.get("index_status") != "completed":
-                        tracker.mark_file_completed(txt_file, "indexing")
+            if 'source' in item:
+                # Reconstruct the txt file path
+                category = item.get('category', '')
+                source = item.get('source', '')
+                txt_path = os.path.join(config.TXT_DIR, category, source)
+                if os.path.exists(txt_path):
+                    source_files.add(txt_path)
         
-        print("\nFAISS index build completed!")
+        for txt_file in source_files:
+            try:
+                tracker.mark_file_completed(txt_file, "indexing")
+            except Exception as e:
+                print(f"Warning: Could not update tracker for {txt_file}: {str(e)}")
         
-        # 顯示統計資訊
-        stats = tracker.get_statistics()
-        print(f"\nProcessing Statistics:")
-        for key, value in stats.items():
-            print(f"   {key}: {value}")
-            
+        return {
+            "success": True,
+            "message": "FAISS index built successfully",
+            "index_path": index_path,
+            "num_vectors": int(index.ntotal),
+            "dimension": int(embeddings.shape[1])
+        }
+    except FileNotFoundError as e:
+        raise FileNotFoundError(f"Required files not found: {str(e)}. Please run chunking and embedding first.")
     except Exception as e:
-        print(f"Error building index: {str(e)}")
-        raise
+        raise Exception(f"Error building index: {str(e)}")
+
+if __name__ == "__main__":
+    result = build_index()
+    print(json.dumps(result, indent=2))
