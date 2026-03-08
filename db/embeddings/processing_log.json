@@ -22,6 +22,30 @@
       "indexing_status": "completed",
       "indexing_completed": "2026-03-08T13:40:49.224541",
       "last_processed": "2026-03-08T13:40:49.224542"
+    },
+    "/app/db/text/20260308_134007/fia_2026_f1_regulations_-_section_c_technical_-_iss_16_-_2026-02-27.txt": {
+      "file_hash": "b5f6ddab08dab510ee2f5302122be15c4e05014fd85e6c2aa2f7aaf4703dfbcf",
+      "file_mtime": 1772948440.1586378,
+      "first_processed": "2026-03-08T08:05:22.639631",
+      "indexing_status": "completed",
+      "indexing_completed": "2026-03-08T08:05:22.639672",
+      "last_processed": "2026-03-08T08:05:22.639675"
+    },
+    "/app/db/text/20260308_015145/fia_2026_f1_regulations_-_section_b_sporting_-_iss_05_-_2026-02-27.txt": {
+      "file_hash": "dbe65a8e71e9a0fa49975bdbbcf807fd775223cc09dd9420fb5203964d336d7e",
+      "file_mtime": 1772905918.8645034,
+      "first_processed": "2026-03-08T08:05:22.640644",
+      "indexing_status": "completed",
+      "indexing_completed": "2026-03-08T08:05:22.640647",
+      "last_processed": "2026-03-08T08:05:22.640647"
+    },
+    "/app/db/text/20260308_080437/fia_2026_f1_regulations_-_section_d_financial_-_f1_teams_-_iss_05_-_2026-02-27.txt": {
+      "file_hash": "cbe9102786f6a537b15bbb5091d5d4b6e6b06cef73fe81b63645a4cb7f8f66d0",
+      "file_mtime": 1772957088.823466,
+      "first_processed": "2026-03-08T08:05:22.640999",
+      "indexing_status": "completed",
+      "indexing_completed": "2026-03-08T08:05:22.641000",
+      "last_processed": "2026-03-08T08:05:22.641001"
     }
   },
   "last_full_rebuild": null,

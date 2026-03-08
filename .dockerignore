@@ -1,0 +1,64 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+*.egg-info/
+dist/
+build/
+
+# Virtual Environment
+.venv/
+venv/
+ENV/
+env/
+
+# IDEs
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Git
+.git/
+.gitignore
+
+# Environment
+.env.local
+.env.*.local
+
+# Logs
+*.log
+
+# Data (comment out if you want to include initial data)
+# db/
+# uploads/
+
+# Test files
+*.test
+test_*
+tests/
+
+# Documentation
+docs/
+*.md
+!README.md
+
+# UV lock can be included
+# uv.lock
+
+# Jupyter notebooks
+*.ipynb
+.ipynb_checkpoints/
+
+# Model weights (large files, download at runtime)
+*.bin
+*.safetensors
+*.ckpt
+*.pth

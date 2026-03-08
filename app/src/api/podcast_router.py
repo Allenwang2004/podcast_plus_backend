@@ -69,7 +69,7 @@ async def generate_dialogue(request: GenerateDialogueRequest):
                             stdout=subprocess.PIPE,
                             stderr=None,  # Let stderr go to terminal
                             text=True,
-                            timeout=30  # 30 seconds timeout
+                            timeout=300  # 5 minutes timeout
                         )
                         
                         if result.returncode == 0:

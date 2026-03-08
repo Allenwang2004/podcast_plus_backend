@@ -21,7 +21,9 @@ app = FastAPI(
 )
 
 # Create static directory if not exists
-static_dir = Path("/Users/coconut/pp_backend/static")
+from config import Config
+config = Config()
+static_dir = Path(config.STATIC_DIR)
 static_dir.mkdir(parents=True, exist_ok=True)
 
 # Mount static files
