@@ -23,7 +23,7 @@ from app.src.schema.rag_schema import (
 from rag.chunking import text_splitter
 from rag.embedding import load_chunks, embed_texts, save_embedding
 from rag.build_index import load_embeddings, create_faiss_index, save_index
-from rag.text_extraction import extract_text, extract_text_ocr, save_text
+from rag.text_extraction import extract_all_text, save_text
 from rag.processing_tracker import ProcessingTracker
 
 router = APIRouter()
@@ -278,11 +278,11 @@ async def upload_pdf(
         # Auto process if requested
         if auto_process:
             try:
-                # Extract text from this specific PDF
+                # Extract text from this specific PDF using new method
                 out_dir = os.path.join(config.TXT_DIR, timestamp)
                 
-                # Extract text (no category-specific logic needed)
-                text = extract_text(file_path, skip_first_page=False)
+                # Use new pdfplumber-based extraction with auto blacklist
+                text = extract_all_text(file_path, skip_first_page=False)
                 
                 filename = os.path.splitext(file.filename)[0] + ".txt"
                 save_text(text, out_dir, filename)
@@ -338,11 +338,8 @@ async def extract_pdf_text():
                     pdf_path = os.path.join(pdf_dir, file)
                     print(f"Extracting: {pdf_path}")
                     
-                    # Use OCR for Physics, regular extraction for others
-                    if category == "Physics":
-                        text = extract_text_ocr(pdf_path, skip_first_page=skip_first)
-                    else:
-                        text = extract_text(pdf_path, skip_first_page=skip_first)
+                    # Use new pdfplumber-based extraction with auto blacklist detection
+                    text = extract_all_text(pdf_path, skip_first_page=skip_first)
                     
                     filename = os.path.splitext(file)[0] + ".txt"
                     save_text(text, out_dir, filename)

@@ -13,7 +13,13 @@ from app.src.schema.podcast_schema import (
     GenerateAudioResponse
 )
 
+# Import config
+import sys
+sys.path.append(os.path.dirname(os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))))
+from config import Config
+
 router = APIRouter()
+config = Config()
 
 @router.post("/generate-dialogue", response_model=GenerateDialogueResponse)
 async def generate_dialogue(request: GenerateDialogueRequest):
@@ -21,7 +27,9 @@ async def generate_dialogue(request: GenerateDialogueRequest):
     Generate a natural dialogue between two people based on user instruction and optional context.
     
     - **user_instruction**: The instruction for dialogue generation
-    - **retrieved_context**: Optional context from RAG system. If empty, generates based on instruction only.
+    - **retrieved_context**: Optional pre-retrieved context. If not provided, will auto-retrieve from RAG if use_rag=True
+    - **use_rag**: Whether to automatically retrieve context from RAG system (default: True)
+    - **top_n**: Number of chunks to retrieve from RAG (default: 3)
     - **model**: OpenAI model to use (default: gpt-4o-mini)
     - **max_tokens**: Maximum tokens for generation (default: 1000)
     """
@@ -37,12 +45,64 @@ async def generate_dialogue(request: GenerateDialogueRequest):
         # Initialize OpenAI client
         client = OpenAI(api_key=api_key)
         
-        # Build prompt based on whether context is provided
-        if request.retrieved_context:
+        # Get or retrieve context
+        context_to_use = request.retrieved_context
+        
+        if not context_to_use and request.use_rag:
+            try:
+                print(f"[RAG] Retrieving context for: {request.user_instruction[:50]}...")
+                
+                # Check if FAISS index exists
+                if not os.path.exists(config.FAISS_INDEX):
+                    print("[RAG] Warning: FAISS index not found, generating without context")
+                else:
+                    # Path to worker script
+                    worker_script = Path(__file__).parent.parent.parent.parent / "rag" / "retrieve_worker.py"
+                    
+                    if not worker_script.exists():
+                        print(f"[RAG] Warning: Worker script not found at {worker_script}")
+                    else:
+                        # Call worker in subprocess
+                        # Don't capture stderr so worker logs appear in terminal
+                        result = subprocess.run(
+                            ["python", str(worker_script), request.user_instruction, str(request.top_n)],
+                            stdout=subprocess.PIPE,
+                            stderr=None,  # Let stderr go to terminal
+                            text=True,
+                            timeout=30  # 30 seconds timeout
+                        )
+                        
+                        if result.returncode == 0:
+                            # Parse result from stdout
+                            try:
+                                worker_result = json.loads(result.stdout.strip().split('\n')[-1])
+                                
+                                if worker_result.get("success"):
+                                    context_to_use = worker_result.get("context", "")
+                                    num_chunks = worker_result.get("num_chunks", 0)
+                                    if context_to_use:
+                                        print(f"[RAG] Retrieved {num_chunks} chunks via worker")
+                                    else:
+                                        print("[RAG] No relevant chunks found")
+                                else:
+                                    print(f"[RAG] Worker failed: {worker_result.get('error', 'Unknown error')}")
+                            except (json.JSONDecodeError, IndexError) as e:
+                                print(f"[RAG] Failed to parse worker output: {str(e)}")
+                        else:
+                            print(f"[RAG] Worker process failed with code {result.returncode}")
+                        
+            except subprocess.TimeoutExpired:
+                print("[RAG] Retrieval timeout, generating without context")
+            except Exception as e:
+                print(f"[RAG] Retrieval failed: {str(e)}, generating without context")
+                # Continue without context rather than failing
+        
+        # Build prompt based on whether context is available
+        if context_to_use:
             prompt = f"""Use the information provided in the relevant context to generate a natural dialogue between two people (Person A and Person B).
 
 ### Relevant Context:
-{request.retrieved_context}
+{context_to_use}
 
 ### Instruction:
 {request.user_instruction}

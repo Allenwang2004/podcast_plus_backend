@@ -4,7 +4,9 @@ from typing import Optional
 class GenerateDialogueRequest(BaseModel):
     """Request model for generating dialogue"""
     user_instruction: str = Field(..., description="User's instruction for dialogue generation")
-    retrieved_context: Optional[str] = Field(default=None, description="Retrieved context from RAG. If empty, generate based on user instruction only.")
+    retrieved_context: Optional[str] = Field(default=None, description="Optional pre-retrieved context. If not provided and use_rag=True, will auto-retrieve from RAG.")
+    use_rag: bool = Field(default=True, description="Whether to use RAG for automatic context retrieval")
+    top_n: Optional[int] = Field(default=3, description="Number of chunks to retrieve from RAG")
     model: Optional[str] = Field(default="gpt-4o-mini", description="OpenAI model to use")
     max_tokens: Optional[int] = Field(default=1000, description="Maximum tokens for generation")
 

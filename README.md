@@ -12,6 +12,7 @@
 - [x]  upload pipleine: 上傳資料後，壓縮後存放到後端資料夾裡，啟動 rag pipline 後存放 index
 - [x]  frontend vocal insert: 語音輸入
 - [x]  tts-pipline: 啟動 retrieval 後，根據檢索結果，給模型產出結果，產出音檔，並回傳給前端(看是要直接做音訊處理還是要用url的形式)
+- [ ]  retrieval pipline
 - [ ]  user interaction : 與 podcast 進行 realtime 互動
 - [ ]  container
 - [ ]  production : backend 部署在 render 上 前端部署在 vercel
