@@ -20,6 +20,7 @@ class Config:
     CHUNK_DIR = os.path.join(ROOT_DIR, "db/chunks")
     EMBED_DIR = os.path.join(ROOT_DIR, "db/embeddings")
     FAISS_INDEX = os.path.join(ROOT_DIR, "db/faiss_index.index")
+    STATIC_DIR = os.path.join(ROOT_DIR, "static")
     
     # Fine-tuning config
     OUTPUT_DIR = "./llama-dialogue-finetuned"

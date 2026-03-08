@@ -57,7 +57,7 @@ async def generate_dialogue(request: GenerateDialogueRequest):
                     print("[RAG] Warning: FAISS index not found, generating without context")
                 else:
                     # Path to worker script
-                    worker_script = Path(__file__).parent.parent.parent.parent / "rag" / "retrieve_worker.py"
+                    worker_script = Path(__file__).parent.parent.parent.parent / "worker" / "retrieve_worker.py"
                     
                     if not worker_script.exists():
                         print(f"[RAG] Warning: Worker script not found at {worker_script}")
@@ -165,11 +165,11 @@ def generate_audio(request: GenerateAudioRequest):
         print(f"[Audio Generation] Starting for audio_id: {request.audio_id}")
         
         # Create static audio directory if not exists
-        static_dir = Path("/Users/coconut/pp_backend/static/audio")
+        static_dir = Path(config.STATIC_DIR) / "audio"
         static_dir.mkdir(parents=True, exist_ok=True)
         
         # Path to worker script
-        worker_script = Path("/Users/coconut/pp_backend/tts/generate_audio_worker.py")
+        worker_script = Path(__file__).parent.parent.parent.parent / "worker" / "audio_worker.py"
         
         if not worker_script.exists():
             raise HTTPException(status_code=500, detail="Audio worker script not found")
