@@ -14,20 +14,38 @@
 - [x]  tts-pipline: 啟動 retrieval 後，根據檢索結果，給模型產出結果，產出音檔，並回傳給前端(看是要直接做音訊處理還是要用url的形式)
 - [x]  retrieval pipline
 - [x]  container
-- [x]  production : backend 部署在 render 上 前端部署在 vercel
-- [ ]  效能優化
+- [x]  production : backend 部署在 digital ocean 上 前端部署在 vercel
+- [ ]  手機播放問題
+- [ ]  如果檢索信心不高，不要使用檢索資訊 for 歐
+- [ ]  multi data-form extraction for 歐
+- [ ]  個人化設定 for 王
+- [ ]  即時對話 for 王
+- [ ]  knowledge base 管理
+- [ ]  fix the production problem on digital ocean for 王
 
 ### Vocal insertion pipline
 
-用戶錄音 → 前端轉換格式 → POST 到 Next.js API Route 
-→ Whisper STT → 將文字作為 user_instruction
+1. 用戶錄音
+2. 前端轉換格式
+3. POST 到 Next.js API Route
+4. Whisper STT
+5. 將文字作為 user_instruction
 
 ### TTS pipline
-前端接受 generate dialogue 和 audioid 後 → 使用 generate_audio 傳入 dialogue 和 audioid -> 後端解析對話 
-→ 使用 TTS 生成音頻 → 合併音頻片段 → 存到服務器 → 前端通過 audioid 產生的 URL 播放
 
+#### 流程說明
+1. 前端接受 generate dialogue 和 audioid
+2. 使用 generate_audio 傳入 dialogue 和 audioid
+3. 後端解析對話
+4. 使用 TTS 生成音頻
+5. 合併音頻片段
+6. 存到服務器
+7. 前端通過 audioid 產生的 URL 播放
+
+#### 架構設計
 分離進程，使用 subprocess
 
+```
 FastAPI main process           Worker process
      |                            |
      |-- subprocess.run() ------->|
@@ -38,3 +56,4 @@ FastAPI main process           Worker process
      |                            | 退出 process
      | 解析结果
      | 返回 URL 给前端
+```

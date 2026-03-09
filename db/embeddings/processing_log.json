@@ -28,24 +28,48 @@
       "file_mtime": 1772948440.1586378,
       "first_processed": "2026-03-08T08:05:22.639631",
       "indexing_status": "completed",
-      "indexing_completed": "2026-03-08T08:05:22.639672",
-      "last_processed": "2026-03-08T08:05:22.639675"
+      "indexing_completed": "2026-03-08T19:01:36.509372",
+      "last_processed": "2026-03-08T19:01:36.509375"
     },
     "/app/db/text/20260308_015145/fia_2026_f1_regulations_-_section_b_sporting_-_iss_05_-_2026-02-27.txt": {
       "file_hash": "dbe65a8e71e9a0fa49975bdbbcf807fd775223cc09dd9420fb5203964d336d7e",
       "file_mtime": 1772905918.8645034,
       "first_processed": "2026-03-08T08:05:22.640644",
       "indexing_status": "completed",
-      "indexing_completed": "2026-03-08T08:05:22.640647",
-      "last_processed": "2026-03-08T08:05:22.640647"
+      "indexing_completed": "2026-03-08T19:01:36.508912",
+      "last_processed": "2026-03-08T19:01:36.508914"
     },
     "/app/db/text/20260308_080437/fia_2026_f1_regulations_-_section_d_financial_-_f1_teams_-_iss_05_-_2026-02-27.txt": {
       "file_hash": "cbe9102786f6a537b15bbb5091d5d4b6e6b06cef73fe81b63645a4cb7f8f66d0",
       "file_mtime": 1772957088.823466,
       "first_processed": "2026-03-08T08:05:22.640999",
       "indexing_status": "completed",
-      "indexing_completed": "2026-03-08T08:05:22.641000",
-      "last_processed": "2026-03-08T08:05:22.641001"
+      "indexing_completed": "2026-03-08T19:01:36.510379",
+      "last_processed": "2026-03-08T19:01:36.510380"
+    },
+    "/app/db/text/20260308_185802/fia_2026_f1_regulations_-_section_d_financial_-_f1_teams_-_iss_05_-_2026-02-27.txt": {
+      "file_hash": "cbe9102786f6a537b15bbb5091d5d4b6e6b06cef73fe81b63645a4cb7f8f66d0",
+      "file_mtime": 1772996290.094424,
+      "first_processed": "2026-03-08T18:58:45.899063",
+      "indexing_status": "completed",
+      "indexing_completed": "2026-03-08T19:01:36.508346",
+      "last_processed": "2026-03-08T19:01:36.508358"
+    },
+    "/app/db/text/20260308_185900/fia_2026_f1_regulations_-_section_b_sporting_-_iss_05_-_2026-02-27 (1).txt": {
+      "file_hash": "0bcba13696f4baebcc361e3acba26ba56305ace5020b6bbf505bbcd0fe2965f0",
+      "file_mtime": 1772996357.8468635,
+      "first_processed": "2026-03-08T19:00:02.525253",
+      "indexing_status": "completed",
+      "indexing_completed": "2026-03-08T19:01:36.509156",
+      "last_processed": "2026-03-08T19:01:36.509160"
+    },
+    "/app/db/text/20260308_190023/fia_2026_f1_regulations_-_section_a_general_provisions_-_iss_02_-_2026-02-27.txt": {
+      "file_hash": "f51eaaef02a806e185a757bc730b2ea89ac540228771acab01bc1b7a6f202a12",
+      "file_mtime": 1772996436.7370975,
+      "first_processed": "2026-03-08T19:01:36.510082",
+      "indexing_status": "completed",
+      "indexing_completed": "2026-03-08T19:01:36.510086",
+      "last_processed": "2026-03-08T19:01:36.510088"
     }
   },
   "last_full_rebuild": null,
