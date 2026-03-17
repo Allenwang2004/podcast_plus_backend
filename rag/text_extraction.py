@@ -3,13 +3,14 @@ import re
 import sys
 import argparse
 import pdfplumber
-from collections import Counter
 import easyocr
+import trafilatura
 import io
 import numpy as np
 from docx import Document
 from pptx import Presentation
 from pptx.enum.shapes import MSO_SHAPE_TYPE
+from collections import Counter
 from PIL import Image
 
 current_script_dir = os.path.dirname(os.path.abspath(__file__))
@@ -201,21 +202,47 @@ def extract_pdf_with_ocr(file_path, skip_first_page=False):
         
     return "\n\n".join(pages_text)
 
-def extract_all_text(file_path, skip_first_page=False):
-    """通用解析器分支：新增圖片支援"""
-    ext = os.path.splitext(file_path)[1].lower()
+def extract_url(url):
+    """從網址提取乾淨的內文"""
+    print(f"    - 正在抓取網頁內容: {url}")
+    try:
+        # 下載網頁
+        downloaded = trafilatura.fetch_url(url)
+        if downloaded is None:
+            return f"錯誤: 無法下載該網址內容 ({url})"
+        
+        # 提取內文 (已自動去除廣告、側邊欄)
+        # include_comments=False 可以確保內容更乾淨
+        result = trafilatura.extract(downloaded, include_comments=False, include_tables=True)
+        
+        if result:
+            return f"[Source URL: {url}]\n{result.strip()}"
+        else:
+            return f"警告: 網址解析後無內容 ({url})"
+            
+    except Exception as e:
+        print(f"  網頁抓取失敗: {e}")
+        return ""
+
+def extract_all_text(source, skip_first_page=False):
+    """通用解析器分支"""
+    # 判斷是否為網址
+    if source.startswith(("http://", "https://")):
+        return extract_url(source)
+    
+    # 檔案路徑判斷
+    ext = os.path.splitext(source)[1].lower()
     
     if ext == ".pdf":
-        return extract_pdf_with_ocr(file_path, skip_first_page)
+        return extract_pdf_with_ocr(source, skip_first_page)
     elif ext == ".docx":
-        return extract_docx_with_ocr(file_path)
+        return extract_docx_with_ocr(source)
     elif ext == ".pptx":
-        return extract_pptx_with_ocr(file_path)
+        return extract_pptx_with_ocr(source)
     elif ext in IMAGE_EXTS:
-        return extract_image_only(file_path)
-    else:
-        print(f"尚未支援的格式: {ext}")
-        return ""
+        return extract_image_only(source)
+    
+    return ""
 
 def save_text(text, out_dir, filename):
     os.makedirs(out_dir, exist_ok=True)
@@ -225,40 +252,54 @@ def save_text(text, out_dir, filename):
     print(f"  [已儲存]: {out_path}")
 
 if __name__ == "__main__":
-    parser = argparse.ArgumentParser(description="多格式文件轉純文字工具 (支援 PDF/Docx/Pptx/Images)")
-    parser.add_argument("--file", type=str, help="指定單一檔案路徑進行測試")
+    parser = argparse.ArgumentParser(description="多格式文件與網頁轉純文字工具")
+    parser.add_argument("--source", type=str, help="指定來源 (檔案路徑或 URL)")
     parser.add_argument("--category", type=str, help="指定特定分類資料夾 (例如: Computer)")
     args = parser.parse_args()
 
-    # 定義所有支援的副檔名
     supported_exts = (".pdf", ".docx", ".pptx", ".jpg", ".jpeg", ".png", ".bmp", ".webp")
 
-    # 執行模式判斷
-    if args.file:
-        # 模式 1: 測試單一檔案
-        target_path = args.file
-        if os.path.exists(target_path):
-            ext = os.path.splitext(target_path)[1].lower()
+    # 1. 判斷是否有指定特定來源 (--source)
+    if args.source:
+        source = args.source
+        
+        # 模式 A: 處理網址 URL
+        if source.startswith(("http://", "https://")):
+            print(f"正在抓取網頁內容: {source}")
+            result_text = extract_all_text(source)
+            # URL 的存檔名稱處理（移除特殊字元）
+            safe_name = re.sub(r'[^\w\s-]', '_', source.split("//")[-1])[:50] + ".txt"
+            save_text(result_text, test_output_dir, safe_name)
+            
+        # 模式 B: 處理單一本地檔案
+        elif os.path.isfile(source):
+            ext = os.path.splitext(source)[1].lower()
             if ext in supported_exts:
-                print(f"正在測試單一檔案: {target_path} (格式: {ext})")
-                
-                # 簡單判斷是否需跳過第一頁 (基於路徑關鍵字)
-                skip = any(cat in target_path for cat in ["Computer", "Physics"])
-                result_text = extract_all_text(target_path, skip_first_page=skip)
-                
-                # 動態產生檔名，將原副檔名替換為 .txt
-                save_name = os.path.splitext(os.path.basename(target_path))[0] + ".txt"
+                print(f"正在處理單一檔案: {source}")
+                skip = any(cat in source for cat in ["Computer", "Physics"])
+                result_text = extract_all_text(source, skip_first_page=skip)
+                save_name = os.path.splitext(os.path.basename(source))[0] + ".txt"
                 save_text(result_text, test_output_dir, save_name)
             else:
-                print(f"錯誤: 不支援的檔案格式 {ext}")
+                print(f"錯誤: 不支援的副檔名 {ext}")
+        
+        # 模式 C: 處理指定目錄
+        elif os.path.isdir(source):
+            print(f"正在處理目錄: {source}")
+            # 這裡可以調用下方的批次處理邏輯，或者直接遍歷該目錄
+            for file in os.listdir(source):
+                if file.lower().endswith(supported_exts):
+                    p_path = os.path.join(source, file)
+                    text = extract_all_text(p_path)
+                    save_text(text, test_output_dir, os.path.splitext(file)[0] + ".txt")
         else:
-            print(f"找不到檔案: {target_path}")
+            print(f"錯誤: 找不到來源 {source}")
 
+    # 2. 預設模式：批次處理 Config 裡的 pdf_dirs
     else:
-        # 模式 2: 批次處理
-        for pdf_dir in pdf_dirs:  # pdf_dirs 在你的 config 裡應該是包含各分類的路徑列表
+        print("未指定 --source，執行 Config 預設批次處理...")
+        for pdf_dir in pdf_dirs:
             category = os.path.basename(os.path.normpath(pdf_dir))
-            
             if args.category and args.category != category:
                 continue
                 
@@ -271,13 +312,9 @@ if __name__ == "__main__":
                 continue
 
             for file in os.listdir(pdf_dir):
-                # 修改此處：檢查是否在支援的副檔名清單中
                 if file.lower().endswith(supported_exts):
                     p_path = os.path.join(pdf_dir, file)
                     print(f"處理中: {file}")
-                    
                     text = extract_all_text(p_path, skip_first_page=skip_first)
-                    
-                    # 動態產生檔名：filename.pptx -> filename.txt
                     filename_only = os.path.splitext(file)[0]
                     save_text(text, out_dir, f"{filename_only}.txt")
