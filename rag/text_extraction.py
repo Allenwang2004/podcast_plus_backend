@@ -257,11 +257,13 @@ if __name__ == "__main__":
     parser.add_argument("--category", type=str, help="指定特定分類資料夾 (例如: Computer)")
     args = parser.parse_args()
 
+    output_root = Config.TXT_DIR
     supported_exts = (".pdf", ".docx", ".pptx", ".jpg", ".jpeg", ".png", ".bmp", ".webp")
 
     # 1. 判斷是否有指定特定來源 (--source)
     if args.source:
         source = args.source
+        out_dir = os.path.join(output_root, args.category) if args.category else output_root
         
         # 模式 A: 處理網址 URL
         if source.startswith(("http://", "https://")):
@@ -269,7 +271,7 @@ if __name__ == "__main__":
             result_text = extract_all_text(source)
             # URL 的存檔名稱處理（移除特殊字元）
             safe_name = re.sub(r'[^\w\s-]', '_', source.split("//")[-1])[:50] + ".txt"
-            save_text(result_text, test_output_dir, safe_name)
+            save_text(result_text, out_dir, safe_name)
             
         # 模式 B: 處理單一本地檔案
         elif os.path.isfile(source):
@@ -279,7 +281,7 @@ if __name__ == "__main__":
                 skip = any(cat in source for cat in ["Computer", "Physics"])
                 result_text = extract_all_text(source, skip_first_page=skip)
                 save_name = os.path.splitext(os.path.basename(source))[0] + ".txt"
-                save_text(result_text, test_output_dir, save_name)
+                save_text(result_text, out_dir, save_name)
             else:
                 print(f"錯誤: 不支援的副檔名 {ext}")
         
@@ -291,7 +293,7 @@ if __name__ == "__main__":
                 if file.lower().endswith(supported_exts):
                     p_path = os.path.join(source, file)
                     text = extract_all_text(p_path)
-                    save_text(text, test_output_dir, os.path.splitext(file)[0] + ".txt")
+                    save_text(text, out_dir, os.path.splitext(file)[0] + ".txt")
         else:
             print(f"錯誤: 找不到來源 {source}")
 
