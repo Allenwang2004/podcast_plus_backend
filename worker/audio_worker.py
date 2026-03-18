@@ -16,7 +16,7 @@ from kokoro import KPipeline
 warnings.filterwarnings('ignore', category=UserWarning, module='torch.nn.modules.rnn')
 warnings.filterwarnings('ignore', category=FutureWarning, module='torch.nn.utils.weight_norm')
 
-def generate_audio(dialogue: str, audio_id: str, output_dir: str):
+def generate_audio(dialogue: str, voice_type: str, audio_id: str, output_dir: str):
     """Generate audio from dialogue text"""
     try:
         print(f"[Worker] Starting audio generation for: {audio_id}", file=sys.stderr)
@@ -46,7 +46,14 @@ def generate_audio(dialogue: str, audio_id: str, output_dir: str):
                 continue
                 
             speaker, text = match.groups()
-            voice = "af_heart" if speaker == "A" else "am_adam"
+            if voice_type == "gentle":
+                voice = "af_bella" if speaker == "A" else "am_echo"
+            elif voice_type == "lively":
+                voice = "af_heart" if speaker == "A" else "am_fenrir"
+            elif voice_type == "meditation":
+                voice = "af_nicole" if speaker == "A" else "am_michael"
+            else:
+                voice = "bf_lily" if speaker == "A" else "bm_lewis"
             
             print(f"[Worker] Processing line {idx+1}: Speaker {speaker}", file=sys.stderr)
             
@@ -99,12 +106,13 @@ def generate_audio(dialogue: str, audio_id: str, output_dir: str):
         return 1
 
 if __name__ == "__main__":
-    if len(sys.argv) != 4:
-        print("Usage: generate_audio_worker.py <dialogue> <audio_id> <output_dir>", file=sys.stderr)
+    if len(sys.argv) != 5:
+        print("Usage: generate_audio_worker.py <dialogue> <voice_type> <audio_id> <output_dir>", file=sys.stderr)
         sys.exit(1)
     
     dialogue = sys.argv[1]
-    audio_id = sys.argv[2]
-    output_dir = sys.argv[3]
+    voice_type = sys.argv[2]
+    audio_id = sys.argv[3]
+    output_dir = sys.argv[4]
     
-    sys.exit(generate_audio(dialogue, audio_id, output_dir))
+    sys.exit(generate_audio(dialogue, voice_type, audio_id, output_dir))

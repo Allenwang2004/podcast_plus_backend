@@ -15,13 +15,18 @@
 - [x]  retrieval pipline
 - [x]  container
 - [x]  production : backend 部署在 digital ocean 上 前端部署在 vercel
+- [x]  multi data-form extraction for 歐
+- [x]  Search tool for 歐
+- [x]  個人化設定 : 聲音選擇 by kokoro model 還有對話難度設定 by prompt
+- [ ]  即時對話 : 要有 memory 的功能
+- [ ]  knowledge base 管理 相關的資料放在一起 : 替未來改成 Ｍulti-agent 準備
+
+- [ ]  測試網頁 demo 流程
 - [ ]  手機播放問題
-- [ ]  如果檢索信心不高，不要使用檢索資訊 for 歐
-- [ ]  multi data-form extraction for 歐
-- [ ]  個人化設定 for 王
-- [ ]  即時對話 for 王
-- [ ]  knowledge base 管理
 - [ ]  fix the production problem on digital ocean for 王
+- [ ]  Agent debate system
+- [ ]  [ ]  如果檢索信心不高，不要使用檢索資訊 for 歐
+
 
 ### Vocal insertion pipline
 
@@ -57,3 +62,36 @@ FastAPI main process           Worker process
      | 解析结果
      | 返回 URL 给前端
 ```
+
+### TTS voice setting
++ For American women:
+  + af_heart：lively
+  + af_bella：gentle
+  + af_nicole meditation
+  + af_sarah : pass
+  + af_sky : pass
+  + af_alloy : pass
+  + af_aoede : pass
+  + af_kore : pass
+  + af_nova : pass
+  + af_river : pass
+  + af_jessica : pass
++ For American men:
+  + am_adam : pass
+  + am_echo gentle
+  + am_eric : pass
+  + am_fenrir：lively
+  + am_liam : pass
+  + am_michael : meditation
+  + am_onyx : pass
+  + am_puck : pass
++ For British women:
+  + bf_alice : pass
+  + bf_emma : pass
+  + bf_isabella :pass
+  + bf_lily british
++ For British men:
+  + bm_daniel : pass
+  + bm_fable : pass
+  + bm_george : pass
+  + bm_lewis : british
