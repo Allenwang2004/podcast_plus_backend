@@ -12,6 +12,11 @@ from app.src.schema.podcast_schema import (
     GenerateAudioRequest,
     GenerateAudioResponse
 )
+from app.src.schema.prompt import (
+    get_dialogue_prompt_with_context,
+    get_dialogue_prompt_without_context,
+    DIALOGUE_SYSTEM_PROMPT
+)
 
 # Import config
 import sys
@@ -100,40 +105,21 @@ async def generate_dialogue(request: GenerateDialogueRequest):
         
         # Build prompt based on whether context is available
         if context_to_use:
-            prompt = f"""Use the information provided in the relevant context to generate a natural dialogue between two people (Person A and Person B).
-
-### Relevant Context:
-{context_to_use}
-
-### Instruction:
-{request.user_instruction}
-
-context difficulty: {request.difficulty}
-
-### Requirements:
-- Format each line as "A: [text]" or "B: [text]"
-- Make it conversational and natural
-- Keep responses focused on the context provided
-- Base on the context difficulty level (easy, medium, hard, professional)
-
-### Dialogue:"""
+            prompt = get_dialogue_prompt_with_context(
+                context=context_to_use,
+                instruction=request.user_instruction,
+                difficulty=request.difficulty
+            )
         else:
-            prompt = f"""Generate a natural dialogue between two people (Person A and Person B) based on the following instruction.
-
-### Instruction:
-{request.user_instruction}
-
-### Requirements:
-- Format each line as "A: [text]" or "B: [text]"
-- Make it conversational and natural
-
-### Dialogue:"""
+            prompt = get_dialogue_prompt_without_context(
+                instruction=request.user_instruction
+            )
         
         # Call OpenAI API
         response = client.chat.completions.create(
             model=request.model,
             messages=[
-                {"role": "system", "content": "You are a helpful assistant that generates natural dialogues between two people based on given context."},
+                {"role": "system", "content": DIALOGUE_SYSTEM_PROMPT},
                 {"role": "user", "content": prompt}
             ],
             max_tokens=request.max_tokens,

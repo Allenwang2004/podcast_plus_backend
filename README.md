@@ -18,14 +18,13 @@
 - [x]  multi data-form extraction for 歐
 - [x]  Search tool for 歐
 - [x]  個人化設定 : 聲音選擇 by kokoro model 還有對話難度設定 by prompt
-- [ ]  即時對話 : 要有 memory 的功能
-- [ ]  knowledge base 管理 相關的資料放在一起 : 替未來改成 Ｍulti-agent 準備
+- [ ]  整合前後端 search tool 和 圖片功能 給 generate-dialogue
+- [ ]  後端要有 memory 的功能，要能分別何時需採用前一次產出，追加問題的話，把上一次檢索內容再餵一次
+- [ ]  knowledge base 將 upload 的 pdf 根據 embedding 分類，針對每個分類取一個值作為代表，提升檢索效率
+- [ ]  prompt 調整
 
-- [ ]  測試網頁 demo 流程
-- [ ]  手機播放問題
-- [ ]  fix the production problem on digital ocean for 王
 - [ ]  Agent debate system
-- [ ]  [ ]  如果檢索信心不高，不要使用檢索資訊 for 歐
+- [ ]  如果檢索信心不高，不要使用檢索資訊 for 歐
 
 
 ### Vocal insertion pipline
