@@ -20,12 +20,10 @@ print(f"  默認設備: CPU (強制模式)")
 # 測試文本
 test_texts = [
     "Hello, this is a test of the Kokoro text-to-speech system running on CPU.",
-    "Let's see how fast it can generate audio without GPU acceleration.",
-    "This is the third test sentence."
 ]
 
 # 測試語音
-test_voices = ["af_heart", "am_adam"]
+test_voices = ["bm_lewis"]
 
 def test_kokoro_cpu():
     """測試 Kokoro 在 CPU 上的運行"""

@@ -30,6 +30,7 @@ async def generate_dialogue(request: GenerateDialogueRequest):
     - **retrieved_context**: Optional pre-retrieved context. If not provided, will auto-retrieve from RAG if use_rag=True
     - **use_rag**: Whether to automatically retrieve context from RAG system (default: True)
     - **top_n**: Number of chunks to retrieve from RAG (default: 3)
+    - **difficulty**: Difficulty level for dialogue generation (easy, medium, hard) (default: medium)
     - **model**: OpenAI model to use (default: gpt-4o-mini)
     - **max_tokens**: Maximum tokens for generation (default: 1000)
     """
@@ -107,10 +108,13 @@ async def generate_dialogue(request: GenerateDialogueRequest):
 ### Instruction:
 {request.user_instruction}
 
+context difficulty: {request.difficulty}
+
 ### Requirements:
 - Format each line as "A: [text]" or "B: [text]"
 - Make it conversational and natural
 - Keep responses focused on the context provided
+- Base on the context difficulty level (easy, medium, hard, professional)
 
 ### Dialogue:"""
         else:
@@ -159,6 +163,7 @@ def generate_audio(request: GenerateAudioRequest):
     Uses a separate worker process to avoid crashes.
     
     - **dialogue**: The dialogue text in format "A: text\nB: text"
+    - **voice_type**: Voice type for audio generation (default: "gentle")
     - **audio_id**: Unique ID for the audio file
     """
     try:
@@ -178,7 +183,7 @@ def generate_audio(request: GenerateAudioRequest):
         
         # Call worker in subprocess
         result = subprocess.run(
-            ["python", str(worker_script), request.dialogue, request.audio_id, str(static_dir)],
+            ["python", str(worker_script), request.dialogue, request.voice_type, request.audio_id, str(static_dir)],
             capture_output=True,
             text=True,
             timeout=300  # 5 minutes timeout
