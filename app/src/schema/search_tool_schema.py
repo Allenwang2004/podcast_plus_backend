@@ -1,10 +1,17 @@
 from pydantic import BaseModel, Field
 from typing import Optional, List
 
+class SearchResultItem(BaseModel):
+    title: str
+    url: str
+    content: str
+    score: float
+
 class SearchToolRequest(BaseModel):
-    title: Optional[str] = Field(default=None, description="Title of the podcast episode to search for")
+    query: str = Field(..., description="要搜尋的原始問題或關鍵字")
+    max_results: int = Field(default=3, description="回傳的網頁數量")
 
 class SearchToolResponse(BaseModel):
     success: bool
-    results: List[str] = Field(default_factory=list, description="List of search results (e.g. episode titles or links)")
+    results: List[SearchResultItem] = Field(default_factory=list)
     message: str
