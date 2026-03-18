@@ -68,24 +68,52 @@ def chunk_texts(text_dir=None, chunk_size=500, chunk_overlap=50):
                     data = []
                     chunk_id = 0
                     last_page = 1
+                    last_url = None
+
+                    initial_url_match = re.search(r'\[Source URL: (.*?)\]', text)
+                    if initial_url_match:
+                        last_url = initial_url_match.group(1)
                     
                     for idx, chunk in enumerate(chunks):
+                        # 1. 偵測頁碼、投影片或網址標籤
                         page_match = re.search(r'\[Page (\d+)\]', chunk)
+                        slide_match = re.search(r'\[Slide (\d+)\]', chunk)
+                        url_match = re.search(r'\[Source URL: (.*?)\]', chunk)
+                        
+                        # 更新當前所在位置
                         if page_match:
                             last_page = int(page_match.group(1))
-                        page_num = last_page
-                        chunk = re.sub(r'\[Page \d+\]', '', chunk).strip()
-                        if not chunk:
+                        elif slide_match:
+                            last_page = int(slide_match.group(1))
+                            
+                        # 2. 判斷是否包含 OCR 內容（用於後續信心評估）
+                        is_ocr = "[圖片 OCR內容:" in chunk
+                        content_type = "web" if last_url else "document"
+                        
+                        # 3. 清理標記：移除標籤以提升 Embedding 準確度
+                        # 不移除 OCR 標籤，但移除結構性的 Page/Slide/URL 標籤
+                        clean_text = re.sub(r'\[(?:Page|Slide)\s+\d+\]', '', chunk)
+                        clean_text = re.sub(r'\[Source URL: .*?\]', '', clean_text).strip()
+                        
+                        if not clean_text:
                             continue
+                            
                         category = os.path.basename(root)
                         source_path = os.path.relpath(file_path, root).replace("\\", "/")
                         
+                        # 4. 封裝結構化數據
                         data.append({
                             "source": source_path,
                             "category": category,
                             "chunk_index": chunk_id,
-                            "page": page_num,
-                            "text": chunk
+                            "page": last_page,
+                            "text": clean_text,
+                            "metadata": {
+                                "is_ocr": is_ocr,
+                                "url": last_url,
+                                "char_length": len(clean_text),
+                                "content_type": content_type
+                            }
                         })
                         chunk_id += 1
                     
