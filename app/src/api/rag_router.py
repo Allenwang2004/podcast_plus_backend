@@ -40,8 +40,10 @@ async def upload_pdf(
     """
     try:
         # Validate file type
-        if not file.filename.lower().endswith('.pdf'):
-            raise HTTPException(status_code=400, detail="Only PDF files are allowed")
+        allowed_extensions = {'.pdf', '.jpg', '.jpeg', '.png', '.gif', '.webp', '.bmp'}
+        file_extension = os.path.splitext(file.filename.lower())[1]
+        if file_extension not in allowed_extensions:
+            raise HTTPException(status_code=400, detail=f"Only {', '.join(sorted(allowed_extensions))} files are allowed")
         
         # Create timestamp-based directory
         from datetime import datetime
@@ -69,7 +71,7 @@ async def upload_pdf(
         }
         
         # Auto process if requested
-        if auto_process:
+        if auto_process and file_extension == '.pdf':
             try:
                 # Extract text from this specific PDF using new method
                 out_dir = os.path.join(config.TXT_DIR, timestamp)

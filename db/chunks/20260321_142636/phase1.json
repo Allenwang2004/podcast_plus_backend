@@ -1,0 +1,15 @@
+[
+  {
+    "source": "phase1.txt",
+    "category": "20260321_142636",
+    "chunk_index": 0,
+    "page": 1,
+    "text": "[Image File: phase1.png]\n階段 PDF文件 轉換為影像 by page 是否設定 Mask遮罩? Yes No 塗白非遮罩區域 使用原始影像 YOLOv10 模型推論 取得原始區塊 去重 & 排序 產出: 現有區塊清單",
+    "metadata": {
+      "is_ocr": false,
+      "url": null,
+      "char_length": 121,
+      "content_type": "document"
+    }
+  }
+]

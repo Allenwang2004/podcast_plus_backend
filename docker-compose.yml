@@ -28,8 +28,56 @@ services:
     environment:
       - PYTHONUNBUFFERED=1
       - PYTHONDONTWRITEBYTECODE=1
+      - BASE_URL=${BASE_URL:-http://localhost:8001}
     env_file:
       - .env
+    restart: unless-stopped
+    networks:
+      - podcast_network
+    depends_on:
+      - audio_worker
+      - retrieval_worker
+
+  audio_worker:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: podcast_audio_worker
+    volumes:
+      # Mount worker code
+      - ./worker:/app/worker
+      - ./static:/app/static
+      
+      # Mount model cache
+      - ./local_model:/app/local_model
+      - ./.env:/app/.env
+    environment:
+      - PYTHONUNBUFFERED=1
+    env_file:
+      - .env
+    command: python worker/audio_worker_service.py
+    restart: unless-stopped
+    networks:
+      - podcast_network
+
+  retrieval_worker:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: podcast_retrieval_worker
+    volumes:
+      # Mount worker code
+      - ./worker:/app/worker
+      - ./rag:/app/rag
+      - ./db:/app/db
+      - ./config.py:/app/config.py
+      - ./.env:/app/.env
+    environment:
+      - PYTHONUNBUFFERED=1
+      - TOKENIZERS_PARALLELISM=false
+    env_file:
+      - .env
+    command: python worker/retrieve_worker_service.py
     restart: unless-stopped
     networks:
       - podcast_network

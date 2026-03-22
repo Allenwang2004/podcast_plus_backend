@@ -10,6 +10,7 @@ class GenerateDialogueRequest(BaseModel):
     top_n: Optional[int] = Field(default=3, description="Number of chunks to retrieve from RAG")
     model: Optional[str] = Field(default="gpt-4o-mini", description="OpenAI model to use")
     max_tokens: Optional[int] = Field(default=1000, description="Maximum tokens for generation")
+    web_search_context: Optional[str] = Field(default=None, description="Optional web search context to include in generation")
 
 class GenerateDialogueResponse(BaseModel):
     """Response model for generated dialogue"""

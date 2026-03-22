@@ -1,0 +1,2 @@
+[Image File: phase1.png]
+階段 PDF文件 轉換為影像 by page 是否設定 Mask遮罩? Yes No 塗白非遮罩區域 使用原始影像 YOLOv10 模型推論 取得原始區塊 去重 & 排序 產出: 現有區塊清單

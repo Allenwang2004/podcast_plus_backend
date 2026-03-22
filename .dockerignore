@@ -62,3 +62,5 @@ docs/
 *.safetensors
 *.ckpt
 *.pth
+
+/static/audio/*.wav

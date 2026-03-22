@@ -14,21 +14,31 @@ def get_dialogue_prompt_with_context(context: str, instruction: str, difficulty:
     Returns:
         Formatted prompt string
     """
-    return f"""Use the information provided in the relevant context to generate a natural dialogue between two people (Person A and Person B).
+    return f"""Create an engaging podcast-style conversation between two hosts (Person A and Person B) using the information provided.
 
-### Relevant Context:
+### Source Material:
 {context}
 
-### Instruction:
+### Episode Topic/Instruction:
 {instruction}
 
-context difficulty: {difficulty}
+Difficulty Level: {difficulty}
 
-### Requirements:
+### Podcast Style Guidelines:
 - Format each line as "A: [text]" or "B: [text]"
-- Make it conversational and natural
-- Keep responses focused on the context provided
-- Base on the context difficulty level (easy, medium, hard, professional)
+- Make it sound like a REAL podcast recording:
+  * Use natural speech patterns with filler words (you know, I mean, like, um, right)
+  * Include reactions and responses ("Oh really?", "That's fascinating!", "Exactly!", "Wait, what?")
+  * Show genuine enthusiasm and curiosity
+  * Add personal touches and relatable examples
+  * Let hosts interrupt, agree, or build on each other's points naturally
+  * Use contractions (don't, it's, we're) for casual tone
+  * Don't need the opening remark
+- Keep it conversational but informative
+- Add some humor or personality where appropriate
+- If continuing a previous conversation, for example, the instruction says "No, I want to know more about...", generate responses with first sentences like "Well, speaking of that...", "Actually, that reminds me...", or "Building on what you just said..."
+- Avoid sounding scripted or overly formal
+- Balance information sharing with entertainment
 
 ### Dialogue:"""
 
@@ -43,16 +53,74 @@ def get_dialogue_prompt_without_context(instruction: str) -> str:
     Returns:
         Formatted prompt string
     """
-    return f"""Generate a natural dialogue between two people (Person A and Person B) based on the following instruction.
+    return f"""Create an engaging podcast-style conversation between two hosts (Person A and Person B) based on the following topic.
 
-### Instruction:
+### Episode Topic:
 {instruction}
 
-### Requirements:
+### Podcast Style Guidelines:
 - Format each line as "A: [text]" or "B: [text]"
-- Make it conversational and natural
+- Make it sound like a REAL podcast recording:
+  * Use natural speech patterns with filler words (you know, I mean, like, um, right)
+  * Include reactions and responses ("Oh really?", "That's fascinating!", "Exactly!", "Wait, what?")
+  * Show genuine enthusiasm and curiosity
+  * Add personal touches and relatable examples
+  * Let hosts interrupt, agree, or build on each other's points naturally
+  * Use contractions (don't, it's, we're) for casual tone
+  * Don't need the opening remark
+- Keep it conversational and engaging
+- Add some humor or personality where appropriate
+- If continuing a previous conversation, for example, the instruction says "No, I want to know more about...", generate responses with first sentences like "Well, speaking of that...", "Actually, that reminds me...", or "Building on what you just said..."
+- Avoid sounding scripted or overly formal
 
 ### Dialogue:"""
 
 
-DIALOGUE_SYSTEM_PROMPT = "You are a helpful assistant that generates natural dialogues between two people based on given context."
+DIALOGUE_SYSTEM_PROMPT = "You are a podcast script writer who creates engaging, natural conversations between two hosts. The dialogue should feel spontaneous, interactive, and entertaining, like a real podcast recording."
+
+
+def get_dialogue_prompt_with_web_search(context: str, instruction: str, difficulty: str, web_search_context: str) -> str:
+    """
+    Generate prompt for dialogue generation with both RAG context and web search context
+    
+    Args:
+        context: Retrieved context from RAG
+        instruction: User's instruction for dialogue generation
+        difficulty: Difficulty level (easy, medium, hard, professional)
+        web_search_context: Additional context from web search
+    
+    Returns:
+        Formatted prompt string
+    """
+    return f"""Create an engaging podcast-style conversation between two hosts (Person A and Person B) using information from both our knowledge base and latest web research.
+
+### Knowledge Base:
+{context}
+
+### Latest Web Research:
+{web_search_context}
+
+### Episode Topic/Instruction:
+{instruction}
+
+Difficulty Level: {difficulty}
+
+### Podcast Style Guidelines:
+- Format each line as "A: [text]" or "B: [text]"
+- Make it sound like a REAL podcast recording:
+  * Use natural speech patterns with filler words (you know, I mean, like, um, right)
+  * Include reactions and responses ("Oh really?", "That's fascinating!", "Exactly!", "Wait, what?")
+  * Show genuine enthusiasm and curiosity
+  * Add personal touches and relatable examples
+  * Let hosts interrupt, agree, or build on each other's points naturally
+  * Use contractions (don't, it's, we're) for casual tone
+  * Don't need the opening remark
+- Seamlessly blend information from both sources
+- Mention when sharing recent updates or discoveries from web research
+- Keep it conversational but informative
+- Add some humor or personality where appropriate
+- If continuing a previous conversation, for example, the instruction says "No, I want to know more about...", generate responses with first sentences like "Well, speaking of that...", "Actually, that reminds me...", or "Building on what you just said..."
+- Avoid sounding scripted or overly formal
+- Balance information sharing with entertainment
+
+### Dialogue:"""

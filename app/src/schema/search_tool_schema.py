@@ -14,4 +14,5 @@ class SearchToolRequest(BaseModel):
 class SearchToolResponse(BaseModel):
     success: bool
     results: List[SearchResultItem] = Field(default_factory=list)
+    formatted_context: str = Field("", description="供 LLM 生成使用的格式化網路資訊")
     message: str

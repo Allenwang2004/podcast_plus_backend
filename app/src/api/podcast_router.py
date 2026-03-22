@@ -15,6 +15,7 @@ from app.src.schema.podcast_schema import (
 from app.src.schema.prompt import (
     get_dialogue_prompt_with_context,
     get_dialogue_prompt_without_context,
+    get_dialogue_prompt_with_web_search,
     DIALOGUE_SYSTEM_PROMPT
 )
 
@@ -54,7 +55,10 @@ async def generate_dialogue(request: GenerateDialogueRequest):
         # Get or retrieve context
         context_to_use = request.retrieved_context
         
-        if not context_to_use and request.use_rag:
+        # If web_search_context is provided, skip RAG retrieval
+        if request.web_search_context:
+            print("[Web Search] Using provided web search context, skipping RAG retrieval")
+        elif not context_to_use and request.use_rag:
             try:
                 print(f"[RAG] Retrieving context for: {request.user_instruction[:50]}...")
                 
@@ -62,55 +66,95 @@ async def generate_dialogue(request: GenerateDialogueRequest):
                 if not os.path.exists(config.FAISS_INDEX):
                     print("[RAG] Warning: FAISS index not found, generating without context")
                 else:
-                    # Path to worker script
-                    worker_script = Path(__file__).parent.parent.parent.parent / "worker" / "retrieve_worker.py"
+                    # Use queue-based retrieval service
+                    queue_dir = Path(__file__).parent.parent.parent.parent / "worker" / "queue"
+                    queue_dir.mkdir(parents=True, exist_ok=True)
                     
-                    if not worker_script.exists():
-                        print(f"[RAG] Warning: Worker script not found at {worker_script}")
-                    else:
-                        # Call worker in subprocess
-                        # Don't capture stderr so worker logs appear in terminal
-                        result = subprocess.run(
-                            ["python", str(worker_script), request.user_instruction, str(request.top_n)],
-                            stdout=subprocess.PIPE,
-                            stderr=None,  # Let stderr go to terminal
-                            text=True,
-                            timeout=300  # 5 minutes timeout
-                        )
-                        
-                        if result.returncode == 0:
-                            # Parse result from stdout
-                            try:
-                                worker_result = json.loads(result.stdout.strip().split('\n')[-1])
-                                
-                                if worker_result.get("success"):
-                                    context_to_use = worker_result.get("context", "")
-                                    num_chunks = worker_result.get("num_chunks", 0)
-                                    if context_to_use:
-                                        print(f"[RAG] Retrieved {num_chunks} chunks via worker")
-                                    else:
-                                        print("[RAG] No relevant chunks found")
+                    # Generate unique task ID
+                    task_id = str(uuid.uuid4())
+                    
+                    # Create retrieval task
+                    task = {
+                        "task_id": task_id,
+                        "query": request.user_instruction,
+                        "top_n": request.top_n
+                    }
+                    
+                    task_file = queue_dir / f"retrieve_task_{task_id}.json"
+                    with open(task_file, 'w', encoding='utf-8') as f:
+                        json.dump(task, f)
+                    
+                    print(f"[RAG] Task submitted to retrieval service")
+                    
+                    # Wait for result (with timeout)
+                    result_file = queue_dir / f"retrieve_result_{task_id}.json"
+                    timeout = 30  # 30 seconds timeout
+                    start_time = Path(task_file).stat().st_mtime
+                    
+                    import time
+                    while True:
+                        if result_file.exists():
+                            # Read result
+                            with open(result_file, 'r', encoding='utf-8') as f:
+                                worker_result = json.load(f)
+                            
+                            # Clean up result file
+                            result_file.unlink()
+                            
+                            if worker_result.get("success"):
+                                context_to_use = worker_result.get("context", "")
+                                num_chunks = worker_result.get("num_chunks", 0)
+                                if context_to_use:
+                                    print(f"[RAG] Retrieved {num_chunks} chunks via service")
                                 else:
-                                    print(f"[RAG] Worker failed: {worker_result.get('error', 'Unknown error')}")
-                            except (json.JSONDecodeError, IndexError) as e:
-                                print(f"[RAG] Failed to parse worker output: {str(e)}")
-                        else:
-                            print(f"[RAG] Worker process failed with code {result.returncode}")
+                                    print("[RAG] No relevant chunks found")
+                            else:
+                                print(f"[RAG] Service failed: {worker_result.get('error', 'Unknown error')}")
+                            break
                         
-            except subprocess.TimeoutExpired:
-                print("[RAG] Retrieval timeout, generating without context")
+                        # Check timeout
+                        elapsed = time.time() - start_time
+                        if elapsed > timeout:
+                            # Clean up task file if still exists
+                            if task_file.exists():
+                                task_file.unlink()
+                            print("[RAG] Retrieval timeout, generating without context")
+                            break
+                        
+                        # Sleep briefly before checking again
+                        time.sleep(0.1)
+                        
             except Exception as e:
                 print(f"[RAG] Retrieval failed: {str(e)}, generating without context")
                 # Continue without context rather than failing
         
-        # Build prompt based on whether context is available
-        if context_to_use:
+        # Build prompt based on available contexts
+        if request.web_search_context:
+            # Use web search context (with or without RAG context)
+            if context_to_use:
+                # Both web search and RAG context available
+                prompt = get_dialogue_prompt_with_web_search(
+                    context=context_to_use,
+                    instruction=request.user_instruction,
+                    difficulty=request.difficulty,
+                    web_search_context=request.web_search_context
+                )
+            else:
+                # Only web search context available, treat it as main context
+                prompt = get_dialogue_prompt_with_context(
+                    context=request.web_search_context,
+                    instruction=request.user_instruction,
+                    difficulty=request.difficulty
+                )
+        elif context_to_use:
+            # Only RAG context available
             prompt = get_dialogue_prompt_with_context(
                 context=context_to_use,
                 instruction=request.user_instruction,
                 difficulty=request.difficulty
             )
         else:
+            # No context available
             prompt = get_dialogue_prompt_without_context(
                 instruction=request.user_instruction
             )
@@ -146,7 +190,7 @@ async def generate_dialogue(request: GenerateDialogueRequest):
 def generate_audio(request: GenerateAudioRequest):
     """
     Generate audio from dialogue text and save it with the given audio_id.
-    Uses a separate worker process to avoid crashes.
+    Uses a persistent worker service for faster processing (no model reload).
     
     - **dialogue**: The dialogue text in format "A: text\nB: text"
     - **voice_type**: Voice type for audio generation (default: "gentle")
@@ -159,57 +203,71 @@ def generate_audio(request: GenerateAudioRequest):
         static_dir = Path(config.STATIC_DIR) / "audio"
         static_dir.mkdir(parents=True, exist_ok=True)
         
-        # Path to worker script
-        worker_script = Path(__file__).parent.parent.parent.parent / "worker" / "audio_worker.py"
+        # Queue directory for worker service
+        queue_dir = Path(__file__).parent.parent.parent.parent / "worker" / "queue"
+        queue_dir.mkdir(parents=True, exist_ok=True)
         
-        if not worker_script.exists():
-            raise HTTPException(status_code=500, detail="Audio worker script not found")
+        # Create task file
+        task = {
+            "dialogue": request.dialogue,
+            "voice_type": request.voice_type,
+            "audio_id": request.audio_id,
+            "output_dir": str(static_dir)
+        }
         
-        print(f"[Audio Generation] Calling worker process...")
+        task_file = queue_dir / f"task_{request.audio_id}.json"
+        with open(task_file, 'w', encoding='utf-8') as f:
+            json.dump(task, f)
         
-        # Call worker in subprocess
-        result = subprocess.run(
-            ["python", str(worker_script), request.dialogue, request.voice_type, request.audio_id, str(static_dir)],
-            capture_output=True,
-            text=True,
-            timeout=300  # 5 minutes timeout
-        )
+        print(f"[Audio Generation] Task submitted to queue")
         
-        print(f"[Audio Generation] Worker exit code: {result.returncode}")
-        print(f"[Audio Generation] Worker stderr: {result.stderr}")
+        # Wait for result (with timeout)
+        result_file = queue_dir / f"result_{request.audio_id}.json"
+        timeout = 300  # 5 minutes
+        start_time = Path(task_file).stat().st_mtime
         
-        if result.returncode != 0:
-            raise HTTPException(
-                status_code=500, 
-                detail=f"Audio generation failed. Check logs for details."
-            )
+        while True:
+            if result_file.exists():
+                # Read result
+                with open(result_file, 'r', encoding='utf-8') as f:
+                    worker_result = json.load(f)
+                
+                # Clean up result file
+                result_file.unlink()
+                
+                if not worker_result.get("success"):
+                    raise HTTPException(
+                        status_code=500, 
+                        detail=f"Audio generation failed: {worker_result.get('error', 'Unknown error')}"
+                    )
+                
+                # Generate URL
+                audio_url = f"{config.BASE_URL}/static/audio/{request.audio_id}.wav"                
+                print(f"[Audio Generation] BASE_URL: {config.BASE_URL}", file=sys.stderr)
+                print(f"[Audio Generation] Generated URL: {audio_url}", file=sys.stderr)                
+                print(f"[Audio Generation] Successfully generated audio: {audio_url}")
+                
+                return GenerateAudioResponse(
+                    success=True,
+                    audio_url=audio_url,
+                    message="Audio generated successfully"
+                )
+            
+            # Check timeout
+            import time
+            elapsed = time.time() - start_time
+            if elapsed > timeout:
+                # Clean up task file if still exists
+                if task_file.exists():
+                    task_file.unlink()
+                raise HTTPException(
+                    status_code=504, 
+                    detail="Audio generation timed out. Make sure the worker service is running."
+                )
+            
+            # Sleep briefly before checking again
+            time.sleep(0.2)
         
-        # Parse result from stdout
-        try:
-            worker_result = json.loads(result.stdout.strip().split('\n')[-1])
-        except (json.JSONDecodeError, IndexError) as e:
-            print(f"[Audio Generation] Failed to parse worker output: {result.stdout}")
-            raise HTTPException(status_code=500, detail="Failed to parse audio generation result")
-        
-        if not worker_result.get("success"):
-            raise HTTPException(
-                status_code=500, 
-                detail=f"Audio generation failed: {worker_result.get('error', 'Unknown error')}"
-            )
-        
-        # Generate URL
-        audio_url = f"http://localhost:8001/static/audio/{request.audio_id}.wav"
-        
-        print(f"[Audio Generation] Successfully generated audio: {audio_url}")
-        
-        return GenerateAudioResponse(
-            success=True,
-            audio_url=audio_url,
-            message="Audio generated successfully"
-        )
-        
-    except subprocess.TimeoutExpired:
-        raise HTTPException(status_code=504, detail="Audio generation timed out")
     except HTTPException:
         raise
     except Exception as e:

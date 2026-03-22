@@ -15,16 +15,31 @@
 - [x]  retrieval pipline
 - [x]  container
 - [x]  production : backend 部署在 digital ocean 上 前端部署在 vercel
-- [x]  multi data-form extraction for 歐
-- [x]  Search tool for 歐
+- [x]  multi data-form extraction
+- [x]  Search tool
 - [x]  個人化設定 : 聲音選擇 by kokoro model 還有對話難度設定 by prompt
-- [ ]  整合前後端 search tool 和 圖片功能 給 generate-dialogue
-- [ ]  後端要有 memory 的功能，要能分別何時需採用前一次產出，追加問題的話，把上一次檢索內容再餵一次
-- [ ]  knowledge base 將 upload 的 pdf 根據 embedding 分類，針對每個分類取一個值作為代表，提升檢索效率
-- [ ]  prompt 調整
+- [x]  search tool 不用當作 API 應該做為一個 function，如果前端網頁收尋功能有被選取，就會使用 search_function 當作檢索到的資訊，use_rag == false
+- [x]  demo 例子呈現
 
+- [x]  後端要有 memory 的功能，用 LLM-as-a-judge 判斷問句是否和上一段產出有關，追加問題的話，把上一次檢索內容再餵一次
+- [x]  檢索 retrieve worker
 - [ ]  Agent debate system
-- [ ]  如果檢索信心不高，不要使用檢索資訊 for 歐
+- [ ]  knowledge base 將 upload 的 pdf 根據 embedding 分類，針對每個分類取一個值作為代表，提升檢索效率
+- [ ]  如果檢索信心不高，不要使用檢索資訊
+
+### 報告內容
+* 產品目的 : 聆聽 podcast 是很多人獲取新知識的一個新方法，但因為 podcast 本身是由創作者所做，我們想做的就是一個完全由個人掌握的一個 podcast 產生系統
+* 系統大致架構 : 前後端的配置，然後提到 worker 的設計(因為使用單一 server)
+* 使用情境一 : 根據知識庫內的產出，就用 F1 的例子，可以把原本的規則截圖下來，這個直接截圖說明幾可
+* 使用情境二 : 根據網頁收尋的產出，用打字輸入的，但就要等他產出(把 RAG 關掉會快)，這段時間跳回來說明可以來講如何做網頁收尋，這應該就用 WBC 的例子
+* 使用情境三 : 根據即時對話有 memory 的產出，用語音輸入，產出的時候跳回來講怎麼處理上下文記憶跟未來展望，例子就是說想聽到跟台灣相關的
+
+### 評分標準
+* 40% 設計概念：包含原創性及應用性
+* 20% 完成性：實作之作品功能是否完整，品質(如穩定度與效能)是否良好。
+* 20% 報告與展示：包含決賽文件與影片內容、現場簡報與問答。
+* 15% 專業性：程式寫作過程是否結合運算思維和軟體開發方法與工具。
+* 5%  AI應用：從需求、設計、實作到測試，妥善應用AI協助。
 
 
 ### Vocal insertion pipline
@@ -47,20 +62,38 @@
 7. 前端通過 audioid 產生的 URL 播放
 
 #### 架構設計
-分離進程，使用 subprocess
+常駐服務 + 文件隊列通信
 
 ```
-FastAPI main process           Worker process
-     |                            |
-     |-- subprocess.run() ------->|
-     |                            | 加載 Kokoro
-     |                            | 生成音頻
-     |                            | 保存文件
-     |<---- JSON 结果 ------------|
-     |                            | 退出 process
-     | 解析结果
-     | 返回 URL 给前端
+FastAPI Backend              Audio Worker Service       Retrieval Worker Service
+     |                              |                           |
+     |                              |                           | (持續運行)
+     |                              |                           | 模型已加載
+     |                              |                           |
+     |----- task.json ------------> |                           |
+     |                              |                           |
+     |                              |                           |
+     |                              |                           |
+     |                              |                           |
+     |                              |                           |
+     |<----- result.json -----------|                           |
+     |                              |                           |
+     |------------------ retrieve_task.json ------------------->|
+     |                                                          |
+     |                                                          | 執行檢索
+     |                                                          | (FAISS + Embedding)
+     |                                                          |
+     |<--  retrieve_result.json   ------------------------------|
+     |
+     | 回傳音頻 URL 或檢索結果
 ```
+
+**優勢：**
+- ✅ 模型只加載一次，速度提升 5-10 倍
+- ✅ 音頻並行生成，加速 2-4 倍
+- ✅ 支援多個請求同時處理
+- ✅ 服務異常不影響主進程
+
 
 ### TTS voice setting
 + For American women:
