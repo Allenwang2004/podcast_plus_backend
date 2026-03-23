@@ -11,6 +11,7 @@ class GenerateDialogueRequest(BaseModel):
     model: Optional[str] = Field(default="gpt-4o-mini", description="OpenAI model to use")
     max_tokens: Optional[int] = Field(default=1000, description="Maximum tokens for generation")
     web_search_context: Optional[str] = Field(default=None, description="Optional web search context to include in generation")
+    previous_audio_id: Optional[str] = Field(default=None, description="Audio ID of previous conversation for continuity")
 
 class GenerateDialogueResponse(BaseModel):
     """Response model for generated dialogue"""

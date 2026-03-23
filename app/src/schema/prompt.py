@@ -2,7 +2,7 @@
 Prompt templates for dialogue generation
 """
 
-def get_dialogue_prompt_with_context(context: str, instruction: str, difficulty: str) -> str:
+def get_dialogue_prompt_with_context(context: str, instruction: str, difficulty: str, previous_conversation: dict = None) -> str:
     """
     Generate prompt for dialogue generation with RAG context
     
@@ -10,12 +10,20 @@ def get_dialogue_prompt_with_context(context: str, instruction: str, difficulty:
         context: Retrieved context from RAG
         instruction: User's instruction for dialogue generation
         difficulty: Difficulty level (easy, medium, hard, professional)
+        previous_conversation: Optional previous conversation memory
     
     Returns:
         Formatted prompt string
     """
-    return f"""Create an engaging podcast-style conversation between two hosts (Person A and Person B) using the information provided.
+    previous_context = ""
+    if previous_conversation:
+        previous_context = f"""\n### Previous Topic (For Reference Only):
+{previous_conversation.get('instruction', 'N/A')}
 
+Note: Consider the previous topic ONLY if the current instruction is a follow-up, continuation, or modification request. Otherwise, treat this as a new, independent conversation.\n"""
+    
+    return f"""Create an engaging podcast-style conversation between two hosts (Person A and Person B) using the information provided.
+{previous_context}
 ### Source Material:
 {context}
 
@@ -26,6 +34,7 @@ Difficulty Level: {difficulty}
 
 ### Podcast Style Guidelines:
 - Format each line as "A: [text]" or "B: [text]"
+- **IMPORTANT: Generate exactly 5 rounds of dialogue (10 lines total: A speaks, B responds, repeat 5 times)**
 - Make it sound like a REAL podcast recording:
   * Use natural speech patterns with filler words (you know, I mean, like, um, right)
   * Include reactions and responses ("Oh really?", "That's fascinating!", "Exactly!", "Wait, what?")
@@ -43,23 +52,32 @@ Difficulty Level: {difficulty}
 ### Dialogue:"""
 
 
-def get_dialogue_prompt_without_context(instruction: str) -> str:
+def get_dialogue_prompt_without_context(instruction: str, previous_conversation: dict = None) -> str:
     """
     Generate prompt for dialogue generation without RAG context
     
     Args:
         instruction: User's instruction for dialogue generation
+        previous_conversation: Optional previous conversation memory
     
     Returns:
         Formatted prompt string
     """
-    return f"""Create an engaging podcast-style conversation between two hosts (Person A and Person B) based on the following topic.
+    previous_context = ""
+    if previous_conversation:
+        previous_context = f"""\n### Previous Topic (For Reference Only):
+{previous_conversation.get('instruction', 'N/A')}
 
+Note: Consider the previous topic ONLY if the current instruction is a follow-up, continuation, or modification request. Otherwise, treat this as a new, independent conversation.\n"""
+    
+    return f"""Create an engaging podcast-style conversation between two hosts (Person A and Person B) based on the following topic.
+{previous_context}
 ### Episode Topic:
 {instruction}
 
 ### Podcast Style Guidelines:
 - Format each line as "A: [text]" or "B: [text]"
+- **IMPORTANT: Generate exactly 5 rounds of dialogue (10 lines total: A speaks, B responds, repeat 5 times)**
 - Make it sound like a REAL podcast recording:
   * Use natural speech patterns with filler words (you know, I mean, like, um, right)
   * Include reactions and responses ("Oh really?", "That's fascinating!", "Exactly!", "Wait, what?")
@@ -79,7 +97,7 @@ def get_dialogue_prompt_without_context(instruction: str) -> str:
 DIALOGUE_SYSTEM_PROMPT = "You are a podcast script writer who creates engaging, natural conversations between two hosts. The dialogue should feel spontaneous, interactive, and entertaining, like a real podcast recording."
 
 
-def get_dialogue_prompt_with_web_search(context: str, instruction: str, difficulty: str, web_search_context: str) -> str:
+def get_dialogue_prompt_with_web_search(context: str, instruction: str, difficulty: str, web_search_context: str, previous_conversation: dict = None) -> str:
     """
     Generate prompt for dialogue generation with both RAG context and web search context
     
@@ -88,12 +106,20 @@ def get_dialogue_prompt_with_web_search(context: str, instruction: str, difficul
         instruction: User's instruction for dialogue generation
         difficulty: Difficulty level (easy, medium, hard, professional)
         web_search_context: Additional context from web search
+        previous_conversation: Optional previous conversation memory
     
     Returns:
         Formatted prompt string
     """
-    return f"""Create an engaging podcast-style conversation between two hosts (Person A and Person B) using information from both our knowledge base and latest web research.
+    previous_context = ""
+    if previous_conversation:
+        previous_context = f"""\n### Previous Topic (For Reference Only):
+{previous_conversation.get('instruction', 'N/A')}
 
+Note: Consider the previous topic ONLY if the current instruction is a follow-up, continuation, or modification request. Otherwise, treat this as a new, independent conversation.\n"""
+    
+    return f"""Create an engaging podcast-style conversation between two hosts (Person A and Person B) using information from both our knowledge base and latest web research.
+{previous_context}
 ### Knowledge Base:
 {context}
 
@@ -107,6 +133,7 @@ Difficulty Level: {difficulty}
 
 ### Podcast Style Guidelines:
 - Format each line as "A: [text]" or "B: [text]"
+- **IMPORTANT: Generate exactly 5 rounds of dialogue (10 lines total: A speaks, B responds, repeat 5 times)**
 - Make it sound like a REAL podcast recording:
   * Use natural speech patterns with filler words (you know, I mean, like, um, right)
   * Include reactions and responses ("Oh really?", "That's fascinating!", "Exactly!", "Wait, what?")

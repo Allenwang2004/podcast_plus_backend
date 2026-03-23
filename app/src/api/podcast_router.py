@@ -18,6 +18,7 @@ from app.src.schema.prompt import (
     get_dialogue_prompt_with_web_search,
     DIALOGUE_SYSTEM_PROMPT
 )
+from app.src.utils.memory import save_conversation_memory, get_conversation_memory
 
 # Import config
 import sys
@@ -51,6 +52,21 @@ async def generate_dialogue(request: GenerateDialogueRequest):
         
         # Initialize OpenAI client
         client = OpenAI(api_key=api_key)
+        
+        # Get previous conversation memory if provided
+        previous_memory = None
+        if request.previous_audio_id:
+            try:
+                previous_memory = get_conversation_memory(
+                    audio_id=request.previous_audio_id,
+                    memory_dir=os.path.join(config.ROOT_DIR, "db/memory")
+                )
+                if previous_memory:
+                    print(f"[Memory] Loaded previous conversation: {request.previous_audio_id}")
+                else:
+                    print(f"[Memory] Previous conversation not found: {request.previous_audio_id}")
+            except Exception as e:
+                print(f"[Memory] Failed to load previous conversation: {str(e)}")
         
         # Get or retrieve context
         context_to_use = request.retrieved_context
@@ -137,26 +153,30 @@ async def generate_dialogue(request: GenerateDialogueRequest):
                     context=context_to_use,
                     instruction=request.user_instruction,
                     difficulty=request.difficulty,
-                    web_search_context=request.web_search_context
+                    web_search_context=request.web_search_context,
+                    previous_conversation=previous_memory
                 )
             else:
                 # Only web search context available, treat it as main context
                 prompt = get_dialogue_prompt_with_context(
                     context=request.web_search_context,
                     instruction=request.user_instruction,
-                    difficulty=request.difficulty
+                    difficulty=request.difficulty,
+                    previous_conversation=previous_memory
                 )
         elif context_to_use:
             # Only RAG context available
             prompt = get_dialogue_prompt_with_context(
                 context=context_to_use,
                 instruction=request.user_instruction,
-                difficulty=request.difficulty
+                difficulty=request.difficulty,
+                previous_conversation=previous_memory
             )
         else:
             # No context available
             prompt = get_dialogue_prompt_without_context(
-                instruction=request.user_instruction
+                instruction=request.user_instruction,
+                previous_conversation=previous_memory
             )
         
         # Call OpenAI API
@@ -175,6 +195,22 @@ async def generate_dialogue(request: GenerateDialogueRequest):
         
         # Generate unique audio ID
         audio_id = str(uuid.uuid4())
+        
+        # Save conversation to memory
+        try:
+            memory_file = save_conversation_memory(
+                instruction=request.user_instruction,
+                dialogue=dialogue,
+                audio_id=audio_id,
+                context=context_to_use,
+                web_search_context=request.web_search_context,
+                difficulty=request.difficulty,
+                memory_dir=os.path.join(config.ROOT_DIR, "db/memory")
+            )
+            print(f"[Memory] Conversation saved to: {memory_file}")
+        except Exception as e:
+            print(f"[Memory] Failed to save conversation: {str(e)}")
+            # Continue even if memory save fails
         
         return GenerateDialogueResponse(
             success=True,
